@@ -1,0 +1,29 @@
+{
+  "method": "HU_Hubble_constant",
+  "framework_constants": {
+    "alpha_xi": "9/10",
+    "s_face": "1/4",
+    "N_gen": 3
+  },
+  "structural_prediction": {
+    "form": "100 * alpha_xi * s_face * N_gen",
+    "fraction": "27/40 (= h_pred)",
+    "h_pred": 0.675,
+    "H_0_pred_km_s_Mpc": 67.5
+  },
+  "Planck_2018": {
+    "H_0": 67.36,
+    "sigma": 0.54,
+    "rel_err_pct": 0.2078384798099771,
+    "z": 0.2592592592592603,
+    "tier": "PRECISE"
+  },
+  "SH0ES_2022": {
+    "H_0": 73.04,
+    "sigma": 1.04,
+    "rel_err_pct": 7.584884994523557,
+    "z": -5.326923076923083,
+    "tier": "TENSION"
+  },
+  "verdict": "PLANCK_H0_STRUCTURAL: H_0 = 100 * alpha_xi * s_face * N_gen = 27/40 * 100 = 67.5 km/s/Mpc matches Planck 2018 (0.21% rel-err, z=+0.26, within 1-sigma); SH0ES local distance ladder 73.04 +- 1.04 sits 5.33 sigma above the structural prediction. Like the S_8 tension (H-L), the Hubble tension is predicted to NOT be a dark-sector new-physics signature but rather local-ladder calibration / systematic divergence; the CMB-anchored Planck side matches the System-R rational at PRECISE tier."
+}

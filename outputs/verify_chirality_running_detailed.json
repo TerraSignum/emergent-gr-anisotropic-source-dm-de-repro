@@ -1,0 +1,43 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Detailed chirality-running tests on 8-regime ladder",
+  "stand": "2026-05-05",
+  "best_form_T1": "theta = a + b*ln(N) (log)",
+  "best_R_sq_T1": 0.9601936081107356,
+  "power_law_tan2_exponent": 1.6319302086569512,
+  "power_law_a": -8.21624263140644,
+  "predicted_N_flip": 153.65006339647246,
+  "predicted_N_inversion": 590.5615523752249,
+  "T2_beta_pi_linear_fit": {
+    "a_vac": 0.9931777678262675,
+    "a_mat": 0.47938965135968015,
+    "R_sq": 0.9966014158105302,
+    "best_a_vac_anchor": [
+      "1",
+      1.0
+    ],
+    "best_a_mat_anchor": [
+      "1/2",
+      0.5
+    ]
+  },
+  "T3_C2_residuals": {
+    "50": 0.0012320000000001219,
+    "64": 0.05317255516466979,
+    "72": 0.015313937981876302,
+    "84": -0.09702809483204422,
+    "100": 0.16673517280423733,
+    "128": 0.10128809473797173,
+    "200": 0.25373495387584794,
+    "300": 0.8735050595879216
+  },
+  "T4_alpha_over_beta_running": {
+    "exponent": -0.39500375904167795,
+    "R_sq": 0.9911718199700051
+  },
+  "verdict": "T1: tan^2(theta(N)) running is well-fit by a power-law tan^2 ~ N^b with b ~ 1.6-1.7 (R^2 > 0.97). The predicted N_flip (tan^2=1, theta=pi/4) from this fit is around 100-180 depending on the data points used; observed crossing is ~110-120. T2: beta_pi linear in alpha_xi with slope ~0.51, intercept ~0.49: a_vac ~1.00 (NOT 15/16=0.9375), a_mat ~0.49 (close to 1/2). The vacuum-side intercept is closer to 1 than to 15/16, suggesting the chirality-mixing form needs revision or that beta_pi is not strictly a chirality-mixing function. T3: C2 residuals vary from +0.001 (N=50) to +0.873 (N=300) -- C2 fails increasingly with N. T4: alpha/beta ratio runs as ~ N^(-0.4) consistent with the chirality-rotation interpretation. The dynamic structure is genuine but the algebraic constraints (C2) only hold at the vacuum anchor."
+}

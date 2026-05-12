@@ -1,0 +1,237 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "SPARC per-galaxy pattern analysis",
+  "stand": "2026-05-05",
+  "best_10": [
+    {
+      "galaxy": "NGC4559",
+      "chi2_per_dof": 0.42194164951052576,
+      "V_flat_kms": 121.2,
+      "T_type": 6
+    },
+    {
+      "galaxy": "UGC09992",
+      "chi2_per_dof": 0.446539790544633,
+      "V_flat_kms": 33.6,
+      "T_type": 10
+    },
+    {
+      "galaxy": "UGC06628",
+      "chi2_per_dof": 0.5363326525789957,
+      "V_flat_kms": 41.8,
+      "T_type": 9
+    },
+    {
+      "galaxy": "NGC3521",
+      "chi2_per_dof": 0.5432236089405931,
+      "V_flat_kms": 213.7,
+      "T_type": 4
+    },
+    {
+      "galaxy": "NGC3949",
+      "chi2_per_dof": 0.5445584339365622,
+      "V_flat_kms": 163.0,
+      "T_type": 4
+    },
+    {
+      "galaxy": "UGCA444",
+      "chi2_per_dof": 1.1540119002039357,
+      "V_flat_kms": 37.0,
+      "T_type": 10
+    },
+    {
+      "galaxy": "NGC3769",
+      "chi2_per_dof": 1.3618177732134236,
+      "V_flat_kms": 118.6,
+      "T_type": 3
+    },
+    {
+      "galaxy": "UGC05005",
+      "chi2_per_dof": 1.4659465262887883,
+      "V_flat_kms": 98.9,
+      "T_type": 10
+    },
+    {
+      "galaxy": "F571-V1",
+      "chi2_per_dof": 1.4973858832089548,
+      "V_flat_kms": 83.6,
+      "T_type": 7
+    },
+    {
+      "galaxy": "UGC06930",
+      "chi2_per_dof": 1.5346903103241796,
+      "V_flat_kms": 107.2,
+      "T_type": 7
+    }
+  ],
+  "worst_10": [
+    {
+      "galaxy": "DDO154",
+      "chi2_per_dof": 707.7950927266551,
+      "V_flat_kms": 47.0,
+      "T_type": 10
+    },
+    {
+      "galaxy": "UGC02916",
+      "chi2_per_dof": 332.3823507773743,
+      "V_flat_kms": 182.7,
+      "T_type": 2
+    },
+    {
+      "galaxy": "NGC2403",
+      "chi2_per_dof": 267.8148603681897,
+      "V_flat_kms": 131.2,
+      "T_type": 6
+    },
+    {
+      "galaxy": "NGC5055",
+      "chi2_per_dof": 260.2520868972224,
+      "V_flat_kms": 179.0,
+      "T_type": 4
+    },
+    {
+      "galaxy": "IC2574",
+      "chi2_per_dof": 221.6798123294196,
+      "V_flat_kms": 66.4,
+      "T_type": 9
+    },
+    {
+      "galaxy": "UGC09133",
+      "chi2_per_dof": 160.78666185446338,
+      "V_flat_kms": 226.8,
+      "T_type": 2
+    },
+    {
+      "galaxy": "UGC05716",
+      "chi2_per_dof": 127.75501337210922,
+      "V_flat_kms": 73.1,
+      "T_type": 9
+    },
+    {
+      "galaxy": "UGC02487",
+      "chi2_per_dof": 107.99260198125108,
+      "V_flat_kms": 332.0,
+      "T_type": 0
+    },
+    {
+      "galaxy": "NGC4217",
+      "chi2_per_dof": 106.87712496882132,
+      "V_flat_kms": 181.3,
+      "T_type": 3
+    },
+    {
+      "galaxy": "UGC02259",
+      "chi2_per_dof": 105.20387116343834,
+      "V_flat_kms": 86.2,
+      "T_type": 8
+    }
+  ],
+  "correlations": {
+    "T_type_vs_chi2": -0.05434655533356748,
+    "Distance_vs_chi2": -0.0009497021381097212,
+    "V_flat_vs_chi2": 0.044700276081747585
+  },
+  "tier_breakdown_by_Hubble_T": {
+    "10": {
+      "EXACT": 1,
+      "PRECISE": 3,
+      "PRECISE_loose": 6,
+      "FACTOR2": 5,
+      "ORDER": 1,
+      "n_total": 16
+    },
+    "4": {
+      "EXACT": 2,
+      "PRECISE": 3,
+      "PRECISE_loose": 3,
+      "FACTOR2": 6,
+      "ORDER": 3,
+      "n_total": 17
+    },
+    "7": {
+      "EXACT": 0,
+      "PRECISE": 3,
+      "PRECISE_loose": 4,
+      "FACTOR2": 7,
+      "ORDER": 0,
+      "n_total": 14
+    },
+    "9": {
+      "EXACT": 1,
+      "PRECISE": 4,
+      "PRECISE_loose": 7,
+      "FACTOR2": 2,
+      "ORDER": 5,
+      "n_total": 19
+    },
+    "5": {
+      "EXACT": 0,
+      "PRECISE": 1,
+      "PRECISE_loose": 5,
+      "FACTOR2": 6,
+      "ORDER": 2,
+      "n_total": 14
+    },
+    "6": {
+      "EXACT": 1,
+      "PRECISE": 1,
+      "PRECISE_loose": 6,
+      "FACTOR2": 5,
+      "ORDER": 3,
+      "n_total": 16
+    },
+    "3": {
+      "EXACT": 0,
+      "PRECISE": 1,
+      "PRECISE_loose": 3,
+      "FACTOR2": 3,
+      "ORDER": 4,
+      "n_total": 11
+    },
+    "11": {
+      "EXACT": 0,
+      "PRECISE": 0,
+      "PRECISE_loose": 1,
+      "FACTOR2": 0,
+      "ORDER": 0,
+      "n_total": 1
+    },
+    "0": {
+      "EXACT": 0,
+      "PRECISE": 1,
+      "PRECISE_loose": 0,
+      "FACTOR2": 0,
+      "ORDER": 2,
+      "n_total": 3
+    },
+    "2": {
+      "EXACT": 0,
+      "PRECISE": 0,
+      "PRECISE_loose": 2,
+      "FACTOR2": 2,
+      "ORDER": 5,
+      "n_total": 9
+    },
+    "8": {
+      "EXACT": 0,
+      "PRECISE": 0,
+      "PRECISE_loose": 3,
+      "FACTOR2": 1,
+      "ORDER": 2,
+      "n_total": 6
+    },
+    "1": {
+      "EXACT": 0,
+      "PRECISE": 0,
+      "PRECISE_loose": 0,
+      "FACTOR2": 2,
+      "ORDER": 1,
+      "n_total": 3
+    }
+  },
+  "verdict": "Pattern analysis on the framework parameter-free NFW fit to the real SPARC sample identifies which galaxy subpopulations the prediction matches naturally vs which require additional structural input. Correlations: T-type r=-0.05, V_flat r=0.04, Distance r=-0.00."
+}

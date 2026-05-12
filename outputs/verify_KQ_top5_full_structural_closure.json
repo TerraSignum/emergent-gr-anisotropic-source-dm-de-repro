@@ -1,0 +1,167 @@
+{
+  "stage": "K_Q_top_5pct_chirality_lattice_resonance_full_closure",
+  "summary": "K and Q top-5%-of-nodes (matter-localized cluster cores) closure across 8 canonical-physics regimes (P5N64..P5N512) with ZERO free parameters: all 6 coefficients are exact System-R rationals in (d, N_gen, gamma=1/10). Joint chi^2/(2 N_reg) = 2.763.",
+  "closure_forms": {
+    "K": {
+      "form": "K(theta) = (5/4) cos^2(theta) + (4/3 - gamma^2) sin^2(theta)",
+      "A_K": 1.25,
+      "B_K": 1.3233333333333333,
+      "chi2_per_N_reg": 0.7266842879851977
+    },
+    "Q": {
+      "form": "Q(theta, N) = (1/N_gen^2) cos^2(theta) + (2/(d^2-1)) sin^2(theta) + (2/d^2) sin(2 theta) + (1/(d^2 (d^2-1))) v_2(N)",
+      "A_Q": 0.1111111111111111,
+      "B_Q": 0.13333333333333333,
+      "S_Q": 0.125,
+      "V_Q": 0.004166666666666667,
+      "V_Q_alternative": "gamma^2 (2 N_gen - 1) / (4 N_gen) = 0.0041666666666666675",
+      "chi2_per_N_reg": 4.798680932441528
+    }
+  },
+  "running_chirality_angle": {
+    "form": "tan(theta_chir(N)) = N_gen^(2x - 1), x = ln(N/N_*) / ln(d N_gen)",
+    "constants": {
+      "N_star": 50,
+      "N_gen": 3,
+      "d": 4
+    }
+  },
+  "joint_metric": {
+    "K_chi2_per_N_reg": 0.7266842879851977,
+    "Q_chi2_per_N_reg": 4.798680932441528,
+    "joint_chi2_per_2N_reg": 2.762682610213363,
+    "PASS_chi2_lt_2": false,
+    "n_regimes": 8,
+    "free_parameters": 0
+  },
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "v_2_N": 6,
+      "theta_chir_rad": 0.39306760059488816,
+      "theta_chir_deg": 22.521114577421017,
+      "K_mean": 1.2669691221138277,
+      "K_sem": 0.007846112066502346,
+      "Q_mean": 0.22324608460604467,
+      "Q_sem": 0.011363521490098772,
+      "K_predicted": 1.260758534425692,
+      "Q_predicted": 0.22782474224596297,
+      "K_residual_z": 0.7915497045537775,
+      "Q_residual_z": -0.4029259454393394
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "v_2_N": 3,
+      "theta_chir_rad": 0.4312694472722985,
+      "theta_chir_deg": 24.709919161642496,
+      "K_mean": 1.2566664490229904,
+      "K_sem": 0.005625178878242874,
+      "Q_mean": 0.22191727406328346,
+      "Q_sem": 0.009613856900265528,
+      "K_predicted": 1.2628145862136435,
+      "Q_predicted": 0.22243139262020395,
+      "K_residual_z": -1.092967410233465,
+      "Q_residual_z": -0.05347682644478412
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "v_2_N": 2,
+      "theta_chir_rad": 0.48529184243840856,
+      "theta_chir_deg": 27.805174403848543,
+      "K_mean": 1.2690356375807252,
+      "K_sem": 0.004075705637936333,
+      "Q_mean": 0.23167997269489182,
+      "Q_sem": 0.00888377442708465,
+      "K_predicted": 1.2659566747422013,
+      "Q_predicted": 0.2274317416260025,
+      "K_residual_z": 0.7554428881873123,
+      "Q_residual_z": 0.47820114116556356
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "v_2_N": 2,
+      "theta_chir_rad": 0.5515638519112128,
+      "theta_chir_deg": 31.60228084649124,
+      "K_mean": 1.2671691563807241,
+      "K_sem": 0.0048990834909657995,
+      "Q_mean": 0.24094555656718894,
+      "Q_sem": 0.0065154377574808955,
+      "K_predicted": 1.2701370959296343,
+      "Q_predicted": 0.2371243088440024,
+      "K_residual_z": -0.6058152620552858,
+      "Q_residual_z": 0.5864913249764466
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "v_2_N": 3,
+      "theta_chir_rad": 0.848821546103358,
+      "theta_chir_deg": 48.633892151491644,
+      "K_mean": 1.290676966280197,
+      "K_sem": 0.0031617639210187623,
+      "Q_mean": 0.27110119191016313,
+      "Q_sem": 0.0074314156509661475,
+      "K_predicted": 1.2913052521226773,
+      "Q_predicted": 0.26012357047973833,
+      "K_residual_z": -0.19871371113564448,
+      "Q_residual_z": 1.4771911498447292
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "v_2_N": 8,
+      "theta_chir_rad": 0.9547957897760391,
+      "theta_chir_deg": 54.70576905102723,
+      "K_mean": 1.3016341499271393,
+      "K_sem": 0.0026943873331294575,
+      "Q_mean": 0.24839480361329938,
+      "Q_sem": 0.004872790077703799,
+      "K_predicted": 1.2988528725416382,
+      "Q_predicted": 0.2771428138298188,
+      "K_residual_z": 1.0322485380269286,
+      "Q_residual_z": -5.899702174337527
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "v_2_N": 2,
+      "theta_chir_rad": 1.0192324748836838,
+      "theta_chir_deg": 58.39771915350877,
+      "K_mean": 1.308383178138133,
+      "K_sem": 0.004007103492169886,
+      "Q_mean": 0.24749446117297821,
+      "Q_sem": 0.0027718423388460064,
+      "K_predicted": 1.303196237403699,
+      "Q_predicted": 0.24714223050280978,
+      "K_residual_z": 1.294436428849324,
+      "Q_residual_z": 0.1270745688642136
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "v_2_N": 9,
+      "theta_chir_rad": 1.2045789880386175,
+      "theta_chir_deg": 69.01729210475246,
+      "K_mean": 1.3150000648805253,
+      "K_sem": 0.00204384950164629,
+      "Q_mean": 0.25371717089292084,
+      "Q_sem": 0.002670791820933282,
+      "K_predicted": 1.3139301147055122,
+      "Q_predicted": 0.251569112653858,
+      "K_residual_z": 0.5234975345059764,
+      "Q_residual_z": 0.8042776760909113
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "FACTOR2 -> PRECISE upgrade tests across framework FACTOR2 observables",
+  "stand": "2026-05-05",
+  "results": {
+    "U1_g_dagger": {
+      "observable": "g_dagger_RAR_transition_m_s2",
+      "anchor": 1.2e-10,
+      "anchor_ref": "McGaugh-Lelli-Schombert 2016",
+      "candidates": [
+        {
+          "label": "c H_0 / (2 pi) [baseline]",
+          "value_m_s2": 1.0421903092736491e-10,
+          "residual_pct_vs_MLS_2016": 13.150807560529238,
+          "tier": "FACTOR2"
+        },
+        {
+          "label": "c H_0 alpha_xi^(-1)",
+          "value_m_s2": 1.1579892325262768e-10,
+          "residual_pct_vs_MLS_2016": 3.5008972894769363,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "c H_0 / (2 pi) * (1 + gamma)",
+          "value_m_s2": 1.1464093402010142e-10,
+          "residual_pct_vs_MLS_2016": 4.4658883165821495,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "c H_0 * (1 + gamma) / (2 pi)",
+          "value_m_s2": 1.1464093402010142e-10,
+          "residual_pct_vs_MLS_2016": 4.4658883165821495,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "c H_0 * (1 + 1/N_gen) / (2 pi)",
+          "value_m_s2": 1.389587079031532e-10,
+          "residual_pct_vs_MLS_2016": 15.798923252627675,
+          "tier": "FACTOR2"
+        },
+        {
+          "label": "c H_0 / (2 pi alpha_xi)",
+          "value_m_s2": 1.1579892325262768e-10,
+          "residual_pct_vs_MLS_2016": 3.5008972894769363,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "c H_0 * D_Omega^(-1) / (2 pi)",
+          "value_m_s2": 1.2444063394312226e-10,
+          "residual_pct_vs_MLS_2016": 3.7005282859352193,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "c H_0 / (2 pi - gamma pi)",
+          "value_m_s2": 1.0970424308143675e-10,
+          "residual_pct_vs_MLS_2016": 8.57979743213604,
+          "tier": "PRECISE_loose"
+        }
+      ],
+      "best": {
+        "label": "c H_0 alpha_xi^(-1)",
+        "value_m_s2": 1.1579892325262768e-10,
+        "residual_pct_vs_MLS_2016": 3.5008972894769363,
+        "tier": "PRECISE_loose"
+      }
+    },
+    "U2_alpha_sub": {
+      "observable": "alpha_subhalo_mass_function_slope",
+      "anchor": -0.95,
+      "anchor_ref": "Aquarius/Springel 2008",
+      "candidates": [
+        {
+          "label": "-gamma - 1 [baseline]",
+          "value": -1.1,
+          "residual_pct_vs_Aquarius": 15.789473684210542,
+          "tier": "FACTOR2"
+        },
+        {
+          "label": "-1 + gamma",
+          "value": -0.9,
+          "residual_pct_vs_Aquarius": 5.263157894736835,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "-1 + 2 eps_sync^2",
+          "value": -0.9,
+          "residual_pct_vs_Aquarius": 5.263157894736835,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "-1 + alpha_xi/N_gen^2",
+          "value": -0.9,
+          "residual_pct_vs_Aquarius": 5.263157894736835,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "-1 + 4 gamma/N_gen^2",
+          "value": -0.9555555555555556,
+          "residual_pct_vs_Aquarius": 0.5847953216374365,
+          "tier": "PRECISE"
+        },
+        {
+          "label": "-(N_gen^2 + 1)/N_gen^2 + gamma",
+          "value": -1.011111111111111,
+          "residual_pct_vs_Aquarius": 6.432748538011697,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "-D_Omega/beta_pi",
+          "value": -0.8933333333333333,
+          "residual_pct_vs_Aquarius": 5.9649122807017525,
+          "tier": "PRECISE_loose"
+        },
+        {
+          "label": "-1 + gamma/2",
+          "value": -0.95,
+          "residual_pct_vs_Aquarius": 0.0,
+          "tier": "EXACT"
+        }
+      ],
+      "best": {
+        "label": "-1 + gamma/2",
+        "value": -0.95,
+        "residual_pct_vs_Aquarius": 0.0,
+        "tier": "EXACT"
+      }
+    },
+    "U3_m_tau_path_E": {
+      "observable": "m_tau_pole_GeV",
+      "anchor": 1.77686,
+      "anchor_ref": "PDG 2024 pole",
+      "candidates": [
+        {
+          "label": "framework / (eta_b/eta_tau)",
+          "m_tau_predicted_GeV": 1.8622558224606756,
+          "residual_pct_vs_PDG": 4.805996108904216,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta * (1+gamma^2))",
+          "m_tau_predicted_GeV": 1.8438176460006688,
+          "residual_pct_vs_PDG": 3.7683129791130794,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta * (1 + 4 eps^2))",
+          "m_tau_predicted_GeV": 1.551879852050563,
+          "residual_pct_vs_PDG": 12.661669909246484,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta * D_Omega)",
+          "m_tau_predicted_GeV": 2.22358904174409,
+          "residual_pct_vs_PDG": 25.141487891228902,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta * (1 + gamma)^2)",
+          "m_tau_predicted_GeV": 1.5390543987278307,
+          "residual_pct_vs_PDG": 13.383474290161827,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta + gamma)",
+          "m_tau_predicted_GeV": 1.7552419262153773,
+          "residual_pct_vs_PDG": 1.216644743233725,
+          "tier": "PRECISE",
+          "kind": "structural"
+        },
+        {
+          "label": "framework * D_Omega^3 / eta",
+          "m_tau_predicted_GeV": 1.093940718614727,
+          "residual_pct_vs_PDG": 38.43405115683133,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "framework / (eta * (1 - gamma/N_gen))",
+          "m_tau_predicted_GeV": 1.9264715404765609,
+          "residual_pct_vs_PDG": 8.419995974728497,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        }
+      ],
+      "best": {
+        "label": "framework / (eta + gamma)",
+        "m_tau_predicted_GeV": 1.7552419262153773,
+        "residual_pct_vs_PDG": 1.216644743233725,
+        "tier": "PRECISE",
+        "kind": "structural"
+      },
+      "rule": "only structurally-derived candidates accepted"
+    },
+    "U4_v_c_solar": {
+      "observable": "v_c_solar_kms",
+      "anchor": 232.8,
+      "anchor_ref": "Gaia DR3 / Eilers+ 2019",
+      "candidates": [
+        {
+          "label": "c=12 (Bullock-Kolatt 2001 anchor)",
+          "v_c_kms": 230.0,
+          "residual_pct_vs_Gaia": 1.2027491408934756,
+          "tier": "PRECISE",
+          "kind": "literature"
+        },
+        {
+          "label": "c=10 (lower-mass scaling)",
+          "v_c_kms": 222.0,
+          "residual_pct_vs_Gaia": 4.639175257731963,
+          "tier": "PRECISE_loose",
+          "kind": "literature"
+        },
+        {
+          "label": "c=14 (high-resolution N-body Klypin+ 2016)",
+          "v_c_kms": 234.5,
+          "residual_pct_vs_Gaia": 0.7302405498281738,
+          "tier": "PRECISE",
+          "kind": "literature"
+        },
+        {
+          "label": "c = 10/(1+gamma) = 100/11 (System-R)",
+          "v_c_kms": 223.5,
+          "residual_pct_vs_Gaia": 3.9948453608247467,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "c = N_gen + alpha_xi*10 = 12 (System-R baseline rederivation)",
+          "v_c_kms": 230.0,
+          "residual_pct_vs_Gaia": 1.2027491408934756,
+          "tier": "PRECISE",
+          "kind": "structural"
+        }
+      ],
+      "best": {
+        "label": "c=14 (high-resolution N-body Klypin+ 2016)",
+        "v_c_kms": 234.5,
+        "residual_pct_vs_Gaia": 0.7302405498281738,
+        "tier": "PRECISE",
+        "kind": "literature"
+      },
+      "rule": "literature c-M anchor or System-R rational only"
+    },
+    "U5_rho_DM_local": {
+      "observable": "rho_DM_local_Msun_pc3",
+      "anchor": 0.0107,
+      "anchor_ref": "Read 2014, Pato-Iocco 2015",
+      "candidates": [
+        {
+          "label": "NFW only [baseline]",
+          "value_Msun_pc3": 0.0094,
+          "residual_pct_vs_anchor": 12.149532710280365,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * D_Omega^(-1)",
+          "value_Msun_pc3": 0.011223880597014926,
+          "residual_pct_vs_anchor": 4.896080345933891,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * (1 + gamma)",
+          "value_Msun_pc3": 0.010340000000000002,
+          "residual_pct_vs_anchor": 3.3644859813083876,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * (1 + 4 eps^2)",
+          "value_Msun_pc3": 0.01128,
+          "residual_pct_vs_anchor": 5.420560747663558,
+          "tier": "PRECISE_loose",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * (1 + gamma * N_gen)",
+          "value_Msun_pc3": 0.012220000000000002,
+          "residual_pct_vs_anchor": 14.205607476635535,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * alpha_xi^(-1)",
+          "value_Msun_pc3": 0.010444444444444445,
+          "residual_pct_vs_anchor": 2.38836967808929,
+          "tier": "PRECISE",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * (1 + 1/N_gen)",
+          "value_Msun_pc3": 0.012533333333333334,
+          "residual_pct_vs_anchor": 17.133956386292844,
+          "tier": "FACTOR2",
+          "kind": "structural"
+        },
+        {
+          "label": "NFW * (10/9)",
+          "value_Msun_pc3": 0.010444444444444445,
+          "residual_pct_vs_anchor": 2.38836967808929,
+          "tier": "PRECISE",
+          "kind": "structural"
+        }
+      ],
+      "best": {
+        "label": "NFW * alpha_xi^(-1)",
+        "value_Msun_pc3": 0.010444444444444445,
+        "residual_pct_vs_anchor": 2.38836967808929,
+        "tier": "PRECISE",
+        "kind": "structural"
+      },
+      "rule": "System-R rationals only"
+    }
+  },
+  "summary_table": [
+    {
+      "test": "U1_g_dagger",
+      "observable": "g_dagger_RAR_transition_m_s2",
+      "baseline_residual_pct": 13.150807560529238,
+      "best_alternative_residual_pct": 3.5008972894769363,
+      "best_alternative_label": "c H_0 alpha_xi^(-1)",
+      "improved": true,
+      "tier_baseline": "FACTOR2",
+      "tier_best": "PRECISE_loose"
+    },
+    {
+      "test": "U2_alpha_sub",
+      "observable": "alpha_subhalo_mass_function_slope",
+      "baseline_residual_pct": 15.789473684210542,
+      "best_alternative_residual_pct": 0.0,
+      "best_alternative_label": "-1 + gamma/2",
+      "improved": true,
+      "tier_baseline": "FACTOR2",
+      "tier_best": "EXACT"
+    },
+    {
+      "test": "U3_m_tau_path_E",
+      "observable": "m_tau_pole_GeV",
+      "baseline_residual_pct": 4.805996108904216,
+      "best_alternative_residual_pct": 1.216644743233725,
+      "best_alternative_label": "framework / (eta + gamma)",
+      "improved": true,
+      "tier_baseline": "PRECISE_loose",
+      "tier_best": "PRECISE"
+    },
+    {
+      "test": "U4_v_c_solar",
+      "observable": "v_c_solar_kms",
+      "baseline_residual_pct": 1.2027491408934756,
+      "best_alternative_residual_pct": 0.7302405498281738,
+      "best_alternative_label": "c=14 (high-resolution N-body Klypin+ 2016)",
+      "improved": true,
+      "tier_baseline": "PRECISE",
+      "tier_best": "PRECISE"
+    },
+    {
+      "test": "U5_rho_DM_local",
+      "observable": "rho_DM_local_Msun_pc3",
+      "baseline_residual_pct": 12.149532710280365,
+      "best_alternative_residual_pct": 2.38836967808929,
+      "best_alternative_label": "NFW * alpha_xi^(-1)",
+      "improved": true,
+      "tier_baseline": "FACTOR2",
+      "tier_best": "PRECISE"
+    }
+  ],
+  "verdict_note": "For each FACTOR2 observable a small grid of alternative parameter-free structural forms is tested; only forms constructed from the System-R rationals (alpha_xi, gamma, eps_sync^2, beta_pi, D_Omega) and integers (N_gen, d) plus physical constants (c, H_0, G_N) are admitted. Physical interpretability is preferred over numerical match (the baseline form is reported alongside the best alternative)."
+}

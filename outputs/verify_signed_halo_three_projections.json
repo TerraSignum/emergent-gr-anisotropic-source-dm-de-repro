@@ -1,0 +1,209 @@
+{
+  "method": "Three-projection halo audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300",
+      "P5N512",
+      "P6",
+      "P7",
+      "P8",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "core_tau": 0.05,
+  "core_top_frac": 0.05,
+  "controls_for_partial_correlation": [
+    "graph_degree",
+    "weight_density_omega"
+  ],
+  "T00_intentionally_NOT_in_controls": "T_00 is the source of the halo; controlling for it would kill the halo signal by construction.",
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_bulk_pooled": 322,
+      "rho_spearman_pi_rho_vs_d": 0.026442938859925588,
+      "rho_spearman_pi_tr_vs_d": -0.11897282705293243,
+      "rho_spearman_pi_F_vs_d": -0.20962899156968118,
+      "partial_pi_rho_vs_d": 0.05735524603990316,
+      "partial_pi_tr_vs_d": 0.10552967738561453,
+      "partial_pi_F_vs_d": -0.12984710982705708
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_bulk_pooled": 1024,
+      "rho_spearman_pi_rho_vs_d": -0.05817482207996567,
+      "rho_spearman_pi_tr_vs_d": -0.3396850189542951,
+      "rho_spearman_pi_F_vs_d": -0.19271343698590945,
+      "partial_pi_rho_vs_d": -0.04663884244689221,
+      "partial_pi_tr_vs_d": -0.3282658943387454,
+      "partial_pi_F_vs_d": -0.17873759477147558
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_bulk_pooled": 1220,
+      "rho_spearman_pi_rho_vs_d": -0.02275983439527866,
+      "rho_spearman_pi_tr_vs_d": -0.20527300436659088,
+      "rho_spearman_pi_F_vs_d": -0.1172718129885386,
+      "partial_pi_rho_vs_d": -0.01639021768125172,
+      "partial_pi_tr_vs_d": -0.19345311722831593,
+      "partial_pi_F_vs_d": -0.10518820095603
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_bulk_pooled": 1447,
+      "rho_spearman_pi_rho_vs_d": -0.05838055863705192,
+      "rho_spearman_pi_tr_vs_d": -0.24210437245097943,
+      "rho_spearman_pi_F_vs_d": -0.1461971463786669,
+      "partial_pi_rho_vs_d": -0.05036919047014677,
+      "partial_pi_tr_vs_d": -0.22859042154379117,
+      "partial_pi_F_vs_d": -0.13194958404908447
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_bulk_pooled": 1864,
+      "rho_spearman_pi_rho_vs_d": -0.059017519741205234,
+      "rho_spearman_pi_tr_vs_d": -0.2405434088247746,
+      "rho_spearman_pi_F_vs_d": -0.15473059545560167,
+      "partial_pi_rho_vs_d": -0.04864496224964721,
+      "partial_pi_tr_vs_d": -0.2285789461718607,
+      "partial_pi_F_vs_d": -0.13959453470951505
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_bulk_pooled": 1060,
+      "rho_spearman_pi_rho_vs_d": 0.155693291303298,
+      "rho_spearman_pi_tr_vs_d": -0.16722525747661907,
+      "rho_spearman_pi_F_vs_d": 0.06605523185124781,
+      "partial_pi_rho_vs_d": 0.17033197921094087,
+      "partial_pi_tr_vs_d": -0.1369845083555375,
+      "partial_pi_F_vs_d": 0.09728227590495213
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_bulk_pooled": 1406,
+      "rho_spearman_pi_rho_vs_d": -0.049271304370783565,
+      "rho_spearman_pi_tr_vs_d": -0.1957101434621122,
+      "rho_spearman_pi_F_vs_d": -0.09784039785912796,
+      "partial_pi_rho_vs_d": -0.04460284358806358,
+      "partial_pi_tr_vs_d": -0.1881295704942036,
+      "partial_pi_F_vs_d": -0.08996482771660079
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_bulk_pooled": 2633,
+      "rho_spearman_pi_rho_vs_d": -0.007766370201052167,
+      "rho_spearman_pi_tr_vs_d": -0.21143932326048542,
+      "rho_spearman_pi_F_vs_d": -0.03706872194201691,
+      "partial_pi_rho_vs_d": 5.778533115253378e-05,
+      "partial_pi_tr_vs_d": -0.20233541065923286,
+      "partial_pi_F_vs_d": -0.025914320202464654
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_bulk_pooled": 3254,
+      "rho_spearman_pi_rho_vs_d": -0.07069369287500801,
+      "rho_spearman_pi_tr_vs_d": -0.27858642956062674,
+      "rho_spearman_pi_F_vs_d": -0.09036109049653383,
+      "partial_pi_rho_vs_d": -0.06826854411411372,
+      "partial_pi_tr_vs_d": -0.27474249291572406,
+      "partial_pi_F_vs_d": -0.082128830010078
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_bulk_pooled": 5097,
+      "rho_spearman_pi_rho_vs_d": -0.04295757326505177,
+      "rho_spearman_pi_tr_vs_d": -0.28911019517769115,
+      "rho_spearman_pi_F_vs_d": -0.04209424406077365,
+      "partial_pi_rho_vs_d": -0.03956131390710784,
+      "partial_pi_tr_vs_d": -0.2847710659174207,
+      "partial_pi_F_vs_d": -0.03615919986471455
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_bulk_pooled": 990,
+      "rho_spearman_pi_rho_vs_d": -0.018544935488427932,
+      "rho_spearman_pi_tr_vs_d": -0.18334556617301523,
+      "rho_spearman_pi_F_vs_d": -0.12477964579150276,
+      "partial_pi_rho_vs_d": -0.015417780770260469,
+      "partial_pi_tr_vs_d": -0.17985056982648043,
+      "partial_pi_F_vs_d": -0.12143376239635903
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_bulk_pooled": 1036,
+      "rho_spearman_pi_rho_vs_d": -0.06531225847816347,
+      "rho_spearman_pi_tr_vs_d": -0.2514946099030624,
+      "rho_spearman_pi_F_vs_d": -0.14366742863661233,
+      "partial_pi_rho_vs_d": -0.05918485673632208,
+      "partial_pi_tr_vs_d": -0.24129959124718253,
+      "partial_pi_F_vs_d": -0.1331873066307681
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_bulk_pooled": 974,
+      "rho_spearman_pi_rho_vs_d": -0.006607770082870906,
+      "rho_spearman_pi_tr_vs_d": -0.2388533039353656,
+      "rho_spearman_pi_F_vs_d": -0.05459652604202262,
+      "partial_pi_rho_vs_d": 0.0007994139020980792,
+      "partial_pi_tr_vs_d": -0.22532955912950892,
+      "partial_pi_F_vs_d": -0.03916183974092473
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "n_bulk_pooled": 1272,
+      "rho_spearman_pi_rho_vs_d": -0.03325964347947355,
+      "rho_spearman_pi_tr_vs_d": -0.21851221376850766,
+      "rho_spearman_pi_F_vs_d": -0.09033107363268586,
+      "partial_pi_rho_vs_d": -0.024651033311344234,
+      "partial_pi_tr_vs_d": -0.20579048111135903,
+      "partial_pi_F_vs_d": -0.0757236831755783
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "n_bulk_pooled": 1253,
+      "rho_spearman_pi_rho_vs_d": -0.041707712914170705,
+      "rho_spearman_pi_tr_vs_d": -0.2668907705262358,
+      "rho_spearman_pi_F_vs_d": -0.10080282916030342,
+      "partial_pi_rho_vs_d": -0.03125164813796141,
+      "partial_pi_tr_vs_d": -0.251955991680166,
+      "partial_pi_F_vs_d": -0.08175042447615916
+    }
+  ],
+  "summary": {
+    "n_regimes": 15,
+    "n_pi_rho_spearman_negative": 13,
+    "n_pi_tr_spearman_negative": 15,
+    "n_pi_F_spearman_negative": 14,
+    "n_pi_rho_partial_negative": 11,
+    "n_pi_tr_partial_negative": 14,
+    "n_pi_F_partial_negative": 14,
+    "n_pi_F_partial_below_minus_0p10": 7
+  }
+}

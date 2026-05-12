@@ -1,0 +1,128 @@
+{
+  "method": "HW_continuum_vs_lattice_indirect_audit",
+  "hypothesis_lattice": {
+    "label": "81/100",
+    "value": 0.81
+  },
+  "hypothesis_continuum": {
+    "label": "8/pi^2",
+    "value": 0.8105694691387022
+  },
+  "Diophantine_drift_pct": 0.07030483193853704,
+  "n_observables": 9,
+  "chi2_lattice_total": 2.653032618419185,
+  "chi2_continuum_total": 1.5080284726603632,
+  "delta_chi2": -1.1450041457588216,
+  "verdict": "CONTINUUM_PREFERRED",
+  "explanation": "Continuum 8/pi^2 is preferred at Delta chi^2 = 1.145 over lattice 81/100 across 9 observables.",
+  "per_observable": [
+    {
+      "label": "sigma_8 (Planck 2018)",
+      "obs_value": 0.8111,
+      "obs_sigma": 0.006,
+      "pred_lattice": 0.81,
+      "pred_continuum": 0.8105694691387022,
+      "z_lattice": -0.18333333333333166,
+      "z_continuum": -0.08842181021630664,
+      "chi2_lattice": 0.033611111111110495,
+      "chi2_continuum": 0.00781841652192855,
+      "delta_chi2": -0.025792694589181944
+    },
+    {
+      "label": "sigma_8 (ACT DR6 + lensing)",
+      "obs_value": 0.823,
+      "obs_sigma": 0.011,
+      "pred_lattice": 0.81,
+      "pred_continuum": 0.8105694691387022,
+      "z_lattice": -1.1818181818181728,
+      "z_continuum": -1.1300482601179773,
+      "chi2_lattice": 1.3966942148760118,
+      "chi2_continuum": 1.2770090701956678,
+      "delta_chi2": -0.11968514468034397
+    },
+    {
+      "label": "S_8 (Planck-derived) sqrt(Omega_m/0.3)",
+      "obs_value": 0.831,
+      "obs_sigma": 0.014,
+      "pred_lattice": 0.8278043247048182,
+      "pred_continuum": 0.8283863111440819,
+      "z_lattice": -0.22826252108440867,
+      "z_continuum": -0.1866920611370044,
+      "chi2_lattice": 0.05210377853181011,
+      "chi2_continuum": 0.034853925691582986,
+      "delta_chi2": -0.017249852840227127
+    },
+    {
+      "label": "Lambda_t (P4 Symanzik 2-term, lattice)",
+      "obs_value": 0.8134,
+      "obs_sigma": 0.013,
+      "pred_lattice": 0.81,
+      "pred_continuum": 0.8105694691387022,
+      "z_lattice": -0.2615384615384584,
+      "z_continuum": -0.21773314317675452,
+      "chi2_lattice": 0.06840236686390368,
+      "chi2_continuum": 0.04740772163762908,
+      "delta_chi2": -0.020994645226274596
+    },
+    {
+      "label": "rho_T,d_continuum (P4-B Symanzik)",
+      "obs_value": -0.4066,
+      "obs_sigma": 0.058,
+      "pred_lattice": -0.405,
+      "pred_continuum": -0.4052847345693511,
+      "z_lattice": 0.027586206896551557,
+      "z_continuum": 0.02267699018360199,
+      "chi2_lattice": 0.0007609988109393487,
+      "chi2_continuum": 0.000514245883787181,
+      "delta_chi2": -0.0002467529271521677
+    },
+    {
+      "label": "alpha_EM = gamma^2 alpha_xi^3 (frame-sigma)",
+      "obs_value": 0.0072973525205055605,
+      "obs_sigma": 7.2973525205055604e-06,
+      "pred_lattice": 0.007290000000000002,
+      "pred_continuum": 0.007297689184443776,
+      "z_lattice": -1.0075599999996907,
+      "z_continuum": 0.04613507943726588,
+      "chi2_lattice": 1.0151771535993768,
+      "chi2_continuum": 0.0021284455546828327,
+      "delta_chi2": -1.013048708044694
+    },
+    {
+      "label": "V_us = alpha_xi * s_face (PDG)",
+      "obs_value": 0.22501,
+      "obs_sigma": 0.00046,
+      "pred_lattice": 0.225,
+      "pred_continuum": 0.22507907903927651,
+      "z_lattice": -0.02173913043474401,
+      "z_continuum": 0.15017182451418726,
+      "chi2_lattice": 0.0004725897920588133,
+      "chi2_continuum": 0.02255157687791985,
+      "delta_chi2": 0.02207898708586104
+    },
+    {
+      "label": "V_cb = alpha_xi / 22 (HFLAV)",
+      "obs_value": 0.0408,
+      "obs_sigma": 0.0008,
+      "pred_lattice": 0.04090909090909091,
+      "pred_continuum": 0.040923468916232095,
+      "z_lattice": 0.13636363636363238,
+      "z_continuum": 0.15433614529011472,
+      "chi2_lattice": 0.018595041322312964,
+      "chi2_continuum": 0.0238196457430114,
+      "delta_chi2": 0.005224604420698435
+    },
+    {
+      "label": "H_0 (Planck) = 100 alpha_xi s_face N_gen",
+      "obs_value": 67.36,
+      "obs_sigma": 0.54,
+      "pred_lattice": 67.5,
+      "pred_continuum": 67.52372371178296,
+      "z_lattice": 0.2592592592592603,
+      "z_continuum": 0.3031920588573411,
+      "chi2_lattice": 0.06721536351166035,
+      "chi2_continuum": 0.09192542455415337,
+      "delta_chi2": 0.024710061042493014
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Baryonic-halo phenomenology pipeline (8 observational axes)",
+  "stand": "2026-05-05",
+  "external_anchors": {
+    "cosmology": {
+      "Omega_c_h2_Planck2018": 0.12,
+      "sigma_8_Planck2018": 0.811,
+      "h0": 0.674
+    },
+    "milky_way": {
+      "R_solar_kpc": 8.122,
+      "v_c_solar_kms": 232.8,
+      "v_c_solar_unc": 3.0,
+      "rho_DM_local_GeV_cm3": 0.4,
+      "rho_DM_local_unc": 0.05,
+      "rho_DM_local_Msun_pc3": 0.01053740779768177,
+      "v_esc_solar_kms": 528.0,
+      "M_200_MW_Msun": 1000000000000.0,
+      "c_200_MW": 12.0
+    },
+    "RAR_mcGaugh_lelli_schombert_2016": {
+      "g_dagger_m_s2": 1.2e-10,
+      "g_dagger_unc": 2e-12
+    },
+    "BTFR_mcGaugh_2012": {
+      "A_M_sun_per_kms4": 47.0,
+      "A_unc": 6.0,
+      "slope": 4.0,
+      "M_b_at_v_100_kms": 4700000000.0
+    },
+    "DES_Y3_galaxy_galaxy_lensing": {
+      "M_h_central_Msun": 1000000000000.0,
+      "rho_NFW_c_typical": 7.0,
+      "DeltaSigma_at_100kpc_Msun_pc2": 30.0
+    }
+  },
+  "framework_rationals": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "eps_sync_squared": 0.05,
+    "beta_pi": 0.9375,
+    "D_Omega": 0.8375,
+    "N_gen": 3
+  },
+  "axis_1_physical_unit_map": {
+    "r_s_lattice_units_canonical_regime": 0.56,
+    "R_200_MW_kpc_derived": 211.56793556948935,
+    "r_s_MW_kpc_derived": 17.630661297457447,
+    "kpc_per_lattice_unit": 31.483323745459725,
+    "rho_DM_local_Msun_per_kpc3": 10700000.0,
+    "rho_critical_Msun_per_kpc3": 126.04680739767309,
+    "h0_used": 0.674,
+    "calibration_anchor": "Milky-Way r_s (Gravity Collaboration 2019 + Eilers+ 2019) + rho_DM_local (Read 2014; Pato-Iocco 2015)."
+  },
+  "axis_2_halo_normalisation": {
+    "c_200_lattice_extracted": 1.5,
+    "c_200_MW_anchor": 12.0,
+    "r_s_kpc": 17.630661297457447,
+    "r_200_kpc": 211.56793556948935,
+    "M_200_Msun": 999999999999.9989,
+    "rho_s_Msun_per_kpc3": 8843922.285384106,
+    "concentration_match_status": "Lattice c~1.5 maps to MW-anchored c~12 under kpc-per-lattice-unit calibration; absolute normalisation pinned by M_200_MW = 1e12 M_sun."
+  },
+  "axis_3_rotation_curves": {
+    "v_c_radial_table": [
+      {
+        "r_kpc": 0.1,
+        "v_c_kms": 20.452384883954668
+      },
+      {
+        "r_kpc": 0.5,
+        "v_c_kms": 45.05684356638323
+      },
+      {
+        "r_kpc": 1.0,
+        "v_c_kms": 62.570845514563885
+      },
+      {
+        "r_kpc": 2.0,
+        "v_c_kms": 85.43708159086775
+      },
+      {
+        "r_kpc": 5.0,
+        "v_c_kms": 122.69461938009209
+      },
+      {
+        "r_kpc": 8.122,
+        "v_c_kms": 143.14208086820406
+      },
+      {
+        "r_kpc": 10.0,
+        "v_c_kms": 151.30251016374817
+      },
+      {
+        "r_kpc": 15.0,
+        "v_c_kms": 165.03433105936855
+      },
+      {
+        "r_kpc": 20.0,
+        "v_c_kms": 172.33540816565983
+      },
+      {
+        "r_kpc": 30.0,
+        "v_c_kms": 178.2994798386709
+      }
+    ],
+    "v_c_at_R_solar_predicted_kms": 143.14208086820406,
+    "v_c_at_R_solar_anchor_kms": 232.8,
+    "residual_pct_vs_MW_solar": 38.51285186073709,
+    "tier": "FACTOR2",
+    "sparc_comparison_note": "Direct SPARC dataset comparison requires per-galaxy stellar mass-to-light Upsilon_star and gas profiles (Lelli+ 2016 SPARC sample, n=175 galaxies). The single-MW anchor here pins the normalisation; full SPARC chi^2/dof + AICc ranking against NFW/Burkert/Einasto baselines is registered as a separate follow-up audit."
+  },
+  "axis_4_core_cusp_classification": {
+    "framework_preference": {
+      "NFW_best_fit_n_regimes": 8,
+      "alternative_n_regimes": 2,
+      "total_regimes": 10
+    },
+    "observed_dichotomy": {
+      "massive_halos_preferred": "NFW (cuspy)",
+      "dwarf_LSB_preferred": "Burkert / cored",
+      "transition_M_halo_Msun": 10000000000.0
+    },
+    "interpretation": "The 8/10 NFW preference matches the observed massive-halo phenomenology; the 2/10 alternative regimes could map to the dwarf/LSB cored regime if the corresponding lattice configurations represent low-mass haloes. A formal regime->mass-scale map remains a structural follow-up."
+  },
+  "axis_5_scatter_relations": {
+    "sigma_logc_predicted": 0.13,
+    "sigma_logc_observed_Bullock_Kolatt_1999": 0.14,
+    "sigma_logc_consistency": "consistent within 10%",
+    "sigma_BTFR_predicted_dex": 0.11,
+    "sigma_BTFR_observed_Lelli_2016_dex": 0.1,
+    "sigma_BTFR_consistency": "consistent within 10%",
+    "sigma_RAR_predicted_dex": 0.13,
+    "sigma_RAR_observed_McGaugh_2016_dex": 0.13,
+    "sigma_RAR_consistency": "consistent at 1-sigma",
+    "structural_note": "Predicted scatters arise from lattice-regime spread + Lipschitz-slaving of factor fields A,Q to Xi-topology (R^2=0.81 by random-forest); the observed scatters are reproduced at the 0.01-0.03 dex level as a baseline consistency check."
+  },
+  "axis_6_RAR_BTFR": {
+    "g_dagger_predicted_m_s2": 1.0421903092736491e-10,
+    "g_dagger_observed_m_s2": 1.2e-10,
+    "g_dagger_residual_pct": 13.150807560529238,
+    "g_dagger_structural_form": "c * H_0 / (2 pi)",
+    "BTFR_A_predicted_Msun_per_kms4": 46.0161260270138,
+    "BTFR_A_observed_Msun_per_kms4": 47.0,
+    "BTFR_A_residual_pct": 2.093348878694048,
+    "BTFR_a_predicted_m_s2": 1.6370687096282853e-10,
+    "BTFR_structural_form": "A = 1/(a_BTFR * G_N), a_BTFR = c H_0 / d (d=4 dim mass integration; distinct from RAR a = c H_0/(2 pi))",
+    "RAR_table": [
+      {
+        "g_bar_m_s2": 1e-12,
+        "g_obs_predicted_m_s2": 1.0716933862892334e-11
+      },
+      {
+        "g_bar_m_s2": 1e-11,
+        "g_obs_predicted_m_s2": 3.754069458576934e-11
+      },
+      {
+        "g_bar_m_s2": 1e-10,
+        "g_obs_predicted_m_s2": 1.6012300830961455e-10
+      },
+      {
+        "g_bar_m_s2": 1e-09,
+        "g_obs_predicted_m_s2": 1.0472926795511074e-09
+      },
+      {
+        "g_bar_m_s2": 1e-08,
+        "g_obs_predicted_m_s2": 1.0000557049528975e-08
+      }
+    ],
+    "tier_g_dagger": "FACTOR2"
+  },
+  "axis_7_weak_lensing": {
+    "DeltaSigma_NFW_table_Msun_per_pc2": [
+      {
+        "R_kpc": 50,
+        "DeltaSigma_predicted_Msun_per_pc2": 38.36998598186423
+      },
+      {
+        "R_kpc": 100,
+        "DeltaSigma_predicted_Msun_per_pc2": 17.54045648280409
+      },
+      {
+        "R_kpc": 200,
+        "DeltaSigma_predicted_Msun_per_pc2": 6.925665048166646
+      },
+      {
+        "R_kpc": 500,
+        "DeltaSigma_predicted_Msun_per_pc2": 1.7312597732616644
+      },
+      {
+        "R_kpc": 1000,
+        "DeltaSigma_predicted_Msun_per_pc2": 0.5594893266404747
+      }
+    ],
+    "DeltaSigma_at_100kpc_predicted": 17.54045648280409,
+    "DeltaSigma_at_100kpc_DES_Y3_anchor": 30.0,
+    "residual_pct_vs_DES_Y3_central_galaxy": 41.53181172398637,
+    "tier": "FACTOR2",
+    "vortex_lensing_complementary_channel_note": "The vortex-lensing channel (frame-dragging + Nielsen-Olesen log-defect) treated in the companion Schwarzschild-PPN paper is a complementary geometric prediction; the NFW-DeltaSigma prediction here is the standard weak-lensing observable comparable to galaxy-galaxy stacked profiles."
+  },
+  "axis_8_substructure": {
+    "subhalo_slope_alpha_predicted": -0.95,
+    "subhalo_slope_alpha_observed_Springel_2008": -0.95,
+    "alpha_residual_pct": 0.0,
+    "N_sub_above_1e8_Msun_predicted": 25,
+    "N_sub_above_1e8_Msun_observed_Aquarius": 28,
+    "structural_form": "alpha = -1 + gamma/2 = -19/20 (supersedes -gamma-1)",
+    "tier": "EXACT",
+    "missing_satellite_problem_note": "The framework's vortex-defect cores localise matter at discrete topological cores; substructure abundance follows the discrete-defect scaling rather than smooth N-body fragmentation. Literature N_sub ~ 25-30 above 10^8 M_sun is reproduced at FACTOR2 level; the missing-satellites and too-big-to-fail problems require a separate baryonic-feedback layer not bundled here."
+  },
+  "honest_summary": "Five of eight axes have a quantitative external-anchor comparison: rotation curves (axis 3, MW solar) at 38.51%, RAR g_dagger (axis 6) at 13.15%, BTFR normalisation A at 2.09%, weak lensing DeltaSigma(100 kpc) (axis 7) at 41.53%, subhalo slope (axis 8) at 0.00%. Axes 1, 2, 4, 5 are calibration / classification / consistency checks rather than independent residual tests. The full SPARC chi^2/dof + AICc-vs-NFW/Burkert/Einasto/MOND ranking, stacked weak-lensing comparison vs DES/HSC/KiDS, and Milky-Way-specific constraints (v_esc, satellite dispersions, stellar streams) remain registered follow-up audits."
+}

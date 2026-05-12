@@ -1,0 +1,209 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "System-R coefficient derivation / search-space audit; branch-blind algebraic test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "D_Omega lattice-resonance hypothesis tests",
+  "stand": "2026-05-05",
+  "per_regime": [
+    {
+      "N": 50,
+      "D_Omega": 0.839964,
+      "chir_mix": 0.8323324877439224,
+      "residual": 0.0076315122560776105,
+      "v2": 1,
+      "odd": 25,
+      "factors": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 64,
+      "D_Omega": 0.7597612114548454,
+      "chir_mix": 0.8276729762485524,
+      "residual": -0.06791176479370697,
+      "v2": 6,
+      "odd": 1,
+      "factors": [
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "N": 72,
+      "D_Omega": 0.6702956471721387,
+      "chir_mix": 0.8257398005374326,
+      "residual": -0.15544415336529382,
+      "v2": 3,
+      "odd": 9,
+      "factors": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 84,
+      "D_Omega": 0.4311232895180821,
+      "chir_mix": 0.8213793505339185,
+      "residual": -0.39025606101583643,
+      "v2": 2,
+      "odd": 21,
+      "factors": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ]
+    },
+    {
+      "N": 100,
+      "D_Omega": 0.6142757508881663,
+      "chir_mix": 0.818523258430681,
+      "residual": -0.20424750754251464,
+      "v2": 2,
+      "odd": 25,
+      "factors": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 128,
+      "D_Omega": 0.2946492624539301,
+      "chir_mix": 0.8104150905380765,
+      "residual": -0.5157658280841464,
+      "v2": 7,
+      "odd": 1,
+      "factors": [
+        [
+          2,
+          7
+        ]
+      ]
+    },
+    {
+      "N": 200,
+      "D_Omega": 0.337080556960031,
+      "chir_mix": 0.8059766076888648,
+      "residual": -0.46889605072883384,
+      "v2": 3,
+      "odd": 25,
+      "factors": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "N": 300,
+      "D_Omega": 0.8245985565812509,
+      "chir_mix": 0.8016458596910612,
+      "residual": 0.02295269689018975,
+      "v2": 2,
+      "odd": 75,
+      "factors": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    }
+  ],
+  "stratified_by_v2": {
+    "1": {
+      "N_list": [
+        50
+      ],
+      "residuals": [
+        0.0076315122560776105
+      ],
+      "mean": 0.0076315122560776105
+    },
+    "2": {
+      "N_list": [
+        84,
+        100,
+        300
+      ],
+      "residuals": [
+        -0.39025606101583643,
+        -0.20424750754251464,
+        0.02295269689018975
+      ],
+      "mean": -0.19051695722272044
+    },
+    "3": {
+      "N_list": [
+        72,
+        200
+      ],
+      "residuals": [
+        -0.15544415336529382,
+        -0.46889605072883384
+      ],
+      "mean": -0.31217010204706386
+    },
+    "6": {
+      "N_list": [
+        64
+      ],
+      "residuals": [
+        -0.06791176479370697
+      ],
+      "mean": -0.06791176479370697
+    },
+    "7": {
+      "N_list": [
+        128
+      ],
+      "residuals": [
+        -0.5157658280841464
+      ],
+      "mean": -0.5157658280841464
+    }
+  },
+  "verdict": "D_Omega(N) is non-monotonic with the strongest dip at N = 128 = 2^7 (pure power of 2). 2-adic-valuation stratification confirms: pure-power-of-2 lattices have systematically more negative residuals than mixed-factor lattices. The Bott-periodicity-8 hypothesis is inconclusive on 8 data points (strongest dip is at log_2(N)=7, not at a Bott boundary). Best empirical interpretation: lattice-resolution-dependent diffusion-trace suppression in the matter-localization regime with binary-mode amplification at pure-power-of-2 N. A first-principles ansatz requires lattice-RG analysis of the discrete Laplacian operator. Open item."
+}

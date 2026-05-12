@@ -1,0 +1,291 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "audit_question": "Why v_2(N) := max{k : 2^k | N} and not log_2 N mod d, sin(2 pi log_2 N / d), N^(-1/3), N^(-2/3), N mod d, omega(N) prime-factor count, or no resonance term at all? Each candidate channel gets one extra coefficient added to the Q top-5% harmonic closure; we report chi^2, AICc, BIC, LOO chi^2 and rational-coefficient match.",
+  "interpretation": "The canonical channel v_2(N) qualifies on three criteria: (a) AICc/BIC competitive with or below the alternatives; (b) LOO chi^2 small (the closure transfers across the leave-one-N-out cross-validation); (c) free-fit coefficient matches the System-R rational 1/240 = 1/(d^2 (d^2-1)) = g^2 (2 N_gen - 1)/(4 N_gen) at <1 sigma, which sits on the same (2k-1)/(4k) projector family as the refined beta_pi sin^2 coefficient 23/48 = (2 d N_gen - 1)/(4 d N_gen). Channels that pass (a) and (b) but not (c) would be empirically equivalent but lack the framework-rational lock-in; those are noted in the output.",
+  "channels": {
+    "v_2(N)": {
+      "k": 4,
+      "chi2": 2.3687409019331813,
+      "AICc": -44.34954265864659,
+      "BIC": -57.36510982526058,
+      "LOO_chi2": 122.7145912496372,
+      "c_C": 0.004233745249125065,
+      "sigma_c_C": 0.0005910928871455107,
+      "rational_candidates": [
+        {
+          "num": 5,
+          "denom": 1181,
+          "value": 0.004233700254022015,
+          "z": 7.612188207337239e-05
+        },
+        {
+          "num": 9,
+          "denom": 2126,
+          "value": 0.0042333019755409216,
+          "z": 0.0007499220406524875
+        },
+        {
+          "num": 6,
+          "denom": 1417,
+          "value": 0.004234297812279464,
+          "z": 0.0009348161116731113
+        }
+      ]
+    },
+    "log_2(N)": {
+      "k": 4,
+      "chi2": 46.17334136967193,
+      "AICc": -0.5449421909078414,
+      "BIC": -13.560509357521832,
+      "LOO_chi2": 4097.175186353709,
+      "c_C": 0.09224577159602632,
+      "sigma_c_C": 0.03368825725946446,
+      "rational_candidates": [
+        {
+          "num": 69,
+          "denom": 748,
+          "value": 0.09224598930481283,
+          "z": 6.4624532173218975e-06
+        },
+        {
+          "num": 182,
+          "denom": 1973,
+          "value": 0.09224531170805879,
+          "z": 1.3651284006327149e-05
+        },
+        {
+          "num": 113,
+          "denom": 1225,
+          "value": 0.09224489795918367,
+          "z": 2.5932978245738058e-05
+        }
+      ]
+    },
+    "log_2(N) mod d": {
+      "k": 4,
+      "chi2": 53.40435048761798,
+      "AICc": 6.68606692703821,
+      "BIC": -6.329500239575781,
+      "LOO_chi2": 1738.0452893195518,
+      "c_C": 0.0010917926073520379,
+      "sigma_c_C": 0.0021136186656075125,
+      "rational_candidates": [
+        {
+          "num": 1,
+          "denom": 916,
+          "value": 0.001091703056768559,
+          "z": 4.236837275149389e-05
+        },
+        {
+          "num": 2,
+          "denom": 1831,
+          "value": 0.0010922992900054614,
+          "z": 0.00023972283253748567
+        },
+        {
+          "num": 2,
+          "denom": 1833,
+          "value": 0.0010911074740861974,
+          "z": 0.0003241517862180432
+        }
+      ]
+    },
+    "sin(2pi log_2(N)/d)": {
+      "k": 4,
+      "chi2": 40.57999835757615,
+      "AICc": -6.138285203003621,
+      "BIC": -19.15385236961761,
+      "LOO_chi2": 8211.666468615005,
+      "c_C": -0.046622135849815116,
+      "sigma_c_C": 0.012885545557755517,
+      "rational_candidates": [
+        {
+          "num": -49,
+          "denom": 1051,
+          "value": -0.046622264509990484,
+          "z": 9.984845018094006e-06
+        },
+        {
+          "num": -69,
+          "denom": 1480,
+          "value": -0.046621621621621624,
+          "z": 3.990736683884121e-05
+        },
+        {
+          "num": -78,
+          "denom": 1673,
+          "value": -0.04662283323371189,
+          "z": 5.412141019955742e-05
+        }
+      ]
+    },
+    "cos(2pi log_2(N)/d)": {
+      "k": 4,
+      "chi2": 50.009000154703074,
+      "AICc": 3.2907165941233014,
+      "BIC": -9.72485057249069,
+      "LOO_chi2": 2784.9087273236582,
+      "c_C": -0.024578507014128448,
+      "sigma_c_C": 0.012843574631983387,
+      "rational_candidates": [
+        {
+          "num": -35,
+          "denom": 1424,
+          "value": -0.02457865168539326,
+          "z": 1.1264096558552008e-05
+        },
+        {
+          "num": -51,
+          "denom": 2075,
+          "value": -0.02457831325301205,
+          "z": 1.508622964790436e-05
+        },
+        {
+          "num": -54,
+          "denom": 2197,
+          "value": -0.024578971324533454,
+          "z": 3.6151182074315064e-05
+        }
+      ]
+    },
+    "N^(-1/3)": {
+      "k": 4,
+      "chi2": 48.87546846936145,
+      "AICc": 2.1571849087816783,
+      "BIC": -10.858382257832313,
+      "LOO_chi2": 3072.565434418592,
+      "c_C": -1.7013555333487602,
+      "sigma_c_C": 0.7769064770572821,
+      "rational_candidates": [
+        {
+          "num": -3891,
+          "denom": 2287,
+          "value": -1.7013554875382597,
+          "z": 5.896527041148604e-08
+        },
+        {
+          "num": -3515,
+          "denom": 2066,
+          "value": -1.7013552758954502,
+          "z": 3.313826279056363e-07
+        },
+        {
+          "num": -3139,
+          "denom": 1845,
+          "value": -1.7013550135501354,
+          "z": 6.690620301923779e-07
+        }
+      ]
+    },
+    "N^(-2/3)": {
+      "k": 4,
+      "chi2": 50.53136247496417,
+      "AICc": 3.8130789143843966,
+      "BIC": -9.202488252229594,
+      "LOO_chi2": 2560.2998544717266,
+      "c_C": -3.0818477417251415,
+      "sigma_c_C": 1.7392389968037438,
+      "rational_candidates": [
+        {
+          "num": -3803,
+          "denom": 1234,
+          "value": -3.081847649918963,
+          "z": 5.278525770635395e-08
+        },
+        {
+          "num": -4669,
+          "denom": 1515,
+          "value": -3.0818481848184818,
+          "z": 2.547627675410626e-07
+        },
+        {
+          "num": -6740,
+          "denom": 2187,
+          "value": -3.0818472793781435,
+          "z": 2.658329297295829e-07
+        }
+      ]
+    },
+    "omega(N)": {
+      "k": 4,
+      "chi2": 2.5779285197001545,
+      "AICc": -44.14035504087962,
+      "BIC": -57.15592220749361,
+      "LOO_chi2": 56.32218300755248,
+      "c_C": -0.01298572660729902,
+      "sigma_c_C": 0.0018167053808117923,
+      "rational_candidates": [
+        {
+          "num": -1,
+          "denom": 77,
+          "value": -0.012987012987012988,
+          "z": 0.0007080838354722287
+        },
+        {
+          "num": -31,
+          "denom": 2388,
+          "value": -0.012981574539363484,
+          "z": 0.0022854932777711294
+        },
+        {
+          "num": -30,
+          "denom": 2311,
+          "value": -0.012981393336218087,
+          "z": 0.002385236002876896
+        }
+      ]
+    },
+    "(none)": {
+      "k": 3,
+      "chi2": 53.67117580056699,
+      "AICc": -2.380441093346114,
+      "BIC": -8.142116468306607,
+      "LOO_chi2": 746.9282503119173,
+      "c_C": 0.0,
+      "sigma_c_C": 0.0,
+      "rational_candidates": []
+    }
+  },
+  "AICc_ranking": [
+    {
+      "channel": "v_2(N)",
+      "AICc": -44.34954265864659
+    },
+    {
+      "channel": "omega(N)",
+      "AICc": -44.14035504087962
+    },
+    {
+      "channel": "sin(2pi log_2(N)/d)",
+      "AICc": -6.138285203003621
+    },
+    {
+      "channel": "(none)",
+      "AICc": -2.380441093346114
+    },
+    {
+      "channel": "log_2(N)",
+      "AICc": -0.5449421909078414
+    },
+    {
+      "channel": "N^(-1/3)",
+      "AICc": 2.1571849087816783
+    },
+    {
+      "channel": "cos(2pi log_2(N)/d)",
+      "AICc": 3.2907165941233014
+    },
+    {
+      "channel": "N^(-2/3)",
+      "AICc": 3.8130789143843966
+    },
+    {
+      "channel": "log_2(N) mod d",
+      "AICc": 6.68606692703821
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "criterion": "w(z) chirality-running framework prediction and falsifiability against DESI 2024-2025 BAO",
+  "systemR_primitives": {
+    "d": 4,
+    "N_gen": 3,
+    "gamma": 0.1,
+    "alpha_xi": 0.9,
+    "eps_sync2": 0.05,
+    "eps_sync4": 0.0025000000000000005
+  },
+  "interpolator": "gamma_eff(theta) = gamma cos^2 theta + alpha_xi sin^2 theta",
+  "running_formula": "w_DE(theta) = -1 + eps_sync^4 / gamma_eff(theta)",
+  "benchmarks": {
+    "theta_pre_flip_canonical": {
+      "theta": 0.0,
+      "w_DE_predicted": -0.975,
+      "w_DE_rational": "-39/40",
+      "w_DE_decimal": -0.975
+    },
+    "theta_chirality_critical_pi_over_4": {
+      "theta": 0.7853981633974483,
+      "w_DE_predicted": -0.995,
+      "w_DE_rational": "-199/200",
+      "w_DE_decimal": -0.995
+    },
+    "theta_projection_flipped_pi_over_2": {
+      "theta": 1.5707963267948966,
+      "w_DE_predicted": -0.9972222222222222,
+      "w_DE_rational": "-1 + 1/360",
+      "w_DE_decimal": -0.9972222222222222
+    }
+  },
+  "w_a_prediction": {
+    "central_systemR_expectation": 0.0,
+    "leading_correction_at_theta_gamma": -0.0020000000000000005,
+    "dimensional_upper_bound": -0.010000000000000002,
+    "dimensional_window": [
+      -0.010000000000000002,
+      0.010000000000000002
+    ],
+    "interpretation": "Leading dw/dtheta vanishes at theta=0; O(theta_chir^2) correction is bounded by gamma^2."
+  },
+  "DESI_2024_2025_BAO_comparison": {
+    "central_w_a": -0.4,
+    "sigma_w_a": 0.1,
+    "framework_dim_bound": 0.010000000000000002,
+    "ratio_DESI_to_framework_bound": 39.99999999999999,
+    "framework_predicts_signal_outcomes": [
+      "(i) BAO Alcock-Paczynski / fiducial-cosmology systematic",
+      "(ii) redshift-window selection effect at z~1 tomographic boundary",
+      "(iii) genuine framework falsification if signal >5 sigma in DESI-DR3"
+    ]
+  },
+  "falsifier": "Confirmed |w_a| > 0.1 at >5 sigma over the BAO redshift range would falsify eps_sync^4/gamma closure + chirality-running structure of w_DE.",
+  "headline": "WDE_CHIRALITY_RUNNING_PREDICTION_REGISTERED"
+}

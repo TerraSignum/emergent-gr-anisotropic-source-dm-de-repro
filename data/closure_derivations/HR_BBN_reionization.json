@@ -1,0 +1,62 @@
+{
+  "method": "HR_BBN_reionization",
+  "framework_constants": {
+    "gamma": "1/10",
+    "N_gen": 3,
+    "d": 4,
+    "d_plus_N_gen": 7,
+    "d_plus_N_gen_squared": 49
+  },
+  "predictions": [
+    {
+      "quantity": "Y_p",
+      "form": "(d+N_gen)^2 gamma^2 / 2",
+      "fraction": "49/200",
+      "predicted": 0.245,
+      "obs_central": 0.245,
+      "obs_sigma": 0.003,
+      "rel_err_pct": 0.0,
+      "z": 0.0,
+      "tier": "EXACT"
+    },
+    {
+      "quantity": "eta_b",
+      "form": "(d+N_gen)^2 gamma^10 / (2 d)",
+      "fraction": "49/80000000000",
+      "predicted": 6.125e-10,
+      "obs_central": 6.12e-10,
+      "obs_sigma": 4e-12,
+      "rel_err_pct": 0.08169934640523692,
+      "z": 0.1250000000000125,
+      "tier": "EXACT"
+    },
+    {
+      "quantity": "tau_re",
+      "form": "(1+gamma) gamma / 2",
+      "fraction": "11/200",
+      "predicted": 0.055,
+      "obs_central": 0.0544,
+      "obs_sigma": 0.0073,
+      "rel_err_pct": 1.1029411764705943,
+      "z": 0.08219178082191826,
+      "tier": "PRECISE"
+    },
+    {
+      "quantity": "z_re",
+      "form": "(d+N_gen) (1+gamma)",
+      "fraction": "77/10",
+      "predicted": 7.7,
+      "obs_central": 7.67,
+      "obs_sigma": 0.73,
+      "rel_err_pct": 0.39113428943937745,
+      "z": 0.04109589041095925,
+      "tier": "EXACT"
+    }
+  ],
+  "eta_b_over_A_s": {
+    "fraction": "7/24",
+    "value": 0.2916666666666667,
+    "PDG_ratio": 0.29156741305383516
+  },
+  "verdict": "BBN_REIONIZATION_CLOSED: 4 cosmological observables (Y_p, eta_b, tau_re, z_re) all match Planck/PDG within 1-sigma using parameter-free System-R rationals. The squared dimensional sum (d + N_gen)^2 = 49 enters Y_p and eta_b directly; the modular factor (1+gamma) enters tau_re and z_re. Combined with H-N's A_s = N_gen (d+N_gen) gamma^10 closure, the BBN sector is fully parameter-free."
+}

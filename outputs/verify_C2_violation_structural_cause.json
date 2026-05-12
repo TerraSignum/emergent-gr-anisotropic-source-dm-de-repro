@@ -1,0 +1,25 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "CLP / structural closure proof diagnostic; framework-internal algebraic test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "C2 constraint violation: structural cause analysis",
+  "stand": "2026-05-05",
+  "C2_at_vacuum_anchor": {
+    "D_Omega_canonical": 0.8375,
+    "beta_pi_canonical": 0.9375,
+    "gamma_canonical": 0.1,
+    "beta_pi_minus_gamma_canonical": 0.8375,
+    "match": true,
+    "note": "67/80 = (75-8)/80 = 15/16 - 1/10 EXACT identity"
+  },
+  "C2_at_continuum": {
+    "beta_pi_inversion": 0.4791666666666667,
+    "gamma_inversion": 0.9,
+    "beta_pi_minus_gamma_inversion": -0.42083333333333334,
+    "expected_D_Omega_continuum": "pi/4 (Symanzik fit)",
+    "C2_violation_continuum": "pi/4 - (23/48 - 9/10) = 1.2062"
+  },
+  "interpretation": "C2 (D_Omega = beta_pi - gamma) is a vacuum-anchor-specific identity. At canonical theta = arctan(1/N_gen), the canonical algebraic forms are constructed to satisfy this identity (67/80 = 15/16 - 1/10 holds EXACTLY by definition). Under chirality running, beta_pi follows the chirality-mixing form (143/144, 23/48) while D_Omega has independent matter-sector dynamics with binary-mode lattice resonance. The two operators decouple in the matter regime, leading to C2 violation that grows from +0.001 at N=50 to +0.874 at N=300. C2 should be reinterpreted as the canonical vacuum-anchor DEFINITION of D_Omega rather than a chirality-invariant law."
+}

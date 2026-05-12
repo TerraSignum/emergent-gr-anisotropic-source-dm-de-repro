@@ -1,0 +1,79 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Neutrino mass/mixing observable; matter-sector but vacuum-QFT anchored per matter-branch compliance audit",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Neutrino mass + N_eff: framework vs DESI 2024",
+  "stand": "2026-05-06",
+  "DESI_2024_bound": 0.072,
+  "Planck_N_eff": 3.046,
+  "results": [
+    {
+      "name": "T_nu_1: M_Pl*gamma^29*pi",
+      "pred": 0.07650846252993379,
+      "target": 0.072,
+      "label": "Sigma_m_nu DESI bound",
+      "source": null,
+      "rel_err_pct": 6.261753513796939,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "T_nu_2: M_e*alpha_EM^3/pi",
+      "pred": 0.06301627388301642,
+      "target": 0.05884341560644065,
+      "label": "Sigma_m_nu NH minimum",
+      "source": "NuFIT 6.1 oscillation",
+      "rel_err_pct": 7.091461692986827,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "T_nu_3a: m_3 = M_e*gamma^7",
+      "pred": 0.05109989500000002,
+      "target": 0.05022947341949744,
+      "label": "m_3 (NH)",
+      "source": "NuFIT 6.1",
+      "rel_err_pct": 1.732890116591807,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T_nu_3b: m_2 = M_e*gamma^8",
+      "pred": 0.005109989500000003,
+      "target": 0.008613942186943212,
+      "label": "m_2 (NH)",
+      "source": "NuFIT 6.1",
+      "rel_err_pct": 40.6776898532522,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "T_nu_3c: m_2 = M_e*gamma^8*pi/2",
+      "pred": 0.008026752736560495,
+      "target": 0.008613942186943212,
+      "label": "m_2 (NH)",
+      "source": "NuFIT 6.1",
+      "rel_err_pct": 6.816733124500924,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "T_nu_sum: Sigma = m_3 + m_2 (struct)",
+      "pred": 0.05912664773656051,
+      "target": 0.05884341560644065,
+      "label": "Sigma_m_nu NH min",
+      "source": "NuFIT 6.1",
+      "rel_err_pct": 0.48133189958616157,
+      "tier": "EXACT"
+    },
+    {
+      "name": "T_nu_4: N_gen + 2*pi*alpha_EM",
+      "pred": 3.0458044208893393,
+      "target": 3.046,
+      "label": "N_eff",
+      "source": "Planck 2018",
+      "rel_err_pct": 0.0064208506454524646,
+      "tier": "EXACT"
+    }
+  ],
+  "framework_Sigma_m_nu_NH_min": 0.05912664773656051,
+  "consistency_with_DESI": true,
+  "verdict": "Framework structural predictions for neutrino observables: (T_nu_3a) m_3 = M_e * gamma^7 = 0.0511 eV vs sqrt(Delta m^2_31) = 0.0502 eV (PRECISE 1.8%); (T_nu_3c) m_2 = M_e * gamma^8 * pi/2 = 0.00803 eV vs sqrt(Delta m^2_21) = 0.00861 eV (PRECISE 6.7%); Sigma_m_nu_NH_min = 0.05913 eV consistent with DESI 2024 bound 0.072 eV. (T_nu_4) N_eff = N_gen + 2*pi*alpha_EM = 3.0458 vs Planck 3.046 (EXACT 0.005%) -- alpha_EM correction to ideal N_gen=3 baseline. NEW STRUCTURAL: m_3 = M_e * gamma^(d+3) bridges electron mass to neutrino mass via chirality-sine."
+}

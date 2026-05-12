@@ -1,0 +1,150 @@
+{
+  "method": "Leading-order 4-parameter projection (cos^2 theta + sin^2 theta) of the full 8-coefficient chirality-flip harmonic closure of verify_factor_field_KQ_full_closure.py. Documents the misfit of the pure cos^2/sin^2 ansatz: endpoints are biased tens of sigma away from the System-R rational targets K_pre = 133/100 = 4/3 - gamma^2/3, K_post = 4/3 + gamma^3, Q_pre = 8/25 = 1/4 + gamma^2*(N_gen+d), Q_post = 403/1600 = 1/4 + gamma^2*N_gen/d^2.",
+  "system_R_inputs": {
+    "gamma": 0.1,
+    "N_gen": 3,
+    "d": 4,
+    "N_star": 50
+  },
+  "targets": {
+    "K_pre_rational": "133/100 = 4/3 - gamma^2/3",
+    "K_pre_value": 1.3299999999999998,
+    "K_post_rational": "4/3 + gamma^3",
+    "K_post_value": 1.3343333333333331,
+    "Q_pre_rational": "8/25 = 1/4 + gamma^2*(N_gen+d)",
+    "Q_pre_value": 0.32,
+    "Q_post_rational": "403/1600 = 1/4 + gamma^2*N_gen/d^2",
+    "Q_post_value": 0.251875
+  },
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "K_mean": 1.3343650829142166,
+      "K_sem": 0.0003766969803016386,
+      "Q_mean": 0.28590644659586834,
+      "Q_sem": 0.0004015640632133035,
+      "theta_chir_deg": 22.521114577421017,
+      "cos2_theta": 0.853292712376929,
+      "sin2_theta": 0.14670728762307095
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "K_mean": 1.3342311852080755,
+      "K_sem": 0.00036077890455824246,
+      "Q_mean": 0.281750852383319,
+      "Q_sem": 0.000401997709450602,
+      "theta_chir_deg": 24.709919161642496,
+      "cos2_theta": 0.8252556425412256,
+      "sin2_theta": 0.17474435745877442
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "K_mean": 1.3353470071270692,
+      "K_sem": 0.00022151992875783016,
+      "Q_mean": 0.2777322485622394,
+      "Q_sem": 0.0003453264900951279,
+      "theta_chir_deg": 27.805174403848543,
+      "cos2_theta": 0.7824089807881621,
+      "sin2_theta": 0.21759101921183788
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "K_mean": 1.3358583676264237,
+      "K_sem": 0.00031892838486210356,
+      "Q_mean": 0.2739445928752968,
+      "Q_sem": 0.0002830088887633205,
+      "theta_chir_deg": 31.60228084649124,
+      "cos2_theta": 0.7254032373231658,
+      "sin2_theta": 0.2745967626768341
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "K_mean": 1.3264617134665937,
+      "K_sem": 0.0002595617939038654,
+      "Q_mean": 0.26701175453637216,
+      "Q_sem": 0.00015703304151871647,
+      "theta_chir_deg": 48.633892151491644,
+      "cos2_theta": 0.4367465619634886,
+      "sin2_theta": 0.5632534380365114
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "K_mean": 1.3261209884752108,
+      "K_sem": 0.00016607658184296023,
+      "Q_mean": 0.2648718937407754,
+      "Q_sem": 0.00012439206866292856,
+      "theta_chir_deg": 54.70576905102723,
+      "cos2_theta": 0.3338244653412973,
+      "sin2_theta": 0.6661755346587027
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "K_mean": 1.3263990970102812,
+      "K_sem": 8.400570051451321e-05,
+      "Q_mean": 0.26378244241889537,
+      "Q_sem": 0.00010959633149162035,
+      "theta_chir_deg": 58.39771915350877,
+      "cos2_theta": 0.2745967626768341,
+      "sin2_theta": 0.725403237323166
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "K_mean": 1.326037112667497,
+      "K_sem": 8.591013555920736e-05,
+      "Q_mean": 0.2606064347292785,
+      "Q_sem": 6.197824210718896e-05,
+      "theta_chir_deg": 69.01729210475246,
+      "cos2_theta": 0.12822570856119403,
+      "sin2_theta": 0.8717742914388059
+    }
+  ],
+  "regression": {
+    "K_pre": 1.3365573832953523,
+    "K_pre_sem": 0.00018796432851885323,
+    "K_post": 1.3234059144301398,
+    "K_post_sem": 0.00031799715697909746,
+    "K_chi2": 523.548311451183,
+    "K_dof": 6,
+    "K_chi2_per_dof": 87.2580519085305,
+    "Q_pre": 0.2831149613660954,
+    "Q_pre_sem": 0.00019665994201821375,
+    "Q_post": 0.2568945518779657,
+    "Q_post_sem": 0.00032267327017521525,
+    "Q_chi2": 537.741943849614,
+    "Q_chi2_per_dof": 89.623657308269
+  },
+  "verdict": {
+    "K_pre_sigma": 34.88631777648583,
+    "K_post_sigma": 34.36325974421103,
+    "K_pre_pass": false,
+    "K_post_pass": false,
+    "K_closure_pass": false,
+    "Q_pre_sigma": 187.55745707729594,
+    "Q_post_sigma": 15.55614406870466,
+    "Q_pre_pass": false,
+    "Q_post_pass": false,
+    "Q_closure_pass": false
+  },
+  "structure_notes": [
+    "K endpoints are gamma^2-split around the 4/3 base: K_pre = 4/3 + gamma^2/3, K_post = 4/3 - gamma^2.",
+    "Q endpoints are gamma/4 = 1/40 apart: Q_pre - Q_post = gamma/4.",
+    "All four endpoints are parameter-free in gamma=1/10, N_gen=3, d=4, with the chirality angle theta_chir(N) of the parent paper running formula.",
+    "Q closure upgrades the prior Lipschitz-slaving theorem (C03-0173 of audit/claims_manifest_master.md) from a stability statement to an explicit chirality-mixing law."
+  ]
+}

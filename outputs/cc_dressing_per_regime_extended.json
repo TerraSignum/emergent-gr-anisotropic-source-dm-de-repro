@@ -1,0 +1,170 @@
+{
+  "method": "Per-regime extension status of CC nine-layer dressing",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Cosmological-constant / Einstein-source Lambda diagnostic; matter-projection-side observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "structural_two_regime_lock": {
+    "documented_at": "outputs_hbr_audit/hbr_ext_01_cross_regime_inventory.md",
+    "audit_date": "2026-04-24",
+    "verdict": "STRUCTURAL_TWO_REGIME_LOCK",
+    "summary": "The CC nine-layer dressing pipeline (gap_closure_cosmology) depends on regime-suffixed outputs of the upstream HBR, PG-02, CSP-03, TAO-05 and DQC pipelines. Those upstream pipelines have only been run on P1 and P2'. Extension to any additional regime requires running the upstream chain on that regime first; there is no 'pure arithmetic' extension from existing P1/P2' outputs.",
+    "upstream_pipelines_required": [
+      {
+        "name": "HBR",
+        "bundle": "outputs_hbr_audit / hierarchy_bridge_bundle",
+        "outputs": "v_EW_predicted_GeV, S_gamow"
+      },
+      {
+        "name": "PG-02",
+        "bundle": "outputs / stationary_core_physics_bundle",
+        "outputs": "core_mass_proxy, born_hbar_eff"
+      },
+      {
+        "name": "CSP-03",
+        "bundle": "outputs / cross_section_phenomenology_bundle",
+        "outputs": "scattering_length, V_depth"
+      },
+      {
+        "name": "TAO-05",
+        "bundle": "outputs / thermal_averaged_observables_bundle",
+        "outputs": "eta_sommerfeld"
+      },
+      {
+        "name": "DQC",
+        "bundle": "outputs / dqc bundle",
+        "outputs": "spectral_gap, d_spectral_eff, E_vac_regularized"
+      }
+    ]
+  },
+  "canonical_regimes_p3_p8_d1_status": [
+    {
+      "regime": "p3",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix17\\d1_p3.json",
+      "mtime_unix": 1777005873.0357077,
+      "n_keys": 1178,
+      "E_geom": 0.00025775039743282445,
+      "E_res": 19443.781110088283,
+      "layer5_gravitational_fraction_log10": -7.877581379718019
+    },
+    {
+      "regime": "p4",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix17\\d1_p4.json",
+      "mtime_unix": 1777099570.1703432,
+      "n_keys": 1178,
+      "E_geom": 0.00012569431372793792,
+      "E_res": 14523.249087841874,
+      "layer5_gravitational_fraction_log10": -8.062748154869842
+    },
+    {
+      "regime": "p5",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix17\\d1_p5.json",
+      "mtime_unix": 1777109492.9561687,
+      "n_keys": 1178,
+      "E_geom": 4.3229426687715016e-05,
+      "E_res": 21595.065663220666,
+      "layer5_gravitational_fraction_log10": -8.698575053004772
+    },
+    {
+      "regime": "p6",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix16\\p6\\d1_p6.json",
+      "mtime_unix": 1776836182.8519053,
+      "n_keys": 1178,
+      "E_geom": 2.4267847823956805e-05,
+      "E_res": 25649.585837203842,
+      "layer5_gravitational_fraction_log10": -9.024049094013098
+    },
+    {
+      "regime": "p7",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix16\\p7\\d1_p7.json",
+      "mtime_unix": 1776921387.9760132,
+      "n_keys": 1178,
+      "E_geom": 2.2254301149224753e-05,
+      "E_res": 10432.600281516763,
+      "layer5_gravitational_fraction_log10": -8.670978607278933
+    },
+    {
+      "regime": "p8",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_fix16\\p8\\d1_p8.json",
+      "mtime_unix": 1777105455.3435056,
+      "n_keys": 1178,
+      "E_geom": 1.9241748063380244e-05,
+      "E_res": 17405.041170873308,
+      "layer5_gravitational_fraction_log10": -8.956430530894297
+    }
+  ],
+  "lattice_n_variants_p5_d1_status": [
+    {
+      "regime": "p5n64",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_p5n64\\d1_p5n64.json",
+      "mtime_unix": 1777471819.3502614,
+      "n_keys": 1178,
+      "E_geom": 2.5062754049749888e-05,
+      "E_res": 3967.223834223841,
+      "layer5_gravitational_fraction_log10": -8.199457912205927
+    },
+    {
+      "regime": "p5n100",
+      "has_E_geom_E_res": true,
+      "source_path": "results_d1_p5n100\\d1_p5n100.json",
+      "mtime_unix": 1777498211.0314116,
+      "n_keys": 1178,
+      "E_geom": 1.0584171569011672e-05,
+      "E_res": 2074.3683437516797,
+      "layer5_gravitational_fraction_log10": -8.29222900505435
+    },
+    {
+      "regime": "p5n128",
+      "has_E_geom_E_res": false,
+      "source_path": "results_d1_p5n128_kq_fixed\\d1_p5n128.json",
+      "mtime_unix": 1777737463.7693841,
+      "n_keys": 33,
+      "E_geom": null,
+      "E_res": null,
+      "layer5_gravitational_fraction_log10": null
+    },
+    {
+      "regime": "p5n200",
+      "has_E_geom_E_res": false,
+      "source_path": "results_d1_p5n200_8seeds\\d1_p5n200.json",
+      "mtime_unix": 1777737956.9072685,
+      "n_keys": 33,
+      "E_geom": null,
+      "E_res": null,
+      "layer5_gravitational_fraction_log10": null
+    },
+    {
+      "regime": "p5n256",
+      "has_E_geom_E_res": false,
+      "source_path": "results_d1_p5n256\\d1_p5n256.json",
+      "mtime_unix": 1777738222.5460873,
+      "n_keys": 33,
+      "E_geom": null,
+      "E_res": null,
+      "layer5_gravitational_fraction_log10": null
+    },
+    {
+      "regime": "p5n300",
+      "has_E_geom_E_res": false,
+      "source_path": "results_d1_p5n300\\d1_p5n300.json",
+      "mtime_unix": 1777738641.4219444,
+      "n_keys": 33,
+      "E_geom": null,
+      "E_res": null,
+      "layer5_gravitational_fraction_log10": null
+    }
+  ],
+  "what_can_be_done_now": [
+    "Algebraic identity Lambda_lat^row-mean = 19/15 is regime-independent by construction; no per-regime extension required.",
+    "D1 layer (Layer 5: gravitational fraction E_geom/E_res) is computable on regimes whose d1.json carries E_geom and E_res; the canonical-regime ladder P0..P8 and the lattice-N variants P5N64, P5N100 carry these keys (older 1178-key format). Layer 5 alone explains roughly 8 of the 122 orders.",
+    "Full nine-layer per-regime closure on P3..P8 and the lattice-N variants is blocked at the upstream HBR / PG-02 / CSP-03 / TAO-05 / DQC level; promoting them to a per-regime loop is upstream work outside the scope of this repro."
+  ]
+}

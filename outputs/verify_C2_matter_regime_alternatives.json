@@ -1,0 +1,41 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "CLP / structural closure proof diagnostic; framework-internal algebraic test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "C2 identity transformation in matter regime",
+  "stand": "2026-05-06",
+  "vacuum_coeff_changes": {
+    "alpha_xi": [
+      0.900819,
+      0.3118449819255915
+    ],
+    "gamma": [
+      0.09918099999999996,
+      0.6881550180744085
+    ],
+    "beta_pi": [
+      0.9379129999999999,
+      0.6392485150677378
+    ],
+    "D_Omega": [
+      0.839964,
+      0.8245985565812509
+    ],
+    "eps_sync2": [
+      0.04959049999999998,
+      0.34407750903720424
+    ]
+  },
+  "C2_alternatives_mean_residuals_pct": {
+    "A": 34.33252675611365,
+    "B": 131.47947901409069,
+    "D": 206.66453647489834,
+    "E": 72.23786810768809,
+    "F": 40.020549553667024,
+    "G": 45.31311351061666,
+    "H": 52.39374707429287
+  },
+  "verdict": "User question: how does C2 (D_Omega = beta_pi - gamma) transform in matter regime? Test of 7 alternative forms shows NONE match D_Omega cleanly across all 8 regimes. C2 holds only at vacuum anchor (residual 0.001%); at matter regime, C2 violation grows to +87%. Sign-flip (beta_pi + gamma) gives even worse residuals. Gravitation-factor hypothesis (X*(b-g)) requires X to swing wildly between vacuum and matter. Best interpretation: D_Omega is an INDEPENDENT operator. At vacuum, D_Omega^V = beta_pi^V - gamma^V holds because 67/80 was canonically constructed = 15/16 - 1/10 to match this difference. At matter, D_Omega^M = pi/d (Symanzik asymptote) is a SEPARATE structural identification with no algebraic connection to (beta_pi - gamma). The C2 identity is therefore anchor-specific, not chirality-invariant. Note: this is consistent with iter-37's previous finding (D_Omega has lattice-resonance dips at N=2^7 etc, separate matter-sector dynamics)."
+}

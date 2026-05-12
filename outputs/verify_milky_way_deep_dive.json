@@ -1,0 +1,99 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Milky Way deep-dive: rotation, escape, local density, satellites, streams",
+  "stand": "2026-05-05",
+  "literature": [
+    "Gravity Collaboration 2019 (R_solar)",
+    "Eilers+ 2019, Mroz+ 2019 (v_c)",
+    "Piffl+ 2014 RAVE (v_esc)",
+    "Read 2014 (rho_DM_local)",
+    "Callingham+ 2019 (M_200_MW)",
+    "Battaglia+ 2008 (satellite dispersions)",
+    "Belokurov+ 2014 (Sgr stream constraint)"
+  ],
+  "framework_NFW_halo": {
+    "M_200_Msun": 1000000000000.0,
+    "c_200": 12.0,
+    "r_s_kpc": 17.02432391094563,
+    "R_200_kpc": 204.29188693134756,
+    "rho_s_Msun_kpc3": 9822931.223061139
+  },
+  "axis_1_v_c_solar": {
+    "v_DM_kms": 147.1049782877921,
+    "v_disk_kms": 141.1855366084801,
+    "v_total_kms": 203.89514556378302,
+    "v_c_anchor_kms": 232.8,
+    "residual_pct": 12.416174586003862,
+    "tier": "FACTOR2"
+  },
+  "axis_2_v_esc_solar": {
+    "v_esc_predicted_kms": 551.9434844788818,
+    "v_esc_anchor_kms": 528.0,
+    "residual_pct": 4.534750848273073,
+    "tier": "PRECISE_loose"
+  },
+  "axis_3_rho_DM_local": {
+    "rho_predicted_Msun_pc3": 0.009437103724988568,
+    "rho_predicted_GeV_cm3": 0.35823245740056603,
+    "rho_anchor_Msun_pc3": 0.0107,
+    "residual_pct": 11.802768925340482,
+    "tier": "FACTOR2"
+  },
+  "axis_4_satellite_dispersions": [
+    {
+      "name": "Sculptor",
+      "M_dyn_Msun_assumed": 10000000.0,
+      "R_eff_pc": 280,
+      "sigma_predicted_kms": 7.156415703009832,
+      "sigma_observed_kms": 9.2,
+      "residual_pct": 22.21287279337139,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "Draco",
+      "M_dyn_Msun_assumed": 20000000.0,
+      "R_eff_pc": 200,
+      "sigma_predicted_kms": 11.974973903938162,
+      "sigma_observed_kms": 9.1,
+      "residual_pct": 31.59311982349629,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "Carina",
+      "M_dyn_Msun_assumed": 10000000.0,
+      "R_eff_pc": 250,
+      "sigma_predicted_kms": 7.573638491504594,
+      "sigma_observed_kms": 6.6,
+      "residual_pct": 14.752098356130222,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "Fornax",
+      "M_dyn_Msun_assumed": 50000000.0,
+      "R_eff_pc": 700,
+      "sigma_predicted_kms": 10.120700145176293,
+      "sigma_observed_kms": 11.7,
+      "residual_pct": 13.498289357467572,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "Sextans",
+      "M_dyn_Msun_assumed": 10000000.0,
+      "R_eff_pc": 700,
+      "sigma_predicted_kms": 4.526114700901236,
+      "sigma_observed_kms": 7.9,
+      "residual_pct": 42.70740884935144,
+      "tier": "FACTOR2"
+    }
+  ],
+  "axis_5_stream_M_inside_30kpc": {
+    "M_inside_predicted": 280257933160.39307,
+    "M_inside_Sgr_anchor": 250000000000.0,
+    "residual_pct": 12.103173264157228,
+    "tier": "FACTOR2"
+  }
+}

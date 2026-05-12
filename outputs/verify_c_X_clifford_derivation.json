@@ -1,0 +1,73 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Algebraic / topological / index-theory diagnostic; branch-independent geometric structure",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Cl(1,3) * N_gen * d derivation of c_X rationals",
+  "stand": "2026-05-05",
+  "spacetime_dim": 4,
+  "family_count": 3,
+  "chirality_sine_squared": 0.010000000000000002,
+  "structure": "c_X = m_X / (n_X * g_X * d * N_gen)",
+  "table": [
+    {
+      "coefficient": "alpha_xi",
+      "channel": "family-cosine off-leakage",
+      "multiplicity_m": 1,
+      "channel_dim_n": 1,
+      "boundary_factor_g": 1,
+      "spacetime_d": 4,
+      "family_N_gen": 3,
+      "c_X_rational": "1/12"
+    },
+    {
+      "coefficient": "gamma",
+      "channel": "family-sine boundary (Z_2-flip)",
+      "multiplicity_m": 1,
+      "channel_dim_n": 1,
+      "boundary_factor_g": 4,
+      "spacetime_d": 4,
+      "family_N_gen": 3,
+      "c_X_rational": "1/48"
+    },
+    {
+      "coefficient": "beta_pi",
+      "channel": "Cl(1,3) bivector channel",
+      "multiplicity_m": 1,
+      "channel_dim_n": 2,
+      "boundary_factor_g": 1,
+      "spacetime_d": 4,
+      "family_N_gen": 3,
+      "c_X_rational": "1/24"
+    },
+    {
+      "coefficient": "D_Omega",
+      "channel": "spacetime diffusion (no family)",
+      "multiplicity_m": 1,
+      "channel_dim_n": 1,
+      "boundary_factor_g": 1,
+      "spacetime_d": 4,
+      "family_N_gen": 1,
+      "c_X_rational": "1/4"
+    },
+    {
+      "coefficient": "eps_sync2",
+      "channel": "topology-protected (no loop)",
+      "multiplicity_m": 0,
+      "channel_dim_n": 1,
+      "boundary_factor_g": 1,
+      "spacetime_d": 1,
+      "family_N_gen": 1,
+      "c_X_rational": "0"
+    }
+  ],
+  "predicted_d3_alternative": {
+    "c_alpha_xi (d=3)": 0.1111111111111111,
+    "c_gamma (d=3)": 0.027777777777777776,
+    "c_beta_pi (d=3)": 0.05555555555555555,
+    "c_D_Omega (d=3)": 0.3333333333333333,
+    "c_eps_sync2 (d=3)": 0
+  },
+  "verdict": "The five c_X rationals {1/12, 1/48, 1/24, 1/4, 0} follow the structural law c_X = m_X / (n_X * g_X * d * N_gen) with m_X in {0,1}, n_X = 1 or 2, g_X in {1,4} selected by the Cl(1,3) channel structure of each coefficient. eps_sync2 has m_X = 0 (topology-protected) and is exactly zero at all loop orders. The hierarchy 1/12 > 1/24 > 1/48 reflects: alpha_xi couples through 1 spacetime channel * 1 family channel; beta_pi couples through the Cl(1,3) bivector subspace (factor 1/2 = bivector 6 / orthogonal-complement 12); gamma couples through the chirality-sine boundary which carries an extra Z_2-flip+reprojection factor 4. D_Omega has no family dependence because spatial diffusion couples all generations identically. The alternative-d=3 predictions (1/9, 1/36, 1/18, 1/3, 0) would be a clean falsification test for any future d=3 emergent-cosmology corpus."
+}

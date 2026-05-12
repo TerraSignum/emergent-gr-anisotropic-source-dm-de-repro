@@ -1,0 +1,2353 @@
+{
+  "method": "Pre-gravity hypothesis: deep audit (A-E)",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300",
+      "P5N512",
+      "P6",
+      "P7",
+      "P8",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "core_top_frac": 0.05,
+  "n_bins_dcrit": 50,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 8,
+        "spearman_mass_vs_J_radial_inner": -0.8571428571428571,
+        "loglog_slope_abs_Jr_vs_M": 3.3446151341851986,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 1.0638843955354134,
+            "core_id": 21,
+            "mean_J_radial_inner": -0.023008374522291337,
+            "n_inner_nodes": 10
+          },
+          {
+            "core_T00": 1.2733191555297136,
+            "core_id": 38,
+            "mean_J_radial_inner": -0.05476062439864242,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.038731126534668,
+            "core_id": 17,
+            "mean_J_radial_inner": -0.013611604303146278,
+            "n_inner_nodes": 8
+          },
+          {
+            "core_T00": 2.078110468672241,
+            "core_id": 1,
+            "mean_J_radial_inner": -0.17358765742236743,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.1674185009410367,
+            "core_id": 27,
+            "mean_J_radial_inner": Infinity,
+            "n_inner_nodes": 14
+          },
+          {
+            "core_T00": 1.39632350724022,
+            "core_id": 14,
+            "mean_J_radial_inner": -0.06132690829620742,
+            "n_inner_nodes": 8
+          },
+          {
+            "core_T00": 1.5611302511310596,
+            "core_id": 3,
+            "mean_J_radial_inner": -0.12077937086244742,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.1191585541277378,
+            "core_id": 15,
+            "mean_J_radial_inner": -0.031007886746431013,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 1.270014631818297,
+            "core_id": 38,
+            "mean_J_radial_inner": -0.13891235424690662,
+            "n_inner_nodes": 6
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 12,
+        "dist_min": 0.02486086604312204,
+        "dist_max": 0.6317231665311758,
+        "dist_median": 0.22429802024523424,
+        "dist_mean": 0.3112675900824348,
+        "dist_std": 0.21678912650808413,
+        "ratio_std_over_mean": 0.696471889189204,
+        "histogram_edges": [
+          0.02486086604312204,
+          0.08554709609192741,
+          0.14623332614073278,
+          0.20691955618953817,
+          0.2676057862383435,
+          0.32829201628714894,
+          0.3889782463359543,
+          0.4496644763847597,
+          0.5103507064335651,
+          0.5710369364823704,
+          0.6317231665311758
+        ],
+        "histogram_counts": [
+          1,
+          2,
+          3,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          3
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 11,
+        "Jm_along_abs_mean": 0.35941797413165893,
+        "Jm_along_abs_median": 0.03365891300447145,
+        "Jm_perp_mean": 0.10854270593330066,
+        "Jm_perp_median": 0.0562507954374771,
+        "ratio_along_to_perp": 3.3113047168044694,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 8,
+        "spearman_mass_vs_J_radial_inner": -0.8333333333333334,
+        "loglog_slope_abs_Jr_vs_M": 4.580058096313367,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 1.011373535437731,
+            "core_id": 11,
+            "mean_J_radial_inner": -0.029268036327487913,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.154799533376509,
+            "core_id": 59,
+            "mean_J_radial_inner": NaN,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 1.356344951737944,
+            "core_id": 13,
+            "mean_J_radial_inner": -0.09385259919180151,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8974994921588015,
+            "core_id": 52,
+            "mean_J_radial_inner": -0.004466173306517181,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9201454429941186,
+            "core_id": 53,
+            "mean_J_radial_inner": -0.012400036094500423,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9228564181509713,
+            "core_id": 41,
+            "mean_J_radial_inner": -0.005228294096940509,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.2100375878296004,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.06541669723043643,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.3466516092923346,
+            "core_id": 3,
+            "mean_J_radial_inner": -0.08164259171969182,
+            "n_inner_nodes": 13
+          },
+          {
+            "core_T00": 1.4176181985802312,
+            "core_id": 17,
+            "mean_J_radial_inner": NaN,
+            "n_inner_nodes": 13
+          },
+          {
+            "core_T00": 1.60969868582458,
+            "core_id": 28,
+            "mean_J_radial_inner": -0.04579760806940005,
+            "n_inner_nodes": 5
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 24,
+        "dist_min": 0.07201616482234029,
+        "dist_max": 0.5198462519578978,
+        "dist_median": 0.24058249561361641,
+        "dist_mean": 0.2756695654873525,
+        "dist_std": 0.15739548205337192,
+        "ratio_std_over_mean": 0.5709570506091761,
+        "histogram_edges": [
+          0.07201616482234029,
+          0.11679917353589603,
+          0.16158218224945178,
+          0.20636519096300754,
+          0.25114819967656327,
+          0.29593120839011905,
+          0.3407142171036748,
+          0.38549722581723056,
+          0.4302802345307863,
+          0.475063243244342,
+          0.5198462519578978
+        ],
+        "histogram_counts": [
+          5,
+          3,
+          3,
+          2,
+          2,
+          0,
+          1,
+          0,
+          3,
+          5
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 23,
+        "Jm_along_abs_mean": 0.0398254769914241,
+        "Jm_along_abs_median": 0.012751682604309929,
+        "Jm_perp_mean": 0.028928926641737036,
+        "Jm_perp_median": 0.012110111252216312,
+        "ratio_along_to_perp": 1.3766662512105143,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 12,
+        "spearman_mass_vs_J_radial_inner": -0.9090909090909091,
+        "loglog_slope_abs_Jr_vs_M": 5.321778673909983,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.881134479017794,
+            "core_id": 27,
+            "mean_J_radial_inner": -0.008453159442134808,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 1.0063816135270707,
+            "core_id": 33,
+            "mean_J_radial_inner": -0.02872322353018765,
+            "n_inner_nodes": 11
+          },
+          {
+            "core_T00": 1.0726174528184087,
+            "core_id": 60,
+            "mean_J_radial_inner": -0.02547476983946338,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.2786991133171945,
+            "core_id": 3,
+            "mean_J_radial_inner": -0.0876481921951601,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.7138673014251555,
+            "core_id": 61,
+            "mean_J_radial_inner": -0.1181282704762059,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9001301896172247,
+            "core_id": 57,
+            "mean_J_radial_inner": -0.01098301790905442,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.9067816126790706,
+            "core_id": 56,
+            "mean_J_radial_inner": -0.006858535156465234,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.9469358915479951,
+            "core_id": 36,
+            "mean_J_radial_inner": -0.009066473039785519,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.285237218712058,
+            "core_id": 36,
+            "mean_J_radial_inner": -0.041489338878587745,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 1.2913264403102136,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.07212498344997822,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.3146398395050558,
+            "core_id": 41,
+            "mean_J_radial_inner": -0.05191785558087676,
+            "n_inner_nodes": 14
+          },
+          {
+            "core_T00": 1.8015479296490953,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.8402188446807631,
+            "n_inner_nodes": 10
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 24,
+        "dist_min": 0.0434226319364377,
+        "dist_max": 0.5511060729327817,
+        "dist_median": 0.28056044930070323,
+        "dist_mean": 0.28985694324975037,
+        "dist_std": 0.14070656543570895,
+        "ratio_std_over_mean": 0.48543451765608214,
+        "histogram_edges": [
+          0.0434226319364377,
+          0.0941909760360721,
+          0.1449593201357065,
+          0.19572766423534088,
+          0.2464960083349753,
+          0.2972643524346097,
+          0.34803269653424407,
+          0.3988010406338785,
+          0.4495693847335129,
+          0.5003377288331473,
+          0.5511060729327817
+        ],
+        "histogram_counts": [
+          1,
+          3,
+          4,
+          2,
+          4,
+          1,
+          2,
+          3,
+          2,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 24,
+        "Jm_along_abs_mean": 0.043759567345725246,
+        "Jm_along_abs_median": 0.009407969934128794,
+        "Jm_perp_mean": 0.03175750574835041,
+        "Jm_perp_median": 0.010223803318238954,
+        "ratio_along_to_perp": 1.3779283452699451,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 12,
+        "spearman_mass_vs_J_radial_inner": -0.972027972027972,
+        "loglog_slope_abs_Jr_vs_M": 7.628544745940917,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8556056285768845,
+            "core_id": 7,
+            "mean_J_radial_inner": 0.0027449272223652467,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8558977908113683,
+            "core_id": 72,
+            "mean_J_radial_inner": -0.002293763730594861,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.2174032093749687,
+            "core_id": 80,
+            "mean_J_radial_inner": -0.04220873529368972,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.2207442082713218,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.04323236975650449,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.3473896197849191,
+            "core_id": 74,
+            "mean_J_radial_inner": -0.052391423186384824,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8646870862759005,
+            "core_id": 79,
+            "mean_J_radial_inner": -0.0023420861304131305,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.864744297698167,
+            "core_id": 47,
+            "mean_J_radial_inner": -0.002466515355670376,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9910453096233772,
+            "core_id": 12,
+            "mean_J_radial_inner": -0.022602969772823448,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.0199864841071347,
+            "core_id": 8,
+            "mean_J_radial_inner": -0.017224706089531725,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8933661571100232,
+            "core_id": 15,
+            "mean_J_radial_inner": -0.003051797501934417,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.1032636441710222,
+            "core_id": 53,
+            "mean_J_radial_inner": -0.012933137678137299,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 1.1132011824952732,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.03747732571078625,
+            "n_inner_nodes": 8
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 40,
+        "dist_min": 0.048177713594837676,
+        "dist_max": 0.5547789464025583,
+        "dist_median": 0.2990179755908735,
+        "dist_mean": 0.2903674553788469,
+        "dist_std": 0.12748908314933566,
+        "ratio_std_over_mean": 0.43906119913817027,
+        "histogram_edges": [
+          0.048177713594837676,
+          0.09883783687560974,
+          0.14949796015638178,
+          0.20015808343715386,
+          0.25081820671792593,
+          0.301478329998698,
+          0.35213845327947,
+          0.4027985765602421,
+          0.45345869984101417,
+          0.5041188231217862,
+          0.5547789464025583
+        ],
+        "histogram_counts": [
+          6,
+          0,
+          4,
+          3,
+          7,
+          6,
+          7,
+          4,
+          1,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 37,
+        "Jm_along_abs_mean": 0.009305624021108008,
+        "Jm_along_abs_median": 0.0022054892556717175,
+        "Jm_perp_mean": 0.006998581200902426,
+        "Jm_perp_median": 0.003289389609016323,
+        "ratio_along_to_perp": 1.3296443599037049,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 11,
+        "spearman_mass_vs_J_radial_inner": -0.7,
+        "loglog_slope_abs_Jr_vs_M": 7.648180959136765,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.953985773587163,
+            "core_id": 3,
+            "mean_J_radial_inner": -0.011779240661618251,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9689783790677092,
+            "core_id": 58,
+            "mean_J_radial_inner": -0.013126849974574023,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.0077432241188686,
+            "core_id": 63,
+            "mean_J_radial_inner": -0.020913528934915153,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8961505348484997,
+            "core_id": 40,
+            "mean_J_radial_inner": -0.0035349308501133672,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8633007502354385,
+            "core_id": 81,
+            "mean_J_radial_inner": -0.00911548602235965,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8690206350785447,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.004602062275874874,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8838378581211128,
+            "core_id": 52,
+            "mean_J_radial_inner": -0.00510412430832434,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.9333751593951561,
+            "core_id": 30,
+            "mean_J_radial_inner": -0.003618092235488284,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.9429450376365356,
+            "core_id": 62,
+            "mean_J_radial_inner": -0.0009674606845202253,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.1334598657243764,
+            "core_id": 80,
+            "mean_J_radial_inner": -0.029125704923785484,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.1650940023409224,
+            "core_id": 23,
+            "mean_J_radial_inner": -0.04126165746729053,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.25074809312464,
+            "core_id": 32,
+            "mean_J_radial_inner": NaN,
+            "n_inner_nodes": 12
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 40,
+        "dist_min": 0.041126103142991755,
+        "dist_max": 0.4487551338314698,
+        "dist_median": 0.2672709043633966,
+        "dist_mean": 0.23543475715515214,
+        "dist_std": 0.10922238127912523,
+        "ratio_std_over_mean": 0.46391782844173424,
+        "histogram_edges": [
+          0.041126103142991755,
+          0.08188900621183956,
+          0.12265190928068737,
+          0.16341481234953517,
+          0.20417771541838298,
+          0.24494061848723078,
+          0.2857035215560786,
+          0.3264664246249264,
+          0.3672293276937742,
+          0.407992230762622,
+          0.4487551338314698
+        ],
+        "histogram_counts": [
+          6,
+          4,
+          1,
+          4,
+          3,
+          6,
+          7,
+          5,
+          2,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 36,
+        "Jm_along_abs_mean": 0.009823198722470509,
+        "Jm_along_abs_median": 0.0021420734554557013,
+        "Jm_perp_mean": 0.010031234037094723,
+        "Jm_perp_median": 0.003780315989407783,
+        "ratio_along_to_perp": 0.9792612440448587,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.4232352462181521,
+        "d_crit_mean": 1.361828082521299,
+        "d_crit_std": 0.2154864632052471,
+        "d_crit_per_seed": [
+          1.496329981626769,
+          1.3501405108095355,
+          1.583235896854911,
+          1.0176059407939801
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 9,
+        "spearman_mass_vs_J_radial_inner": -0.5166666666666667,
+        "loglog_slope_abs_Jr_vs_M": 24.851128696341558,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8492382722301268,
+            "core_id": 89,
+            "mean_J_radial_inner": -0.0021327275654249244,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8847659896194806,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.0037173353473633703,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8756952193864062,
+            "core_id": 81,
+            "mean_J_radial_inner": -0.003845069693567791,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8793594992531277,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.006251334658635443,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8388319749996623,
+            "core_id": 38,
+            "mean_J_radial_inner": -0.0007289258845096969,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8506837558731236,
+            "core_id": 6,
+            "mean_J_radial_inner": -0.0058700777410084296,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8509140725841691,
+            "core_id": 86,
+            "mean_J_radial_inner": -0.0014517164667673884,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8557982497057447,
+            "core_id": 39,
+            "mean_J_radial_inner": -0.0037608595282801233,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8608536234066547,
+            "core_id": 115,
+            "mean_J_radial_inner": -0.004157576828833934,
+            "n_inner_nodes": 3
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 84,
+        "dist_min": 0.02536579345574271,
+        "dist_max": 0.48149949602787073,
+        "dist_median": 0.2543233588656655,
+        "dist_mean": 0.23908323917241925,
+        "dist_std": 0.1255959529373871,
+        "ratio_std_over_mean": 0.5253231191451747,
+        "histogram_edges": [
+          0.02536579345574271,
+          0.07097916371295551,
+          0.11659253397016832,
+          0.16220590422738115,
+          0.20781927448459395,
+          0.2534326447418067,
+          0.29904601499901956,
+          0.34465938525623235,
+          0.39027275551344515,
+          0.43588612577065794,
+          0.48149949602787073
+        ],
+        "histogram_counts": [
+          12,
+          7,
+          7,
+          9,
+          7,
+          13,
+          9,
+          9,
+          8,
+          3
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 80,
+        "Jm_along_abs_mean": 0.007329846666984022,
+        "Jm_along_abs_median": 0.002936327991564044,
+        "Jm_perp_mean": 0.0030985773924407955,
+        "Jm_perp_median": 0.002435298400542905,
+        "ratio_along_to_perp": 2.365552232087446,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.2605940880335982,
+        "d_crit_mean": 1.2558435929799958,
+        "d_crit_std": 0.2160572735033156,
+        "d_crit_per_seed": [
+          1.1399578757673663,
+          0.9704451676811817,
+          1.38123030029983,
+          1.5317410281716046
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 23,
+        "spearman_mass_vs_J_radial_inner": -0.4792490118577075,
+        "loglog_slope_abs_Jr_vs_M": 37.708045320105875,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8479881077630651,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.0028768002221250593,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8483235968879128,
+            "core_id": 170,
+            "mean_J_radial_inner": -0.0005335300970190877,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8492533197655003,
+            "core_id": 8,
+            "mean_J_radial_inner": 0.00010558731529623517,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8523618371253386,
+            "core_id": 56,
+            "mean_J_radial_inner": -0.0021999054794028107,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8551964082864899,
+            "core_id": 114,
+            "mean_J_radial_inner": -0.0009765448815184713,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8600480486961812,
+            "core_id": 50,
+            "mean_J_radial_inner": -0.004108509614829606,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8529446710687077,
+            "core_id": 105,
+            "mean_J_radial_inner": -0.0006165592708957469,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8536724523410945,
+            "core_id": 63,
+            "mean_J_radial_inner": 0.00044398015093706196,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8563105561125629,
+            "core_id": 165,
+            "mean_J_radial_inner": -0.002338020833839775,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8596437358953889,
+            "core_id": 134,
+            "mean_J_radial_inner": 0.0017080293051221066,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.85992388065029,
+            "core_id": 153,
+            "mean_J_radial_inner": -8.38435893012908e-05,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8636166761212629,
+            "core_id": 100,
+            "mean_J_radial_inner": -0.004685948358439179,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8648192096089395,
+            "core_id": 33,
+            "mean_J_radial_inner": 0.0009501467125941289,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8685644469811395,
+            "core_id": 88,
+            "mean_J_radial_inner": -0.005299403279146091,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8575286834581504,
+            "core_id": 79,
+            "mean_J_radial_inner": -0.0023107154743811985,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8577619340167134,
+            "core_id": 182,
+            "mean_J_radial_inner": -0.0017365455002121082,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8653239929068374,
+            "core_id": 149,
+            "mean_J_radial_inner": -0.003095848694517086,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8633484390244243,
+            "core_id": 102,
+            "mean_J_radial_inner": -0.004221278462105197,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8683685018243339,
+            "core_id": 109,
+            "mean_J_radial_inner": -0.005879120538845372,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8731009875831356,
+            "core_id": 121,
+            "mean_J_radial_inner": -0.0026338577055712515,
+            "n_inner_nodes": 8
+          },
+          {
+            "core_T00": 0.8840838970274344,
+            "core_id": 44,
+            "mean_J_radial_inner": -0.0004518564413130536,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8878498660726251,
+            "core_id": 85,
+            "mean_J_radial_inner": -0.0040540514153889675,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8926534271812582,
+            "core_id": 180,
+            "mean_J_radial_inner": -0.010373638808528297,
+            "n_inner_nodes": 4
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 180,
+        "dist_min": 0.02106021445548033,
+        "dist_max": 0.463687892489043,
+        "dist_median": 0.1880643840922534,
+        "dist_mean": 0.2035667087679478,
+        "dist_std": 0.10909104900418057,
+        "ratio_std_over_mean": 0.5358982795587511,
+        "histogram_edges": [
+          0.02106021445548033,
+          0.06532298225883659,
+          0.10958575006219286,
+          0.15384851786554915,
+          0.1981112856689054,
+          0.24237405347226165,
+          0.28663682127561796,
+          0.3308995890789742,
+          0.37516235688233046,
+          0.4194251246856867,
+          0.463687892489043
+        ],
+        "histogram_counts": [
+          19,
+          28,
+          23,
+          25,
+          15,
+          22,
+          20,
+          15,
+          10,
+          3
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 178,
+        "Jm_along_abs_mean": 0.003579342251354939,
+        "Jm_along_abs_median": 0.0017774394239502055,
+        "Jm_perp_mean": 0.002441504124433169,
+        "Jm_perp_median": 0.0011687615144392845,
+        "ratio_along_to_perp": 1.4660398135456503,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.427563485461762,
+        "d_crit_mean": 1.4264269717149856,
+        "d_crit_std": 0.1495022980348861,
+        "d_crit_per_seed": [
+          1.4688112094826866,
+          1.217931069052433,
+          1.6326498468839858,
+          1.3863157614408372
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 31,
+        "spearman_mass_vs_J_radial_inner": -0.45161290322580644,
+        "loglog_slope_abs_Jr_vs_M": 12.08374061402216,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8527707820996362,
+            "core_id": 118,
+            "mean_J_radial_inner": -0.003266203442908136,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8539439085018956,
+            "core_id": 232,
+            "mean_J_radial_inner": -0.0023271940437644624,
+            "n_inner_nodes": 8
+          },
+          {
+            "core_T00": 0.8590100922561305,
+            "core_id": 41,
+            "mean_J_radial_inner": 0.000183380456077961,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.860178786977797,
+            "core_id": 108,
+            "mean_J_radial_inner": -0.002595701019038607,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8616305536110186,
+            "core_id": 97,
+            "mean_J_radial_inner": -0.0012734036716506958,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8716128445370016,
+            "core_id": 59,
+            "mean_J_radial_inner": -0.002807970675438551,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8938552558828795,
+            "core_id": 204,
+            "mean_J_radial_inner": -0.0065717192832115585,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8652636450033319,
+            "core_id": 21,
+            "mean_J_radial_inner": -0.002360009778776948,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8667031073234807,
+            "core_id": 146,
+            "mean_J_radial_inner": -0.0007597591667043342,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8679091578418869,
+            "core_id": 42,
+            "mean_J_radial_inner": -0.003965855175987244,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8695807149935253,
+            "core_id": 134,
+            "mean_J_radial_inner": -0.0035180550032975016,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8730660180105719,
+            "core_id": 27,
+            "mean_J_radial_inner": -0.00206773123712771,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8788929171838648,
+            "core_id": 73,
+            "mean_J_radial_inner": -0.003591619878950465,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8857415284558585,
+            "core_id": 221,
+            "mean_J_radial_inner": -0.0018636884720603637,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8881907774991031,
+            "core_id": 67,
+            "mean_J_radial_inner": -0.008567979769172153,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8929405682288121,
+            "core_id": 35,
+            "mean_J_radial_inner": -0.0035291919886324304,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8536589517172161,
+            "core_id": 86,
+            "mean_J_radial_inner": -0.002334712202406537,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8542595623679604,
+            "core_id": 123,
+            "mean_J_radial_inner": -0.0016465797944610412,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8565185787666245,
+            "core_id": 115,
+            "mean_J_radial_inner": -2.296684651981541e-05,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8588090718937317,
+            "core_id": 243,
+            "mean_J_radial_inner": -0.003036890132826508,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.0667797737341616,
+            "core_id": 84,
+            "mean_J_radial_inner": -0.015873027617376887,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.100546281927703,
+            "core_id": 6,
+            "mean_J_radial_inner": -0.025076237384525673,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8473257828644398,
+            "core_id": 135,
+            "mean_J_radial_inner": 0.00019175684187109428,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8486647257210619,
+            "core_id": 27,
+            "mean_J_radial_inner": -0.0011037292758691762,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8508652370339935,
+            "core_id": 122,
+            "mean_J_radial_inner": -0.0027366280006670776,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8512615010481377,
+            "core_id": 37,
+            "mean_J_radial_inner": -0.004349873451442416,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8518622544989354,
+            "core_id": 236,
+            "mean_J_radial_inner": -0.0034470933580544303,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8594393718651341,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.004898636515141739,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8598260798899584,
+            "core_id": 62,
+            "mean_J_radial_inner": -0.0022597694846401453,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8609769642938421,
+            "core_id": 101,
+            "mean_J_radial_inner": -0.00017912166509382793,
+            "n_inner_nodes": 3
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 312,
+        "dist_min": 0.019248149801256012,
+        "dist_max": 0.44870507173285534,
+        "dist_median": 0.18419270469194488,
+        "dist_mean": 0.19358124630073026,
+        "dist_std": 0.09521306144708132,
+        "ratio_std_over_mean": 0.4918506480693225,
+        "histogram_edges": [
+          0.019248149801256012,
+          0.062193841994415945,
+          0.10513953418757588,
+          0.1480852263807358,
+          0.19103091857389576,
+          0.23397661076705567,
+          0.2769223029602156,
+          0.31986799515337555,
+          0.36281368734653546,
+          0.4057593795396954,
+          0.44870507173285534
+        ],
+        "histogram_counts": [
+          23,
+          39,
+          48,
+          52,
+          40,
+          49,
+          26,
+          23,
+          8,
+          4
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 306,
+        "Jm_along_abs_mean": 0.0026284788966016302,
+        "Jm_along_abs_median": 0.0010280045451928634,
+        "Jm_perp_mean": 0.002187001233942019,
+        "Jm_perp_median": 0.0009584918055729938,
+        "ratio_along_to_perp": 1.2018643866349623,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.1041754657296914,
+        "d_crit_mean": 1.1293129998268263,
+        "d_crit_std": 0.19728538479841196,
+        "d_crit_per_seed": [
+          0.9664491293055213,
+          1.2419018021538613,
+          0.9144282201189273,
+          1.3944728477289947
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 36,
+        "spearman_mass_vs_J_radial_inner": -0.4383526383526384,
+        "loglog_slope_abs_Jr_vs_M": 23.209443000710387,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8605542753347036,
+            "core_id": 225,
+            "mean_J_radial_inner": -0.001054113350528157,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8607632754195825,
+            "core_id": 231,
+            "mean_J_radial_inner": -0.002602533383581268,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8620621495742593,
+            "core_id": 65,
+            "mean_J_radial_inner": -0.0018363552668838952,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8631218926885115,
+            "core_id": 37,
+            "mean_J_radial_inner": 0.001601640597007516,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8632210419255641,
+            "core_id": 64,
+            "mean_J_radial_inner": -0.0015768771303628622,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.863723140661856,
+            "core_id": 273,
+            "mean_J_radial_inner": -0.00044386315537679787,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8648621800556155,
+            "core_id": 213,
+            "mean_J_radial_inner": -0.0021111051820079337,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8743641404606639,
+            "core_id": 134,
+            "mean_J_radial_inner": -0.0018283653124426767,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8830732962848742,
+            "core_id": 20,
+            "mean_J_radial_inner": -0.00166680563052233,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8859397661122748,
+            "core_id": 191,
+            "mean_J_radial_inner": -0.002980941289574508,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8878930181477168,
+            "core_id": 211,
+            "mean_J_radial_inner": -0.0033183020065669527,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8452646355103648,
+            "core_id": 264,
+            "mean_J_radial_inner": -0.0018820045366293463,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8460517904063062,
+            "core_id": 75,
+            "mean_J_radial_inner": -0.0008184642552642607,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8474279833956899,
+            "core_id": 35,
+            "mean_J_radial_inner": -0.00037493470640027573,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8477961812632259,
+            "core_id": 183,
+            "mean_J_radial_inner": -0.002552456245486162,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8560165025195499,
+            "core_id": 25,
+            "mean_J_radial_inner": -0.0014217661366362963,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8560165599380545,
+            "core_id": 298,
+            "mean_J_radial_inner": -0.0010799485626721925,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8487448211137514,
+            "core_id": 31,
+            "mean_J_radial_inner": -0.00015605699195309574,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8494160632925876,
+            "core_id": 219,
+            "mean_J_radial_inner": -0.0005214958790911166,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.853277477277293,
+            "core_id": 202,
+            "mean_J_radial_inner": -0.0017928326527944626,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8537233931533151,
+            "core_id": 65,
+            "mean_J_radial_inner": -0.0006688272436223002,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8542379146350999,
+            "core_id": 71,
+            "mean_J_radial_inner": -0.0009341046478258548,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8545930980528281,
+            "core_id": 109,
+            "mean_J_radial_inner": 0.003770726489083443,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.854618496769976,
+            "core_id": 4,
+            "mean_J_radial_inner": -0.0030283676672430817,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8644903614814141,
+            "core_id": 249,
+            "mean_J_radial_inner": -0.0010439251320008656,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8864663288162719,
+            "core_id": 269,
+            "mean_J_radial_inner": -0.0035991570374237546,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8311722339791884,
+            "core_id": 213,
+            "mean_J_radial_inner": 0.00015192775808779832,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.831774471453907,
+            "core_id": 170,
+            "mean_J_radial_inner": -0.001191916730520382,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8318256347338802,
+            "core_id": 235,
+            "mean_J_radial_inner": -0.00040390080741387963,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8357846286881732,
+            "core_id": 199,
+            "mean_J_radial_inner": -0.0024453308419350285,
+            "n_inner_nodes": 6
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 420,
+        "dist_min": 0.012697348600137878,
+        "dist_max": 0.35197916535945156,
+        "dist_median": 0.15507746342915646,
+        "dist_mean": 0.15503472295656529,
+        "dist_std": 0.06984998947257483,
+        "ratio_std_over_mean": 0.4505441628850079,
+        "histogram_edges": [
+          0.012697348600137878,
+          0.04662553027606925,
+          0.08055371195200062,
+          0.11448189362793199,
+          0.14841007530386335,
+          0.18233825697979472,
+          0.2162664386557261,
+          0.25019462033165746,
+          0.2841228020075888,
+          0.3180509836835202,
+          0.35197916535945156
+        ],
+        "histogram_counts": [
+          23,
+          45,
+          59,
+          64,
+          84,
+          62,
+          49,
+          15,
+          12,
+          7
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 417,
+        "Jm_along_abs_mean": 0.001202244052882905,
+        "Jm_along_abs_median": 0.0007193322724382813,
+        "Jm_perp_mean": 0.0015183413797487562,
+        "Jm_perp_median": 0.001007269579860663,
+        "ratio_along_to_perp": 0.7918140603411885,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.6474321603389064,
+        "d_crit_mean": 1.5944386042021979,
+        "d_crit_std": 0.3647634601791,
+        "d_crit_per_seed": [
+          1.814943215898347,
+          1.4799211047794658,
+          2.023553102390443,
+          1.059336993740535
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 54,
+        "spearman_mass_vs_J_radial_inner": -0.278063655422146,
+        "loglog_slope_abs_Jr_vs_M": 15.540679731817207,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.837029200341634,
+            "core_id": 170,
+            "mean_J_radial_inner": -0.0008486712100564533,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8371912057953085,
+            "core_id": 295,
+            "mean_J_radial_inner": -0.00045979016628687323,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8373033424445913,
+            "core_id": 270,
+            "mean_J_radial_inner": -0.003906243961832053,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8374440892487051,
+            "core_id": 320,
+            "mean_J_radial_inner": -0.0024897196852684627,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8380652983570523,
+            "core_id": 205,
+            "mean_J_radial_inner": -0.0006754296706635142,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8419579767460377,
+            "core_id": 247,
+            "mean_J_radial_inner": -0.0007377725475588643,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8434003308085686,
+            "core_id": 114,
+            "mean_J_radial_inner": -0.000896473657236436,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8445278984137707,
+            "core_id": 207,
+            "mean_J_radial_inner": -0.001311217579982104,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8461219246254731,
+            "core_id": 451,
+            "mean_J_radial_inner": -0.001600136068785973,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8618945363612911,
+            "core_id": 152,
+            "mean_J_radial_inner": -0.003262632553790721,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8518451685273941,
+            "core_id": 500,
+            "mean_J_radial_inner": -0.00044590012687917063,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8519738220380481,
+            "core_id": 184,
+            "mean_J_radial_inner": 0.00015312153905914548,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8524474088034735,
+            "core_id": 220,
+            "mean_J_radial_inner": -0.00022601864291660133,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8527273339913863,
+            "core_id": 369,
+            "mean_J_radial_inner": -0.0003770573719340414,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8533117170136961,
+            "core_id": 315,
+            "mean_J_radial_inner": -0.0006073542014245041,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8541653352585596,
+            "core_id": 320,
+            "mean_J_radial_inner": -0.002281554776153134,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8544058879576386,
+            "core_id": 339,
+            "mean_J_radial_inner": -0.0013228348816770891,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8546684277524778,
+            "core_id": 210,
+            "mean_J_radial_inner": -0.001481590442689312,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8549514920714355,
+            "core_id": 312,
+            "mean_J_radial_inner": -0.001182556984679997,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8559107026835234,
+            "core_id": 100,
+            "mean_J_radial_inner": -0.0013738348674972396,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.857028602336684,
+            "core_id": 59,
+            "mean_J_radial_inner": -0.0008410456145309582,
+            "n_inner_nodes": 7
+          },
+          {
+            "core_T00": 0.8576638880617291,
+            "core_id": 270,
+            "mean_J_radial_inner": -0.0006638375266473819,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8593761879026028,
+            "core_id": 255,
+            "mean_J_radial_inner": -4.312362311444341e-05,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8601117975989345,
+            "core_id": 61,
+            "mean_J_radial_inner": -0.0013226814089143692,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8613536541735766,
+            "core_id": 211,
+            "mean_J_radial_inner": -0.0005130903937573203,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8691317933406859,
+            "core_id": 364,
+            "mean_J_radial_inner": -0.006491781685897244,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8369809177849229,
+            "core_id": 42,
+            "mean_J_radial_inner": -0.0011618805432876771,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8376647984837021,
+            "core_id": 389,
+            "mean_J_radial_inner": 9.441814629869477e-05,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8382440425208941,
+            "core_id": 139,
+            "mean_J_radial_inner": -0.0005185001768219497,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8451214954579855,
+            "core_id": 470,
+            "mean_J_radial_inner": -9.774738998709132e-05,
+            "n_inner_nodes": 4
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 1300,
+        "dist_min": 0.009019383855048062,
+        "dist_max": 0.3468533733094847,
+        "dist_median": 0.14179834945275022,
+        "dist_mean": 0.1452952367983694,
+        "dist_std": 0.06499976253418253,
+        "ratio_std_over_mean": 0.4473633407844242,
+        "histogram_edges": [
+          0.009019383855048062,
+          0.042802782800491726,
+          0.07658618174593539,
+          0.11036958069137905,
+          0.1441529796368227,
+          0.17793637858226635,
+          0.21171977752771,
+          0.24550317647315367,
+          0.27928657541859736,
+          0.31306997436404105,
+          0.3468533733094847
+        ],
+        "histogram_counts": [
+          51,
+          153,
+          216,
+          242,
+          237,
+          198,
+          107,
+          60,
+          26,
+          10
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 1298,
+        "Jm_along_abs_mean": 0.0014143804783550717,
+        "Jm_along_abs_median": 0.0005490218553027516,
+        "Jm_perp_mean": 0.0013406054919779104,
+        "Jm_perp_median": 0.0007913762139527887,
+        "ratio_along_to_perp": 1.0550310936503138,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 6,
+        "spearman_mass_vs_J_radial_inner": -0.9428571428571428,
+        "loglog_slope_abs_Jr_vs_M": 9.364017296272971,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.9548294705081716,
+            "core_id": 49,
+            "mean_J_radial_inner": -0.010894119490242759,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.9966382691250335,
+            "core_id": 41,
+            "mean_J_radial_inner": -0.019209271196221032,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8759653678222983,
+            "core_id": 42,
+            "mean_J_radial_inner": 0.005291682662220902,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8814185181479224,
+            "core_id": 55,
+            "mean_J_radial_inner": -0.006641837980491773,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8824873096847923,
+            "core_id": 56,
+            "mean_J_radial_inner": 0.00013846526699811388,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.092771817137486,
+            "core_id": 46,
+            "mean_J_radial_inner": NaN,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.266380679177159,
+            "core_id": 36,
+            "mean_J_radial_inner": -0.04897400646618886,
+            "n_inner_nodes": 3
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 12,
+        "dist_min": 0.036200265501785095,
+        "dist_max": 0.5343068991578902,
+        "dist_median": 0.3960897745254362,
+        "dist_mean": 0.32373590061850227,
+        "dist_std": 0.19533786215706622,
+        "ratio_std_over_mean": 0.6033864696002832,
+        "histogram_edges": [
+          0.036200265501785095,
+          0.0860109288673956,
+          0.1358215922330061,
+          0.1856322555986166,
+          0.23544291896422712,
+          0.28525358232983766,
+          0.3350642456954481,
+          0.3848749090610586,
+          0.43468557242666916,
+          0.48449623579227963,
+          0.5343068991578902
+        ],
+        "histogram_counts": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          4
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 10,
+        "Jm_along_abs_mean": 0.017608644761300977,
+        "Jm_along_abs_median": 0.015078393925413578,
+        "Jm_perp_mean": 0.03589474350297456,
+        "Jm_perp_median": 0.006406085569404502,
+        "ratio_along_to_perp": 0.4905633260714558,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 12,
+        "spearman_mass_vs_J_radial_inner": -0.9370629370629371,
+        "loglog_slope_abs_Jr_vs_M": 5.429064660536726,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8842385211885349,
+            "core_id": 27,
+            "mean_J_radial_inner": -0.009675063389493586,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.0098910115094497,
+            "core_id": 33,
+            "mean_J_radial_inner": -0.03382401345546994,
+            "n_inner_nodes": 8
+          },
+          {
+            "core_T00": 1.0127591726088216,
+            "core_id": 60,
+            "mean_J_radial_inner": -0.016181141564323542,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.2667731085960692,
+            "core_id": 3,
+            "mean_J_radial_inner": -0.09182456235625107,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.6870941361286942,
+            "core_id": 61,
+            "mean_J_radial_inner": -0.10964245299142071,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9382265579638233,
+            "core_id": 36,
+            "mean_J_radial_inner": -0.009108971750928192,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.9642767391305402,
+            "core_id": 30,
+            "mean_J_radial_inner": -0.015397733586215047,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.9793130697068,
+            "core_id": 57,
+            "mean_J_radial_inner": -0.012440657697290544,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.207788485059067,
+            "core_id": 36,
+            "mean_J_radial_inner": -0.03143310959385404,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 1.223545227702175,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.056399512006900576,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 1.3178953019597068,
+            "core_id": 41,
+            "mean_J_radial_inner": -0.0517939398666604,
+            "n_inner_nodes": 12
+          },
+          {
+            "core_T00": 1.6613663746776597,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.8494685826181015,
+            "n_inner_nodes": 8
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 24,
+        "dist_min": 0.027495306031151506,
+        "dist_max": 0.5493296089833087,
+        "dist_median": 0.308952671632713,
+        "dist_mean": 0.30065511399515993,
+        "dist_std": 0.14932272267737656,
+        "ratio_std_over_mean": 0.496657850562224,
+        "histogram_edges": [
+          0.027495306031151506,
+          0.07967873632636724,
+          0.13186216662158295,
+          0.1840455969167987,
+          0.23622902721201441,
+          0.28841245750723016,
+          0.34059588780244593,
+          0.39277931809766164,
+          0.44496274839287736,
+          0.4971461786880931,
+          0.5493296089833087
+        ],
+        "histogram_counts": [
+          2,
+          3,
+          1,
+          0,
+          6,
+          2,
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 23,
+        "Jm_along_abs_mean": 0.03427597932558376,
+        "Jm_along_abs_median": 0.010183667392694202,
+        "Jm_perp_mean": 0.03468702344114052,
+        "Jm_perp_median": 0.010792175748507877,
+        "ratio_along_to_perp": 0.9881499167475627,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 4,
+      "test_A_d_crit": null,
+      "test_BE_mass_scaling": {
+        "n_cores": 10,
+        "spearman_mass_vs_J_radial_inner": -0.6848484848484848,
+        "loglog_slope_abs_Jr_vs_M": 6.723343610350931,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8501716587793109,
+            "core_id": 72,
+            "mean_J_radial_inner": -0.0020515926298424326,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8788590855736357,
+            "core_id": 67,
+            "mean_J_radial_inner": 0.012663688857430229,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.0989288042176977,
+            "core_id": 80,
+            "mean_J_radial_inner": -0.028349568999346167,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 1.324093663409508,
+            "core_id": 74,
+            "mean_J_radial_inner": -0.031231767265248206,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.859251614721362,
+            "core_id": 20,
+            "mean_J_radial_inner": -0.0031152989665527114,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8666840049538316,
+            "core_id": 7,
+            "mean_J_radial_inner": -0.0028863042867599063,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8758447220911246,
+            "core_id": 47,
+            "mean_J_radial_inner": -0.0034399653912595813,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9609491186036863,
+            "core_id": 12,
+            "mean_J_radial_inner": -0.01804146739856315,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.884675386215198,
+            "core_id": 15,
+            "mean_J_radial_inner": 0.0018762009873723954,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 1.1074704490470952,
+            "core_id": 0,
+            "mean_J_radial_inner": -0.03783498996800197,
+            "n_inner_nodes": 6
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 40,
+        "dist_min": 0.04695709155465269,
+        "dist_max": 0.5724389306171228,
+        "dist_median": 0.31411841496341697,
+        "dist_mean": 0.28872391786706497,
+        "dist_std": 0.1409642888257836,
+        "ratio_std_over_mean": 0.48823211414956885,
+        "histogram_edges": [
+          0.04695709155465269,
+          0.09950527546089971,
+          0.1520534593671467,
+          0.20460164327339372,
+          0.25714982717964074,
+          0.3096980110858878,
+          0.36224619499213473,
+          0.4147943788983818,
+          0.4673425628046288,
+          0.5198907467108758,
+          0.5724389306171228
+        ],
+        "histogram_counts": [
+          8,
+          2,
+          0,
+          4,
+          6,
+          6,
+          7,
+          4,
+          1,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 37,
+        "Jm_along_abs_mean": 0.012809337973199499,
+        "Jm_along_abs_median": 0.005763584343576998,
+        "Jm_perp_mean": 0.006253602026239905,
+        "Jm_perp_median": 0.003702894774849065,
+        "ratio_along_to_perp": 2.0483135830281407,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.5338901078008795,
+        "d_crit_mean": 1.5695176170427227,
+        "d_crit_std": 0.2062897278955513,
+        "d_crit_per_seed": [
+          1.8573144836835627,
+          1.3961117349339343,
+          1.3529757688855693,
+          1.6716684806678248
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 14,
+        "spearman_mass_vs_J_radial_inner": -0.7230769230769231,
+        "loglog_slope_abs_Jr_vs_M": 20.558992058223506,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.860650169174759,
+            "core_id": 107,
+            "mean_J_radial_inner": 0.0005315183875557718,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.9005814315186941,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.0036131482472244163,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8758529448472864,
+            "core_id": 127,
+            "mean_J_radial_inner": -0.0051873677850700845,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8831226401240897,
+            "core_id": 81,
+            "mean_J_radial_inner": -0.004936776343772647,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9642887348662276,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.013722892227559801,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8451951760313673,
+            "core_id": 38,
+            "mean_J_radial_inner": -0.0002737195637124961,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8458597953996048,
+            "core_id": 92,
+            "mean_J_radial_inner": -0.0008961931694611358,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.852141175865339,
+            "core_id": 61,
+            "mean_J_radial_inner": -0.004237339158541267,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8491222237430908,
+            "core_id": 121,
+            "mean_J_radial_inner": -0.0025205730380512036,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8553252240918886,
+            "core_id": 42,
+            "mean_J_radial_inner": -0.005327430212241784,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8674278534705492,
+            "core_id": 6,
+            "mean_J_radial_inner": -0.0045267890539265766,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.8814123768570403,
+            "core_id": 115,
+            "mean_J_radial_inner": -0.00373975275221845,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.901412316755391,
+            "core_id": 86,
+            "mean_J_radial_inner": -0.008941925986381546,
+            "n_inner_nodes": 5
+          },
+          {
+            "core_T00": 0.9109595179676019,
+            "core_id": 39,
+            "mean_J_radial_inner": -0.00819803574743705,
+            "n_inner_nodes": 3
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 84,
+        "dist_min": 0.021974736060798156,
+        "dist_max": 0.4205429314195376,
+        "dist_median": 0.24563362695064828,
+        "dist_mean": 0.2264302766144562,
+        "dist_std": 0.11434485918120534,
+        "ratio_std_over_mean": 0.5049892659712677,
+        "histogram_edges": [
+          0.021974736060798156,
+          0.0618315555966721,
+          0.10168837513254604,
+          0.14154519466842,
+          0.18140201420429394,
+          0.2212588337401679,
+          0.2611156532760418,
+          0.30097247281191575,
+          0.3408292923477897,
+          0.38068611188366364,
+          0.4205429314195376
+        ],
+        "histogram_counts": [
+          9,
+          9,
+          6,
+          7,
+          5,
+          11,
+          9,
+          13,
+          8,
+          7
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 78,
+        "Jm_along_abs_mean": 0.007135548029475307,
+        "Jm_along_abs_median": 0.002559740147014605,
+        "Jm_perp_mean": 0.005190592960438074,
+        "Jm_perp_median": 0.0023563684062809175,
+        "ratio_along_to_perp": 1.3747076844324706,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "n_seeds": 4,
+      "test_A_d_crit": {
+        "n_seeds": 4,
+        "d_crit_median": 1.5886521146851278,
+        "d_crit_mean": 1.6593248155423086,
+        "d_crit_std": 0.3247303835455379,
+        "d_crit_per_seed": [
+          1.6349733114992906,
+          1.2841671344961576,
+          2.1758278983028214,
+          1.5423309178709652
+        ]
+      },
+      "test_BE_mass_scaling": {
+        "n_cores": 12,
+        "spearman_mass_vs_J_radial_inner": -0.5874125874125874,
+        "loglog_slope_abs_Jr_vs_M": 15.098915781672133,
+        "interpretation": "spearman < 0 (more negative for higher mass): consistent with mass-amplified attraction (chain-reaction signature). loglog slope ~ 1: linear gravitational scaling. loglog slope ~ 0: saturated.",
+        "core_mass_J_pairs": [
+          {
+            "core_T00": 0.8673908999005674,
+            "core_id": 118,
+            "mean_J_radial_inner": -0.006891124634394695,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8868651272193927,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.005221595186620462,
+            "n_inner_nodes": 6
+          },
+          {
+            "core_T00": 0.8596813403980855,
+            "core_id": 46,
+            "mean_J_radial_inner": -0.0012025609931565263,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8894465724625823,
+            "core_id": 81,
+            "mean_J_radial_inner": -0.004937280113911712,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8909939756046559,
+            "core_id": 127,
+            "mean_J_radial_inner": -0.005904825157703243,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.9692807805897359,
+            "core_id": 70,
+            "mean_J_radial_inner": -0.011736752667288308,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8522755607841336,
+            "core_id": 38,
+            "mean_J_radial_inner": 0.0005427009993858676,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.852725573137411,
+            "core_id": 109,
+            "mean_J_radial_inner": -0.0047652541267686355,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8699435138527412,
+            "core_id": 6,
+            "mean_J_radial_inner": -0.005302023542903854,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.88070901089582,
+            "core_id": 86,
+            "mean_J_radial_inner": -0.0033705681628456363,
+            "n_inner_nodes": 4
+          },
+          {
+            "core_T00": 0.8833425854465521,
+            "core_id": 115,
+            "mean_J_radial_inner": -0.005341706528203707,
+            "n_inner_nodes": 3
+          },
+          {
+            "core_T00": 0.8858351044724546,
+            "core_id": 39,
+            "mean_J_radial_inner": -0.003968293298283482,
+            "n_inner_nodes": 4
+          }
+        ]
+      },
+      "test_C_hierarchy": {
+        "n_pairs": 84,
+        "dist_min": 0.03904737457256623,
+        "dist_max": 0.5626679485994728,
+        "dist_median": 0.269515726376063,
+        "dist_mean": 0.25319671680573147,
+        "dist_std": 0.1410007628132202,
+        "ratio_std_over_mean": 0.5568822715872926,
+        "histogram_edges": [
+          0.03904737457256623,
+          0.09140943197525689,
+          0.14377148937794754,
+          0.1961335467806382,
+          0.24849560418332886,
+          0.3008576615860195,
+          0.3532197189887102,
+          0.4055817763914008,
+          0.4579438337940915,
+          0.5103058911967822,
+          0.5626679485994728
+        ],
+        "histogram_counts": [
+          13,
+          16,
+          6,
+          4,
+          9,
+          12,
+          11,
+          8,
+          3,
+          2
+        ]
+      },
+      "test_D_defect_defect": {
+        "n_pairs": 78,
+        "Jm_along_abs_mean": 0.15912102743579484,
+        "Jm_along_abs_median": 0.0025688808831998513,
+        "Jm_perp_mean": 0.004563209151868615,
+        "Jm_perp_median": 0.002288884273101028,
+        "ratio_along_to_perp": 34.870421701059975,
+        "interpretation": "Jm_along/perp == flow at midpoint along/perpendicular to core-core axis. Sign-symmetric: along should be ~0 mean by exchange symmetry. Perp dominance: J flows orthogonal to core-pair line at midpoint, consistent with each core attracting its own halo independently rather than direct core-core gravitational pull."
+      }
+    }
+  ]
+}

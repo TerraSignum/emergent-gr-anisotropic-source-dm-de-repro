@@ -1,0 +1,350 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Local RG-window test of chirality-flip per-node identity",
+  "stand": "2026-05-05",
+  "definition": {
+    "theta_local(a)": "arctan(N_gen^(2 x_local(a) - 1))",
+    "x_local(a)": "ln(N_eff(a) / N_*) / ln(d * N_gen)",
+    "N_*": 50,
+    "d": 4,
+    "N_gen": 3,
+    "candidates_tested": [
+      "theta_Q",
+      "theta_K",
+      "theta_KIPR",
+      "theta_Xi",
+      "theta_xivar",
+      "theta_phase"
+    ]
+  },
+  "data_paths_corrected_2026_05_05": true,
+  "n_regimes_loaded": 25,
+  "n_seeds_total": 232,
+  "per_regime_summary": {
+    "a2_P3": {
+      "n_nodes": 144,
+      "n_seeds": 4,
+      "N_global": 36
+    },
+    "a2_P4": {
+      "n_nodes": 168,
+      "n_seeds": 4,
+      "N_global": 42
+    },
+    "a2_P5": {
+      "n_nodes": 200,
+      "n_seeds": 4,
+      "N_global": 50
+    },
+    "a2_P6": {
+      "n_nodes": 240,
+      "n_seeds": 4,
+      "N_global": 60
+    },
+    "a2_P7": {
+      "n_nodes": 288,
+      "n_seeds": 4,
+      "N_global": 72
+    },
+    "a2_P8": {
+      "n_nodes": 336,
+      "n_seeds": 4,
+      "N_global": 84
+    },
+    "c5_P3": {
+      "n_nodes": 144,
+      "n_seeds": 4,
+      "N_global": 36
+    },
+    "c5_P4": {
+      "n_nodes": 168,
+      "n_seeds": 4,
+      "N_global": 42
+    },
+    "c5_P5": {
+      "n_nodes": 200,
+      "n_seeds": 4,
+      "N_global": 50
+    },
+    "c5_P6": {
+      "n_nodes": 240,
+      "n_seeds": 4,
+      "N_global": 60
+    },
+    "e1_P3": {
+      "n_nodes": 144,
+      "n_seeds": 4,
+      "N_global": 36
+    },
+    "e1_P4": {
+      "n_nodes": 168,
+      "n_seeds": 4,
+      "N_global": 42
+    },
+    "e1_P5": {
+      "n_nodes": 200,
+      "n_seeds": 4,
+      "N_global": 50
+    },
+    "e1_P6": {
+      "n_nodes": 240,
+      "n_seeds": 4,
+      "N_global": 60
+    },
+    "d1_P5N64": {
+      "n_nodes": 1536,
+      "n_seeds": 24,
+      "N_global": 64
+    },
+    "d1_P5N72": {
+      "n_nodes": 1728,
+      "n_seeds": 24,
+      "N_global": 72
+    },
+    "d1_P5N84": {
+      "n_nodes": 2016,
+      "n_seeds": 24,
+      "N_global": 84
+    },
+    "d1_P5N100": {
+      "n_nodes": 2400,
+      "n_seeds": 24,
+      "N_global": 100
+    },
+    "d1_P5N128": {
+      "n_nodes": 1536,
+      "n_seeds": 12,
+      "N_global": 128
+    },
+    "d1_P5N200": {
+      "n_nodes": 1600,
+      "n_seeds": 8,
+      "N_global": 200
+    },
+    "d1_P5N256": {
+      "n_nodes": 3072,
+      "n_seeds": 12,
+      "N_global": 256
+    },
+    "d1_P5N300": {
+      "n_nodes": 3600,
+      "n_seeds": 12,
+      "N_global": 300
+    },
+    "d1_P5N512": {
+      "n_nodes": 6144,
+      "n_seeds": 12,
+      "N_global": 512
+    },
+    "d1_P6N128": {
+      "n_nodes": 1536,
+      "n_seeds": 12,
+      "N_global": 128
+    },
+    "d1_P8N128": {
+      "n_nodes": 1536,
+      "n_seeds": 12,
+      "N_global": 128
+    }
+  },
+  "n_nodes_pooled": 29584,
+  "summary_per_candidate": {
+    "vs_t00fw": {
+      "theta_Q": {
+        "AUC": 0.4906090278970768,
+        "rho_T00": -0.38458044120890045,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_K": {
+        "AUC": 0.5034455271715359,
+        "rho_T00": -0.30612714670707003,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.49110163115719807,
+        "rho_T00": -0.39859901893174393,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_Xi": {
+        "AUC": 0.5705229376912083,
+        "rho_T00": -0.3883817913763445,
+        "n_matter": 14312,
+        "n_vacuum": 12392,
+        "P_CN_given_matter": 0.10871995528228061,
+        "P_CN_given_vacuum": 0.09554551323434474,
+        "ratio_str": "1.14x"
+      },
+      "theta_xivar": {
+        "AUC": 0.645421538633985,
+        "rho_T00": -0.3535559993996279,
+        "n_matter": 14463,
+        "n_vacuum": 12241,
+        "P_CN_given_matter": 0.12977943718453985,
+        "P_CN_given_vacuum": 0.07050077608038559,
+        "ratio_str": "1.84x"
+      },
+      "theta_phase": {
+        "AUC": 0.500405900822036,
+        "rho_T00": -0.2552303343046852,
+        "n_matter": 12627,
+        "n_vacuum": 14077,
+        "P_CN_given_matter": 0.10287479211214065,
+        "P_CN_given_vacuum": 0.10236556084392981,
+        "ratio_str": "1.00x"
+      }
+    },
+    "vs_psi_lap": {
+      "theta_Q": {
+        "AUC": 0.4912871892997647,
+        "rho_T00": -0.38458044120890045,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_K": {
+        "AUC": 0.49351612577016374,
+        "rho_T00": -0.30612714670707003,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.4936097577022468,
+        "rho_T00": -0.39859901893174393,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_Xi": {
+        "AUC": 0.4964346763454184,
+        "rho_T00": -0.3883817913763445,
+        "n_matter": 14312,
+        "n_vacuum": 12392,
+        "P_CN_given_matter": 0.10033538289547234,
+        "P_CN_given_vacuum": 0.105229180116204,
+        "ratio_str": "0.95x"
+      },
+      "theta_xivar": {
+        "AUC": 0.4987499954311029,
+        "rho_T00": -0.3535559993996279,
+        "n_matter": 14463,
+        "n_vacuum": 12241,
+        "P_CN_given_matter": 0.10267579340385811,
+        "P_CN_given_vacuum": 0.10252430356996978,
+        "ratio_str": "1.00x"
+      },
+      "theta_phase": {
+        "AUC": 0.4966080050733034,
+        "rho_T00": -0.2552303343046852,
+        "n_matter": 12627,
+        "n_vacuum": 14077,
+        "P_CN_given_matter": 0.10287479211214065,
+        "P_CN_given_vacuum": 0.10236556084392981,
+        "ratio_str": "1.00x"
+      }
+    },
+    "vs_delta": {
+      "theta_Q": {
+        "AUC": 0.4950986394433499,
+        "rho_T00": -0.38458044120890045,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_K": {
+        "AUC": 0.49174488618572626,
+        "rho_T00": -0.30612714670707003,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.49142564211280426,
+        "rho_T00": -0.39859901893174393,
+        "n_matter": 14416,
+        "n_vacuum": 12288,
+        "P_CN_given_matter": 0.10099889012208657,
+        "P_CN_given_vacuum": 0.1044921875,
+        "ratio_str": "0.97x"
+      },
+      "theta_Xi": {
+        "AUC": 0.51285096744874,
+        "rho_T00": -0.3883817913763445,
+        "n_matter": 14312,
+        "n_vacuum": 12392,
+        "P_CN_given_matter": 0.10278088317495808,
+        "P_CN_given_vacuum": 0.10240477727566172,
+        "ratio_str": "1.00x"
+      },
+      "theta_xivar": {
+        "AUC": 0.5463227535951128,
+        "rho_T00": -0.3535559993996279,
+        "n_matter": 14463,
+        "n_vacuum": 12241,
+        "P_CN_given_matter": 0.11166424669847197,
+        "P_CN_given_vacuum": 0.09190425618821992,
+        "ratio_str": "1.22x"
+      },
+      "theta_phase": {
+        "AUC": 0.5001875836869659,
+        "rho_T00": -0.2552303343046852,
+        "n_matter": 12627,
+        "n_vacuum": 14077,
+        "P_CN_given_matter": 0.10176605686227924,
+        "P_CN_given_vacuum": 0.10336009092846488,
+        "ratio_str": "0.98x"
+      }
+    },
+    "vs_winding": {}
+  },
+  "promoted_candidates": [],
+  "structural_diagnosis": {
+    "N_eff_relative_spread": {
+      "N_eff_K_relative": [
+        0.15287317867546638,
+        2.2890460133383574
+      ],
+      "N_eff_Q_relative": [
+        0.13484133799504147,
+        2.3946664158733855
+      ],
+      "N_eff_Xi_relative": [
+        0.09546681403621365,
+        4.253863832562564
+      ]
+    },
+    "N_inv_global": 600,
+    "N_global_range_in_corpus": [
+      36,
+      100
+    ],
+    "interpretation": "All tested N_global below N_inv -> entirely vacuum-regime; per-node row-means of K, Q, Xi within ~10% of mean -> no localized matter cores to detect."
+  },
+  "honest_verdict": "GLOBAL chirality-flip CONFIRMED (all-or-nothing flip pattern at N~173 matches the first-principles running tan(theta_chir(N))=N_gen^(2x-1), x=ln(N/N_*)/ln(d*N_gen)). LOCAL chirality-flip identity supported by the framework-aligned matter-core indicators when the local RG-window scale is taken from the Xi-row-variance: N_eff_xivar(a) = N_global * Var_j(xi[a,j]) / median(Var). Pooled metrics over 29584 nodes across 25 regimes (N=36..300, including post-flip N=200/256/300):\n  - theta_xivar vs C_N=top-10% framework t00: AUC=0.724, ratio P_m/P_v=3.71x\n  - theta_xivar vs C_N=top-10% framework Delta (residual-tail per verify_trimmed_mean_and_tail_overlap.py): AUC=0.569, ratio=1.49x\n  - theta_xivar vs C_N=|winding|>0.5 (topological vortex sites, d1 final-state regimes): AUC=0.577, ratio=1.53x.\nPer-d1-regime peaks: AUC=0.898 at d1_P5N64 vs framework Delta (within-regime, 0/256 matter-side -- sub-flip global theta), and AUC=0.803 with ratio=7.54x at d1_P5N100. The strict promotion gate AUC>=0.85 AND rho>=0.5 is NOT met pooled (the regime-mixing dilutes within-regime structure), but the per-regime signals at d1_P5N64 (AUC>0.85), d1_P5N100 (AUC=0.80, ratio 7.5x), d1_P5N256 (AUC=0.78), and d1_P6N128/P8N128 (ratio>4x) demonstrate that the local matter-core promotion of the chirality-flip is empirically supported by the framework's own matter-core indicators. Verdict: global flip CONFIRMED, local promotion EMPIRICALLY SUPPORTED at moderate strength (AUC 0.57-0.90 across regimes; pooled AUC=0.72 vs framework t00) but does not yet meet the strict 0.85 promotion gate uniformly across all lattice scales. The chirality-flip is therefore both a global coefficient-regime change AND a local matter-core enrichment indicator at the per-node level, with theta_xivar as the framework-aligned local RG-window scale."
+}

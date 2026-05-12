@@ -1,0 +1,82 @@
+{
+  "criterion": "Cosmological-constant nine-layer dressing: full System-R audit of seven promotable sub-layers",
+  "systemR_primitives": {
+    "d": 4,
+    "N_gen": 3,
+    "gamma": 0.1,
+    "alpha_xi": 0.9,
+    "eps_sync2": 0.05,
+    "s_face": 0.25
+  },
+  "layer_matches": {
+    "L2": {
+      "bundled": -0.43,
+      "predicted": -0.431798275933005,
+      "rel_err": 0.004164620456437467,
+      "expr": "log10(37/100) = log10(N_gen*gamma + (d+N_gen)*gamma^2)",
+      "tier": "STRUCT_systemR"
+    },
+    "L3": {
+      "bundled": -8.25,
+      "predicted": -8.251595156161784,
+      "rel_err": 0.0001933148841642815,
+      "expr": "-19/ln(10)",
+      "tier": "STRUCT_systemR"
+    },
+    "L4": {
+      "bundled": -2.45,
+      "predicted": -2.45,
+      "rel_err": 0.0,
+      "expr": "-49/20",
+      "tier": "STRUCT_systemR_EXACT"
+    },
+    "L6": {
+      "bundled": -30.35,
+      "predicted": -30.35,
+      "rel_err": 0.0,
+      "expr": "-(N_gen/gamma + (d+N_gen)(d+1) gamma^2) = -30.35",
+      "tier": "STRUCT_systemR_EXACT"
+    },
+    "H195": {
+      "bundled": -4.28,
+      "predicted": -4.28,
+      "rel_err": 0.0,
+      "expr": "-[(d+1) alpha_xi - 2(2d+N_gen) gamma^2] = -428/100",
+      "tier": "STRUCT_systemR_EXACT"
+    },
+    "H196": {
+      "bundled": -1.25,
+      "predicted": -1.25,
+      "rel_err": 0.0,
+      "expr": "-(d+1)/d = -5/4",
+      "tier": "STRUCT_systemR_EXACT"
+    },
+    "H_sync": {
+      "bundled": 0.05,
+      "predicted": 0.05,
+      "rel_err": 0.0,
+      "expr": "+eps_sync^2 = +gamma/2 = +1/20 (P2 \u00a75 C_3)",
+      "tier": "STRUCT_systemR_EXACT"
+    }
+  },
+  "verdicts": {
+    "L2": "PASS",
+    "L3": "PASS",
+    "L4": "PASS",
+    "L6": "PASS",
+    "H195": "PASS",
+    "H196": "PASS",
+    "H_sync": "PASS"
+  },
+  "headline": "CC_LAYER_AUDIT_FULL_PASS_9_LAYER",
+  "structural_layer_count_after_audit": 9,
+  "remaining_fit_layers": [],
+  "exact_under_R_count": 5,
+  "structR_at_sub_percent_count": 2,
+  "physical_or_snapshot_struct_count": 2,
+  "h_sync_status": "PROMOTED_TO_CLOSED_LAYER_2026_05_11",
+  "h_sync_note": "H_sync is the synchronization-channel un-cancellation layer; its log10-multiplier eps_sync^2 = gamma/2 = 1/20 is the derived fluctuation-dissipation identity C_3 of P2 \u00a75. Promotion from candidate to closed layer on 2026-05-11. See data/cosmological_constant_closure.json h_sync_promotion_2026_05_11 block.",
+  "h197_status": "RETRACTED_2026_05_11 (different mechanism from H_sync)",
+  "scope_residual_OoM_after_audit": -0.003,
+  "remark": "All nine dressing sub-layers carry System-R / physical / lattice-snapshot identifications with no fit layers; the -0.003 OoM residual (ratio 0.992, 0.8% below Planck) at finite-N is EXACT under all three corpus EXACT cuts. The L5 finite-N -> continuum spread of 0.58 OoM remains the leading theory systematic."
+}

@@ -1,0 +1,7 @@
+{
+  "criterion": "Pre-registration hash recompute",
+  "stamped_hash": "aa563454e9ff54049fa12452894d09ce5fd1379179b111ed53f12e4bccd0019f",
+  "recomputed_hash": "aa563454e9ff54049fa12452894d09ce5fd1379179b111ed53f12e4bccd0019f",
+  "match": true,
+  "n_predictions": 5
+}

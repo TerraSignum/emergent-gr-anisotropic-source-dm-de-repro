@@ -1,0 +1,68 @@
+{
+  "method": "HM_Omega_m_Lambda",
+  "framework_constants": {
+    "gamma": "1/10",
+    "N_gen": 3,
+    "d": 4
+  },
+  "Omega_m_matter_branch": {
+    "form": "gamma*N_gen + gamma^2*d/N_gen",
+    "fraction": "47/150",
+    "value": 0.31333333333333335
+  },
+  "Omega_m_vacuum_branch": {
+    "form": "gamma*N_gen + gamma^2*(d+1)/N_gen",
+    "fraction": "19/60",
+    "value": 0.31666666666666665
+  },
+  "branch_difference": {
+    "form": "gamma^2/N_gen",
+    "fraction": "1/300",
+    "value": 0.0033333333333333335
+  },
+  "anchor_branch_comparison": {
+    "Planck 2018 (CMB-only)": {
+      "measured": 0.3158,
+      "sigma": 0.0073,
+      "z_to_matter_form": 0.33789954337899625,
+      "z_to_vacuum_form": -0.11872146118720914,
+      "rel_pct_to_matter": 0.7872340425531933,
+      "rel_pct_to_vacuum": -0.2736842105263032,
+      "preferred_branch": "vacuum"
+    },
+    "Planck + DESI BAO 2024": {
+      "measured": 0.3144,
+      "sigma": 0.0073,
+      "z_to_matter_form": 0.14611872146118632,
+      "z_to_vacuum_form": -0.31050228310501904,
+      "rel_pct_to_matter": 0.34042553191489155,
+      "rel_pct_to_vacuum": -0.7157894736842019,
+      "preferred_branch": "matter"
+    }
+  },
+  "predictions": [
+    {
+      "quantity": "Omega_m",
+      "predicted_fraction": "47/150",
+      "predicted": 0.31333333333333335,
+      "Planck_central": 0.3158,
+      "Planck_sigma": 0.0073,
+      "rel_err_pct": 0.7810850749419481,
+      "z": -0.33789954337899625,
+      "tier": "PRECISE"
+    },
+    {
+      "quantity": "Omega_Lambda",
+      "predicted_fraction": "103/150",
+      "predicted": 0.6866666666666666,
+      "Planck_central": 0.6847,
+      "Planck_sigma": 0.0073,
+      "rel_err_pct": 0.2872304172143526,
+      "z": 0.2694063926940647,
+      "tier": "EXACT"
+    }
+  ],
+  "sum_check": 1.0,
+  "Omega_L_over_Omega_m_ratio": 2.1914893617021276,
+  "verdict": "DUAL_BRANCH_STRUCTURAL_MATCH: Omega_m has two structurally-natural System-R rational forms tied to the chirality flip. Matter branch (late-universe, z=0): Omega_m^matter = gamma*N_gen + gamma^2*d/N_gen = 47/150 = 0.3133. Vacuum branch (CMB-era, early-universe): Omega_m^vacuum = gamma*N_gen + gamma^2*(d+1)/N_gen = 19/60 = 0.3167. Branch difference = gamma^2/N_gen = 1/300 = 0.00333. Anchor-by-anchor: Planck 2018 CMB-only (Omega_m = 0.3158) fits vacuum form better (z=-0.12 vs z=+0.34); Planck + DESI BAO 2024 combo (Omega_m = 0.3144) fits matter form better (z=+0.15 vs z=-0.31). Direction of bias matches framework's chirality-flip hypothesis: CMB-dominated inference is vacuum-era weighted; late-universe-weighted combinations are matter-era. Branch diff 1/300 is below current Planck sigma 0.0073, so cannot discriminate at present precision. CMB-S4-class measurements with sigma_Omega_m ~ 0.001 would test this dual-form prediction directly. Cross-sector verifier: emergent-gr-closure-repro/src/verify_chirality_flip_cross_sector.py"
+}

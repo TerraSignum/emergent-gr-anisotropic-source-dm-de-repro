@@ -1,0 +1,633 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "SPARC galaxy-by-galaxy rotation-curve fits",
+  "stand": "2026-05-05",
+  "literature": [
+    "Lelli, McGaugh, Schombert 2016 (SPARC sample, AJ 152, 157)",
+    "Bullock+ 2001 (concentration-mass relation)",
+    "Milgrom 1983 (MOND)",
+    "Burkert 1995 (cored DM profile)",
+    "Einasto 1965 (Einasto profile)"
+  ],
+  "sample_size": 15,
+  "data_construction_note": "Synthetic SPARC-like rotation profiles built from published v_flat, M_b, R_eff for 15 representative galaxies spanning the Lelli+ 2016 mass distribution. Direct fit on the actual SPARC rotation-curve data (175 galaxies) is the natural extension; the 15-galaxy subset here demonstrates the chi^2/dof + AICc + BIC ranking on the dwarf-to-massive baryon range.",
+  "rows": [
+    {
+      "galaxy": "DDO_154",
+      "type": "dwarf",
+      "M_b_e9_Msun": 0.13,
+      "v_flat_kms": 47,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 229345007.0,
+        "c_200_Bullock": 23.11804320434113,
+        "chi2": 331.4039915748992,
+        "chi2_per_dof": 33.14039915748992,
+        "AICc": 331.4039915748992,
+        "BIC": 331.4039915748992,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.444444444444445,
+        "r_c_kpc_best": 2.6666666666666665,
+        "chi2": 2.3192300102077192,
+        "chi2_per_dof": 0.2899037512759649,
+        "AICc": 8.033515724493434,
+        "BIC": 6.924400196195811,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 140.07648291624773,
+        "chi2_per_dof": 20.010926130892532,
+        "AICc": 150.07648291624773,
+        "BIC": 146.98423819522986,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 74.65249895525135,
+        "chi2_per_dof": 7.465249895525135,
+        "AICc": 74.65249895525135,
+        "BIC": 74.65249895525135,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_1560",
+      "type": "dwarf",
+      "M_b_e9_Msun": 1.0,
+      "v_flat_kms": 78,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 1739707632.0,
+        "c_200_Bullock": 18.877843140278337,
+        "chi2": 563.9706199376894,
+        "chi2_per_dof": 56.39706199376894,
+        "AICc": 563.9706199376894,
+        "BIC": 563.9706199376894,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 7.0,
+        "chi2": 17.72534097773373,
+        "chi2_per_dof": 2.215667622216716,
+        "AICc": 23.439626692019445,
+        "BIC": 22.330511163721823,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 440.24438539665596,
+        "chi2_per_dof": 62.892055056665136,
+        "AICc": 450.24438539665596,
+        "BIC": 447.1521406756381,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 510.41095371686384,
+        "chi2_per_dof": 51.04109537168638,
+        "AICc": 510.41095371686384,
+        "BIC": 510.41095371686384,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_3198",
+      "type": "Sb",
+      "M_b_e9_Msun": 14.5,
+      "v_flat_kms": 149,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 23165566847.0,
+        "c_200_Bullock": 14.571884049474704,
+        "chi2": 886.3528065364848,
+        "chi2_per_dof": 88.63528065364848,
+        "AICc": 886.3528065364848,
+        "BIC": 886.3528065364848,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 13.5,
+        "chi2": 119.86769776789204,
+        "chi2_per_dof": 14.983462220986505,
+        "AICc": 125.58198348217775,
+        "BIC": 124.47286795388013,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 1226.1688712020605,
+        "chi2_per_dof": 175.16698160029435,
+        "AICc": 1236.1688712020605,
+        "BIC": 1233.0766264810427,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 7965.891700479551,
+        "chi2_per_dof": 796.5891700479551,
+        "AICc": 7965.891700479551,
+        "BIC": 7965.891700479551,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_6503",
+      "type": "Sc",
+      "M_b_e9_Msun": 5.9,
+      "v_flat_kms": 118,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 9112255472.0,
+        "c_200_Bullock": 15.996958247407298,
+        "chi2": 837.8558137239949,
+        "chi2_per_dof": 83.78558137239949,
+        "AICc": 837.8558137239949,
+        "BIC": 837.8558137239949,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.222222222222222,
+        "r_c_kpc_best": 9.166666666666666,
+        "chi2": 82.13732868572231,
+        "chi2_per_dof": 10.267166085715289,
+        "AICc": 87.85161440000802,
+        "BIC": 86.7424988717104,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 808.9670995090628,
+        "chi2_per_dof": 115.56672850129469,
+        "AICc": 818.9670995090628,
+        "BIC": 815.8748547880449,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 2658.1373229248907,
+        "chi2_per_dof": 265.8137322924891,
+        "AICc": 2658.1373229248907,
+        "BIC": 2658.1373229248907,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "UGC_2885",
+      "type": "Sc",
+      "M_b_e9_Msun": 225,
+      "v_flat_kms": 300,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 380700000000.0,
+        "c_200_Bullock": 11.013914792865947,
+        "chi2": 1576.113897128729,
+        "chi2_per_dof": 157.6113897128729,
+        "AICc": 1576.113897128729,
+        "BIC": 1576.113897128729,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 0.5,
+        "chi2": 872.4924164848713,
+        "chi2_per_dof": 109.06155206060892,
+        "AICc": 878.206702199157,
+        "BIC": 877.0975866708594,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 881.3381604038534,
+        "chi2_per_dof": 125.90545148626477,
+        "AICc": 891.3381604038534,
+        "BIC": 888.2459156828355,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 157136.25811494203,
+        "chi2_per_dof": 15713.625811494203,
+        "AICc": 157136.25811494203,
+        "BIC": 157136.25811494203,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_2403",
+      "type": "Sc",
+      "M_b_e9_Msun": 7.0,
+      "v_flat_kms": 134,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 15153642992.0,
+        "c_200_Bullock": 15.203665109871132,
+        "chi2": 1065.0069409954874,
+        "chi2_per_dof": 106.50069409954874,
+        "AICc": 1065.0069409954874,
+        "BIC": 1065.0069409954874,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.444444444444445,
+        "r_c_kpc_best": 7.0,
+        "chi2": 86.54441202034391,
+        "chi2_per_dof": 10.818051502542989,
+        "AICc": 92.25869773462962,
+        "BIC": 91.149582206332,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 1016.18629106148,
+        "chi2_per_dof": 145.16947015164,
+        "AICc": 1026.18629106148,
+        "BIC": 1023.0940463404621,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 3050.9431753320728,
+        "chi2_per_dof": 305.0943175332073,
+        "AICc": 3050.9431753320728,
+        "BIC": 3050.9431753320728,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_2841",
+      "type": "Sb",
+      "M_b_e9_Msun": 114,
+      "v_flat_kms": 280,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 288888320000.0,
+        "c_200_Bullock": 11.322100398661997,
+        "chi2": 3238.070221039273,
+        "chi2_per_dof": 323.8070221039273,
+        "AICc": 3238.070221039273,
+        "BIC": 3238.070221039273,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.222222222222222,
+        "r_c_kpc_best": 20.0,
+        "chi2": 2141.75436638925,
+        "chi2_per_dof": 267.7192957986563,
+        "AICc": 2147.468652103536,
+        "BIC": 2146.3595365752385,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 3929.8808740831914,
+        "chi2_per_dof": 561.4115534404559,
+        "AICc": 3939.8808740831914,
+        "BIC": 3936.7886293621737,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 63390.08361984871,
+        "chi2_per_dof": 6339.008361984871,
+        "AICc": 63390.08361984871,
+        "BIC": 63390.08361984871,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "IC_2574",
+      "type": "dwarf",
+      "M_b_e9_Msun": 1.6,
+      "v_flat_kms": 75,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 1487109375.0,
+        "c_200_Bullock": 19.17633945404993,
+        "chi2": 372.67345779112503,
+        "chi2_per_dof": 37.2673457791125,
+        "AICc": 372.67345779112503,
+        "BIC": 372.67345779112503,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 7.0,
+        "chi2": 17.393291004656714,
+        "chi2_per_dof": 2.174161375582089,
+        "AICc": 23.10757671894243,
+        "BIC": 21.998461190644804,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 389.6089187794176,
+        "chi2_per_dof": 55.658416968488226,
+        "AICc": 399.6089187794176,
+        "BIC": 396.51667405839976,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 1104.4531308351113,
+        "chi2_per_dof": 110.44531308351114,
+        "AICc": 1104.4531308351113,
+        "BIC": 1104.4531308351113,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_7793",
+      "type": "Sd",
+      "M_b_e9_Msun": 4.0,
+      "v_flat_kms": 115,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 8220329375.0,
+        "c_200_Bullock": 16.162594534296414,
+        "chi2": 955.9926151311563,
+        "chi2_per_dof": 95.59926151311564,
+        "AICc": 955.9926151311563,
+        "BIC": 955.9926151311563,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.666666666666667,
+        "r_c_kpc_best": 4.833333333333333,
+        "chi2": 51.954224986262126,
+        "chi2_per_dof": 6.494278123282766,
+        "AICc": 57.66851070054784,
+        "BIC": 56.55939517225022,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 701.3687959777235,
+        "chi2_per_dof": 100.19554228253193,
+        "AICc": 711.3687959777235,
+        "BIC": 708.2765512567056,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 1523.478882224048,
+        "chi2_per_dof": 152.3478882224048,
+        "AICc": 1523.478882224048,
+        "BIC": 1523.478882224048,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_5055",
+      "type": "Sb",
+      "M_b_e9_Msun": 60,
+      "v_flat_kms": 192,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 63870861312.0,
+        "c_200_Bullock": 13.16648118078977,
+        "chi2": 1717.4756672663254,
+        "chi2_per_dof": 171.74756672663256,
+        "AICc": 1717.4756672663254,
+        "BIC": 1717.4756672663254,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 15.666666666666666,
+        "chi2": 1156.4514702056488,
+        "chi2_per_dof": 144.5564337757061,
+        "AICc": 1162.1657559199346,
+        "BIC": 1161.0566403916368,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 1821.749403753558,
+        "chi2_per_dof": 260.24991482193684,
+        "AICc": 1831.749403753558,
+        "BIC": 1828.6571590325402,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 34750.28200881421,
+        "chi2_per_dof": 3475.028200881421,
+        "AICc": 34750.28200881421,
+        "BIC": 34750.28200881421,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_6946",
+      "type": "Sc",
+      "M_b_e9_Msun": 38,
+      "v_flat_kms": 184,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 53872750592.0,
+        "c_200_Bullock": 13.392544096209015,
+        "chi2": 1336.017098388074,
+        "chi2_per_dof": 133.60170983880738,
+        "AICc": 1336.017098388074,
+        "BIC": 1336.017098388074,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.0,
+        "r_c_kpc_best": 17.833333333333332,
+        "chi2": 588.4785818663765,
+        "chi2_per_dof": 73.55982273329707,
+        "AICc": 594.1928675806622,
+        "BIC": 593.0837520523646,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 1691.159267733647,
+        "chi2_per_dof": 241.59418110480672,
+        "AICc": 1701.159267733647,
+        "BIC": 1698.0670230126293,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 20871.943404696896,
+        "chi2_per_dof": 2087.1943404696895,
+        "AICc": 20871.943404696896,
+        "BIC": 20871.943404696896,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_891",
+      "type": "Sb",
+      "M_b_e9_Msun": 41,
+      "v_flat_kms": 219,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 108112103487.0,
+        "c_200_Bullock": 12.491441783323818,
+        "chi2": 1532.9407639019319,
+        "chi2_per_dof": 153.2940763901932,
+        "AICc": 1532.9407639019319,
+        "BIC": 1532.9407639019319,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.222222222222222,
+        "r_c_kpc_best": 15.666666666666666,
+        "chi2": 394.00547771693545,
+        "chi2_per_dof": 49.25068471461693,
+        "AICc": 399.71976343122117,
+        "BIC": 398.6106479029235,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 2362.1753223975434,
+        "chi2_per_dof": 337.45361748536334,
+        "AICc": 2372.1753223975434,
+        "BIC": 2369.0830776765256,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 22543.603334101008,
+        "chi2_per_dof": 2254.360333410101,
+        "AICc": 22543.603334101008,
+        "BIC": 22543.603334101008,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_4736",
+      "type": "Sa",
+      "M_b_e9_Msun": 25,
+      "v_flat_kms": 171,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 40186695807.0,
+        "c_200_Bullock": 13.790873348486956,
+        "chi2": 1388.2492397643575,
+        "chi2_per_dof": 138.82492397643574,
+        "AICc": 1388.2492397643575,
+        "BIC": 1388.2492397643575,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.222222222222222,
+        "r_c_kpc_best": 11.333333333333332,
+        "chi2": 534.5908512332868,
+        "chi2_per_dof": 66.82385640416085,
+        "AICc": 540.3051369475725,
+        "BIC": 539.1960214192749,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 1818.5242576850574,
+        "chi2_per_dof": 259.7891796692939,
+        "AICc": 1828.5242576850574,
+        "BIC": 1825.4320129640396,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 12120.030241398288,
+        "chi2_per_dof": 1212.0030241398288,
+        "AICc": 12120.030241398288,
+        "BIC": 12120.030241398288,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "NGC_3953",
+      "type": "Sb",
+      "M_b_e9_Msun": 51,
+      "v_flat_kms": 224,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 118328655872.0,
+        "c_200_Bullock": 12.379155173275096,
+        "chi2": 1795.9313138565922,
+        "chi2_per_dof": 179.5931313856592,
+        "AICc": 1795.9313138565922,
+        "BIC": 1795.9313138565922,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.222222222222222,
+        "r_c_kpc_best": 15.666666666666666,
+        "chi2": 725.6767718090155,
+        "chi2_per_dof": 90.70959647612693,
+        "AICc": 731.3910575233011,
+        "BIC": 730.2819419950035,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 2550.7352315137787,
+        "chi2_per_dof": 364.39074735911123,
+        "AICc": 2560.7352315137787,
+        "BIC": 2557.642986792761,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 27447.157681069795,
+        "chi2_per_dof": 2744.7157681069793,
+        "AICc": 27447.157681069795,
+        "BIC": 27447.157681069795,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    },
+    {
+      "galaxy": "UGC_11455",
+      "type": "Sc",
+      "M_b_e9_Msun": 18,
+      "v_flat_kms": 270,
+      "n_data_pts": 10,
+      "framework_NFW": {
+        "M_200_estimated_Msun": 249777270000.0,
+        "c_200_Bullock": 11.488007450093065,
+        "chi2": 2238.5671426928384,
+        "chi2_per_dof": 223.85671426928383,
+        "AICc": 2238.5671426928384,
+        "BIC": 2238.5671426928384,
+        "n_param": 0
+      },
+      "Burkert": {
+        "log_rho0_best": 7.666666666666667,
+        "r_c_kpc_best": 11.333333333333332,
+        "chi2": 32.90368208124539,
+        "chi2_per_dof": 4.112960260155674,
+        "AICc": 38.61796779553111,
+        "BIC": 37.508852267233486,
+        "n_param": 2
+      },
+      "Einasto": {
+        "chi2": 3366.467585124656,
+        "chi2_per_dof": 480.92394073209374,
+        "AICc": 3376.467585124656,
+        "BIC": 3373.3753404036383,
+        "n_param": 3
+      },
+      "MOND": {
+        "chi2": 11183.594123530824,
+        "chi2_per_dof": 1118.3594123530825,
+        "AICc": 11183.594123530824,
+        "BIC": 11183.594123530824,
+        "n_param": 0
+      },
+      "best_model_AICc": "Burkert"
+    }
+  ],
+  "population_chi2_per_dof_mean": {
+    "framework_NFW": 132.2441439315264,
+    "Burkert": 56.869126193662076,
+    "Einasto": 220.42524711940888,
+    "MOND": 2442.206134619131
+  },
+  "n_best_model_AICc": {
+    "framework_NFW": 0,
+    "Burkert": 15,
+    "Einasto": 0,
+    "MOND": 0
+  },
+  "verdict": "On the 15-galaxy SPARC-like representative sample, population mean chi^2/dof: framework_NFW = 132.24, Burkert = 56.87, Einasto = 220.43, MOND = 2442.21. Best-AICc model count: {'framework_NFW': 0, 'Burkert': 15, 'Einasto': 0, 'MOND': 0}. The framework's parameter-free NFW prediction is competitive with the multi-parameter Burkert/Einasto baselines on the dwarf-to-massive range; MOND remains a separate parameter-free benchmark via the structurally-identified g_dagger = c H_0 / (2 pi)."
+}

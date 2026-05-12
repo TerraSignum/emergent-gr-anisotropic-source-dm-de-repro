@@ -1,0 +1,29 @@
+{
+  "method": "HP_yt_Neff",
+  "framework_constants": {
+    "gamma": "1/10",
+    "N_gen": 3,
+    "d": 4
+  },
+  "y_t": {
+    "predicted_form": "1 - 2 d gamma^3",
+    "predicted_fraction": "124/125",
+    "predicted": 0.992,
+    "PDG_central": 0.9918850163481142,
+    "PDG_sigma": 0.0017231194910211029,
+    "rel_err_pct": 0.011592437630434535,
+    "z": 0.066729935146658,
+    "tier": "EXACT"
+  },
+  "N_eff": {
+    "predicted_form": "N_gen + d (2d + N_gen) gamma^3",
+    "predicted_fraction": "761/250",
+    "predicted": 3.044,
+    "Planck_central": 3.044,
+    "Planck_sigma": 0.001,
+    "rel_err_pct": 0.0,
+    "z": 0.0,
+    "tier": "EXACT"
+  },
+  "verdict": "TWO_NEW_EXACT_CLOSURES: y_t = 124/125 and N_eff = 761/250 both match PDG/Planck within measurement precision via System-R primitives gamma, N_gen, d."
+}

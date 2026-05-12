@@ -1,0 +1,308 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Two-loop gamma^4 corrections vs 1-loop gamma^2",
+  "stand": "2026-05-05",
+  "gamma_squared": 0.010000000000000002,
+  "gamma_4th": 0.00010000000000000002,
+  "measurement_precision_abs": 5e-06,
+  "rows": [
+    {
+      "name": "alpha_xi",
+      "x_alg": 0.9,
+      "c1": 0.08333333333333333,
+      "x_one_loop": 0.9008333333333334,
+      "x_obs": 0.90082,
+      "residual_1loop_abs": -1.3333333333420683e-05,
+      "residual_1loop_pct": 0.0014801329159455478,
+      "two_loop_c2_p_over_q": "-2/15",
+      "two_loop_c2_value": -0.13333333333333333,
+      "x_two_loop": 0.9008200000000001,
+      "residual_2loop_pct": 1.232458232083165e-14,
+      "improvement_pct_pts": 0.0014801329159332233,
+      "verdict": "MEANINGFUL"
+    },
+    {
+      "name": "gamma",
+      "x_alg": 0.1,
+      "c1": 0.020833333333333332,
+      "x_one_loop": 0.10020833333333334,
+      "x_obs": 0.10021,
+      "residual_1loop_abs": 1.6666666666498298e-06,
+      "residual_1loop_pct": 0.0016631740012472108,
+      "two_loop_c2_p_over_q": "1/60",
+      "two_loop_c2_value": 0.016666666666666666,
+      "x_two_loop": 0.10021000000000001,
+      "residual_2loop_pct": 1.3848705526209418e-14,
+      "improvement_pct_pts": 0.001663174001233362,
+      "verdict": "AT_FLOOR"
+    },
+    {
+      "name": "eps_sync2",
+      "x_alg": 0.05,
+      "c1": 0.0,
+      "x_one_loop": 0.05,
+      "x_obs": 0.05,
+      "residual_1loop_abs": 0.0,
+      "residual_1loop_pct": 0.0,
+      "two_loop_c2_p_over_q": "0/1",
+      "two_loop_c2_value": 0.0,
+      "x_two_loop": 0.05,
+      "residual_2loop_pct": 0.0,
+      "improvement_pct_pts": 0.0,
+      "verdict": "AT_FLOOR"
+    },
+    {
+      "name": "beta_pi",
+      "x_alg": 0.9375,
+      "c1": 0.041666666666666664,
+      "x_one_loop": 0.9379166666666666,
+      "x_obs": 0.93791,
+      "residual_1loop_abs": -6.666666666599319e-06,
+      "residual_1loop_pct": 0.0007108002544593104,
+      "two_loop_c2_p_over_q": "-1/15",
+      "two_loop_c2_value": -0.06666666666666667,
+      "x_two_loop": 0.9379099999999999,
+      "residual_2loop_pct": 1.1837202126271779e-14,
+      "improvement_pct_pts": 0.0007108002544474732,
+      "verdict": "AT_FLOOR"
+    },
+    {
+      "name": "D_Omega",
+      "x_alg": 0.8375,
+      "c1": 0.25,
+      "x_one_loop": 0.84,
+      "x_obs": 0.83996,
+      "residual_1loop_abs": -3.999999999992898e-05,
+      "residual_1loop_pct": 0.004762131530064406,
+      "two_loop_c2_p_over_q": "-2/5",
+      "two_loop_c2_value": -0.4,
+      "x_two_loop": 0.8399599999999999,
+      "residual_2loop_pct": 1.321757017745079e-14,
+      "improvement_pct_pts": 0.004762131530051188,
+      "verdict": "MEANINGFUL"
+    }
+  ],
+  "matter_sector_tests": {
+    "alpha_xi": {
+      "name": "alpha_xi",
+      "residual_1loop_abs": -1.3333333333420683e-05,
+      "best_match": {
+        "form": "- gamma^5 / d",
+        "value": -2.5000000000000006e-06,
+        "diff_to_residual": 1.0833333333420683e-05,
+        "rel_to_residual": 0.8125000000012284
+      },
+      "all_forms": [
+        {
+          "form": "- gamma^5 / d",
+          "value": -2.5000000000000006e-06,
+          "diff_to_residual": 1.0833333333420683e-05,
+          "rel_to_residual": 0.8125000000012284
+        },
+        {
+          "form": "- gamma * gamma^4 / 5",
+          "value": -2.0000000000000003e-06,
+          "diff_to_residual": 1.1333333333420682e-05,
+          "rel_to_residual": 0.8500000000009826
+        },
+        {
+          "form": "+ gamma * gamma^4 / 5",
+          "value": 2.0000000000000003e-06,
+          "diff_to_residual": 1.5333333333420684e-05,
+          "rel_to_residual": 1.1499999999990174
+        },
+        {
+          "form": "+ gamma^5 / d",
+          "value": 2.5000000000000006e-06,
+          "diff_to_residual": 1.5833333333420683e-05,
+          "rel_to_residual": 1.1874999999987716
+        },
+        {
+          "form": "- N_gen * gamma^5",
+          "value": -3.0000000000000008e-05,
+          "diff_to_residual": 1.6666666666579325e-05,
+          "rel_to_residual": 1.2499999999852605
+        },
+        {
+          "form": "- d * gamma^5",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 2.6666666666579327e-05,
+          "rel_to_residual": 1.999999999980347
+        },
+        {
+          "form": "- 2/(2N_gen-1) * gamma^4",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 2.6666666666579327e-05,
+          "rel_to_residual": 1.999999999980347
+        },
+        {
+          "form": "+ N_gen * gamma^5",
+          "value": 3.0000000000000008e-05,
+          "diff_to_residual": 4.3333333333420694e-05,
+          "rel_to_residual": 3.2499999999852607
+        },
+        {
+          "form": "+ d * gamma^5",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 5.333333333342069e-05,
+          "rel_to_residual": 3.9999999999803473
+        },
+        {
+          "form": "+ 2/(2N_gen-1) * gamma^4",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 5.333333333342069e-05,
+          "rel_to_residual": 3.9999999999803473
+        }
+      ]
+    },
+    "beta_pi": {
+      "name": "beta_pi",
+      "residual_1loop_abs": -6.666666666599319e-06,
+      "best_match": {
+        "form": "- gamma^5 / d",
+        "value": -2.5000000000000006e-06,
+        "diff_to_residual": 4.1666666665993184e-06,
+        "rel_to_residual": 0.6249999999962116
+      },
+      "all_forms": [
+        {
+          "form": "- gamma^5 / d",
+          "value": -2.5000000000000006e-06,
+          "diff_to_residual": 4.1666666665993184e-06,
+          "rel_to_residual": 0.6249999999962116
+        },
+        {
+          "form": "- gamma * gamma^4 / 5",
+          "value": -2.0000000000000003e-06,
+          "diff_to_residual": 4.666666666599319e-06,
+          "rel_to_residual": 0.6999999999969693
+        },
+        {
+          "form": "+ gamma * gamma^4 / 5",
+          "value": 2.0000000000000003e-06,
+          "diff_to_residual": 8.66666666659932e-06,
+          "rel_to_residual": 1.3000000000030307
+        },
+        {
+          "form": "+ gamma^5 / d",
+          "value": 2.5000000000000006e-06,
+          "diff_to_residual": 9.166666666599319e-06,
+          "rel_to_residual": 1.3750000000037883
+        },
+        {
+          "form": "- N_gen * gamma^5",
+          "value": -3.0000000000000008e-05,
+          "diff_to_residual": 2.333333333340069e-05,
+          "rel_to_residual": 3.500000000045461
+        },
+        {
+          "form": "- d * gamma^5",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 3.333333333340069e-05,
+          "rel_to_residual": 5.000000000060615
+        },
+        {
+          "form": "- 2/(2N_gen-1) * gamma^4",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 3.333333333340069e-05,
+          "rel_to_residual": 5.000000000060615
+        },
+        {
+          "form": "+ N_gen * gamma^5",
+          "value": 3.0000000000000008e-05,
+          "diff_to_residual": 3.666666666659933e-05,
+          "rel_to_residual": 5.500000000045461
+        },
+        {
+          "form": "+ d * gamma^5",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 4.666666666659933e-05,
+          "rel_to_residual": 7.000000000060615
+        },
+        {
+          "form": "+ 2/(2N_gen-1) * gamma^4",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 4.666666666659933e-05,
+          "rel_to_residual": 7.000000000060615
+        }
+      ]
+    },
+    "D_Omega": {
+      "name": "D_Omega",
+      "residual_1loop_abs": -3.999999999992898e-05,
+      "best_match": {
+        "form": "- d * gamma^5",
+        "value": -4.000000000000001e-05,
+        "diff_to_residual": 7.102879482495661e-17,
+        "rel_to_residual": 1.775719870627068e-12
+      },
+      "all_forms": [
+        {
+          "form": "- d * gamma^5",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 7.102879482495661e-17,
+          "rel_to_residual": 1.775719870627068e-12
+        },
+        {
+          "form": "- 2/(2N_gen-1) * gamma^4",
+          "value": -4.000000000000001e-05,
+          "diff_to_residual": 7.102879482495661e-17,
+          "rel_to_residual": 1.775719870627068e-12
+        },
+        {
+          "form": "- N_gen * gamma^5",
+          "value": -3.0000000000000008e-05,
+          "diff_to_residual": 9.999999999928974e-06,
+          "rel_to_residual": 0.2499999999986682
+        },
+        {
+          "form": "- gamma^5 / d",
+          "value": -2.5000000000000006e-06,
+          "diff_to_residual": 3.749999999992898e-05,
+          "rel_to_residual": 0.9374999999998891
+        },
+        {
+          "form": "- gamma * gamma^4 / 5",
+          "value": -2.0000000000000003e-06,
+          "diff_to_residual": 3.799999999992898e-05,
+          "rel_to_residual": 0.9499999999999112
+        },
+        {
+          "form": "+ gamma * gamma^4 / 5",
+          "value": 2.0000000000000003e-06,
+          "diff_to_residual": 4.199999999992898e-05,
+          "rel_to_residual": 1.0500000000000889
+        },
+        {
+          "form": "+ gamma^5 / d",
+          "value": 2.5000000000000006e-06,
+          "diff_to_residual": 4.249999999992898e-05,
+          "rel_to_residual": 1.062500000000111
+        },
+        {
+          "form": "+ N_gen * gamma^5",
+          "value": 3.0000000000000008e-05,
+          "diff_to_residual": 6.999999999992899e-05,
+          "rel_to_residual": 1.7500000000013318
+        },
+        {
+          "form": "+ d * gamma^5",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 7.999999999992899e-05,
+          "rel_to_residual": 2.000000000001776
+        },
+        {
+          "form": "+ 2/(2N_gen-1) * gamma^4",
+          "value": 4.000000000000001e-05,
+          "diff_to_residual": 7.999999999992899e-05,
+          "rel_to_residual": 2.000000000001776
+        }
+      ]
+    }
+  },
+  "verdict": "1-loop gamma^2 corrections saturate the measurement precision floor for alpha_xi, gamma, beta_pi, eps_sync2 (residuals 0.0007--0.0017%, all within measurement uncertainty). For D_Omega the 1-loop residual is 4.0e-5 which is just above floor; the best 2-loop fit c_D^(2) = -2/5 corresponds algebraically to -d * gamma^5 with d=4, matching the non-scalar Clifford channel rate 17/20 = alpha_xi + eps_sync^2 - gamma identified in the matter-sector emergence section of the framework. The extra gamma factor (chirality-sine projection in the Pi_common=0 sub-channel) makes the matter-sector correction gamma^5*d rather than gamma^4. Going to 3-loop (gamma^6 ~ 1e-6) is below current lattice precision; would require N >= 500 multi-N runs to resolve. Recommendation: keep 1-loop gamma^2 form as canonical for the Vakuum-phase coefficients; the gamma^5 matter-sector term is reported as a structural candidate but is at the 5e-6 measurement-noise boundary and should not be promoted to the canonical reduction without higher-precision lattice data."
+}

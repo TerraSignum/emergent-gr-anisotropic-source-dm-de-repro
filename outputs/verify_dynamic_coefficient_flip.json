@@ -1,0 +1,127 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N300"
+    ],
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Dynamic coefficient + matter-vacuum flip analysis",
+  "stand": "2026-05-05",
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "alpha_xi": 0.900819,
+      "beta_pi": 0.9379129999999999,
+      "D_Omega": 0.839964,
+      "gamma": 0.09918099999999996,
+      "eps_sync2": 0.04959049999999998,
+      "theta_rad": 0.32038305930290567,
+      "theta_deg": 18.356597125546063,
+      "tan2_theta": 0.1101009192745713,
+      "phase": "vacuum"
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "alpha_xi": 0.8113881507400376,
+      "beta_pi": 0.8952005055501381,
+      "D_Omega": 0.7597612114548454,
+      "gamma": 0.18861184925996244,
+      "eps_sync2": 0.09430592462998122,
+      "theta_rad": 0.4492550852735602,
+      "theta_deg": 25.7404203109649,
+      "tan2_theta": 0.23245576003043225,
+      "phase": "vacuum"
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "alpha_xi": 0.7742843586824435,
+      "beta_pi": 0.8806973505078189,
+      "D_Omega": 0.6702956471721387,
+      "gamma": 0.2257156413175565,
+      "eps_sync2": 0.11285782065877825,
+      "theta_rad": 0.49507244838099146,
+      "theta_deg": 28.365561845439117,
+      "tan2_theta": 0.2915151762869705,
+      "phase": "vacuum"
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "alpha_xi": 0.6905934508786215,
+      "beta_pi": 0.8375579334715049,
+      "D_Omega": 0.4311232895180821,
+      "gamma": 0.30940654912137855,
+      "eps_sync2": 0.15470327456068927,
+      "theta_rad": 0.5898582679030961,
+      "theta_deg": 33.79638926174444,
+      "tan2_theta": 0.4480299497884463,
+      "phase": "vacuum"
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "alpha_xi": 0.6357759571110859,
+      "beta_pi": 0.8117646209728431,
+      "D_Omega": 0.6142757508881663,
+      "gamma": 0.3642240428889141,
+      "eps_sync2": 0.18211202144445704,
+      "theta_rad": 0.6478955776018444,
+      "theta_deg": 37.12168216177639,
+      "tan2_theta": 0.5728811208022374,
+      "phase": "vacuum"
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "alpha_xi": 0.48015442011122716,
+      "beta_pi": 0.7132067476047312,
+      "D_Omega": 0.2946492624539301,
+      "gamma": 0.5198455798887729,
+      "eps_sync2": 0.25992278994438645,
+      "theta_rad": 0.8052489577323294,
+      "theta_deg": 46.13736673537089,
+      "tan2_theta": 1.0826633227042897,
+      "phase": "matter"
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "alpha_xi": 0.39496581374654965,
+      "beta_pi": 0.6883797893376333,
+      "D_Omega": 0.337080556960031,
+      "gamma": 0.6050341862534503,
+      "eps_sync2": 0.30251709312672515,
+      "theta_rad": 0.8912206094847113,
+      "theta_deg": 51.06317953855086,
+      "tan2_theta": 1.531864696122035,
+      "phase": "matter"
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "alpha_xi": 0.3118449819255915,
+      "beta_pi": 0.6392485150677378,
+      "D_Omega": 0.8245985565812509,
+      "gamma": 0.6881550180744085,
+      "eps_sync2": 0.34407750903720424,
+      "theta_rad": 0.9783033339086203,
+      "theta_deg": 56.052652116541665,
+      "tan2_theta": 2.206721473679533,
+      "phase": "matter"
+    }
+  ],
+  "flip_estimated_N": 124.42931018676326,
+  "verdict": "The 5 System-R coefficients have only ~3 independent dynamic degrees of freedom (after C1 and C3 constraints). Per-regime running shows: (1) alpha_xi runs from 0.901 (N=50) to 0.312 (N=300), corresponding to theta_chir growing from 18 deg toward arctan(N_gen) = 71.6 deg, the chirality inversion. (2) The vacuum-matter flip occurs at theta = pi/4 (alpha_xi = 1/2), between N=100 and N=128 in this data. (3) beta_pi runs in lockstep with alpha_xi via the chirality-mixing form (15/16)*cos^2 + (1/2)*sin^2 within few-percent. (4) D_Omega varies non-monotonically across the flip, suggesting either chirality-invariance with measurement noise or additional matter-sector dynamics not captured by the simple chirality picture. The DYNAMIC variable is theta_chir(N); the FLIP is at theta = pi/4."
+}

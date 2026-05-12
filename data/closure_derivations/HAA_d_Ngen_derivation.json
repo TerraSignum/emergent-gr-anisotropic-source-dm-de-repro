@@ -1,0 +1,182 @@
+{
+  "method": "HAA_d_Ngen_derivation_chain",
+  "constraints": {
+    "d_constraints": [
+      "D1 BH entropy face s_face=1/d=1/4 -> uniquely d=4",
+      "D2 Cl(1,3) spinor algebra (Lorentzian (1,3))",
+      "D3 SM anomaly cancellation",
+      "D4 Atiyah-Singer index integer in d=4",
+      "D5 z_* = (2d+1)(2d+N_gen)^2 = 1089 uniquely d=4"
+    ],
+    "N_gen_constraints": [
+      "N1 CKM CP violation requires N_gen>=3",
+      "N2 (d+N_gen)=7 fixes A_s, n_s, Y_p, eta_b closures",
+      "N3 Atiyah-Singer Q_top=-20 at N_gen=3",
+      "N4 NuFIT 3-generation neutrino oscillations",
+      "N5 z_* integer = 1089 uniquely N_gen=3"
+    ]
+  },
+  "grid_scan": [
+    {
+      "d": 3,
+      "N_gen": 2,
+      "predictions": {
+        "gamma": 0.125,
+        "alpha_xi": 0.875,
+        "s_face": 0.3333333333333333,
+        "V_us": 0.2916666666666667,
+        "sin2_thetaW": 0.3020833333333333,
+        "sigma_8": 0.765625,
+        "n_s": 0.9609375,
+        "Y_p": 0.1953125,
+        "z_star": 448
+      },
+      "chi_like": 0.5728849215855086
+    },
+    {
+      "d": 3,
+      "N_gen": 3,
+      "predictions": {
+        "gamma": 0.125,
+        "alpha_xi": 0.875,
+        "s_face": 0.3333333333333333,
+        "V_us": 0.2916666666666667,
+        "sin2_thetaW": 0.3125,
+        "sigma_8": 0.765625,
+        "n_s": 0.953125,
+        "Y_p": 0.28125,
+        "z_star": 567
+      },
+      "chi_like": 0.4667416387716207
+    },
+    {
+      "d": 3,
+      "N_gen": 4,
+      "predictions": {
+        "gamma": 0.125,
+        "alpha_xi": 0.875,
+        "s_face": 0.3333333333333333,
+        "V_us": 0.2916666666666667,
+        "sin2_thetaW": 0.3177083333333333,
+        "sigma_8": 0.765625,
+        "n_s": 0.9453125,
+        "Y_p": 0.3828125,
+        "z_star": 700
+      },
+      "chi_like": 0.6756639446940493
+    },
+    {
+      "d": 4,
+      "N_gen": 2,
+      "predictions": {
+        "gamma": 0.1,
+        "alpha_xi": 0.9,
+        "s_face": 0.25,
+        "V_us": 0.225,
+        "sin2_thetaW": 0.225,
+        "sigma_8": 0.81,
+        "n_s": 0.97,
+        "Y_p": 0.18,
+        "z_star": 900
+      },
+      "chi_like": 0.1015096317342104
+    },
+    {
+      "d": 4,
+      "N_gen": 3,
+      "predictions": {
+        "gamma": 0.1,
+        "alpha_xi": 0.9,
+        "s_face": 0.25,
+        "V_us": 0.225,
+        "sin2_thetaW": 0.23333333333333334,
+        "sigma_8": 0.81,
+        "n_s": 0.965,
+        "Y_p": 0.245,
+        "z_star": 1089
+      },
+      "chi_like": 8.66307702700889e-05
+    },
+    {
+      "d": 4,
+      "N_gen": 4,
+      "predictions": {
+        "gamma": 0.1,
+        "alpha_xi": 0.9,
+        "s_face": 0.25,
+        "V_us": 0.225,
+        "sin2_thetaW": 0.2375,
+        "sigma_8": 0.81,
+        "n_s": 0.96,
+        "Y_p": 0.32,
+        "z_star": 1296
+      },
+      "chi_like": 0.13021651230460762
+    },
+    {
+      "d": 5,
+      "N_gen": 2,
+      "predictions": {
+        "gamma": 0.08333333333333333,
+        "alpha_xi": 0.9166666666666666,
+        "s_face": 0.2,
+        "V_us": 0.18333333333333332,
+        "sin2_thetaW": 0.17916666666666667,
+        "sigma_8": 0.8402777777777778,
+        "n_s": 0.9756944444444444,
+        "Y_p": 0.1701388888888889,
+        "z_star": 1584
+      },
+      "chi_like": 0.385226277005904
+    },
+    {
+      "d": 5,
+      "N_gen": 3,
+      "predictions": {
+        "gamma": 0.08333333333333333,
+        "alpha_xi": 0.9166666666666666,
+        "s_face": 0.2,
+        "V_us": 0.18333333333333332,
+        "sin2_thetaW": 0.18611111111111112,
+        "sigma_8": 0.8402777777777778,
+        "n_s": 0.9722222222222222,
+        "Y_p": 0.2222222222222222,
+        "z_star": 1859
+      },
+      "chi_like": 0.5802052918635313
+    },
+    {
+      "d": 5,
+      "N_gen": 4,
+      "predictions": {
+        "gamma": 0.08333333333333333,
+        "alpha_xi": 0.9166666666666666,
+        "s_face": 0.2,
+        "V_us": 0.18333333333333332,
+        "sin2_thetaW": 0.18958333333333333,
+        "sigma_8": 0.8402777777777778,
+        "n_s": 0.96875,
+        "Y_p": 0.28125,
+        "z_star": 2156
+      },
+      "chi_like": 1.0465574815210321
+    }
+  ],
+  "best": {
+    "d": 4,
+    "N_gen": 3,
+    "predictions": {
+      "gamma": 0.1,
+      "alpha_xi": 0.9,
+      "s_face": 0.25,
+      "V_us": 0.225,
+      "sin2_thetaW": 0.23333333333333334,
+      "sigma_8": 0.81,
+      "n_s": 0.965,
+      "Y_p": 0.245,
+      "z_star": 1089
+    },
+    "chi_like": 8.66307702700889e-05
+  },
+  "verdict": "Both d=4 and N_gen=3 are constrained by multiple independent empirical closures. The grid scan finds the (d, N_gen) = (4, 3) point as the global minimum of the cumulative chi-like residual at 1171.8x discrimination over the second-best alternative. The framework is not free in d or N_gen; both are uniquely selected by the joint algebraic consistency of 30+ cross-sector closures."
+}

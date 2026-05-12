@@ -1,0 +1,34 @@
+{
+  "method": "HE_tau_eps_sync_identification",
+  "schema_version": "1.0.0",
+  "hypothesis": "matter-core fraction tau = eps^2_sync = gamma/2 = 1/20 is a structural identification, not a numerical coincidence",
+  "derivation_paths": [
+    {
+      "name": "loop-class spinor-trace library (algebraic)",
+      "value": 0.05,
+      "form": "gamma/2 by C3 fluctuation-dissipation symmetry",
+      "source": "loop-class manuscript line 888 Lemma 10"
+    },
+    {
+      "name": "matter-core lattice resonance (geometric)",
+      "value": 0.05,
+      "form": "argmin of joint KQ chi^2(tau) at tau=gamma/2 on canonical 8-regime ladder",
+      "source": "H-B = HB_matter_core_fraction.json, verify_KQ_top_pct_chi2_sweep.json"
+    },
+    {
+      "name": "Cosmological-Density loop class (Lemma 8)",
+      "value": 0.05,
+      "form": "1 +/- gamma/2 = chirality restriction (matter-only)",
+      "source": "loop-class manuscript Table tab:library row Lemma 8"
+    }
+  ],
+  "algebraic_identity": true,
+  "kq_chi2_at_optimum": 2.5357796620853024,
+  "kq_chi2_at_next_best_percentile": 7.460557634584788,
+  "kq_separation_factor": 2.9421158889055787,
+  "framework_constants": {
+    "gamma": 0.1,
+    "eps_sync_squared": 0.05
+  },
+  "verdict": "STRUCTURAL_IDENTIFICATION: tau_matter-core, eps^2_sync (Pure-Sync), and Lemma 8 Cosmological-Density factor all equal gamma/2 = 1/20. Three independent System-R derivations give the same chirality-restricted matter-only projection ratio. This unifies the geometric matter-core resonance with the spinor-trace fluctuation-dissipation symmetry."
+}

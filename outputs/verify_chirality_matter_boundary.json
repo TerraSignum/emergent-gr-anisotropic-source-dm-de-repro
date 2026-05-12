@@ -1,0 +1,248 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "d1_P5N100",
+      "d1_P5N64",
+      "a2_P3",
+      "a2_P4",
+      "a2_P5",
+      "a2_P6",
+      "c5_P3",
+      "c5_P4",
+      "c5_P5",
+      "c5_P6",
+      "e1_P3",
+      "e1_P4",
+      "e1_P5"
+    ],
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Local matter-boundary audit: chirality-flip = matter-core boundary?",
+  "stand": "2026-05-05",
+  "data_paths_corrected": true,
+  "data_sources": [
+    {
+      "label": "d1_P5N100",
+      "path": "C:/Users/user/Desktop/Emergence/results_d1_p5n100/d1_p5n100.npz"
+    },
+    {
+      "label": "d1_P5N64",
+      "path": "C:/Users/user/Desktop/Emergence/results_d1_p5n64/d1_p5n64.npz"
+    },
+    {
+      "label": "a2_P3",
+      "path": "C:/Users/user/Desktop/Emergence/results_a2_real_p3_extension/a2_a3_b1_p3.npz"
+    },
+    {
+      "label": "a2_P4",
+      "path": "C:/Users/user/Desktop/Emergence/results_a2_real_p4_extension/a2_a3_b1_p4.npz"
+    },
+    {
+      "label": "a2_P5",
+      "path": "C:/Users/user/Desktop/Emergence/results_a2_real_p5_extension/a2_a3_b1_p5.npz"
+    },
+    {
+      "label": "a2_P6",
+      "path": "C:/Users/user/Desktop/Emergence/results_a2_real_p6_extension/a2_a3_b1_p6.npz"
+    },
+    {
+      "label": "c5_P3",
+      "path": "C:/Users/user/Desktop/Emergence/results_c5_p3_extension/c5_p3.npz"
+    },
+    {
+      "label": "c5_P4",
+      "path": "C:/Users/user/Desktop/Emergence/results_c5_p4_extension/c5_p4.npz"
+    },
+    {
+      "label": "c5_P5",
+      "path": "C:/Users/user/Desktop/Emergence/results_c5_p5_extension/c5_p5.npz"
+    },
+    {
+      "label": "c5_P6",
+      "path": "C:/Users/user/Desktop/Emergence/results_c5_p6_extension/c5_p6.npz"
+    },
+    {
+      "label": "e1_P3",
+      "path": "C:/Users/user/Desktop/Emergence/results_e1_p3_extension/e1_p3.npz"
+    },
+    {
+      "label": "e1_P4",
+      "path": "C:/Users/user/Desktop/Emergence/results_e1_p4_extension/e1_p4.npz"
+    },
+    {
+      "label": "e1_P5",
+      "path": "C:/Users/user/Desktop/Emergence/results_e1_p5_extension/e1_p5.npz"
+    }
+  ],
+  "definitions": {
+    "K_node": "mean_j |ff_K_seed[a,j]|",
+    "Q_node": "mean_j |ff_Q_seed[a,j]|",
+    "theta_chir": "arctan2(Q_node, K_node)",
+    "T_00": "K_node**2 + Q_node**2",
+    "C_N(tau)": "T_00 >= percentile_70(T_00)",
+    "promotion_criterion": "AUC>=0.85 AND rho(theta,T_00)>=0.5 over pooled corpus"
+  },
+  "n_regimes_loaded": 13,
+  "per_regime": {
+    "d1_P5N100": {
+      "n_nodes": 400,
+      "n_matter_side": 0,
+      "n_vacuum_side": 400,
+      "AUC": 0.4483333333333333,
+      "rho_theta_T00": -0.0954534715841974,
+      "rho_theta_R00abs": -0.033300583128644555,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": 0.10177732360827255
+    },
+    "d1_P5N64": {
+      "n_nodes": 256,
+      "n_matter_side": 0,
+      "n_vacuum_side": 256,
+      "AUC": 0.4981534090909091,
+      "rho_theta_T00": -0.006242847333485924,
+      "rho_theta_R00abs": 0.044550383382925156,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3125,
+      "rho_theta_distance": 0.01720788509956512
+    },
+    "a2_P3": {
+      "n_nodes": 144,
+      "n_matter_side": 0,
+      "n_vacuum_side": 144,
+      "AUC": 0.6215909090909091,
+      "rho_theta_T00": 0.10173619483964312,
+      "rho_theta_R00abs": -0.07598665702113978,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3055555555555556,
+      "rho_theta_distance": -0.1141749055542159
+    },
+    "a2_P4": {
+      "n_nodes": 168,
+      "n_matter_side": 0,
+      "n_vacuum_side": 168,
+      "AUC": 0.4379973474801061,
+      "rho_theta_T00": -0.08420437232044786,
+      "rho_theta_R00abs": -0.021742651636709673,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.30952380952380953,
+      "rho_theta_distance": 0.048050981722101024
+    },
+    "a2_P5": {
+      "n_nodes": 200,
+      "n_matter_side": 0,
+      "n_vacuum_side": 200,
+      "AUC": 0.5402380952380952,
+      "rho_theta_T00": 0.04969924248106203,
+      "rho_theta_R00abs": 0.026970674266856672,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": -0.04736668416710418
+    },
+    "a2_P6": {
+      "n_nodes": 240,
+      "n_matter_side": 0,
+      "n_vacuum_side": 240,
+      "AUC": 0.4833829365079365,
+      "rho_theta_T00": 0.009703293459955901,
+      "rho_theta_R00abs": -0.048085036198545116,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": -0.008106911578326013
+    },
+    "c5_P3": {
+      "n_nodes": 144,
+      "n_matter_side": 0,
+      "n_vacuum_side": 144,
+      "AUC": 0.6215909090909091,
+      "rho_theta_T00": 0.10173619483964312,
+      "rho_theta_R00abs": -0.07598665702113978,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3055555555555556,
+      "rho_theta_distance": -0.1141749055542159
+    },
+    "c5_P4": {
+      "n_nodes": 168,
+      "n_matter_side": 0,
+      "n_vacuum_side": 168,
+      "AUC": 0.4379973474801061,
+      "rho_theta_T00": -0.08420437232044786,
+      "rho_theta_R00abs": -0.021742651636709673,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.30952380952380953,
+      "rho_theta_distance": 0.048050981722101024
+    },
+    "c5_P5": {
+      "n_nodes": 200,
+      "n_matter_side": 0,
+      "n_vacuum_side": 200,
+      "AUC": 0.5402380952380952,
+      "rho_theta_T00": 0.04969924248106203,
+      "rho_theta_R00abs": 0.026970674266856672,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": -0.04736668416710418
+    },
+    "c5_P6": {
+      "n_nodes": 240,
+      "n_matter_side": 0,
+      "n_vacuum_side": 240,
+      "AUC": 0.4833829365079365,
+      "rho_theta_T00": 0.009703293459955901,
+      "rho_theta_R00abs": -0.048085036198545116,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": -0.008106911578326013
+    },
+    "e1_P3": {
+      "n_nodes": 144,
+      "n_matter_side": 0,
+      "n_vacuum_side": 144,
+      "AUC": 0.6215909090909091,
+      "rho_theta_T00": 0.10173619483964312,
+      "rho_theta_R00abs": -0.07598665702113978,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3055555555555556,
+      "rho_theta_distance": -0.1141749055542159
+    },
+    "e1_P4": {
+      "n_nodes": 168,
+      "n_matter_side": 0,
+      "n_vacuum_side": 168,
+      "AUC": 0.4379973474801061,
+      "rho_theta_T00": -0.08420437232044786,
+      "rho_theta_R00abs": -0.021742651636709673,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.30952380952380953,
+      "rho_theta_distance": 0.048050981722101024
+    },
+    "e1_P5": {
+      "n_nodes": 200,
+      "n_matter_side": 0,
+      "n_vacuum_side": 200,
+      "AUC": 0.5402380952380952,
+      "rho_theta_T00": 0.04969924248106203,
+      "rho_theta_R00abs": 0.026970674266856672,
+      "P_CN_given_matter": null,
+      "P_CN_given_vacuum": 0.3,
+      "rho_theta_distance": -0.04736668416710418
+    }
+  },
+  "pooled": {
+    "n_nodes": 2672,
+    "n_matter_side": 0,
+    "n_vacuum_side": 2672,
+    "AUC": 0.5062589385030987,
+    "rho_theta_T00": 0.147756469508697,
+    "rho_theta_R00abs": 0.022206737747203054,
+    "P_CN_given_matter": null,
+    "P_CN_given_vacuum": 0.30389221556886226,
+    "rho_theta_distance": 0.00920804105131818
+  },
+  "promotion_gate_AUC_pass": false,
+  "promotion_gate_rho_pass": false,
+  "hypothesis_status": "NOT_PROMOTED",
+  "honest_verdict": "Real per-node data across 13 regimes, 2672 lattice nodes, 4 seeds each: AUC=0.506 (< 0.85 gate); rho(theta, T_00)=+0.148 (< 0.5 gate). The hypothesis 'theta_chir(a) > pi/4 \u21d4 matter-core support' is NOT supported by the per-node data: the global chirality-flip at theta_chir(N) = pi/4 remains a coefficient-level regime change of the bounded-operator readouts; it does NOT promote to a per-node matter-localization indicator under the simple arctan(|Q(a)|/|K(a)|) definition. This is an honest negative result on real lattice data \u2014 the global chirality-flip framework survives, but its strongest possible local interpretation is rejected."
+}

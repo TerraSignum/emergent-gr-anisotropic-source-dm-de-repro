@@ -1,0 +1,52 @@
+{
+  "method": "HL_sigma8_alpha_xi_squared",
+  "schema_version": "1.0.0",
+  "framework_constants": {
+    "alpha_xi": "9/10",
+    "alpha_xi_squared": "81/100"
+  },
+  "structural_prediction": {
+    "form": "sigma_8 = alpha_xi^2 = Lambda_t",
+    "fraction": "81/100",
+    "decimal": 0.81,
+    "interpretation": "Cosmological matter clustering amplitude is the back-channel chirality projection squared, the same quantity that gives the asymptote of the matter stress-energy fluctuation Lambda_t in the discrete relational lattice (P4)."
+  },
+  "anchor_comparisons": [
+    {
+      "anchor": "Planck_2018_TTTEEE_lowE_lensing",
+      "central": 0.8111,
+      "sigma": 0.006,
+      "rel_err_pct": 0.13561829614104176,
+      "z_score": -0.18333333333333166
+    },
+    {
+      "anchor": "Planck_2018_TT_lowP_lensing",
+      "central": 0.811,
+      "sigma": 0.008,
+      "rel_err_pct": 0.12330456226880405,
+      "z_score": -0.1250000000000001
+    },
+    {
+      "anchor": "DES_Y3_weak_lensing_S8",
+      "central": 0.776,
+      "sigma": 0.017,
+      "rel_err_pct": 4.381443298969076,
+      "z_score": 2.0000000000000018
+    },
+    {
+      "anchor": "KiDS_1000",
+      "central": 0.766,
+      "sigma": 0.02,
+      "rel_err_pct": 5.744125326370762,
+      "z_score": 2.200000000000002
+    },
+    {
+      "anchor": "Planck_2015_TT_lowP",
+      "central": 0.8159,
+      "sigma": 0.0086,
+      "rel_err_pct": 0.7231278342934068,
+      "z_score": -0.686046511627896
+    }
+  ],
+  "verdict": "STRUCTURAL_MATCH: sigma_8 = alpha_xi^2 = 81/100 = 0.81 is within Planck 2018 1-sigma band (0.8111 +/- 0.0060). This identifies the cosmological matter-clustering amplitude with the same back-channel projection squared that gives Lambda_t in P4 (back-channel matter asymptote). Different scales, same chirality-projected mass-energy amplitude. The S_8 tension between Planck (~0.81) and weak-lensing surveys (~0.77) sits with Planck closer to the System-R prediction; weak-lensing surveys are 2-3 sigma below."
+}

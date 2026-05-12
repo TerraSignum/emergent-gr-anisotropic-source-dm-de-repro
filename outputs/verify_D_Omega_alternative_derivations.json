@@ -1,0 +1,190 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "System-R coefficient derivation / search-space audit; branch-blind algebraic test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Alternative structural derivations of D_Omega = 67/80",
+  "stand": "2026-05-06",
+  "lattice_vacuum_value": 0.84,
+  "candidates": [
+    {
+      "name": "A1: C2 canonical (beta_pi - gamma) = 67/80",
+      "pred": 0.8375,
+      "target": 0.84,
+      "label": "15/16 - 1/10",
+      "rel_err_pct": 0.2976190476190413,
+      "tier": "EXACT",
+      "formula": "15/16 - 1/10"
+    },
+    {
+      "name": "A2: non-scalar Clifford rate (alpha_xi + eps^2 - gamma) = 17/20",
+      "pred": 0.8500000000000001,
+      "target": 0.84,
+      "label": "9/10 + 1/20 - 1/10",
+      "rel_err_pct": 1.190476190476205,
+      "tier": "PRECISE",
+      "formula": "9/10 + 1/20 - 1/10"
+    },
+    {
+      "name": "A3: Cl(1,3) bivector ratio (rank 2 dim / 2^(d-1))",
+      "pred": 0.75,
+      "target": 0.84,
+      "label": "6/8 = 3/4",
+      "rel_err_pct": 10.714285714285712,
+      "tier": "FACTOR2",
+      "formula": "6/8 = 3/4"
+    },
+    {
+      "name": "A4: Spinor-trace-1 inverse (1 - N_gen/d\u00b2)",
+      "pred": 0.8125,
+      "target": 0.84,
+      "label": "1 - 3/16 = 13/16",
+      "rel_err_pct": 3.2738095238095206,
+      "tier": "PRECISE",
+      "formula": "1 - 3/16 = 13/16"
+    },
+    {
+      "name": "A5: alpha_xi * beta_pi (chirality * Cl(1,3))",
+      "pred": 0.84375,
+      "target": 0.84,
+      "label": "(9/10)(15/16) = 27/32",
+      "rel_err_pct": 0.4464285714285751,
+      "tier": "EXACT",
+      "formula": "(9/10)(15/16) = 27/32"
+    },
+    {
+      "name": "A6: 1 - gamma * (1 + d/N_gen)",
+      "pred": 0.7666666666666667,
+      "target": 0.84,
+      "label": "1 - (1/10)(1 + 4/3) = 1 - 7/30 = 23/30",
+      "rel_err_pct": 8.73015873015872,
+      "tier": "FACTOR2",
+      "formula": "1 - (1/10)(1 + 4/3) = 1 - 7/30 = 23/30"
+    },
+    {
+      "name": "A7: 1 - eps^2 * d * (1 - eps^2)",
+      "pred": 0.81,
+      "target": 0.84,
+      "label": "1 - (1/20)(4)(19/20) = 1 - 76/400",
+      "rel_err_pct": 3.5714285714285614,
+      "tier": "PRECISE",
+      "formula": "1 - (1/20)(4)(19/20) = 1 - 76/400"
+    },
+    {
+      "name": "A8: pi/4 + 1/20 = pi/4 + eps^2",
+      "pred": 0.8353981633974483,
+      "target": 0.84,
+      "label": "approx 0.7854 + 0.05",
+      "rel_err_pct": 0.5478376907799578,
+      "tier": "EXACT",
+      "formula": "approx 0.7854 + 0.05"
+    },
+    {
+      "name": "A9: pi/4 + alpha_xi - 13/16",
+      "pred": 0.8728981633974482,
+      "target": 0.84,
+      "label": "approx 0.7854 + 0.9 - 0.8125",
+      "rel_err_pct": 3.9164480235057404,
+      "tier": "PRECISE",
+      "formula": "approx 0.7854 + 0.9 - 0.8125"
+    },
+    {
+      "name": "A10: 1 - alpha_xi*gamma - d/(d\u00b2+1)",
+      "pred": 0.6747058823529413,
+      "target": 0.84,
+      "label": "...",
+      "rel_err_pct": 19.67787114845937,
+      "tier": "FACTOR2",
+      "formula": "..."
+    },
+    {
+      "name": "A11: (2^d+3)/(d\u00b2+8) = 19/24",
+      "pred": 0.7916666666666666,
+      "target": 0.84,
+      "label": "= (2^d+3)/(d\u00b2+8)",
+      "rel_err_pct": 5.753968253968255,
+      "tier": "FACTOR2",
+      "formula": "= (2^d+3)/(d\u00b2+8)"
+    },
+    {
+      "name": "A12: 1 - 1/(2*pi)^? approximation",
+      "pred": 0.8408450569081046,
+      "target": 0.84,
+      "label": "approx 0.841 -- coincidence?",
+      "rel_err_pct": 0.10060201286960212,
+      "tier": "EXACT",
+      "formula": "approx 0.841 -- coincidence?"
+    },
+    {
+      "name": "A13: cos\u00b2(arctan(1/N_gen)) - eps\u00b2 + gamma\u00b7d/2",
+      "pred": 1.05,
+      "target": 0.84,
+      "label": "0.9 - 0.05 + 0.2 = ... no",
+      "rel_err_pct": 25.00000000000001,
+      "tier": "FACTOR2",
+      "formula": "0.9 - 0.05 + 0.2 = ... no"
+    },
+    {
+      "name": "A14: 27/32 -- chirality times Cl(1,3) projector",
+      "pred": 0.84375,
+      "target": 0.84,
+      "label": "(9/10)\u00b7(15/16) = 27/32",
+      "rel_err_pct": 0.4464285714285751,
+      "tier": "EXACT",
+      "formula": "(9/10)\u00b7(15/16) = 27/32"
+    },
+    {
+      "name": "A15: 5/6 -- simple rational",
+      "pred": 0.8333333333333334,
+      "target": 0.84,
+      "label": "= 0.8333",
+      "rel_err_pct": 0.7936507936507856,
+      "tier": "EXACT",
+      "formula": "= 0.8333"
+    },
+    {
+      "name": "A16: d/(d+0.762) -- bare fitting",
+      "pred": 0.8399832003359932,
+      "target": 0.84,
+      "label": "ad-hoc",
+      "rel_err_pct": 0.0019999600008102107,
+      "tier": "EXACT",
+      "formula": "ad-hoc"
+    },
+    {
+      "name": "A17: 1 - alpha_xi\u00b7gamma - eps^2\u00b7N_gen (matter-corrected)",
+      "pred": 0.76,
+      "target": 0.84,
+      "label": "...",
+      "rel_err_pct": 9.523809523809518,
+      "tier": "FACTOR2",
+      "formula": "..."
+    },
+    {
+      "name": "A18: alpha_xi\u00b7beta_pi - gamma\u00b7eps^2",
+      "pred": 0.83875,
+      "target": 0.84,
+      "label": "...",
+      "rel_err_pct": 0.14880952380952064,
+      "tier": "EXACT",
+      "formula": "..."
+    },
+    {
+      "name": "A19: 1 - gamma + eps^2 - eps^2/d",
+      "pred": 0.9375000000000001,
+      "target": 0.84,
+      "label": "1 - 0.1 + 0.05 - 0.0125",
+      "rel_err_pct": 11.607142857142874,
+      "tier": "FACTOR2",
+      "formula": "1 - 0.1 + 0.05 - 0.0125"
+    }
+  ],
+  "exact_matches_count": 8,
+  "key_decomposition_3": {
+    "form": "1 - (N_gen*d+1)/(d\u00b2*5)",
+    "value": 0.8375,
+    "interpretation": "unity minus structural correction, independent of beta_pi/gamma chirality"
+  },
+  "verdict": "D_Omega = 67/80 admits multiple structural derivations within ~1% at vacuum (where lattice precision is also ~1%). The canonical C2 form D_Omega = beta_pi - gamma is one of several candidates; equally clean are the non-scalar Clifford rate (alpha_xi+eps^2-gamma), the chirality-Cl(1,3) product (alpha_xi*beta_pi = 27/32), and the structural decomposition 1 - (N_gen*d+1)/(d\u00b2*5). The chirality-running DISTINGUISHES these forms at matter regime: C2 fails, alpha_xi*beta_pi has different running, Symanzik continuum gives pi/d. The structurally cleanest interpretation: D_Omega is independent of the chirality-projection beta_pi/gamma; its vacuum value 67/80 = 1 - 13/80 is structurally-determined by spacetime dimension d=4 and family count N_gen=3 via the universal correction 13 = N_gen*d+1 over scale 80 = d\u00b2*5. The matter-side D_Omega^M = pi/d is then naturally the continuum-saturated form. The C2 identity remains valid at the vacuum anchor by numerical coincidence."
+}

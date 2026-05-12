@@ -1,0 +1,17 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "System-R coefficient derivation / search-space audit; branch-blind algebraic test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "D_Omega higher-N consistency test",
+  "stand": "2026-05-06",
+  "vacuum_form_value": 0.8375,
+  "matter_asymptote": 0.7853981633974483,
+  "vacuum_anchor_match_pct": 0.025477282359725833,
+  "constant_67_80_mean_residual_pct": 62.54091984045364,
+  "chirality_mix_mean_residual_pct": 59.217616021970294,
+  "smooth_running_mean_residual_pct": 59.2176160219703,
+  "matter_mean_vs_pi_d_pct": 38.19150405209859,
+  "verdict": "The clean structural derivation D_Omega^V = 1 - (N_gen*d+1)/(d2*(2N_gen-1)) = 67/80 holds AT THE VACUUM ANCHOR (N=50) to 0.3% precision AND with the iter-31 1-loop sub-leading correction gamma2alpha_xi/4 to 0.0255% precision. It does NOT hold as a constant form across all N: at higher N, lattice readouts of D_Omega run (with non-monotonic dips at binary-power regimes) toward the matter-side asymptote pi/d. Both vacuum 67/80 = 1 - 13/80 and matter pi/d are structurally derivable from (d, N_gen) alone -- but they describe two distinct regime identifications rather than a single algebraic form. The C2 identity D_Omega = beta_pi - gamma was an algebraic coincidence at vacuum that fails under chirality running."
+}

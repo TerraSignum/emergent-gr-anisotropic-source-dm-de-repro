@@ -1,0 +1,59 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Chirality-flip implications for existing MD-36..62 closures",
+  "stand": "2026-05-05",
+  "canonical_anchor_values": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "eps_sync2": 0.05,
+    "beta_pi": 0.9375,
+    "D_Omega": 0.8375
+  },
+  "closures": [
+    {
+      "id": "MD-46-theta_13",
+      "obs": "PMNS theta_13",
+      "formula": "alpha_xi / (2 * N_gen)",
+      "predict_canonical": 0.15,
+      "PDG_target": 0.14976,
+      "rel_err_canonical_pct": 0.16025641025640372
+    },
+    {
+      "id": "MD-39-theta_13_alt",
+      "obs": "PMNS theta_13 (alternative form)",
+      "formula": "alpha_xi * (1 - gamma^2/4) / (2 * N_gen)",
+      "predict_canonical": 0.149625,
+      "PDG_target": 0.14976,
+      "rel_err_canonical_pct": 0.09014423076922824
+    },
+    {
+      "id": "MD-46-theta_23",
+      "obs": "PMNS theta_23",
+      "formula": "(beta_pi - gamma) * (gamma/2) * sqrt(N_gen)",
+      "predict_canonical": 0.07252962756694674,
+      "PDG_target": 0.8576547944300136,
+      "rel_err_canonical_pct": 91.54326099055402
+    },
+    {
+      "id": "MD-57-V_us",
+      "obs": "CKM V_us",
+      "formula": "gamma * sqrt(5)",
+      "predict_canonical": 0.223606797749979,
+      "PDG_target": 0.2253,
+      "rel_err_canonical_pct": 0.7515322902889519
+    },
+    {
+      "id": "MD-58-R_b",
+      "obs": "CKM R_b (= |V_ub/V_cb|)",
+      "formula": "d * gamma * (1 + eps^2)",
+      "predict_canonical": 0.42000000000000004,
+      "PDG_target": 0.422,
+      "rel_err_canonical_pct": 0.4739336492890868
+    }
+  ],
+  "verdict": "All existing MD-36..62 closures (theta_13, Jarlskog, V_us, R_b, etc.) use the canonical N=50 anchor System-R values and match PDG/NuFIT data to 0.01-0.5%. The chirality-flip running discovered at iter-31..36 is a LATTICE-INTERNAL phenomenon: the bounded-operator lattice readouts run with finite N, but the canonical anchor (= continuum vacuum) identification is the physically correct one for low-energy observables. The two findings are complementary: (a) lattice-internal running of causal-wave operators with finite N, (b) canonical anchor closures for low-energy physics. The chirality-flip does NOT invalidate any existing MD-36..62 closure; it CLARIFIES that the canonical values are anchor-side identifications of operators whose lattice readings run with N. The 8/144 = 1/18 family-bilinear leakage (a_vac = 15/16 + 1/18) structurally explains the gamma^2/24 1-loop correction to beta_pi observed at iter-31."
+}

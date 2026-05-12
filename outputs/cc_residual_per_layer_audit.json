@@ -1,0 +1,190 @@
+{
+  "schema_version": "2.0.0",
+  "stand": "2026-05-11",
+  "audit": "Per-layer decomposition of 122-orders cosmological-constant cascade (eight-layer chain)",
+  "per_layer_breakdown": [
+    {
+      "tag": "L1",
+      "name": "EW-hierarchy suppression",
+      "log10": -66.78
+    },
+    {
+      "tag": "L2",
+      "name": "Lattice vacuum regularisation",
+      "log10": -1.0
+    },
+    {
+      "tag": "L3",
+      "name": "Gamow vacuum sequestering",
+      "log10": -8.25
+    },
+    {
+      "tag": "L4",
+      "name": "Spectral-dimension IR screening",
+      "log10": -2.45
+    },
+    {
+      "tag": "L5",
+      "name": "Gravitational fraction",
+      "log10": -8.64
+    },
+    {
+      "tag": "L6",
+      "name": "Structured occupancy filtering (H194)",
+      "log10": -30.35
+    },
+    {
+      "tag": "H195",
+      "name": "Zero-mode cancellation",
+      "log10": -4.28
+    },
+    {
+      "tag": "H196",
+      "name": "Gravitational backreaction screening",
+      "log10": -1.25
+    }
+  ],
+  "sum_log10_orders": -123.0,
+  "ratio_predicted_over_observed": 0.8923208232860144,
+  "log10_residual_OoM": -0.04947897215723884,
+  "sensitivity_ranking": {
+    "layer_with_largest_sensitivity_at_pct_perturbation": "L6 (L_occ_single)",
+    "L6_perturbation_to_orders_ratio": "+10% perturbation -> +0.331 orders",
+    "interpretation": "Layer 6 (occupancy filter) is the dominant sensitivity; the -0.05 OoM finite-N residual sits inside the L5 finite-N -> continuum spread of 0.58 OoM."
+  },
+  "system_R_algebraic_limit_candidates": {
+    "L1": {
+      "form": "(v_EW/M_Pl)^4",
+      "log10": -66.78143722683228,
+      "system_R_status": "physical (v_EW from P1, M_Pl from CODATA)"
+    },
+    "L2": {
+      "form": "log10(N_gen*gamma + (d+N_gen)*gamma^2) = log10(37/100)",
+      "log10": -0.43179827593300496,
+      "system_R_status": "STRUCT_systemR (sub-percent rational)"
+    },
+    "L3": {
+      "form": "-(2*(d+1)*N_gen - (2*d+N_gen))/ln(10) = -19/ln(10)",
+      "log10": -8.251595156161784,
+      "system_R_status": "STRUCT_systemR (0.02% rational)"
+    },
+    "L4": {
+      "form": "-(d+N_gen)^2/(d*(d+1)) = -49/20",
+      "log10": -2.45,
+      "system_R_status": "EXACT under R"
+    },
+    "L5": {
+      "form": "E_geom/E_res (lattice snapshots; finite-N vs continuum)",
+      "system_R_status": "structural via lattice snapshots"
+    },
+    "L6": {
+      "form": "-[N_gen/gamma + (d+N_gen)*(d+1)*gamma^2] = -30.35",
+      "log10": -30.35,
+      "system_R_status": "EXACT under R"
+    },
+    "H195": {
+      "form": "-[(d+1)*alpha_xi - 2*(2*d+N_gen)*gamma^2] = -428/100",
+      "log10": -4.28,
+      "system_R_status": "EXACT under R"
+    },
+    "H196": {
+      "form": "-(d+1)/d = -5/4",
+      "log10": -1.25,
+      "system_R_status": "EXACT under R"
+    }
+  },
+  "rho_obs_anchors": {
+    "Planck2018": 2.49e-47,
+    "Pantheon_Brout2022": 2.83e-47
+  },
+  "eps_sync2_identification": {
+    "needed_correction_OoM": 0.04947897215723884,
+    "eps_sync2_OoM": 0.05,
+    "match_pct": 1.0420556855223195,
+    "structural_argument": "The eight-layer chain treats two cancellation/screening mechanisms: H195 cancels boson-fermion zero-mode pairs (Pauli-Zeldovich analogue) and H196 screens gravitationally-coupled vacuum insertions (Schwinger-Dyson resummation). A third class of vacuum modes -- the synchronization-channel phase-coherence modes between defects -- is neither a particle pair (no anti-partner for Pauli-Zeldovich cancellation) nor a graviton-coupled mode (no Dyson resummation in the gravitational propagator). The sync channel therefore contributes a multiplicative un-cancellation factor to the vacuum energy after H195+H196, whose magnitude is fixed by the sync-channel coupling strength eps_sync^2 = gamma/2 = 1/20 (P2 fluctuation-dissipation identity C_3). The observed log10 residual of -0.05 OoM matches +eps_sync^2 = +1/20 OoM as the predicted log10-multiplier of the sync-channel un-cancellation.",
+    "candidate_layer_name": "H_sync (synchronization-channel un-cancellation)",
+    "candidate_layer_formula": "rho_after_H_sync = rho_after_H196 * 10^(eps_sync^2)",
+    "candidate_layer_log10_contribution_OoM": 0.05,
+    "status": "STRUCTURAL IDENTIFICATION (pending rigorous derivation). The structural argument above identifies eps_sync^2 as the natural System-R primitive that closes the eight-layer residual. The rigorous derivation requires showing that (a) the sync channel is genuinely independent of the H195 particle-pair and H196 graviton-coupling sectors, and (b) its un-cancellation log10-multiplier equals eps_sync^2 (not its linear value). Both steps are open follow-up; the identification is registered here as a publication-ready ninth-layer candidate, not promoted to a closed layer of the 8-layer chain."
+  },
+  "h197_retraction": {
+    "status": "RETRACTED_2026_05_11",
+    "note": "The previous H197 layer is retracted: the 122-OoM hierarchy is fully accounted for by L1..L6 + H195 + H196. See data/cosmological_constant_closure.json h197_retraction_2026_05_11 block for the full record."
+  },
+  "honest_verdict": "Eight-layer chain closes the 122-OoM hierarchy at finite-N P1 to residual -0.05 OoM (ratio 0.89, 11% below Planck), zero fitted parameters. The L5 finite-N -> continuum spread of 0.58 OoM is the leading theory systematic on the closure tier. The eps_sync^2 = gamma/2 identification of the residual is structurally suggestive but lacks an external derivation; it is registered as follow-up, not promoted to a closure layer.",
+  "per_regime_partial_inventory": {
+    "P1": {
+      "orders_explained": 122.99,
+      "log10_residual": -0.05,
+      "source": "data/cosmological_constant_closure.json (P1)",
+      "cascade_complete": true
+    },
+    "P3": {
+      "E_geom": 0.00025775039743282445,
+      "E_res": 19443.781110088283,
+      "layer5_gravitational_fraction_log10": -7.877581379718019,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    },
+    "P4": {
+      "E_geom": 0.00012569431372793792,
+      "E_res": 14523.249087841874,
+      "layer5_gravitational_fraction_log10": -8.062748154869842,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    },
+    "P5": {
+      "E_geom": 4.3229426687715016e-05,
+      "E_res": 21595.065663220666,
+      "layer5_gravitational_fraction_log10": -8.698575053004772,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    },
+    "P6": {
+      "E_geom": 2.4267847823956805e-05,
+      "E_res": 25649.585837203842,
+      "layer5_gravitational_fraction_log10": -9.024049094013098,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    },
+    "P7": {
+      "E_geom": 2.2254301149224753e-05,
+      "E_res": 10432.600281516763,
+      "layer5_gravitational_fraction_log10": -8.670978607278933,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    },
+    "P8": {
+      "E_geom": 1.9241748063380244e-05,
+      "E_res": 17405.041170873308,
+      "layer5_gravitational_fraction_log10": -8.956430530894297,
+      "source": "cc_dressing_per_regime_extended.json (canonical ladder)",
+      "cascade_complete": false,
+      "layer_5_complete": true,
+      "missing_for_full_cascade": [
+        "upstream HBR, PG-02, CSP-03, TAO-05, DQC outputs needed for L1, L3, L4, L6, H195, H196"
+      ]
+    }
+  },
+  "per_regime_note": "Full eight-layer cascade currently bundled only for P1. Layer 5 alone is available on the canonical P5/P5N lattice-N ladder for the L5 finite-N -> continuum extrapolation."
+}

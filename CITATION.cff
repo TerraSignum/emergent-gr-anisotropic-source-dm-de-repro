@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Anisotropic source dark matter / dark energy from emergent gravity"
+message: "If you use this software or data, please cite it using the metadata below."
+authors:
+  - family-names: Bucciarelli
+    given-names: Sandro
+version: 0.1.0
+date-released: 2026-05-03
+license: MIT
+repository-code: "https://github.com/[anonymized]/emergent-gr-anisotropic-source-dm-de-repro"
+references:
+  - type: article
+    title: "Anisotropic source decomposition: dark matter, dark energy, cosmological-constant nine-layer dressing"
+    authors:
+      - family-names: Bucciarelli
+        given-names: Sandro
+    year: 2026
+    notes: "Accompanying preprint; see paper/ in this repository."

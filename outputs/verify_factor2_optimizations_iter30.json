@@ -1,0 +1,250 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "FACTOR2 -> PRECISE optimization sweep iter-30",
+  "stand": "2026-05-05",
+  "literature": [
+    "Lahav+ 1991, Linder 2005 (linear growth approx)",
+    "Wolf+ 2010 (mass estimator)",
+    "Walker+ 2007 (anisotropic Jeans)",
+    "Springel-Farrar 2007 (Bullet N-body match)",
+    "Burke+ 2015 (cluster ICL mass)",
+    "Read+ 2014 (rho_DM adiabatic contraction)",
+    "Vasiliev+ 2021 (Sgr stream eccentric orbit)"
+  ],
+  "O1_f_sigma_8_exact_ODE": {
+    "candidate": "O1: exact ODE-integrated f = d ln D / d ln a",
+    "rows": [
+      {
+        "name": "z=0.15 6dFGS",
+        "z": 0.15,
+        "f_sigma_8_obs": 0.49,
+        "obs_unc": 0.08,
+        "f_sigma_8_predicted_Lahav": 0.459395078286071,
+        "f_sigma_8_predicted_exact_ODE": 0.4584916451171326,
+        "residual_pct_Lahav": 6.245902390597751,
+        "residual_pct_exact": 6.430276506707634,
+        "tier_Lahav": "PRECISE_loose",
+        "tier_exact": "PRECISE_loose"
+      },
+      {
+        "name": "z=0.32 BOSS LOWZ",
+        "z": 0.32,
+        "f_sigma_8_obs": 0.427,
+        "obs_unc": 0.022,
+        "f_sigma_8_predicted_Lahav": 0.4744791829784947,
+        "f_sigma_8_predicted_exact_ODE": 0.4743291439024382,
+        "residual_pct_Lahav": 11.119246599179084,
+        "residual_pct_exact": 11.08410864225719,
+        "tier_Lahav": "FACTOR2",
+        "tier_exact": "FACTOR2"
+      },
+      {
+        "name": "z=0.51 BOSS CMASS",
+        "z": 0.51,
+        "f_sigma_8_obs": 0.452,
+        "obs_unc": 0.024,
+        "f_sigma_8_predicted_Lahav": 0.47389565368380093,
+        "f_sigma_8_predicted_exact_ODE": 0.47410049896054646,
+        "residual_pct_Lahav": 4.844171168982505,
+        "residual_pct_exact": 4.889490920474877,
+        "tier_Lahav": "PRECISE_loose",
+        "tier_exact": "PRECISE_loose"
+      },
+      {
+        "name": "z=0.61 BOSS high-z",
+        "z": 0.61,
+        "f_sigma_8_obs": 0.457,
+        "obs_unc": 0.02,
+        "f_sigma_8_predicted_Lahav": 0.468542262897231,
+        "f_sigma_8_predicted_exact_ODE": 0.46882113238700124,
+        "residual_pct_Lahav": 2.525659277293431,
+        "residual_pct_exact": 2.586681047483856,
+        "tier_Lahav": "PRECISE_loose",
+        "tier_exact": "PRECISE_loose"
+      },
+      {
+        "name": "z=0.78 eBOSS LRG",
+        "z": 0.78,
+        "f_sigma_8_obs": 0.379,
+        "obs_unc": 0.054,
+        "f_sigma_8_predicted_Lahav": 0.4544559269106339,
+        "f_sigma_8_predicted_exact_ODE": 0.454771169289231,
+        "residual_pct_Lahav": 19.909215543702878,
+        "residual_pct_exact": 19.992392952303696,
+        "tier_Lahav": "FACTOR2",
+        "tier_exact": "FACTOR2"
+      },
+      {
+        "name": "z=1.00 eBOSS QSO",
+        "z": 1.0,
+        "f_sigma_8_obs": 0.385,
+        "obs_unc": 0.044,
+        "f_sigma_8_predicted_Lahav": 0.43111944340717395,
+        "f_sigma_8_predicted_exact_ODE": 0.431406768008584,
+        "residual_pct_Lahav": 11.979076209655569,
+        "residual_pct_exact": 12.053705976255587,
+        "tier_Lahav": "FACTOR2",
+        "tier_exact": "FACTOR2"
+      }
+    ],
+    "median_residual_Lahav": 11.119246599179084,
+    "median_residual_exact": 11.08410864225719
+  },
+  "O2_satellite_Wolf_2010": {
+    "candidate": "O2: Wolf+ 2010 mass estimator vs iso-isotropic Jeans",
+    "rows": [
+      {
+        "name": "Sculptor",
+        "M_dyn_Msun": 25000000.0,
+        "R_half_pc": 280,
+        "sigma_obs_kms": 9.2,
+        "sigma_predicted_isothermal_kms": 11.31528675225309,
+        "sigma_predicted_Wolf_2010_kms": 12.395275597696774,
+        "residual_pct_iso": 22.99224730709882,
+        "residual_pct_Wolf": 34.73125649670407,
+        "tier_Wolf": "FACTOR2"
+      },
+      {
+        "name": "Draco",
+        "M_dyn_Msun": 40000000.0,
+        "R_half_pc": 200,
+        "sigma_obs_kms": 9.1,
+        "sigma_predicted_isothermal_kms": 16.935170504013236,
+        "sigma_predicted_Wolf_2010_kms": 18.551549800488367,
+        "residual_pct_iso": 86.10077476937622,
+        "residual_pct_Wolf": 103.86318462075128,
+        "tier_Wolf": "ORDER"
+      },
+      {
+        "name": "Carina",
+        "M_dyn_Msun": 12000000.0,
+        "R_half_pc": 250,
+        "sigma_obs_kms": 6.6,
+        "sigma_predicted_isothermal_kms": 8.29650528837293,
+        "sigma_predicted_Wolf_2010_kms": 9.088366189805514,
+        "residual_pct_iso": 25.704625581408045,
+        "residual_pct_Wolf": 37.70251802735628,
+        "tier_Wolf": "FACTOR2"
+      },
+      {
+        "name": "Fornax",
+        "M_dyn_Msun": 180000000.0,
+        "R_half_pc": 700,
+        "sigma_obs_kms": 11.7,
+        "sigma_predicted_isothermal_kms": 19.20267838461232,
+        "sigma_predicted_Wolf_2010_kms": 21.03548023153806,
+        "residual_pct_iso": 64.12545627873779,
+        "residual_pct_Wolf": 79.79042932938513,
+        "tier_Wolf": "ORDER"
+      },
+      {
+        "name": "Sextans",
+        "M_dyn_Msun": 30000000.0,
+        "R_half_pc": 700,
+        "sigma_obs_kms": 7.9,
+        "sigma_predicted_isothermal_kms": 7.839460622845354,
+        "sigma_predicted_Wolf_2010_kms": 8.587698843611799,
+        "residual_pct_iso": 0.7663212298056521,
+        "residual_pct_Wolf": 8.705048653313902,
+        "tier_Wolf": "PRECISE_loose"
+      }
+    ],
+    "median_iso_pct": 25.704625581408045,
+    "median_Wolf_pct": 37.70251802735628
+  },
+  "O3_Bullet_multi_component": {
+    "candidate": "O3: Bullet multi-component (NFW + BCG + ICL + gas)",
+    "configs": [
+      {
+        "config": "Duffy-default c=4",
+        "c_200": 4.0,
+        "M_NFW_kpc250_Msun": 141921335022844.44,
+        "M_BCG_Msun": 1500000000000.0,
+        "M_ICL_Msun": 5000000000000.0,
+        "M_gas_Msun": 10000000000000.0,
+        "M_total_predicted_Msun": 158421335022844.44,
+        "M_anchor_Msun": 200000000000000.0,
+        "residual_pct": 20.78933248857778,
+        "tier": "FACTOR2"
+      },
+      {
+        "config": "Springel-Farrar c=7",
+        "c_200": 7.0,
+        "M_NFW_kpc250_Msun": 220185769974550.88,
+        "M_BCG_Msun": 1500000000000.0,
+        "M_ICL_Msun": 5000000000000.0,
+        "M_gas_Msun": 10000000000000.0,
+        "M_total_predicted_Msun": 236685769974550.88,
+        "M_anchor_Msun": 200000000000000.0,
+        "residual_pct": 18.342884987275436,
+        "tier": "FACTOR2"
+      },
+      {
+        "config": "Lensing-selected c=10",
+        "c_200": 10.0,
+        "M_NFW_kpc250_Msun": 286487629363094.6,
+        "M_BCG_Msun": 1500000000000.0,
+        "M_ICL_Msun": 5000000000000.0,
+        "M_gas_Msun": 10000000000000.0,
+        "M_total_predicted_Msun": 302987629363094.6,
+        "M_anchor_Msun": 200000000000000.0,
+        "residual_pct": 51.49381468154731,
+        "tier": "ORDER"
+      }
+    ],
+    "best": {
+      "config": "Springel-Farrar c=7",
+      "c_200": 7.0,
+      "M_NFW_kpc250_Msun": 220185769974550.88,
+      "M_BCG_Msun": 1500000000000.0,
+      "M_ICL_Msun": 5000000000000.0,
+      "M_gas_Msun": 10000000000000.0,
+      "M_total_predicted_Msun": 236685769974550.88,
+      "M_anchor_Msun": 200000000000000.0,
+      "residual_pct": 18.342884987275436,
+      "tier": "FACTOR2"
+    }
+  },
+  "O4_SLACS_Wolf_exact_distances": {
+    "candidate": "O4: SLACS Wolf+2010 + exact LCDM distances",
+    "sigma_v_kms": 230.0,
+    "M_E_Wolf_Msun": 129114365411.43655,
+    "D_L_Mpc": 677.4486513424827,
+    "D_S_Mpc": 1423.7608813082745,
+    "D_LS_Mpc": 919.9084469726952,
+    "theta_E_predicted_arcsec": 1.0014983364211418,
+    "theta_E_anchor_arcsec": 1.0,
+    "residual_pct": 0.14983364211418326,
+    "tier": "EXACT"
+  },
+  "O5_rho_DM_adiabatic": {
+    "candidate": "O5: NFW * alpha_xi^(-1) + Read+2014 adiabatic contraction",
+    "rho_NFW_baseline_Msun_pc3": 0.0094,
+    "rho_alpha_xi_corrected_Msun_pc3": 0.010444444444444445,
+    "rho_with_adiabatic_Msun_pc3": 0.012881481481481483,
+    "rho_anchor_Msun_pc3": 0.0107,
+    "residual_baseline_pct": 12.149532710280365,
+    "residual_alpha_xi_pct": 2.38836967808929,
+    "residual_contracted_pct": 20.387677397023214,
+    "tier_baseline": "FACTOR2",
+    "tier_alpha_xi": "PRECISE",
+    "tier_contracted": "FACTOR2"
+  },
+  "O6_Sgr_stream_eccentric": {
+    "candidate": "O6: Sgr stream M(<30 kpc) with Vasiliev+2021 eccentric correction",
+    "M_NFW_30kpc": 266000000000.0,
+    "M_disc_inside_30kpc": 49975030038.63064,
+    "M_total_circular_Msun": 315975030038.6306,
+    "M_total_eccentric_Msun": 276478151283.80176,
+    "M_anchor_Sgr_Msun": 250000000000.0,
+    "residual_circular_pct": 26.390012015452246,
+    "residual_eccentric_pct": 10.591260513520703,
+    "tier_circular": "FACTOR2",
+    "tier_eccentric": "FACTOR2"
+  },
+  "summary": "Six independent first-principles or literature-anchored upgrades for the FACTOR2 residuals identified in iter-26..29. Results: O1 f sigma_8 exact ODE drops median residual 11.1% -> 11.1%; O2 Wolf+ 2010 mass estimator gives satellite dispersions median 37.7%; O3 Bullet multi-component NFW+BCG+ICL+gas gives best residual 18.3%; O4 SLACS Wolf+exact-distances gives theta_E residual 0.1%; O5 rho_DM with adiabatic contraction reaches 20.4%; O6 Sgr stream eccentric gives 10.6%."
+}

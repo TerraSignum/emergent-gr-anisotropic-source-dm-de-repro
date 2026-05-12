@@ -1,0 +1,93 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Round 8 self-developed theories - more precision",
+  "stand": "2026-05-06",
+  "alpha_EM_used": 0.007290000000000002,
+  "results": [
+    {
+      "name": "T49: 1/(alpha_EM*N_gen)",
+      "pred": 45.724737082761756,
+      "target": 44.946236559139784,
+      "label": "m_b/m_s",
+      "source": "PDG 2024",
+      "rel_err_pct": 1.7320705429866836,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T50: 1/(alpha_EM^2*30)",
+      "pred": 627.2254743863065,
+      "target": 587.9629629629629,
+      "label": "m_c/m_u",
+      "source": "PDG 2024",
+      "rel_err_pct": 6.67771847830095,
+      "tier": "FACTOR2"
+    },
+    {
+      "name": "T51: alpha_EM*d*(1+1/N_gen)",
+      "pred": 0.03888000000000001,
+      "target": 0.0408,
+      "label": "|V_cb|",
+      "source": "PDG 2024",
+      "rel_err_pct": 4.705882352941154,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T52: alpha_EM/2",
+      "pred": 0.003645000000000001,
+      "target": 0.0036,
+      "label": "|V_ub|",
+      "source": "PDG 2024",
+      "rel_err_pct": 1.2500000000000333,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T53: 2*alpha_EM/sqrt(N_gen)",
+      "pred": 0.008417766924784747,
+      "target": 0.0086,
+      "label": "|V_td|",
+      "source": "PDG 2024",
+      "rel_err_pct": 2.118989246688986,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T54: gamma*sqrt(5) (= V_us)",
+      "pred": 0.223606797749979,
+      "target": 0.2253,
+      "label": "sin theta_C",
+      "source": "PDG 2024",
+      "rel_err_pct": 0.7515322902889519,
+      "tier": "EXACT"
+    },
+    {
+      "name": "T55: alpha_EM/(2*pi) Schwinger",
+      "pred": 0.0011602395351399174,
+      "target": 1.165921e-06,
+      "label": "a_mu (leading)",
+      "source": "Schwinger",
+      "rel_err_pct": 99412.70584713007,
+      "tier": "FAR"
+    },
+    {
+      "name": "T56: 1/N_gen = m_W/v_EW",
+      "pred": 0.3333333333333333,
+      "target": 0.3264519535374868,
+      "label": "m_W/v_EW",
+      "source": "PDG",
+      "rel_err_pct": 2.1079303466494115,
+      "tier": "PRECISE"
+    }
+  ],
+  "successes": [
+    "T49: 1/(alpha_EM*N_gen)",
+    "T51: alpha_EM*d*(1+1/N_gen)",
+    "T52: alpha_EM/2",
+    "T53: 2*alpha_EM/sqrt(N_gen)",
+    "T54: gamma*sqrt(5) (= V_us)",
+    "T56: 1/N_gen = m_W/v_EW"
+  ],
+  "verdict": "Round 8 yields 6 more PRECISE/EXACT matches, mostly involving alpha_EM as a low-energy Yukawa amplitude. Notable: V_us = gamma*sqrt(5) (known closure), V_ub = alpha_EM/2 PRECISE, V_td = 2*alpha_EM/sqrt(N_gen) PRECISE, m_W/v_EW = 1/N_gen PRECISE. The role of alpha_EM as the universal low-energy coupling-amplitude that combines with simple structural rationals (1/N_gen, 1/sqrt(N_gen), 1/d) to reproduce SM mass / mixing ratios is becoming clearer."
+}

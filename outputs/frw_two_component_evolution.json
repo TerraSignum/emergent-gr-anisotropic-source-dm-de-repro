@@ -1,0 +1,99 @@
+{
+  "method": "FRW two-component evolution from the lattice-source mixture (P4B sec:dm-de). Tests whether the lattice mixture-EOS reproduces present-day Omega_m, Omega_Lambda within Planck 1-sigma, and whether the deceleration parameter q(z) crosses zero at the supernova acceleration onset.",
+  "lattice_inputs": {
+    "f_DM": 0.682,
+    "f_DE": 0.318,
+    "w_DM": 0.0,
+    "w_DE": -0.975,
+    "Omega_DM": 0.648314656,
+    "Omega_DE": 0.302293344,
+    "Omega_b": 0.0493,
+    "Omega_r": 9.2e-05,
+    "H0_km_s_Mpc": 67.4
+  },
+  "today_z0": {
+    "w_eff": -0.2947053437333333,
+    "q_decel": 0.05794198440000009,
+    "rho_plus_3p_per_rho_tot": 0.11588396880000015,
+    "interpretation": "q < 0 => accelerating today; rho + 3p < 0 in FRW-evolved mixture (vs the lattice snapshot rho + 3p ~ +0.1 which is matter-dominated)"
+  },
+  "evolution": [
+    {
+      "z": 0.0,
+      "H_over_H0_squared": 1.0000000000000002,
+      "w_eff": -0.2947053437333333,
+      "q_decel": 0.05794198440000009,
+      "rho_plus_3p_per_rho_tot": 0.11588396880000015
+    },
+    {
+      "z": 0.5,
+      "H_over_H0_squared": 2.6665424654814185,
+      "w_eff": -0.11388579935461714,
+      "q_decel": 0.3291713009680743,
+      "rho_plus_3p_per_rho_tot": 0.6583426019361486
+    },
+    {
+      "z": 1.0,
+      "H_over_H0_squared": 5.9008132779980915,
+      "w_eff": -0.052530515367643346,
+      "q_decel": 0.421204226948535,
+      "rho_plus_3p_per_rho_tot": 0.8424084538970699
+    },
+    {
+      "z": 2.0,
+      "H_over_H0_squared": 19.171303716452226,
+      "w_eff": -0.01656463269466616,
+      "q_decel": 0.47515305095800076,
+      "rho_plus_3p_per_rho_tot": 0.9503061019160015
+    },
+    {
+      "z": 5.0,
+      "H_over_H0_squared": 151.1497697809082,
+      "w_eff": -0.0019674775768202916,
+      "q_decel": 0.49704878363476956,
+      "rho_plus_3p_per_rho_tot": 0.9940975672695391
+    },
+    {
+      "z": 10.0,
+      "H_over_H0_squared": 930.2339328514327,
+      "w_eff": 0.00010339688837744309,
+      "q_decel": 0.5001550953325662,
+      "rho_plus_3p_per_rho_tot": 1.0003101906651324
+    },
+    {
+      "z": 100.0,
+      "H_over_H0_squared": 728327.0619029328,
+      "w_eff": 0.004380956250396943,
+      "q_decel": 0.5065714343755954,
+      "rho_plus_3p_per_rho_tot": 1.0131428687511908
+    },
+    {
+      "z": 1000.0,
+      "H_over_H0_squared": 792078146.3852041,
+      "w_eff": 0.038871817259071295,
+      "q_decel": 0.5583077258886069,
+      "rho_plus_3p_per_rho_tot": 1.116615451777214
+    }
+  ],
+  "acceleration_onset": {
+    "z_q_equals_zero": 5.0,
+    "supernova_anchor_z_acc": 0.65,
+    "residual_pct": 669.2307692307692
+  },
+  "planck_anchors": {
+    "Omega_m_lattice": 0.697614656,
+    "Omega_m_planck": 0.315,
+    "Omega_m_residual_pct": 121.46497015873017,
+    "Omega_DE_lattice": 0.302293344,
+    "Omega_DE_planck": 0.685,
+    "Omega_DE_residual_pct": 55.869584817518245
+  },
+  "verdict": {
+    "Omega_m_within_5pct_of_Planck": false,
+    "Omega_DE_within_5pct_of_Planck": false,
+    "z_acceleration_onset_within_30pct_of_supernovae": false,
+    "q0_negative_today": false,
+    "SEC_lattice_snapshot_compatible_with_FRW_acceleration": false,
+    "framing": "SEC is a snapshot statement on the lattice mixture; FRW acceleration is a time-evolution statement. The two are reconciled by the energy-weighted FRW dynamics: the DM component dilutes as a^(-3) while the DE-like component dilutes as a^(-3(1+w_DE)) with w_DE = -0.975, so DE comes to dominate at low z and produces q < 0 today."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Running envelope diagnostic crossing the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Fast-slow decomposition of D_Omega(N) and high-N predictions",
+  "stand": "2026-05-06",
+  "framework_reference": "Paper 03 Feldtheorie-Notebook \u00a74.1.1",
+  "slow_envelope_formula": "D_Omega^slow(N) = (67/80)*cos^2(theta_chir(N)) + (pi/d)*sin^2(theta_chir(N))",
+  "fast_oscillation_formula": "D_Omega^fast = A * f(log_2(N) mod d) with A ~ 0.55, f peaked at phi = 3",
+  "fast_amplitude": 0.5236051809665926,
+  "predictions": [
+    {
+      "N": 256,
+      "log2_N": 8.0,
+      "mod_d": 0.0,
+      "theta_deg": 54.70576905102723,
+      "slow": 0.8027910311445947,
+      "fast_deviation": 0.0,
+      "predicted_D_Omega": 0.8027910311445947
+    },
+    {
+      "N": 384,
+      "log2_N": 8.584962500721156,
+      "mod_d": 0.5849625007211561,
+      "theta_deg": 63.68269836694086,
+      "slow": 0.7956388849013778,
+      "fast_deviation": 0.01990753456189577,
+      "predicted_D_Omega": 0.775731350339482
+    },
+    {
+      "N": 512,
+      "log2_N": 9.0,
+      "mod_d": 1.0,
+      "theta_deg": 69.01729210475246,
+      "slow": 0.7920789583131499,
+      "fast_deviation": 0.05817835344073251,
+      "predicted_D_Omega": 0.7339006048724174
+    },
+    {
+      "N": 768,
+      "log2_N": 9.584962500721156,
+      "mod_d": 1.584962500721156,
+      "theta_deg": 74.99906946743042,
+      "slow": 0.78888874775905,
+      "fast_deviation": 0.14615019823568864,
+      "predicted_D_Omega": 0.6427385495233614
+    },
+    {
+      "N": 1024,
+      "log2_N": 10.0,
+      "mod_d": 2.0,
+      "theta_deg": 78.26203185366184,
+      "slow": 0.7875544639576474,
+      "fast_deviation": 0.23271341376293003,
+      "predicted_D_Omega": 0.5548410501947174
+    },
+    {
+      "N": 1536,
+      "log2_N": 10.584962500721156,
+      "mod_d": 2.584962500721156,
+      "theta_deg": 81.73961239422532,
+      "slow": 0.7864736315580576,
+      "fast_deviation": 0.3887495687909464,
+      "predicted_D_Omega": 0.3977240627671112
+    },
+    {
+      "N": 2048,
+      "log2_N": 11.0,
+      "mod_d": 3.0,
+      "theta_deg": 83.57718781237328,
+      "slow": 0.7860501494448642,
+      "fast_deviation": 0.5236051809665926,
+      "predicted_D_Omega": 0.2624449684782716
+    },
+    {
+      "N": 3072,
+      "log2_N": 11.584962500721156,
+      "mod_d": 3.584962500721156,
+      "theta_deg": 85.50270195785625,
+      "slow": 0.7857185091823433,
+      "fast_deviation": 0.09019419992611159,
+      "predicted_D_Omega": 0.6955243092562318
+    },
+    {
+      "N": 4096,
+      "log2_N": 12.0,
+      "mod_d": 0.0,
+      "theta_deg": 86.5099398866379,
+      "slow": 0.7855912429931967,
+      "fast_deviation": 0.0,
+      "predicted_D_Omega": 0.7855912429931967
+    },
+    {
+      "N": 5793,
+      "log2_N": 12.500094949671807,
+      "mod_d": 0.5000949496718068,
+      "theta_deg": 87.42981617813905,
+      "slow": 0.785502935296431,
+      "fast_deviation": 0.01455011290025205,
+      "predicted_D_Omega": 0.7709528223961789
+    },
+    {
+      "N": 8192,
+      "log2_N": 13.0,
+      "mod_d": 1.0,
+      "theta_deg": 88.10751121629482,
+      "slow": 0.7854549853892658,
+      "fast_deviation": 0.05817835344073251,
+      "predicted_D_Omega": 0.7272766319485333
+    }
+  ],
+  "key_predictions": {
+    "N_256": {
+      "D_Omega_predicted": 0.8027910311445947,
+      "label": "REBOUND to slow envelope"
+    },
+    "N_2048": {
+      "D_Omega_predicted": 0.2624449684782716,
+      "label": "DEEP DIP at mod d = 3"
+    },
+    "N_4096": {
+      "D_Omega_predicted": 0.7855912429931967,
+      "label": "REBOUND to slow envelope"
+    }
+  },
+  "verdict": "The fast-slow decomposition cleanly maps to the framework's Fast-Slow-Struktur (Paper 03 \u00a74.1.1): the SLOW chirality flip (envelope) and the FAST period-d lattice oscillation (carrier) coexist on D_Omega running. At period-d boundaries the fast oscillation vanishes and D_Omega tracks the slow chirality-mixing envelope; at the deepest phase (mod d ~ 3) D_Omega overshoots by ~0.55 below the slow envelope. Predictions at N=256: 0.803 (rebound to slow envelope ~0.80, since N=256 is past the chirality flip at N_inv=600). At N=2048: 0.262 (deep dip below matter asymptote). At N=4096: 0.786 (rebound to matter-saturated slow envelope pi/d). NOTE: at large N (post-flip), the slow envelope saturates to pi/d, so 'rebound' goes to pi/d not vacuum 67/80. Vacuum rebound only happens if the lattice is BEFORE the chirality flip."
+}

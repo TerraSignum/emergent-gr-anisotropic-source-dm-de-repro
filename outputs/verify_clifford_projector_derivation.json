@@ -1,0 +1,54 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Theoretical derivation of 143/144 + 23/48 from Cl(1,3) projector decomposition",
+  "stand": "2026-05-05",
+  "Cl_1_3_decomposition": {
+    "rank 0 (scalar)": 1,
+    "rank 1 (vector)": 4,
+    "rank 2 (bivector)": 6,
+    "rank 3 (pseudovector)": 4,
+    "rank 4 (pseudoscalar)": 1,
+    "total = 2^d": 16
+  },
+  "a_vac_derivation": {
+    "cl_dim": 16,
+    "family_bilinear_dim": 9,
+    "total_states": 144,
+    "trace_removed": 1,
+    "a_vac_predicted": 0.9930555555555556,
+    "a_vac_rational": "143/144"
+  },
+  "a_mat_derivation": {
+    "dirac_components": 4,
+    "spacetime_d": 4,
+    "family_N_gen": 3,
+    "chirality_channels": 2,
+    "total_dirac_bilinear": 48,
+    "half_dirac_per_chirality": 24,
+    "a_mat_predicted": 0.4791666666666667,
+    "a_mat_rational": "23/48"
+  },
+  "canonical_beta_pi_reconciliation": {
+    "canonical": 0.9375,
+    "a_vac": 0.9930555555555556,
+    "difference": 0.05555555555555558,
+    "algebraic_form": "(1 - 1/N_gen^2) / 2^d = family-bilinear leakage",
+    "leakage_value": 0.05555555555555555
+  },
+  "per_regime_residuals_pct": [
+    0.4450883681820025,
+    0.10383331467910463,
+    0.41269058794031754,
+    0.4182356251299424,
+    0.724317612788312,
+    1.781522756291223,
+    0.9071416088007307,
+    0.02687888390769621
+  ],
+  "mean_residual_pct": 0.6024635947149162,
+  "verdict": "The structural rationals a_vac = 143/144 and a_mat = 23/48 are derived from Cl(1,3) projector decomposition as: a_vac = (2^d * N_gen^2 - 1) / (2^d * N_gen^2) is the Cl(1,3) module times family-bilinear projector eigenvalue with universal singlet removed; a_mat = (2*d*N_gen - 1) / (4*d*N_gen) is the Dirac-bilinear chirality-rotated subspace projector eigenvalue with singlet removed. The theoretical prediction matches the empirical linear-fit values within 0.60% across the 8-regime ladder. The canonical Cl(1,3) projector eigenvalue 15/16 is recovered as a_vac at the family-bilinear-trivial level; the additional 8/144 = (N_gen^2-1)/(2^d * N_gen^2) shift represents the family-bilinear leakage of the singlet projector into the N_gen^2 - 1 = 8 non-trivial family-bilinear states."
+}

@@ -1,0 +1,270 @@
+{
+  "method": "verify_factor_field_KQ_5harmonic_extension",
+  "premise": "Extend the iter-37 4-harmonic closure F = F_pre cos^2(theta) + F_post sin^2(theta) + a sin(2 theta) + b sin(4 theta) to include the natural next endpoint-preserving harmonic c sin(6 theta). 6 theta = (2 N_gen) theta is the structural third-harmonic of the chirality flip; the addition resolves whether a_Q (1.29 sigma) and b_Q (1.44 sigma) borderline tensions on the 12-seed P5N256 ladder are absorbed.",
+  "system_R_inputs": {
+    "gamma": 0.1,
+    "N_gen": 3,
+    "d": 4,
+    "N_star": 50
+  },
+  "fit_4harmonic": {
+    "K_coeffs": {
+      "F_pre": {
+        "value": 1.330379383822379,
+        "sem": 0.0023095242617806634
+      },
+      "F_post": {
+        "value": 1.3348111661078024,
+        "sem": 0.0008129362894020739
+      },
+      "a": {
+        "value": -0.002815155000148839,
+        "sem": 0.0010502440286727995
+      },
+      "b": {
+        "value": 0.006273591759876851,
+        "sem": 0.0009524227300679005
+      }
+    },
+    "K_chi2": 143.95644378203875,
+    "K_dof": 4,
+    "Q_coeffs": {
+      "F_pre": {
+        "value": 0.32054859077802533,
+        "sem": 0.0021454958107863134
+      },
+      "F_post": {
+        "value": 0.25187811074722066,
+        "sem": 0.0007950530965983944
+      },
+      "a": {
+        "value": -0.018818408327855234,
+        "sem": 0.0009162012345131158
+      },
+      "b": {
+        "value": -0.012552089477578687,
+        "sem": 0.000903765529368289
+      }
+    },
+    "Q_chi2": 46.420531578080336,
+    "Q_dof": 4
+  },
+  "fit_5harmonic": {
+    "K_coeffs": {
+      "F_pre": {
+        "value": 1.2756155383835939,
+        "sem": 0.005404286451840449
+      },
+      "F_post": {
+        "value": 1.2998753392606552,
+        "sem": 0.0032211855303239797
+      },
+      "a": {
+        "value": 0.049953928983654805,
+        "sem": 0.004823691575800542
+      },
+      "b": {
+        "value": 0.012147395185130527,
+        "sem": 0.0010870779954139731
+      },
+      "c": {
+        "value": 0.00981556467241873,
+        "sem": 0.0008757284980046957
+      }
+    },
+    "K_chi2": 18.32694931470684,
+    "K_dof": 3,
+    "Q_coeffs": {
+      "F_pre": {
+        "value": 0.35280347316339533,
+        "sem": 0.00533646845227685
+      },
+      "F_post": {
+        "value": 0.27000793290233527,
+        "sem": 0.0028591867780055455
+      },
+      "a": {
+        "value": -0.04868141912792656,
+        "sem": 0.00461568807141251
+      },
+      "b": {
+        "value": -0.016833994869132285,
+        "sem": 0.0011124477497237268
+      },
+      "c": {
+        "value": -0.005188579776518237,
+        "sem": 0.0007859997195018805
+      }
+    },
+    "Q_chi2": 2.8440446599609857,
+    "Q_dof": 3
+  },
+  "BIC_comparison": {
+    "K": {
+      "BIC_4H": 152.27420994875808,
+      "BIC_5H": 28.72415702310602,
+      "dBIC": -123.55005292565207
+    },
+    "Q": {
+      "BIC_4H": 54.73829774479968,
+      "BIC_5H": 13.241252368360165,
+      "dBIC": -41.497045376439516
+    }
+  },
+  "best_c_K_candidates_unconstrained": [
+    {
+      "name": "gamma/d^2",
+      "expr": "1/160",
+      "value": 0.00625,
+      "z": 4.071541214591845
+    },
+    {
+      "name": "gamma/(2 d^2)",
+      "expr": "1/320",
+      "value": 0.003125,
+      "z": 7.639998798329451
+    },
+    {
+      "name": "gamma^2/d",
+      "expr": "1/400",
+      "value": 0.0025000000000000005,
+      "z": 8.353690315076973
+    },
+    {
+      "name": "gamma^2 N_gen/d^2",
+      "expr": "3/1600",
+      "value": 0.0018750000000000004,
+      "z": 9.067381831824495
+    },
+    {
+      "name": "gamma^3",
+      "expr": "1/1000",
+      "value": 0.0010000000000000002,
+      "z": 10.066549955271023
+    },
+    {
+      "name": "gamma^2/(d N_gen)",
+      "expr": "1/1200",
+      "value": 0.0008333333333333335,
+      "z": 10.256867693070362
+    }
+  ],
+  "best_c_Q_candidates_unconstrained": [
+    {
+      "name": "-gamma^3 d",
+      "expr": "-4/1000",
+      "value": -0.004000000000000001,
+      "z": 1.5121885504889072
+    },
+    {
+      "name": "-gamma^2/N_gen",
+      "expr": "-1/300",
+      "value": -0.003333333333333334,
+      "z": 2.3603652738714045
+    },
+    {
+      "name": "-gamma^3 N_gen",
+      "expr": "-3/1000",
+      "value": -0.003000000000000001,
+      "z": 2.784453635562653
+    },
+    {
+      "name": "-gamma^2/d",
+      "expr": "-1/400",
+      "value": -0.0025000000000000005,
+      "z": 3.420586178099526
+    },
+    {
+      "name": "-gamma^2/(2 N_gen)",
+      "expr": "-1/600",
+      "value": -0.001666666666666667,
+      "z": 4.480807082327647
+    },
+    {
+      "name": "-gamma^2/(2 d)",
+      "expr": "-1/800",
+      "value": -0.0012500000000000002,
+      "z": 5.010917534441708
+    }
+  ],
+  "constrained_5harmonic_fit": {
+    "description": "Fit only c sin(6 theta) to the residual after subtracting the four System-R rational 4-harmonic targets (F_pre cos^2 + F_post sin^2 + a sin(2 theta) + b sin(4 theta) at iter-37 rational values). This isolates the sin(6 theta) amplitude without coupling to the 4-harmonic coefficients.",
+    "c_K": {
+      "value": 0.00026629819266194016,
+      "sem": 9.028629524884624e-05,
+      "chi2": 147.7991413434026,
+      "dof": 7
+    },
+    "c_Q": {
+      "value": 0.0011983656622736485,
+      "sem": 6.570858365170368e-05,
+      "chi2": 1764.1965748964892,
+      "dof": 7
+    },
+    "best_c_K_rational_match": [
+      {
+        "name": "0",
+        "expr": "0",
+        "value": 0.0,
+        "z": 2.949486319357457
+      },
+      {
+        "name": "gamma^2/(d N_gen)",
+        "expr": "1/1200",
+        "value": 0.0008333333333333335,
+        "z": 6.280412094754098
+      },
+      {
+        "name": "gamma^3",
+        "expr": "1/1000",
+        "value": 0.0010000000000000002,
+        "z": 8.12639177757641
+      },
+      {
+        "name": "-gamma^2/(d N_gen)",
+        "expr": "-1/1200",
+        "value": -0.0008333333333333335,
+        "z": 12.17938473346901
+      },
+      {
+        "name": "-gamma^3",
+        "expr": "-1/1000",
+        "value": -0.0010000000000000002,
+        "z": 14.025364416291323
+      }
+    ],
+    "best_c_Q_rational_match": [
+      {
+        "name": "gamma^2/(2 d)",
+        "expr": "1/800",
+        "value": 0.0012500000000000002,
+        "z": 0.7858081068988761
+      },
+      {
+        "name": "gamma^3",
+        "expr": "1/1000",
+        "value": 0.0010000000000000002,
+        "z": 3.0188698530637876
+      },
+      {
+        "name": "gamma^2/(d N_gen)",
+        "expr": "1/1200",
+        "value": 0.0008333333333333335,
+        "z": 5.555321826372231
+      },
+      {
+        "name": "gamma^2/(2 N_gen)",
+        "expr": "1/600",
+        "value": 0.001666666666666667,
+        "z": 7.126938040169984
+      },
+      {
+        "name": "0",
+        "expr": "0",
+        "value": 0.0,
+        "z": 18.237581692914446
+      }
+    ],
+    "verdict": "c_Q = gamma^2/(2 d) = 1/800 at z = 0.79 sigma is the cleanest System-R rational match for sin(6 theta) Q-amplitude with all four leading targets fixed at the iter-37 rationals; c_K remains consistent with 0 (no K-side sin(6 theta) extension)."
+  }
+}

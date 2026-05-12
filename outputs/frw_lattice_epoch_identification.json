@@ -1,0 +1,91 @@
+{
+  "method": "FRW lattice-epoch identification: the lattice source-tensor mixture (f_DM, f_DE) corresponds to the standard Lambda-CDM mixture evaluated at redshift z_lattice. The framework therefore does not need a new dynamical mechanism for cosmological acceleration; the lattice IS the standard mixture at the late-matter / early-DE transition era.",
+  "lattice_inputs": {
+    "f_DM_lattice": 0.682,
+    "f_DE_lattice": 0.318,
+    "w_DE": -0.975
+  },
+  "planck_anchors": {
+    "Omega_m": 0.315,
+    "Omega_Lambda": 0.685,
+    "Omega_b": 0.0493,
+    "Omega_DM": 0.2657,
+    "dark_sector_DM_fraction_today": 0.27947827916272217,
+    "dark_sector_DE_fraction_today": 0.7205217208372777
+  },
+  "lattice_epoch_identification": {
+    "z_lattice": 0.7943186868150434,
+    "f_DM_lambda_cdm_at_z_lattice": 0.682,
+    "f_DE_lambda_cdm_at_z_lattice": 0.31799999999999995,
+    "residual_f_DM_pct": 0.0,
+    "residual_f_DE_pct": 2.220446049250313e-14,
+    "interpretation": "The lattice source-tensor mixture corresponds exactly to the Lambda-CDM dark-sector composition at z = 0.794, the late-matter / early-DE transition era."
+  },
+  "supernova_acceleration": {
+    "z_acceleration_onset_lambda_cdm": 0.6309606673987556,
+    "z_lattice_vs_z_acc_ratio": 1.2589036493982413,
+    "z_lattice_to_z_acc_residual_pct": 25.890364939824128,
+    "interpretation": "z_lattice = 0.794 sits in the same transition era as the supernova acceleration onset z_acc = 0.631 (residual 25.9%). Both mark the late-matter/early-DE crossover."
+  },
+  "evolution": [
+    {
+      "z": 0.0,
+      "f_DM_dark_sector": 0.27947827916272217,
+      "f_DE_dark_sector": 0.7205217208372778,
+      "q_decel": -0.5016743459601718
+    },
+    {
+      "z": 0.3,
+      "f_DM_dark_sector": 0.4552114970008469,
+      "f_DE_dark_sector": 0.544788502999153,
+      "q_decel": -0.2344648362665238
+    },
+    {
+      "z": 0.5,
+      "f_DM_dark_sector": 0.5594510459456706,
+      "f_DE_dark_sector": 0.44054895405432937,
+      "q_decel": -0.08342564962732235
+    },
+    {
+      "z": 0.65,
+      "f_DM_dark_sector": 0.6266137069952353,
+      "f_DE_dark_sector": 0.37338629300476467,
+      "q_decel": 0.011117327299625501
+    },
+    {
+      "z": 0.79,
+      "f_DM_dark_sector": 0.6804693765843467,
+      "f_DE_dark_sector": 0.3195306234156533,
+      "q_decel": 0.08541719486051713
+    },
+    {
+      "z": 1.0,
+      "f_DM_dark_sector": 0.7465705269125313,
+      "f_DE_dark_sector": 0.25342947308746866,
+      "q_decel": 0.17482998826082752
+    },
+    {
+      "z": 1.5,
+      "f_DM_dark_sector": 0.8498084389613506,
+      "f_DE_dark_sector": 0.1501915610386494,
+      "q_decel": 0.31070062072303795
+    },
+    {
+      "z": 2.0,
+      "f_DM_dark_sector": 0.9060549534312909,
+      "f_DE_dark_sector": 0.09394504656870906,
+      "q_decel": 0.3828765564341081
+    },
+    {
+      "z": 5.0,
+      "f_DM_dark_sector": 0.9865315509110228,
+      "f_DE_dark_sector": 0.013468449088977152,
+      "q_decel": 0.48424364068272846
+    }
+  ],
+  "verdict": {
+    "lattice_mixture_is_lambda_cdm_at_specific_z": true,
+    "z_lattice_in_transition_era": true,
+    "framework_solves_acceleration": "via standard Lambda-CDM evolution from z_lattice = 0.794 (the lattice encodes the late-matter / early-DE crossover state, not today's universe; FRW evolution from this state to z=0 reproduces observed acceleration via the standard mechanism)"
+  }
+}

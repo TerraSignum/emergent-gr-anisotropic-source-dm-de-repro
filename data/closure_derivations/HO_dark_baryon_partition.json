@@ -1,0 +1,36 @@
+{
+  "method": "HO_dark_baryon_partition",
+  "framework_constants": {
+    "gamma": "1/10",
+    "N_gen": 3,
+    "d": 4,
+    "d_plus_N_gen": 7
+  },
+  "predictions": [
+    {
+      "quantity": "Omega_dm",
+      "predicted_fraction": "53/200",
+      "predicted": 0.265,
+      "Planck_central": 0.2647,
+      "Planck_sigma": 0.0049,
+      "rel_err_pct": 0.11333585190782867,
+      "z": 0.06122448979592295,
+      "tier": "EXACT"
+    },
+    {
+      "quantity": "Omega_b",
+      "predicted_fraction": "29/600",
+      "predicted": 0.04833333333333333,
+      "Planck_central": 0.0493,
+      "Planck_sigma": 0.0007,
+      "rel_err_pct": 1.9607843137254857,
+      "z": -1.3809523809523776,
+      "tier": "PRECISE"
+    }
+  ],
+  "ratio_Omega_dm_over_Omega_b": {
+    "predicted": 5.482758620689655,
+    "Planck": 5.369168356997972
+  },
+  "verdict": "DARK_BARYON_PARTITION_CLOSED: Omega_dm = 53/200 = 0.265 (z = +0.06, EXACT) and Omega_b = 29/600 = 0.0483 (z = -1.38, PRECISE). The dimensional sum (d + N_gen) = 7 enters both: Omega_dm = gamma*N_gen reduced by gamma^2 (d+N_gen)/2; Omega_b prefactor 2d + N_gen*(d+N_gen) = 29 contains it via N_gen*(d+N_gen) = 21. Sum reproduces Omega_m = 47/150 (H-M) exactly. The full cosmological energy budget (Omega_dm, Omega_b, Omega_Lambda) is now parameter-free in System-R rationals."
+}

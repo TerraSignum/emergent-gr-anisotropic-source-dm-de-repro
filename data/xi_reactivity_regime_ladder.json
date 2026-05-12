@@ -1,0 +1,184 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P2prime",
+      "P1",
+      "P2",
+      "P7",
+      "P0"
+    ],
+    "branch_rationale": "Lattice-seed-level diagnostic; branch-blind lattice analysis",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "block": "PG-ZMEQ-A4",
+  "tag": "zero_mode_maturity_ladder",
+  "status": "NO_ZERO_MODE_LADDER",
+  "status_note": "min Kendall-tau = -0.200 <= 0.5",
+  "real_vs_synthetic": "REAL_ONLY",
+  "regimes_ordered_desc_by_M": [
+    "P5",
+    "P2prime",
+    "P1",
+    "P2",
+    "P7",
+    "P0"
+  ],
+  "ladder": [
+    {
+      "ladder_rank": 1,
+      "regime": "P5",
+      "fisher_kpp_class": "A_MATURE_ZERO_MODE",
+      "maturity_score_M": 0.2496629728082666,
+      "axes": {
+        "fisher_kpp_class": "A_MATURE_ZERO_MODE",
+        "cw_net_corrected_mean": -0.001211488491748469,
+        "sync_floor": 0.008451529389027776,
+        "abs_net_over_sync": 0.1433454746452503,
+        "cross_seed_sd_over_sync": 0.8357745134322846,
+        "reac_over_diss": 0.5240237259765078,
+        "lock_covered": true
+      },
+      "components": {
+        "equilibrium_factor": 0.874626280661384,
+        "stability_factor": 0.5447292097602632,
+        "reactive_factor_clamped": 0.5240237259765078,
+        "lock_factor": 1.0
+      }
+    },
+    {
+      "ladder_rank": 2,
+      "regime": "P2prime",
+      "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+      "maturity_score_M": 0.2016771653689912,
+      "axes": {
+        "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+        "cw_net_corrected_mean": -0.0019496216032594334,
+        "sync_floor": 0.00915432853553859,
+        "abs_net_over_sync": 0.2129726495712586,
+        "cross_seed_sd_over_sync": 1.9338650490366223,
+        "reac_over_diss": 0.7177081375511992,
+        "lock_covered": true
+      },
+      "components": {
+        "equilibrium_factor": 0.8244208971681788,
+        "stability_factor": 0.34084730663680823,
+        "reactive_factor_clamped": 0.7177081375511992,
+        "lock_factor": 1.0
+      }
+    },
+    {
+      "ladder_rank": 3,
+      "regime": "P1",
+      "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+      "maturity_score_M": 0.15019863073103212,
+      "axes": {
+        "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+        "cw_net_corrected_mean": -0.008290633302731915,
+        "sync_floor": 0.015135310305796845,
+        "abs_net_over_sync": 0.547767646333395,
+        "cross_seed_sd_over_sync": 1.759604943951079,
+        "reac_over_diss": 0.6415324843272295,
+        "lock_covered": true
+      },
+      "components": {
+        "equilibrium_factor": 0.6460918099489696,
+        "stability_factor": 0.3623707089639594,
+        "reactive_factor_clamped": 0.6415324843272295,
+        "lock_factor": 1.0
+      }
+    },
+    {
+      "ladder_rank": 4,
+      "regime": "P2",
+      "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+      "maturity_score_M": 0.0817425564005704,
+      "axes": {
+        "fisher_kpp_class": "D_VOLATILE_ZERO_MODE",
+        "cw_net_corrected_mean": -0.008495894355270607,
+        "sync_floor": 0.009869592080011527,
+        "abs_net_over_sync": 0.8608151468060151,
+        "cross_seed_sd_over_sync": 1.5680099751666945,
+        "reac_over_diss": 0.7812286290892758,
+        "lock_covered": false
+      },
+      "components": {
+        "equilibrium_factor": 0.5373988930154852,
+        "stability_factor": 0.38940658707335746,
+        "reactive_factor_clamped": 0.7812286290892758,
+        "lock_factor": 0.5
+      }
+    },
+    {
+      "ladder_rank": 5,
+      "regime": "P7",
+      "fisher_kpp_class": "C_DECAY_DOMINATED",
+      "maturity_score_M": 0.040132032041800124,
+      "axes": {
+        "fisher_kpp_class": "C_DECAY_DOMINATED",
+        "cw_net_corrected_mean": -0.02206257557981602,
+        "sync_floor": 0.011668598631211186,
+        "abs_net_over_sync": 1.8907648019362846,
+        "cross_seed_sd_over_sync": 0.34627894374276297,
+        "reac_over_diss": 0.31236974093878483,
+        "lock_covered": false
+      },
+      "components": {
+        "equilibrium_factor": 0.3459292154554333,
+        "stability_factor": 0.7427881158268138,
+        "reactive_factor_clamped": 0.31236974093878483,
+        "lock_factor": 0.5
+      }
+    },
+    {
+      "ladder_rank": 6,
+      "regime": "P0",
+      "fisher_kpp_class": "C_DECAY_DOMINATED",
+      "maturity_score_M": 0.017225516692668346,
+      "axes": {
+        "fisher_kpp_class": "C_DECAY_DOMINATED",
+        "cw_net_corrected_mean": -0.08360138160492828,
+        "sync_floor": 0.015610038110613756,
+        "abs_net_over_sync": 5.355616752023499,
+        "cross_seed_sd_over_sync": 1.686351263240674,
+        "reac_over_diss": 0.5881969310876928,
+        "lock_covered": false
+      },
+      "components": {
+        "equilibrium_factor": 0.15734114233392382,
+        "stability_factor": 0.37225213756806036,
+        "reactive_factor_clamped": 0.5881969310876928,
+        "lock_factor": 0.5
+      }
+    }
+  ],
+  "maturity_score_definition": {
+    "form": "M = (1/(1+abs_net_over_sync)) * (1/(1+cross_seed_sd_over_sync)) * min(1, reac_over_diss) * (1.0 if lock_covered else 0.5)",
+    "axes_used": [
+      "abs_net_over_sync (A5 regime_aggregates + cw_sync_mean)",
+      "cross_seed_sd_over_sync (A5 per_regime_class.rationale)",
+      "reac_over_diss (A1 per_regime_aggregates cw_xi_reaction_mean / cw_dissipation_mean)",
+      "lock_covered (A5 per_regime_class.axes.lock_covered)"
+    ],
+    "form_rationale": "Product form so that any near-zero factor collapses maturity (Liebig-minimum: the weakest axis gates the whole). Clamping reac_over_diss at 1 reflects that reactivity above balanced level does not further increase zero-mode maturity \u2014 only the match between reaction and dissipation matters for equilibrium."
+  },
+  "kendall_tau_M_vs_axis": {
+    "abs_net_over_sync": 1.0,
+    "cross_seed_sd_over_sync": -0.2,
+    "reac_over_diss": 0.06666666666666667,
+    "lock_covered": 0.3333333333333333
+  },
+  "dominant_axis": {
+    "name": "abs_net_over_sync",
+    "kendall_tau": 1.0
+  },
+  "claim_limit": "REGIME_LADDER_ONLY",
+  "honesty_guard": {
+    "no_new_physics_introduced": true,
+    "no_synthetic_values": true,
+    "uniform_weights_avoid_tuning": true,
+    "no_arbitrary_cutoffs_in_score": true
+  },
+  "validation_pass": true
+}

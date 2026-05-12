@@ -1,0 +1,151 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Cosmological growth f sigma_8(z) + S_8 + halo mass function vs surveys",
+  "stand": "2026-05-05",
+  "literature_anchors": [
+    "Aghanim+ 2020 (Planck 2018 cosmology TTTEEE+lowE+lensing)",
+    "DES Collaboration 2022 PRD 105 023520 (3x2pt)",
+    "Asgari+ 2021 (KiDS-1000 cosmic shear)",
+    "Sugiyama+ 2022 (HSC-Y3)",
+    "Beutler+ 2012 (6dFGS RSD)",
+    "Alam+ 2017 (BOSS DR12 RSD)",
+    "Bautista+ 2020, Hou+ 2020 (eBOSS RSD)",
+    "Tinker+ 2008 (halo mass function fit)",
+    "Lahav+ 1991, Linder 2005 (linear growth approximation)"
+  ],
+  "cosmology_inputs": {
+    "Omega_m_Planck_2018": 0.3147,
+    "h0_Planck_2018": 0.6736,
+    "sigma_8_Planck_2018": 0.811,
+    "n_s_Planck_2018": 0.9649,
+    "A_s_Planck_2018": 2.099e-09
+  },
+  "f_sigma_8_z_evolution": [
+    {
+      "z": 0.15,
+      "f_sigma_8_predicted": 0.4593950776438131,
+      "f_sigma_8_anchor": 0.49,
+      "anchor_unc": 0.08,
+      "residual_pct": 6.245902521670795,
+      "sigma_offset": -0.3825615294523361,
+      "ref": "6dFGS Beutler+ 2012",
+      "tier": "PRECISE_loose"
+    },
+    {
+      "z": 0.32,
+      "f_sigma_8_predicted": 0.47447918078870843,
+      "f_sigma_8_anchor": 0.427,
+      "anchor_unc": 0.022,
+      "residual_pct": 11.119246086348582,
+      "sigma_offset": 2.158144581304929,
+      "ref": "BOSS DR12 LOWZ",
+      "tier": "FACTOR2"
+    },
+    {
+      "z": 0.51,
+      "f_sigma_8_predicted": 0.47389564926633193,
+      "f_sigma_8_anchor": 0.452,
+      "anchor_unc": 0.024,
+      "residual_pct": 4.844170191666353,
+      "sigma_offset": 0.9123187194304966,
+      "ref": "BOSS DR12 CMASS",
+      "tier": "PRECISE_loose"
+    },
+    {
+      "z": 0.61,
+      "f_sigma_8_predicted": 0.46854225730386656,
+      "f_sigma_8_anchor": 0.457,
+      "anchor_unc": 0.02,
+      "residual_pct": 2.525658053362482,
+      "sigma_offset": 0.5771128651933272,
+      "ref": "BOSS DR12 high-z",
+      "tier": "PRECISE_loose"
+    },
+    {
+      "z": 0.78,
+      "f_sigma_8_predicted": 0.454455919527846,
+      "f_sigma_8_anchor": 0.379,
+      "anchor_unc": 0.054,
+      "residual_pct": 19.909213595737725,
+      "sigma_offset": 1.3973318431082586,
+      "ref": "eBOSS LRG Bautista+ 2020",
+      "tier": "FACTOR2"
+    },
+    {
+      "z": 1.0,
+      "f_sigma_8_predicted": 0.43111943427094596,
+      "f_sigma_8_anchor": 0.385,
+      "anchor_unc": 0.044,
+      "residual_pct": 11.979073836609338,
+      "sigma_offset": 1.048168960703317,
+      "ref": "eBOSS QSO Hou+ 2020",
+      "tier": "FACTOR2"
+    }
+  ],
+  "S_8_predictions_vs_surveys": [
+    {
+      "survey": "Planck_2018_implied",
+      "S_8_predicted": 0.8306318853740207,
+      "S_8_anchor": 0.8306318853740207,
+      "unc": 0.014,
+      "residual_pct": 0.0,
+      "sigma_offset": 0.0,
+      "tier": "EXACT"
+    },
+    {
+      "survey": "DES_Year_3_3x2pt",
+      "S_8_predicted": 0.8306318853740207,
+      "S_8_anchor": 0.776,
+      "unc": 0.017,
+      "residual_pct": 7.040191414177917,
+      "sigma_offset": 3.2136403161188607,
+      "tier": "PRECISE_loose"
+    },
+    {
+      "survey": "KiDS_1000_cosmic_shear",
+      "S_8_predicted": 0.8306318853740207,
+      "S_8_anchor": 0.759,
+      "unc": 0.024,
+      "residual_pct": 9.437666057183222,
+      "sigma_offset": 2.984661890584194,
+      "tier": "PRECISE_loose"
+    },
+    {
+      "survey": "HSC_Year_3",
+      "S_8_predicted": 0.8306318853740207,
+      "S_8_anchor": 0.776,
+      "unc": 0.03,
+      "residual_pct": 7.040191414177917,
+      "sigma_offset": 1.8210628458006881,
+      "tier": "PRECISE_loose"
+    }
+  ],
+  "halo_mass_function_Tinker2008": [
+    {
+      "M_Msun": 1000000000000.0,
+      "sigma_M": 2.9150842049965373,
+      "f_sigma_Tinker": 0.2960514369485754
+    },
+    {
+      "M_Msun": 10000000000000.0,
+      "sigma_M": 1.8392937889207703,
+      "f_sigma_Tinker": 0.3447908890320622
+    },
+    {
+      "M_Msun": 100000000000000.0,
+      "sigma_M": 1.1605159247763623,
+      "f_sigma_Tinker": 0.324242704672214
+    },
+    {
+      "M_Msun": 1000000000000000.0,
+      "sigma_M": 0.7322360461238692,
+      "f_sigma_Tinker": 0.1482048129089474
+    }
+  ],
+  "growth_function_at_z0": 0.7876398798090547,
+  "verdict": "Framework cosmological growth chain (Planck 2018 anchors -> LCDM growth ODE -> f sigma_8(z), S_8, halo MF): f sigma_8 RSD predictions match BOSS/eBOSS at the FACTOR2-or-better level across z in [0.15, 1.0]; S_8 = 0.831 matches Planck-implied (0.831) essentially exactly (consistency check) but reproduces the ~3-sigma S_8 tension with low-z lensing surveys (DES Y3 0.776, KiDS 0.759, HSC 0.776). The framework's halo mass function f(sigma) reproduces Tinker+ 2008 across M in [1e12, 1e15] M_sun. Note: growth chain uses Planck Omega_m and h0 as anchors (no fits); the consistency is the LCDM growth-equation prediction, not a free fit."
+}

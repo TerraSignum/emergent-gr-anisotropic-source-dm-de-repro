@@ -1,0 +1,43 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Refined chirality-mixing structural rationals",
+  "stand": "2026-05-05",
+  "structural_anchors_beta_pi": {
+    "a_vac_formula": "(2^d * N_gen^2 - 1)/(2^d * N_gen^2)",
+    "a_vac_value_d4_Ngen3": 0.9930555555555556,
+    "a_vac_rational": "143/144",
+    "a_mat_formula": "(2d*N_gen - 1)/(4d*N_gen)",
+    "a_mat_value_d4_Ngen3": 0.4791666666666667,
+    "a_mat_rational": "23/48"
+  },
+  "beta_pi_per_regime_residual_pct": {
+    "old_15_16_formula_mean": 3.180062701002401,
+    "old_15_16_formula_max": 4.763037331730623,
+    "refined_143_144_formula_mean": 0.6024635947149162,
+    "refined_143_144_formula_max": 1.781522756291223,
+    "improvement_factor": 5.278431309209972
+  },
+  "D_Omega_chirality_mixing_linear_fit": {
+    "b_vac_fitted": 0.7538884341922045,
+    "b_mat_fitted": 0.3341263622524992,
+    "best_b_vac_anchor": {
+      "name": "11/14",
+      "value": 0.7857142857142857
+    },
+    "best_b_mat_anchor": {
+      "name": "3/4",
+      "value": 0.75
+    }
+  },
+  "alpha_over_beta_power_law": {
+    "exponent_fitted": -0.39500375904167795,
+    "target_minus_2_over_5": -0.4,
+    "rel_err_pct": 1.2490602395805184,
+    "R_sq": 0.9911718199700051
+  },
+  "verdict": "The refined beta_pi chirality-mixing form with (a_vac, a_mat) = (143/144, 23/48) = ((2^d*N_gen^2-1)/(2^d*N_gen^2), (2d*N_gen-1)/(4d*N_gen)) matches all 8 regimes with mean residual 0.60%, a 5.3x improvement over the canonical (15/16, 1/2) form. The vacuum-side anchor a_vac=143/144 connects the 2^d*N_gen^2=144 'Cl(1,3) module x family' scale; the matter-side anchor a_mat=23/48 connects the 2*d*N_gen=24 'spacetime-doubled times family' scale. The alpha/beta ~ N^(-2/5) power-law verifies cleanly with R^2 = 0.9912, exponent matching -2/5 within 1.25%. D_Omega chirality mixing is less clean (non-monotonic per-regime) but linear fit b_vac~0.754, b_mat~0.334."
+}

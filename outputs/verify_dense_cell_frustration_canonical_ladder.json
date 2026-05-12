@@ -1,0 +1,147 @@
+{
+  "method": "Negative-triangle defect share + per-node f_neg(R_00) on the canonical-physics ladder; H110 Big Bang dense-cell universality analogue",
+  "definitions": {
+    "negative_triangle_share": "fraction of distinct (i,j,k) with delta_ijk = -log Xi_ik + log Xi_ij + log Xi_jk < 0 (M3 over-saturation)",
+    "f_neg_R00": "fraction of nodes with R_00(a) = G_00(a) + LAMBDA_T - T_00(a) < 0 (P4-B halo signature)",
+    "cycle_density": "per-node closed-triangle density on the Xi-thresholded graph (Xi_threshold=0.13)"
+  },
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 28,
+      "neg_triangle_share_mean": 0.8390318270165208,
+      "neg_triangle_share_std": 0.0036968410553791576,
+      "cycle_density_mean": 13.835714285714285,
+      "cycle_density_std": 6.229692395852204,
+      "f_neg_R00_mean": 0.7649999999999999,
+      "f_neg_R00_std": 0.1533087454406024
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "neg_triangle_share_mean": 0.8695493178230075,
+      "neg_triangle_share_std": 0.004405974953491982,
+      "cycle_density_mean": 9.930989583333334,
+      "cycle_density_std": 6.574273164427875,
+      "f_neg_R00_mean": 0.7180989583333334,
+      "f_neg_R00_std": 0.22218650954762445
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "neg_triangle_share_mean": 0.8840205585364037,
+      "neg_triangle_share_std": 0.003103546828813,
+      "cycle_density_mean": 8.752314814814815,
+      "cycle_density_std": 4.27611023494795,
+      "f_neg_R00_mean": 0.7800925925925926,
+      "f_neg_R00_std": 0.18067422501007277
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "neg_triangle_share_mean": 0.9016705614560449,
+      "neg_triangle_share_std": 0.0030135194592596903,
+      "cycle_density_mean": 7.951884920634921,
+      "cycle_density_std": 4.345204771516418,
+      "f_neg_R00_mean": 0.7867063492063492,
+      "f_neg_R00_std": 0.1966063609385557
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "neg_triangle_share_mean": 0.9209483439840582,
+      "neg_triangle_share_std": 0.0032050779308982337,
+      "cycle_density_mean": 6.730416666666666,
+      "cycle_density_std": 4.4357275607340405,
+      "f_neg_R00_mean": 0.7466666666666667,
+      "f_neg_R00_std": 0.19629201602601049
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "neg_triangle_share_mean": 0.9438456423415823,
+      "neg_triangle_share_std": 0.0016886534689807458,
+      "cycle_density_mean": 2.0377604166666665,
+      "cycle_density_std": 1.0643597452032847,
+      "f_neg_R00_mean": 0.23697916666666666,
+      "f_neg_R00_std": 0.14501724783672765
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "neg_triangle_share_mean": 0.9699816633673417,
+      "neg_triangle_share_std": 0.0009510355561047169,
+      "cycle_density_mean": 4.00375,
+      "cycle_density_std": 1.943916391591984,
+      "f_neg_R00_mean": 0.66875,
+      "f_neg_R00_std": 0.149744574192189
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "neg_triangle_share_mean": 0.9796557369667028,
+      "neg_triangle_share_std": 0.0010011247517447276,
+      "cycle_density_mean": 2.7386067708333335,
+      "cycle_density_std": 1.3228318795495002,
+      "f_neg_R00_mean": 0.5322265625,
+      "f_neg_R00_std": 0.2298340760076786
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "neg_triangle_share_mean": 0.9834309680042098,
+      "neg_triangle_share_std": 0.0007397766886756577,
+      "cycle_density_mean": 3.352222222222222,
+      "cycle_density_std": 1.588214892012374,
+      "f_neg_R00_mean": 0.6369444444444444,
+      "f_neg_R00_std": 0.17587589444524107
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "neg_triangle_share_mean": 0.992629741679777,
+      "neg_triangle_share_std": 0.0006549904754002052,
+      "cycle_density_mean": 2.0621744791666665,
+      "cycle_density_std": 1.699047344034846,
+      "f_neg_R00_mean": 0.44775390625,
+      "f_neg_R00_std": 0.2665247917262025
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 20,
+      "neg_triangle_share_mean": 0.884018835233624,
+      "neg_triangle_share_std": 0.003396758309333062,
+      "cycle_density_mean": 5.961805555555555,
+      "cycle_density_std": 3.320321464221741,
+      "f_neg_R00_mean": 0.6812499999999999,
+      "f_neg_R00_std": 0.21816942356009286
+    }
+  ],
+  "summary": {
+    "n_regimes": 11,
+    "neg_triangle_share_mean_across_regimes": 0.9244348360372066,
+    "neg_triangle_share_min": 0.8390318270165208,
+    "neg_triangle_share_max": 0.992629741679777,
+    "f_neg_R00_mean_across_regimes": 0.6364062406054594,
+    "f_neg_R00_min": 0.23697916666666666,
+    "f_neg_R00_max": 0.7867063492063492,
+    "cycle_density_mean_across_regimes": 6.123421792328042,
+    "h110_PASS_threshold": 0.5,
+    "h110_PASS_on_canonical_ladder": true,
+    "neg_triangle_share_symanzik_intercept": 1.0122490462624154,
+    "neg_triangle_share_symanzik_slope": -9.001319324470344,
+    "f_neg_R00_symanzik_intercept": 0.47543194731383404,
+    "f_neg_R00_symanzik_slope": 16.50053007631455
+  }
+}

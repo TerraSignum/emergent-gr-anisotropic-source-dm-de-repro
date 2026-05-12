@@ -1,0 +1,64 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Algebraic / topological / index-theory diagnostic; branch-independent geometric structure",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Bott-periodicity prediction test for D_Omega dips",
+  "stand": "2026-05-06",
+  "best_period": 4,
+  "best_pearson_r": 0.8183921675285089,
+  "statistical_significance": {
+    "n": 8,
+    "t_stat": 3.488397976657754,
+    "p_two_tailed": 0.04500120266724594,
+    "bonferroni_corrected_p": 0.3150084186707216
+  },
+  "leave_one_out_RMS_error": 0.5523012100038885,
+  "spread_of_data": 0.54531473754607,
+  "predictions_for_future_runs": [
+    {
+      "N": 256,
+      "log2_N": 8.0,
+      "mod_8": 0.0,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 384,
+      "log2_N": 8.584962500721156,
+      "mod_8": 0.5849625007211561,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 512,
+      "log2_N": 9.0,
+      "mod_8": 1.0,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 768,
+      "log2_N": 9.584962500721156,
+      "mod_8": 1.584962500721156,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 1024,
+      "log2_N": 10.0,
+      "mod_8": 2.0,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 32768,
+      "log2_N": 15.0,
+      "mod_8": 7.0,
+      "D_Omega_predicted": "see T_pred_4 table"
+    },
+    {
+      "N": 65536,
+      "log2_N": 16.0,
+      "mod_8": 0.0,
+      "D_Omega_predicted": "see T_pred_4 table"
+    }
+  ],
+  "verdict": "The Bott-periodicity hypothesis (D_Omega oscillates with log_2(N) mod 8) has Pearson r=+0.818 on the 8-data-point ladder. This is statistically marginal (uncorrected p~0.045, Bonferroni-corrected p~0.315 for 7 period hypotheses tested). Two specific data points DO match the Bott prediction cleanly: N=128 (log2=7, predicted deepest dip) and N=300 (log2=8.23, predicted rebound to vacuum 67/80, matched to 1.5%). The remaining 6 data points have residuals not captured by log2(N) mod 8 alone. The hypothesis is a STRUCTURAL CANDIDATE that requires multi-N runs at N=256, 512, 32768 to falsify or confirm. Falsifiable predictions: N=256 should give D_Omega near vacuum 67/80; N=32768 should give a second deep dip; N=65536 should give a second rebound. With current 8-point data, the hypothesis is consistent but not yet conclusively established."
+}

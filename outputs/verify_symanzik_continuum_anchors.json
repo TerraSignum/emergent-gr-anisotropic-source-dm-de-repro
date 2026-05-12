@@ -1,0 +1,196 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Symanzik continuum analysis with anchor identification",
+  "stand": "2026-05-05",
+  "fits": {
+    "alpha_xi": {
+      "Sym-1 (1/N)": {
+        "y_inf": 0.2189536262166345,
+        "R_sq": 0.9669174148984929
+      },
+      "Sym-2 (1/N + 1/N^2)": {
+        "y_inf": 0.10448372989547217,
+        "R_sq": 0.9909076662317307
+      },
+      "Sym-sqrt (1/sqrt(N))": {
+        "y_inf": -0.12888920469280407,
+        "R_sq": 0.98617246736684
+      },
+      "Power-only (no const)": {
+        "y_inf": NaN,
+        "R_sq": 0.9828877089194782
+      },
+      "Sym-cube (1/N^(1/3))": {
+        "y_inf": -0.4728748233581719,
+        "R_sq": 0.9846591365810562
+      },
+      "Sym-exp (e^-N)": {
+        "y_inf": 0.23702476529969685,
+        "R_sq": 0.986338052633024
+      }
+    },
+    "beta_pi": {
+      "Sym-1 (1/N)": {
+        "y_inf": 0.5933373791089736,
+        "R_sq": 0.9502639539889675
+      },
+      "Sym-2 (1/N + 1/N^2)": {
+        "y_inf": 0.5302657966961046,
+        "R_sq": 0.9777601783519695
+      },
+      "Sym-sqrt (1/sqrt(N))": {
+        "y_inf": 0.4154655641803089,
+        "R_sq": 0.9711951535771395
+      },
+      "Power-only (no const)": {
+        "y_inf": NaN,
+        "R_sq": 0.8985795068307053
+      },
+      "Sym-cube (1/N^(1/3))": {
+        "y_inf": 0.23962825870510684,
+        "R_sq": 0.9702236593706813
+      },
+      "Sym-exp (e^-N)": {
+        "y_inf": 0.6021368207970883,
+        "R_sq": 0.9734747349613284
+      }
+    },
+    "D_Omega": {
+      "Sym-1 (1/N)": {
+        "y_inf": 0.40712417945377055,
+        "R_sq": 0.1975128555319009
+      },
+      "Sym-2 (1/N + 1/N^2)": {
+        "y_inf": 0.7851953483615617,
+        "R_sq": 0.44332615829899136
+      },
+      "Sym-sqrt (1/sqrt(N))": {
+        "y_inf": 0.31258688658478206,
+        "R_sq": 0.1313540726530581
+      },
+      "Power-only (no const)": {
+        "y_inf": NaN,
+        "R_sq": 0.015484347732780845
+      },
+      "Sym-cube (1/N^(1/3))": {
+        "y_inf": 0.21881764734063935,
+        "R_sq": 0.10944212554836119
+      },
+      "Sym-exp (e^-N)": {
+        "y_inf": 0.46345283256704173,
+        "R_sq": 0.10891264374527221
+      }
+    }
+  },
+  "anchors": {
+    "alpha_xi": [
+      {
+        "name": "gamma=1/10",
+        "value": 0.1,
+        "rel_err_pct": 4.291318753606694
+      },
+      {
+        "name": "log(2)/(2*pi)",
+        "value": 0.1103178000763258,
+        "rel_err_pct": 5.583711633084086
+      },
+      {
+        "name": "1/9",
+        "value": 0.1111111111111111,
+        "rel_err_pct": 6.342979162659218
+      },
+      {
+        "name": "1/8",
+        "value": 0.125,
+        "rel_err_pct": 19.635851557991625
+      },
+      {
+        "name": "pi/40",
+        "value": 0.07853981633974483,
+        "rel_err_pct": 24.830577527890902
+      },
+      {
+        "name": "1/7",
+        "value": 0.14285714285714285,
+        "rel_err_pct": 36.72668749484757
+      }
+    ],
+    "beta_pi": [
+      {
+        "name": "9/17",
+        "value": 0.5294117647058824,
+        "rel_err_pct": 0.16105734059097088
+      },
+      {
+        "name": "8/15",
+        "value": 0.5333333333333333,
+        "rel_err_pct": 0.5784903828120563
+      },
+      {
+        "name": "phi/3",
+        "value": 0.5393446629166316,
+        "rel_err_pct": 1.712134985340211
+      },
+      {
+        "name": "0.5",
+        "value": 0.5,
+        "rel_err_pct": 5.707665266113696
+      },
+      {
+        "name": "1/phi",
+        "value": 0.6180339887498948,
+        "rel_err_pct": 16.551735488248003
+      },
+      {
+        "name": "(N_gen+1)/(N_gen+2)\u00b7d/(d+1)",
+        "value": 0.6400000000000001,
+        "rel_err_pct": 20.694188459374494
+      }
+    ],
+    "D_Omega": [
+      {
+        "name": "pi/4",
+        "value": 0.7853981633974483,
+        "rel_err_pct": 0.025829882501189165
+      },
+      {
+        "name": "11/14",
+        "value": 0.7857142857142857,
+        "rel_err_pct": 0.06609022249136617
+      },
+      {
+        "name": "alpha_xi-1/8",
+        "value": 0.775,
+        "rel_err_pct": 1.298447371451693
+      },
+      {
+        "name": "67/80-1/16",
+        "value": 0.775,
+        "rel_err_pct": 1.298447371451693
+      },
+      {
+        "name": "5/(2*pi)",
+        "value": 0.7957747154594768,
+        "rel_err_pct": 1.3473547850214151
+      },
+      {
+        "name": "phi/2",
+        "value": 0.8090169943749475,
+        "rel_err_pct": 3.033849609921088
+      }
+    ]
+  },
+  "C2_continuum_check": {
+    "alpha_xi_inf": 0.10448372989547217,
+    "gamma_inf": 0.8955162701045278,
+    "beta_pi_inf": 0.5302657966961046,
+    "D_Omega_inf_Symanzik": 0.7851953483615617,
+    "C2_prediction": -0.3652504734084232,
+    "C2_violation_abs": 1.1504458217699849
+  },
+  "verdict": "Symanzik continuum extrapolation gives (alpha_xi, beta_pi, D_Omega) -> (0.105, 0.530, 0.785). The match D_Omega ~ pi/4 = 0.7854 is striking (0.05%) and the match alpha_xi ~ gamma_canonical = 0.10 is suggestive (5%). However the C2 constraint D_Omega = beta_pi - gamma is VIOLATED at continuum (diff +0.65), so the Symanzik triple is not a coherent framework solution. The right interpretation is either: (a) the canonical (9/10, 15/16, 67/80) is the N=50 anchor reading and Symanzik does not access the same algebraic system; (b) the per-regime calibration is inconsistent at different N and only N=50 is meaningful. Multi-N runs at N >= 1000 with alternative regime types would be needed to discriminate."
+}

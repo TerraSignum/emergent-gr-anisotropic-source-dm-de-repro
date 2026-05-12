@@ -1,0 +1,33 @@
+{
+  "method": "cosmological-constant eight-layer dressing per-regime closure",
+  "input_data_file": "data\\gcc07_cc_residual_closure.json",
+  "rho_observed_GeV4_planck2018": 2.49066e-47,
+  "closure_threshold_log10": 0.5,
+  "per_regime": [
+    {
+      "regime": "p1",
+      "rho_final_GeV4": 2.201986e-47,
+      "rho_observed_GeV4": 2.49066e-47,
+      "ratio_final_over_observed": 0.8840973878409739,
+      "log10_residual_orders": -0.05349989259739218,
+      "total_orders_explained": 122.99,
+      "closed_within_factor_~3": true,
+      "absolute_relative_deviation_pct": 11.590261215902608
+    },
+    {
+      "regime": "p2prime",
+      "rho_final_GeV4": 2.909955e-39,
+      "rho_observed_GeV4": 2.49066e-47,
+      "ratio_final_over_observed": 116834694.41834694,
+      "log10_residual_orders": 8.067571826997574,
+      "total_orders_explained": 114.85,
+      "closed_within_factor_~3": false,
+      "absolute_relative_deviation_pct": 11683469341.834694
+    }
+  ],
+  "summary": {
+    "n_regimes_in_pipeline_output": 2,
+    "n_closed_within_factor_~3": 1,
+    "n_open": 1
+  }
+}

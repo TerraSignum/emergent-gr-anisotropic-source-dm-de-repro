@@ -1,0 +1,516 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "pi/phi-loop and digit-cascade vs gamma^2/c_X 1-loop",
+  "stand": "2026-05-05",
+  "hypotheses_tested": [
+    "Canonical_1loop_gamma2/c_X",
+    "H_pi:   gamma^pi (uniform)",
+    "H_phi:  gamma^phi (uniform)",
+    "H_e:    gamma^e (uniform)",
+    "H_pi_cascade_base_gamma_start2",
+    "H_pi_cascade_base_gamma_start3",
+    "H_pi_cascade_base_gamma_start4",
+    "H_pi_cascade_base_invphi_start2",
+    "H_pi_cascade_base_phi_squared_inv_start2",
+    "H_pi_cascade_base_gamma_phi_start2",
+    "H_pi_cascade_base_gamma_div_phi_start2",
+    "H_phi_cascade_base_gamma_start2",
+    "H_phi_cascade_base_gamma_start3",
+    "H_phi_cascade_base_gamma_start4",
+    "H_phi_cascade_base_invphi_start2",
+    "H_phi_cascade_base_phi_squared_inv_start2",
+    "H_phi_cascade_base_gamma_phi_start2",
+    "H_phi_cascade_base_gamma_div_phi_start2"
+  ],
+  "rows": [
+    {
+      "coefficient": "alpha_xi",
+      "x_alg": 0.9,
+      "x_obs": 0.90082,
+      "true_correction": 0.0008199999999999319,
+      "Canonical_1loop_gamma2/c_X": {
+        "corr_predicted": 0.0008333333333333335,
+        "x_predicted": 0.9008333333333334,
+        "residual_pct": 0.0014801329159455478
+      },
+      "H_pi:   gamma^pi (uniform)": {
+        "corr_predicted": 0.000721784159074728,
+        "x_predicted": 0.9007217841590748,
+        "residual_pct": 0.010902937426475372
+      },
+      "H_phi:  gamma^phi (uniform)": {
+        "corr_predicted": 0.02409716832074905,
+        "x_predicted": 0.9240971683207491,
+        "residual_pct": 2.5839977265989997
+      },
+      "H_e:    gamma^e (uniform)": {
+        "corr_predicted": 0.0019130141022243186,
+        "x_predicted": 0.9019130141022244,
+        "residual_pct": 0.12133546127133044
+      },
+      "H_pi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.031415926535897934,
+        "x_predicted": 0.931415926535898,
+        "residual_pct": 3.3964528469503388
+      },
+      "H_pi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.003141592653589794,
+        "x_predicted": 0.9031415926535898,
+        "residual_pct": 0.2577199277979938
+      },
+      "H_pi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00031415926535897925,
+        "x_predicted": 0.900314159265359,
+        "residual_pct": 0.056153364117248104
+      },
+      "H_pi_cascade_base_invphi_start2": {
+        "corr_predicted": 2.8748506914265715,
+        "x_predicted": 3.7748506914265714,
+        "residual_pct": 319.0460570842756
+      },
+      "H_pi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.6153492900670757,
+        "x_predicted": 1.5153492900670757,
+        "residual_pct": 68.2188772526227
+      },
+      "H_pi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.08574694771675984,
+        "x_predicted": 0.9857469477167599,
+        "residual_pct": 9.427737807415456
+      },
+      "H_pi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.011754619374950606,
+        "x_predicted": 0.9117546193749506,
+        "residual_pct": 1.2138517545070782
+      },
+      "H_phi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.016180339887498955,
+        "x_predicted": 0.916180339887499,
+        "residual_pct": 1.7051508500587325
+      },
+      "H_phi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.0016180339887498947,
+        "x_predicted": 0.90161803398875,
+        "residual_pct": 0.0885897281088344
+      },
+      "H_phi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00016180339887498948,
+        "x_predicted": 0.900161803398875,
+        "residual_pct": 0.07306638408616405
+      },
+      "H_phi_cascade_base_invphi_start2": {
+        "corr_predicted": 3.1102521688713356,
+        "x_predicted": 4.010252168871336,
+        "residual_pct": 345.1779677262201
+      },
+      "H_phi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.5739059900976741,
+        "x_predicted": 1.473905990097674,
+        "residual_pct": 63.618257820394106
+      },
+      "H_phi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.053180292222231015,
+        "x_predicted": 0.953180292222231,
+        "residual_pct": 5.812514400460808
+      },
+      "H_phi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.005257882472847664,
+        "x_predicted": 0.9052578824728477,
+        "residual_pct": 0.49264919438375143
+      }
+    },
+    {
+      "coefficient": "gamma",
+      "x_alg": 0.1,
+      "x_obs": 0.10021,
+      "true_correction": 0.00020999999999998797,
+      "Canonical_1loop_gamma2/c_X": {
+        "corr_predicted": 0.00020833333333333337,
+        "x_predicted": 0.10020833333333334,
+        "residual_pct": 0.0016631740012472108
+      },
+      "H_pi:   gamma^pi (uniform)": {
+        "corr_predicted": 0.000721784159074728,
+        "x_predicted": 0.10072178415907473,
+        "residual_pct": 0.5107116645791246
+      },
+      "H_phi:  gamma^phi (uniform)": {
+        "corr_predicted": 0.02409716832074905,
+        "x_predicted": 0.12409716832074906,
+        "residual_pct": 23.83711038893231
+      },
+      "H_e:    gamma^e (uniform)": {
+        "corr_predicted": 0.0019130141022243186,
+        "x_predicted": 0.10191301410222432,
+        "residual_pct": 1.699445267163286
+      },
+      "H_pi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.031415926535897934,
+        "x_predicted": 0.13141592653589795,
+        "residual_pct": 31.14053141991614
+      },
+      "H_pi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.003141592653589794,
+        "x_predicted": 0.1031415926535898,
+        "residual_pct": 2.9254492102482827
+      },
+      "H_pi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00031415926535897925,
+        "x_predicted": 0.10031415926535898,
+        "residual_pct": 0.10394098928150008
+      },
+      "H_pi_cascade_base_invphi_start2": {
+        "corr_predicted": 2.8748506914265715,
+        "x_predicted": 2.9748506914265715,
+        "residual_pct": 2868.616596573767
+      },
+      "H_pi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.6153492900670757,
+        "x_predicted": 0.7153492900670757,
+        "residual_pct": 613.8502046373374
+      },
+      "H_pi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.08574694771675984,
+        "x_predicted": 0.18574694771675984,
+        "residual_pct": 85.35769655399646
+      },
+      "H_pi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.011754619374950606,
+        "x_predicted": 0.11175461937495061,
+        "residual_pct": 11.520426479343996
+      },
+      "H_phi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.016180339887498955,
+        "x_predicted": 0.11618033988749896,
+        "residual_pct": 15.936872455342744
+      },
+      "H_phi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.0016180339887498947,
+        "x_predicted": 0.1016180339887499,
+        "residual_pct": 1.4050833137909435
+      },
+      "H_phi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00016180339887498948,
+        "x_predicted": 0.100161803398875,
+        "residual_pct": 0.048095600364232466
+      },
+      "H_phi_cascade_base_invphi_start2": {
+        "corr_predicted": 3.1102521688713356,
+        "x_predicted": 3.2102521688713357,
+        "residual_pct": 3103.5247668609277
+      },
+      "H_phi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.5739059900976741,
+        "x_predicted": 0.673905990097674,
+        "residual_pct": 572.4937532159206
+      },
+      "H_phi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.053180292222231015,
+        "x_predicted": 0.153180292222231,
+        "residual_pct": 52.859287718023175
+      },
+      "H_phi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.005257882472847664,
+        "x_predicted": 0.10525788247284767,
+        "residual_pct": 5.037304134165933
+      }
+    },
+    {
+      "coefficient": "eps_sync2",
+      "x_alg": 0.05,
+      "x_obs": 0.05,
+      "true_correction": 0.0,
+      "Canonical_1loop_gamma2/c_X": {
+        "corr_predicted": 0.0,
+        "x_predicted": 0.05,
+        "residual_pct": 0.0
+      },
+      "H_pi:   gamma^pi (uniform)": {
+        "corr_predicted": 0.000721784159074728,
+        "x_predicted": 0.05072178415907473,
+        "residual_pct": 1.4435683181494574
+      },
+      "H_phi:  gamma^phi (uniform)": {
+        "corr_predicted": 0.02409716832074905,
+        "x_predicted": 0.07409716832074906,
+        "residual_pct": 48.19433664149811
+      },
+      "H_e:    gamma^e (uniform)": {
+        "corr_predicted": 0.0019130141022243186,
+        "x_predicted": 0.05191301410222432,
+        "residual_pct": 3.826028204448634
+      },
+      "H_pi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.031415926535897934,
+        "x_predicted": 0.08141592653589794,
+        "residual_pct": 62.83185307179586
+      },
+      "H_pi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.003141592653589794,
+        "x_predicted": 0.053141592653589795,
+        "residual_pct": 6.2831853071795845
+      },
+      "H_pi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00031415926535897925,
+        "x_predicted": 0.05031415926535898,
+        "residual_pct": 0.6283185307179584
+      },
+      "H_pi_cascade_base_invphi_start2": {
+        "corr_predicted": 2.8748506914265715,
+        "x_predicted": 2.9248506914265713,
+        "residual_pct": 5749.701382853143
+      },
+      "H_pi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.6153492900670757,
+        "x_predicted": 0.6653492900670758,
+        "residual_pct": 1230.6985801341514
+      },
+      "H_pi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.08574694771675984,
+        "x_predicted": 0.13574694771675982,
+        "residual_pct": 171.49389543351964
+      },
+      "H_pi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.011754619374950606,
+        "x_predicted": 0.06175461937495061,
+        "residual_pct": 23.50923874990121
+      },
+      "H_phi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.016180339887498955,
+        "x_predicted": 0.06618033988749895,
+        "residual_pct": 32.360679774997905
+      },
+      "H_phi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.0016180339887498947,
+        "x_predicted": 0.051618033988749895,
+        "residual_pct": 3.2360679774997845
+      },
+      "H_phi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00016180339887498948,
+        "x_predicted": 0.05016180339887499,
+        "residual_pct": 0.32360679774998125
+      },
+      "H_phi_cascade_base_invphi_start2": {
+        "corr_predicted": 3.1102521688713356,
+        "x_predicted": 3.1602521688713354,
+        "residual_pct": 6220.504337742671
+      },
+      "H_phi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.5739059900976741,
+        "x_predicted": 0.6239059900976741,
+        "residual_pct": 1147.811980195348
+      },
+      "H_phi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.053180292222231015,
+        "x_predicted": 0.10318029222223102,
+        "residual_pct": 106.36058444446202
+      },
+      "H_phi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.005257882472847664,
+        "x_predicted": 0.055257882472847665,
+        "residual_pct": 10.515764945695324
+      }
+    },
+    {
+      "coefficient": "beta_pi",
+      "x_alg": 0.9375,
+      "x_obs": 0.93791,
+      "true_correction": 0.00041000000000002146,
+      "Canonical_1loop_gamma2/c_X": {
+        "corr_predicted": 0.00041666666666666675,
+        "x_predicted": 0.9379166666666666,
+        "residual_pct": 0.0007108002544593104
+      },
+      "H_pi:   gamma^pi (uniform)": {
+        "corr_predicted": 0.000721784159074728,
+        "x_predicted": 0.9382217841590748,
+        "residual_pct": 0.033242438941341386
+      },
+      "H_phi:  gamma^phi (uniform)": {
+        "corr_predicted": 0.02409716832074905,
+        "x_predicted": 0.961597168320749,
+        "residual_pct": 2.5255267904968512
+      },
+      "H_e:    gamma^e (uniform)": {
+        "corr_predicted": 0.0019130141022243186,
+        "x_predicted": 0.9394130141022243,
+        "residual_pct": 0.16025142094916456
+      },
+      "H_pi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.031415926535897934,
+        "x_predicted": 0.968915926535898,
+        "residual_pct": 3.305853070752839
+      },
+      "H_pi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.003141592653589794,
+        "x_predicted": 0.9406415926535898,
+        "residual_pct": 0.2912425129905639
+      },
+      "H_pi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00031415926535897925,
+        "x_predicted": 0.9378141592653589,
+        "residual_pct": 0.01021854278567068
+      },
+      "H_pi_cascade_base_invphi_start2": {
+        "corr_predicted": 2.8748506914265715,
+        "x_predicted": 3.8123506914265715,
+        "residual_pct": 306.47297623722653
+      },
+      "H_pi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.6153492900670757,
+        "x_predicted": 1.5528492900670758,
+        "residual_pct": 65.56485057916814
+      },
+      "H_pi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.08574694771675984,
+        "x_predicted": 1.0232469477167598,
+        "residual_pct": 9.098628622869978
+      },
+      "H_pi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.011754619374950606,
+        "x_predicted": 0.9492546193749506,
+        "residual_pct": 1.2095637507810526
+      },
+      "H_phi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.016180339887498955,
+        "x_predicted": 0.953680339887499,
+        "residual_pct": 1.6814342407585998
+      },
+      "H_phi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.0016180339887498947,
+        "x_predicted": 0.9391180339887499,
+        "residual_pct": 0.1288006299911412
+      },
+      "H_phi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00016180339887498948,
+        "x_predicted": 0.937661803398875,
+        "residual_pct": 0.026462731085612954
+      },
+      "H_phi_cascade_base_invphi_start2": {
+        "corr_predicted": 3.1102521688713356,
+        "x_predicted": 4.047752168871336,
+        "residual_pct": 331.57149074765545
+      },
+      "H_phi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.5739059900976741,
+        "x_predicted": 1.511405990097674,
+        "residual_pct": 61.14616435454083
+      },
+      "H_phi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.053180292222231015,
+        "x_predicted": 0.990680292222231,
+        "residual_pct": 5.626370570974928
+      },
+      "H_phi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.005257882472847664,
+        "x_predicted": 0.9427578824728476,
+        "residual_pct": 0.5168814142985595
+      }
+    },
+    {
+      "coefficient": "D_Omega",
+      "x_alg": 0.8375,
+      "x_obs": 0.83996,
+      "true_correction": 0.0024600000000000177,
+      "Canonical_1loop_gamma2/c_X": {
+        "corr_predicted": 0.0025000000000000005,
+        "x_predicted": 0.84,
+        "residual_pct": 0.004762131530064406
+      },
+      "H_pi:   gamma^pi (uniform)": {
+        "corr_predicted": 0.000721784159074728,
+        "x_predicted": 0.8382217841590748,
+        "residual_pct": 0.20694031155355747
+      },
+      "H_phi:  gamma^phi (uniform)": {
+        "corr_predicted": 0.02409716832074905,
+        "x_predicted": 0.8615971683207491,
+        "residual_pct": 2.575976037043314
+      },
+      "H_e:    gamma^e (uniform)": {
+        "corr_predicted": 0.0019130141022243186,
+        "x_predicted": 0.8394130141022244,
+        "residual_pct": 0.06512046975757023
+      },
+      "H_pi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.031415926535897934,
+        "x_predicted": 0.868915926535898,
+        "residual_pct": 3.447298268476827
+      },
+      "H_pi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.003141592653589794,
+        "x_predicted": 0.8406415926535898,
+        "residual_pct": 0.08114584665815062
+      },
+      "H_pi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00031415926535897925,
+        "x_predicted": 0.837814159265359,
+        "residual_pct": 0.25546939552372494
+      },
+      "H_pi_cascade_base_invphi_start2": {
+        "corr_predicted": 2.8748506914265715,
+        "x_predicted": 3.7123506914265714,
+        "residual_pct": 341.96755695825647
+      },
+      "H_pi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.6153492900670757,
+        "x_predicted": 1.4528492900670757,
+        "residual_pct": 72.96648531680981
+      },
+      "H_pi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.08574694771675984,
+        "x_predicted": 0.9232469477167599,
+        "residual_pct": 9.915584994137793
+      },
+      "H_pi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.011754619374950606,
+        "x_predicted": 0.8492546193749506,
+        "residual_pct": 1.106554999636956
+      },
+      "H_phi_cascade_base_gamma_start2": {
+        "corr_predicted": 0.016180339887498955,
+        "x_predicted": 0.853680339887499,
+        "residual_pct": 1.6334515795393814
+      },
+      "H_phi_cascade_base_gamma_start3": {
+        "corr_predicted": 0.0016180339887498947,
+        "x_predicted": 0.83911803398875,
+        "residual_pct": 0.1002388222355926
+      },
+      "H_phi_cascade_base_gamma_start4": {
+        "corr_predicted": 0.00016180339887498948,
+        "x_predicted": 0.837661803398875,
+        "residual_pct": 0.2736078624130993
+      },
+      "H_phi_cascade_base_invphi_start2": {
+        "corr_predicted": 3.1102521688713356,
+        "x_predicted": 3.9477521688713355,
+        "residual_pct": 369.99287690739266
+      },
+      "H_phi_cascade_base_phi_squared_inv_start2": {
+        "corr_predicted": 0.5739059900976741,
+        "x_predicted": 1.411405990097674,
+        "residual_pct": 68.03252417944593
+      },
+      "H_phi_cascade_base_gamma_phi_start2": {
+        "corr_predicted": 0.053180292222231015,
+        "x_predicted": 0.890680292222231,
+        "residual_pct": 6.038417570149882
+      },
+      "H_phi_cascade_base_gamma_div_phi_start2": {
+        "corr_predicted": 0.005257882472847664,
+        "x_predicted": 0.8427578824728477,
+        "residual_pct": 0.3330971085346473
+      }
+    }
+  ],
+  "canonical_max_pct": 0.004762131530064406,
+  "pi_loop_max_pct": 1.4435683181494574,
+  "phi_loop_max_pct": 48.19433664149811,
+  "pi_digit_cascade_max_pct": 62.83185307179586,
+  "verdict": "User-exploratory hypotheses (pi-loop, phi-loop, e-loop, pi-digit-cascade, phi-digit-cascade) are all falsified vs the canonical gamma^2/c_X 1-loop form. A SINGLE uniform exponent cannot match all 5 coefficients simultaneously because their true corrections differ by ~30x in magnitude (alpha_xi: 8e-4, D_Omega: 2.5e-3, eps_sync2: 0). The structured c_X per coefficient (1/12, 1/48, 1/24, 1/4, 0) -- pure Cl(1,3)/N_gen/d rationals -- is the unique structural form. The pi-digit cascade does not fit any single coefficient at sub-percent level and accumulates to ~3.4e-2 per the geometric series, much larger than any observed correction."
+}

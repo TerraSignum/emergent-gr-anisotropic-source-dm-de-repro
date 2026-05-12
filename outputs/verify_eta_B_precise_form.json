@@ -1,0 +1,89 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Precise structural form for eta_B baryon asymmetry",
+  "stand": "2026-05-05",
+  "eta_B_observed": 6.1e-10,
+  "BBN_band": [
+    5.8e-10,
+    6.5e-10
+  ],
+  "candidates": [
+    {
+      "form": "gamma^10",
+      "value": 1.0000000000000006e-10,
+      "label": "10^-10",
+      "ratio_to_eta_B": 6.099999999999996,
+      "rel_err_pct": 83.60655737704917,
+      "tier": "ORDER"
+    },
+    {
+      "form": "N_gen! * gamma^10",
+      "value": 6.000000000000003e-10,
+      "label": "6 * 10^-10",
+      "ratio_to_eta_B": 1.0166666666666662,
+      "rel_err_pct": 1.6393442622950256,
+      "tier": "PRECISE"
+    },
+    {
+      "form": "(N_gen!) * gamma^(2d+2)",
+      "value": 6.000000000000003e-10,
+      "label": "6 * gamma^10",
+      "ratio_to_eta_B": 1.0166666666666662,
+      "rel_err_pct": 1.6393442622950256,
+      "tier": "PRECISE"
+    },
+    {
+      "form": "(N_gen!) * gamma^(d^2-6)",
+      "value": 6.000000000000003e-10,
+      "label": "6 * gamma^10",
+      "ratio_to_eta_B": 1.0166666666666662,
+      "rel_err_pct": 1.6393442622950256,
+      "tier": "PRECISE"
+    },
+    {
+      "form": "N_gen! * gamma * eps^2 * gamma^d * eps^2 * gamma^2",
+      "value": 1.5000000000000008e-09,
+      "label": "6 * gamma^7 * eps^4 = 6e-7 * 2.5e-3 = 1.5e-9",
+      "ratio_to_eta_B": 0.4066666666666664,
+      "rel_err_pct": 145.90163934426243,
+      "tier": "ORDER"
+    },
+    {
+      "form": "N_gen! * gamma^(2d) * eps^2",
+      "value": 3.000000000000002e-09,
+      "label": "6 * gamma^8 * eps^2",
+      "ratio_to_eta_B": 0.20333333333333317,
+      "rel_err_pct": 391.8032786885249,
+      "tier": "FAR"
+    },
+    {
+      "form": "N_gen^N_gen * gamma^11",
+      "value": 2.7000000000000015e-10,
+      "label": "27 * 10^-11",
+      "ratio_to_eta_B": 2.2592592592592577,
+      "rel_err_pct": 55.73770491803276,
+      "tier": "ORDER"
+    },
+    {
+      "form": "gamma^9 * eps^2",
+      "value": 5.000000000000003e-11,
+      "label": "10^-9 * 1/20 = 5e-11",
+      "ratio_to_eta_B": 12.199999999999992,
+      "rel_err_pct": 91.80327868852459,
+      "tier": "ORDER"
+    }
+  ],
+  "best": {
+    "form": "N_gen! * gamma^10",
+    "value": 6.000000000000003e-10,
+    "label": "6 * 10^-10",
+    "ratio_to_eta_B": 1.0166666666666662,
+    "rel_err_pct": 1.6393442622950256,
+    "tier": "PRECISE"
+  },
+  "verdict": "Best structural form for eta_B is N_gen! * gamma^10 = 6.000e-10, matching Planck 2018 / BBN observed value (6.1e-10) to 1.64% (tier PRECISE). The factor N_gen! = 6 = |S_3| is the family permutation count, suggesting a structural origin in family-asymmetry generation. The chirality-sine power 10 encodes the dimensional + family structure. This is a NEW structural prediction not in the existing corpus, directly derivable from the post-flip System-R^(matter) values."
+}

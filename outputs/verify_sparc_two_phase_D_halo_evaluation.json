@@ -1,0 +1,34 @@
+{
+  "method": "SPARC two-phase classifier evaluation on the pre-registered D_halo domain (T_type >= 8 late-type subset of the Q<3 quality cut). Reports binomial p-value, Wilson CI, AUC, confusion matrix, balanced accuracy, and AICc-wins.",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "domain_definition": "T_type >= 8 (late-type)",
+  "n_full_sample": 129,
+  "n_D_halo": 42,
+  "threshold_M_b_e9_Msun": 101.0,
+  "accuracy": 0.6428571428571429,
+  "majority_baseline": 0.6428571428571429,
+  "binomial_p_value": 0.569762822718593,
+  "wilson_95_CI": [
+    0.4916608928707938,
+    0.7701100749837315
+  ],
+  "roc_auc": 0.33827160493827163,
+  "confusion_matrix": {
+    "TP": 0,
+    "TN": 27,
+    "FP": 0,
+    "FN": 15,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.5
+  },
+  "aicc_wins_within_D_halo": {
+    "two_phase_vs_always_NFW": 27,
+    "two_phase_vs_always_Burkert": 0,
+    "n_D_halo": 42
+  }
+}

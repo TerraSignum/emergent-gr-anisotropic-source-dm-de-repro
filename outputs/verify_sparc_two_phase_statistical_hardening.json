@@ -1,0 +1,43 @@
+{
+  "method": "Statistical hardening of the SPARC two-phase classifier: binomial p-value, Wilson 95% CI, confusion matrix, ROC AUC, bootstrap accuracy CI, LOO accuracy spread, all computed at the pre-registered threshold M_b ~ 10^11 Msun (Milky Way scale).",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_total": 129,
+  "threshold_M_b_e9_Msun": 101.0,
+  "pre_registered_threshold_meaning": "Milky Way baryonic mass scale (~ 10^11 Msun)",
+  "majority_baseline": 0.627906976744186,
+  "accuracy": 0.6666666666666666,
+  "binomial_p_value_vs_majority": 0.20697604027988153,
+  "wilson_95_CI": [
+    0.5815375061875019,
+    0.7421562764829868
+  ],
+  "confusion_matrix": {
+    "TP": 12,
+    "TN": 74,
+    "FP": 7,
+    "FN": 36,
+    "sensitivity": 0.25,
+    "specificity": 0.9135802469135802,
+    "balanced_accuracy": 0.5817901234567902
+  },
+  "roc_auc": 0.5313786008230452,
+  "bootstrap_accuracy_95_CI": [
+    0.5813953488372093,
+    0.7443798449612374
+  ],
+  "bootstrap_optimal_threshold_median": 92.05126,
+  "bootstrap_optimal_threshold_95_CI": [
+    59.68074,
+    223.34431
+  ],
+  "LOO_accuracy_mean": 0.6666666666666666,
+  "LOO_accuracy_std": 0.0036828478186799354,
+  "LOO_accuracy_range": [
+    0.6640625,
+    0.671875
+  ]
+}

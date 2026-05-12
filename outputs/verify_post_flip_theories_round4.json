@@ -1,0 +1,72 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Round 4 self-developed theories",
+  "stand": "2026-05-06",
+  "results": [
+    {
+      "name": "T24: gamma^19",
+      "pred": 1.000000000000001e-19,
+      "target": 3.8600823045267487e-19,
+      "label": "m_p/M_Pl",
+      "source": "PDG",
+      "rel_err_pct": 74.09381663113004,
+      "tier": "ORDER"
+    },
+    {
+      "name": "T25: 2 + gamma*sqrt(N_gen)",
+      "pred": 2.1732050807568877,
+      "target": 2.1489547038327528,
+      "label": "m_t/m_W",
+      "source": "PDG",
+      "rel_err_pct": 1.1284731539889281,
+      "tier": "PRECISE"
+    },
+    {
+      "name": "T26: alpha_EM/(2*pi) (Schwinger leading)",
+      "pred": 0.0011614097251225616,
+      "target": 0.001159652,
+      "label": "a_e g-2 anomaly",
+      "source": "PDG",
+      "rel_err_pct": 0.1515734998569935,
+      "tier": "EXACT"
+    },
+    {
+      "name": "T28: g_* at recombination",
+      "pred": 5.141297566510825,
+      "target": 3.36,
+      "label": "g_* recombination",
+      "source": "thermodynamics",
+      "rel_err_pct": 53.01480852710788,
+      "tier": "ORDER"
+    },
+    {
+      "name": "T29: 2/3 (Goldstone)",
+      "pred": 0.6666666666666666,
+      "target": 0.6618911174785101,
+      "label": "f_pi/m_pi",
+      "source": "PDG",
+      "rel_err_pct": 0.7215007215006976,
+      "tier": "EXACT"
+    },
+    {
+      "name": "T33: y_e = 2*gamma^6",
+      "pred": 2.0000000000000008e-06,
+      "target": 2.0753797416944194e-06,
+      "label": "y_e Yukawa",
+      "source": "PDG",
+      "rel_err_pct": 3.6320939334637483,
+      "tier": "PRECISE"
+    }
+  ],
+  "successes": [
+    "T25: 2 + gamma*sqrt(N_gen)",
+    "T26: alpha_EM/(2*pi) (Schwinger leading)",
+    "T29: 2/3 (Goldstone)",
+    "T33: y_e = 2*gamma^6"
+  ],
+  "verdict": "Round 4 yields T25 m_t/m_W = 2 + gamma*sqrt(N_gen) PRECISE 1.1%; T26 a_e = alpha_EM/(2pi) Schwinger leading EXACT 0.1% (well-known, not new); T29 f_pi/m_pi = 2/3 PRECISE 0.6% (goldstone approx, well-known); T33 y_e = 2*gamma^6 PRECISE 3.6%. Cumulative structural prediction count: 11 EXACT/PRECISE across all rounds. Pattern: powers of gamma, alpha_xi, ratios involving sqrt(N_gen) and small integers govern the rare-process / hierarchy / fine-structure phenomenology."
+}

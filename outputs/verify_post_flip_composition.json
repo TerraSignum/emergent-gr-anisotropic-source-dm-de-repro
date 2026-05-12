@@ -1,0 +1,110 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Post-flip composition: System-R^(matter) detailed",
+  "stand": "2026-05-05",
+  "vacuum_side_canonical": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "eps_sync2": 0.05,
+    "beta_pi": 0.9375,
+    "D_Omega": 0.8375
+  },
+  "matter_side_post_flip": {
+    "alpha_xi": 0.1,
+    "gamma": 0.9,
+    "eps_sync2": 0.45,
+    "beta_pi": 0.5305555555555556,
+    "beta_pi_rational": "191/360",
+    "D_Omega_C2_naive": -0.36944444444444446,
+    "D_Omega_Symanzik_asymptote": 0.7853981633974483,
+    "D_Omega_recommended": "pi/4 (matter-side, Symanzik)"
+  },
+  "swap_symmetry": "(alpha_xi, gamma) -> (gamma, alpha_xi); cosine and sine roles swap",
+  "closures_evaluated": [
+    {
+      "id": "PMNS theta_13",
+      "formula": "alpha_xi / (2 * N_gen)",
+      "vac_pred": 0.15,
+      "mat_pred": 0.016666666666666666,
+      "PDG_target": 0.14976,
+      "PDG_label": "8.58 deg",
+      "vac_rel_err_pct": 0.16025641025640372,
+      "mat_rel_err_pct": 88.87108262108262
+    },
+    {
+      "id": "CKM V_us",
+      "formula": "gamma * sqrt(5)",
+      "vac_pred": 0.223606797749979,
+      "mat_pred": 2.012461179749811,
+      "PDG_target": 0.2253,
+      "PDG_label": "Cabibbo",
+      "vac_rel_err_pct": 0.7515322902889519,
+      "mat_rel_err_pct": 793.2362093873995
+    },
+    {
+      "id": "CKM R_b",
+      "formula": "d * gamma * (1 + eps^2)",
+      "vac_pred": 0.42000000000000004,
+      "mat_pred": 5.22,
+      "PDG_target": 0.422,
+      "PDG_label": "|V_ub|/|V_cb| ratio",
+      "vac_rel_err_pct": 0.4739336492890868,
+      "mat_rel_err_pct": 1136.9668246445497
+    },
+    {
+      "id": "PMNS theta_12 sin",
+      "formula": "tan(theta_chir)",
+      "vac_pred": 0.33333333333333337,
+      "mat_pred": 3.0,
+      "PDG_target": 0.6656570223974544,
+      "PDG_label": "33.65 deg",
+      "vac_rel_err_pct": 49.92416182544158,
+      "mat_rel_err_pct": 350.68254357102575
+    },
+    {
+      "id": "BH 1/4",
+      "formula": "alpha_xi/2 - 2*gamma",
+      "vac_pred": 0.25,
+      "mat_pred": -1.75,
+      "PDG_target": 0.25,
+      "PDG_label": "BH entropy coefficient",
+      "vac_rel_err_pct": 0.0,
+      "mat_rel_err_pct": 800.0
+    },
+    {
+      "id": "Einstein gap 2/3",
+      "formula": "2*(alpha_xi - gamma)/3 (heuristic)",
+      "vac_pred": 0.5333333333333333,
+      "mat_pred": -0.5333333333333333,
+      "PDG_target": 0.6666666666666666,
+      "PDG_label": "spectral gap exponent",
+      "vac_rel_err_pct": 19.999999999999996,
+      "mat_rel_err_pct": 180.0
+    },
+    {
+      "id": "sin^2 theta_W (PDG)",
+      "formula": "gamma * beta_pi * 4/pi",
+      "vac_pred": 0.1193662073189215,
+      "mat_pred": 0.6079718826110403,
+      "PDG_target": 0.23122,
+      "PDG_label": "Weinberg angle",
+      "vac_rel_err_pct": 48.37548338425677,
+      "mat_rel_err_pct": 162.94087129618558
+    },
+    {
+      "id": "alpha_dn G_NET",
+      "formula": "alpha_xi + beta_pi + eps^2 - gamma",
+      "vac_pred": 1.7874999999999999,
+      "mat_pred": 0.18055555555555547,
+      "PDG_target": 1.8333333333333335,
+      "PDG_label": "alpha_dn anchor (Yukawa exponent)",
+      "vac_rel_err_pct": 2.500000000000015,
+      "mat_rel_err_pct": 90.15151515151516
+    }
+  ],
+  "verdict": "Post-flip System-R^(matter) values: alpha_xi^M = 1/10, gamma^M = 9/10, eps^2_M = 9/20, beta_pi^M = 191/360 = 0.5306, D_Omega^M = pi/4 (Symanzik). Vacuum-side and matter-side anchors are related by the swap (alpha_xi, gamma) -> (gamma, alpha_xi). All existing closures evaluated with post-flip values DIVERGE from SM low-energy observables (V_us^M > 1, negative BH entropy, etc.), confirming that the vacuum anchor is the physically correct low-energy identification. The post-flip regime is a structurally well-defined dual but does not correspond to SM phenomenology; potential identification with matter-side / dark-sector observables is speculative without further theoretical input. The C2 identity D_Omega = beta_pi - gamma breaks in matter regime (gives negative D_Omega); the empirical Symanzik continuum asymptote D_Omega -> pi/4 is structurally independent of C2."
+}

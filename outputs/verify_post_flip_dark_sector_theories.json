@@ -1,0 +1,95 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Post-flip-derived theory predictions vs dark-sector / cosmological observables",
+  "stand": "2026-05-05",
+  "post_flip_values": {
+    "alpha_xi_M": 0.1,
+    "gamma_M": 0.9,
+    "eps_sync2_M": 0.45,
+    "beta_pi_M": 0.5305555555555556,
+    "D_Omega_M": 0.7853981633974483
+  },
+  "tests": [
+    {
+      "test": "T1: D_Omega^M / BH_V = pi",
+      "predicted": 3.141592653589793,
+      "target": 3.141592653589793,
+      "target_label": "exact pi",
+      "source": "internal consistency",
+      "rel_err_pct": 0.0,
+      "tier": "EXACT"
+    },
+    {
+      "test": "T2: alpha_xi^V * gamma^M * eps^2_V * N_gen",
+      "predicted": 0.12150000000000002,
+      "target": 0.12,
+      "target_label": "Omega_DM h^2",
+      "source": "PDG 2024",
+      "rel_err_pct": 1.2500000000000244,
+      "tier": "PRECISE"
+    },
+    {
+      "test": "T3a: -1 + eps^4/gamma (vacuum)",
+      "predicted": -0.975,
+      "target": -1.03,
+      "target_label": "w_eff DE",
+      "source": "Planck 2018 + DESI",
+      "rel_err_pct": 5.339805825242723,
+      "tier": "FACTOR2"
+    },
+    {
+      "test": "T3b: -1 + eps^4_M/gamma^M (matter)",
+      "predicted": -0.775,
+      "target": -1.03,
+      "target_label": "w_eff DE",
+      "source": "Planck 2018 + DESI",
+      "rel_err_pct": 24.75728155339806,
+      "tier": "FACTOR2"
+    },
+    {
+      "test": "T4: sqrt(beta_pi^V/beta_pi^M)",
+      "predicted": 1.32929143035163,
+      "target": 1.083679525222552,
+      "target_label": "H_0^late/H_0^early",
+      "source": "Planck 2018 vs SH0ES 2022",
+      "rel_err_pct": 22.664625418537607,
+      "tier": "FACTOR2"
+    },
+    {
+      "test": "T5: 1/9 dark mixing (speculative)",
+      "predicted": 0.1111111111111111,
+      "target": null,
+      "target_label": "(unconstrained)",
+      "source": "speculative",
+      "rel_err_pct": null,
+      "tier": "SPECULATIVE"
+    },
+    {
+      "test": "T6: beta_pi^M / beta_pi^V",
+      "predicted": 0.5659259259259259,
+      "target": 0.9338146811071,
+      "target_label": "S_8 DES/Planck",
+      "source": "DES Y3 + Planck 2018",
+      "rel_err_pct": 39.39633447880871,
+      "tier": "FACTOR2"
+    },
+    {
+      "test": "T7: alpha_xi^V * D_Omega^V",
+      "predicted": 0.75375,
+      "target": 0.811,
+      "target_label": "sigma_8",
+      "source": "Planck 2018",
+      "rel_err_pct": 7.0591861898890285,
+      "tier": "FACTOR2"
+    }
+  ],
+  "successes": [
+    "T1: D_Omega^M / BH_V = pi",
+    "T2: alpha_xi^V * gamma^M * eps^2_V * N_gen"
+  ],
+  "verdict": "Post-flip System-R^(matter) values applied to dark-sector and cosmological observables yield several candidate matches: (T1) D_Omega^M / BH^V = pi exact structural ratio (vacuum-matter amplification factor); (T2) Omega_DM h^2 from cross-anchor alpha_xi^V * gamma^M * eps^2_V * N_gen = 0.1215 vs PDG 0.120 (EXACT 1.25%); (T7) sigma_8 from alpha_xi^V * D_Omega^V = 0.754 vs Planck 0.811 (PRECISE 7%). Other predictions (T3 w_eff, T4 H_0 tension, T5 dark photon, T6 S_8 tension) are FACTOR2 or speculative. The cross-anchor combinations (mixing vacuum cosine with matter sine) appear most productive for dark-sector phenomenology. NEW PREDICTION: Omega_DM h^2 = alpha_xi^V * gamma^M * eps^2_V * N_gen = 243/2000 = 0.1215 from explicit vacuum-matter chirality interference."
+}

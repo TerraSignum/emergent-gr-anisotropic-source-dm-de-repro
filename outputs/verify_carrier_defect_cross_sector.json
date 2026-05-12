@@ -1,0 +1,22 @@
+{
+  "method": "Cross-sector consistency: same |g| closes EW + cosmological transport",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "input_file": "data\\xi_reactivity_regime_ladder.json",
+  "tree_value_g": 1.66,
+  "msbar_value_g": 1.4187,
+  "msbar_uncertainty_g": 0.1,
+  "ew_healing_factor_g_msbar_over_g_tree": 0.8546385542168675,
+  "p5_reac_over_diss": 0.5240237259765078,
+  "p2prime_reac_over_diss": 0.7177081375511992,
+  "p2prime_over_p5_overamp_pct": 36.96100042297977,
+  "cosmo_healing_factor_sqrt_p5_over_p2prime": 0.8544792880187291,
+  "ew_minus_cosmo_healing": 0.00015926619813844134,
+  "agree_to_three_sig_figs": true,
+  "agree_to_four_sig_figs": true,
+  "post_renorm_projected_overamp_pct": 26.99657559276582,
+  "verdict": "EW healing factor |g|_MS/|g|_tree = 0.8546; cosmological healing factor sqrt(P5/P2') = 0.8545; difference +0.0002. The renormalisation that closes v_EW agrees with the rescaling that heals the +37.0% reactivity-over-dissipation over-amplification at P2' to within three significant figures."
+}

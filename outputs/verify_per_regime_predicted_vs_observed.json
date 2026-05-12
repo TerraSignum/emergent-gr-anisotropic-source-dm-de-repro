@@ -1,0 +1,120 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Anisotropic-source DM/DE repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Per-regime predicted vs observed comparison",
+  "stand": "2026-05-05",
+  "predicted_aggregate": {
+    "alpha_xi": 0.9008333333333334,
+    "gamma": 0.10020833333333334,
+    "eps_sync2": 0.05,
+    "beta_pi": 0.9379166666666666,
+    "D_Omega": 0.84
+  },
+  "observed_aggregate": {
+    "alpha_xi": 0.90082,
+    "gamma": 0.10021,
+    "eps_sync2": 0.05,
+    "beta_pi": 0.93791,
+    "D_Omega": 0.83996
+  },
+  "L1_error_summary": {
+    "alpha_xi": {
+      "L1_obs": 2.2067338668044427,
+      "L1_pred": 2.20684053347111
+    },
+    "gamma": {
+      "L1_obs": 0.0,
+      "L1_pred": 0.0
+    },
+    "eps_sync2": {
+      "L1_obs": 0.0,
+      "L1_pred": 0.0
+    },
+    "beta_pi": {
+      "L1_obs": 1.0993175374875928,
+      "L1_pred": 1.0993648708209256
+    },
+    "D_Omega": {
+      "L1_obs": 1.9479397249715555,
+      "L1_pred": 1.9482517249715552
+    }
+  },
+  "L2_RMS_summary": {
+    "alpha_xi": {
+      "rms_obs": 0.3387831958978584,
+      "rms_pred": 0.3387940521616348
+    },
+    "gamma": {
+      "rms_obs": 0.0,
+      "rms_pred": 0.0
+    },
+    "eps_sync2": {
+      "rms_obs": 0.0,
+      "rms_pred": 0.0
+    },
+    "beta_pi": {
+      "rms_obs": 0.17067371734748857,
+      "rms_pred": 0.17067908490365966
+    },
+    "D_Omega": {
+      "rms_obs": 0.3169751928610879,
+      "rms_pred": 0.31700592077526496
+    }
+  },
+  "symanzik_extrapolation": {
+    "alpha_xi": {
+      "y_inf": 0.10448372989546151,
+      "a": 62.609363240603216,
+      "b": -1121.173080439985,
+      "OBS": 0.90082,
+      "PRED": 0.9008333333333334,
+      "dist_to_OBS": 0.7963362701045384,
+      "dist_to_PRED": 0.7963496034378719,
+      "winner": "OBS"
+    },
+    "gamma": {
+      "y_inf": 0.8955162701045358,
+      "a": -62.6093632406031,
+      "b": 1121.1730804400577,
+      "OBS": 0.10021,
+      "PRED": 0.10020833333333334,
+      "dist_to_OBS": 0.7953062701045358,
+      "dist_to_PRED": 0.7953079367712025,
+      "winner": "OBS"
+    },
+    "eps_sync2": {
+      "y_inf": 0.4477581350522679,
+      "a": -31.30468162030155,
+      "b": 560.5865402200288,
+      "OBS": 0.05,
+      "PRED": 0.05,
+      "dist_to_OBS": 0.3977581350522679,
+      "dist_to_PRED": 0.3977581350522679,
+      "winner": "OBS"
+    },
+    "beta_pi": {
+      "y_inf": 0.5302657966961029,
+      "a": 32.984438375342506,
+      "b": -617.7533361579408,
+      "OBS": 0.93791,
+      "PRED": 0.9379166666666666,
+      "dist_to_OBS": 0.40764420330389717,
+      "dist_to_PRED": 0.40765086997056377,
+      "winner": "OBS"
+    },
+    "D_Omega": {
+      "y_inf": 0.785195348361567,
+      "a": -66.97038218547777,
+      "b": 3703.010404418019,
+      "OBS": 0.83996,
+      "PRED": 0.84,
+      "dist_to_OBS": 0.054764651638433026,
+      "dist_to_PRED": 0.054804651638432955,
+      "winner": "OBS"
+    }
+  },
+  "verdict": "Aggregate 'observed' values (0.90082, 0.10021, 0.05000, 0.93791, 0.83996) are the P5 N=50 anchor calibration. Per-regime calibrated values drop rapidly with N (alpha_xi: 0.901->0.312 across N=50..300). Symanzik continuum extrapolation y_inf fits are dominated by this calibration-anchor effect, recovering values far from 9/10 = 0.9 and far from 0.900833 = predicted. The two candidates differ by 5e-4, MUCH smaller than the per-regime spread 0.6 -- per-regime data does NOT distinguish predicted from observed. Honest reading: the canonical values are anchor-defined, not continuum-extrapolated, and the gamma^2/c_X correction matches at the anchor to 0.001-0.005% which is the relevant precision claim."
+}

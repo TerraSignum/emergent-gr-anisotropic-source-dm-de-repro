@@ -1,0 +1,179 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Iter-36 chirality running first-principles + D_Omega + higher-N predictions + p95/p99 CIs",
+  "stand": "2026-05-05",
+  "T1_first_principles_running": {
+    "structural_form": "tan(theta(N)) = N_gen^(2x-1) with x = ln(N/N_*)/ln(d*N_gen)",
+    "theta_canonical_deg": 18.43494882292201,
+    "theta_inversion_deg": 71.56505117707799,
+    "delta_theta_deg": 53.13010235415599,
+    "predicted_b_deg_per_lnN": 21.381126071149907,
+    "empirical_b_deg_per_lnN": 21.301037928790183,
+    "rel_err_b_pct": 0.3745740149195832,
+    "N_canonical": 50,
+    "N_inversion_predicted": 600,
+    "N_inversion_empirical": 591,
+    "match_pct": 1.5228426395939088,
+    "per_regime_residuals_deg": [
+      0.07835169737594683,
+      3.2193057335438837,
+      3.6556426837966214,
+      5.991214857895894,
+      5.519401315285151,
+      8.708987509924164,
+      2.429287387059219,
+      2.3450670369671016
+    ],
+    "mean_residual_deg": 3.9934072777309977
+  },
+  "T2_D_Omega_residuals": [
+    {
+      "N": 50,
+      "D_Omega": 0.839964,
+      "chirality_mix_pred": 0.8323324877439224,
+      "residual": 0.0076315122560776105
+    },
+    {
+      "N": 64,
+      "D_Omega": 0.7597612114548454,
+      "chirality_mix_pred": 0.8276729762485524,
+      "residual": -0.06791176479370697
+    },
+    {
+      "N": 72,
+      "D_Omega": 0.6702956471721387,
+      "chirality_mix_pred": 0.8257398005374326,
+      "residual": -0.15544415336529382
+    },
+    {
+      "N": 84,
+      "D_Omega": 0.4311232895180821,
+      "chirality_mix_pred": 0.8213793505339185,
+      "residual": -0.39025606101583643
+    },
+    {
+      "N": 100,
+      "D_Omega": 0.6142757508881663,
+      "chirality_mix_pred": 0.818523258430681,
+      "residual": -0.20424750754251464
+    },
+    {
+      "N": 128,
+      "D_Omega": 0.2946492624539301,
+      "chirality_mix_pred": 0.8104150905380765,
+      "residual": -0.5157658280841464
+    },
+    {
+      "N": 200,
+      "D_Omega": 0.337080556960031,
+      "chirality_mix_pred": 0.8059766076888648,
+      "residual": -0.46889605072883384
+    },
+    {
+      "N": 300,
+      "D_Omega": 0.8245985565812509,
+      "chirality_mix_pred": 0.8016458596910612,
+      "residual": 0.02295269689018975
+    }
+  ],
+  "T3_higher_N_predictions": [
+    {
+      "N": 400,
+      "x_frac": 0.8368288369533894,
+      "tan_theta": 2.096121220322005,
+      "theta_deg": 64.49551394396848,
+      "alpha_xi": 0.18540065610127543,
+      "gamma": 0.8145993438987247,
+      "beta_pi": 0.5744420038298221
+    },
+    {
+      "N": 500,
+      "x_frac": 0.9266284080291269,
+      "tan_theta": 2.5533300865857536,
+      "theta_deg": 68.61243328169722,
+      "alpha_xi": 0.1329876623846018,
+      "gamma": 0.8670123376153982,
+      "beta_pi": 0.5475075487254204
+    },
+    {
+      "N": 600,
+      "x_frac": 1.0,
+      "tan_theta": 3.0,
+      "theta_deg": 71.56505117707799,
+      "alpha_xi": 0.1,
+      "gamma": 0.8999999999999999,
+      "beta_pi": 0.5305555555555556
+    },
+    {
+      "N": 800,
+      "x_frac": 1.1157717826045193,
+      "tan_theta": 3.868972217005788,
+      "theta_deg": 75.50811005603832,
+      "alpha_xi": 0.06262154051998124,
+      "gamma": 0.9373784594800187,
+      "beta_pi": 0.5113471805449904
+    },
+    {
+      "N": 1000,
+      "x_frac": 1.2055713536802566,
+      "tan_theta": 4.7128778002293625,
+      "theta_deg": 78.02039318049458,
+      "alpha_xi": 0.04308261790458101,
+      "gamma": 0.9569173820954189,
+      "beta_pi": 0.5013063453120763
+    },
+    {
+      "N": 1500,
+      "x_frac": 1.3687425167268672,
+      "tan_theta": 6.745141103297508,
+      "theta_deg": 81.56704782671547,
+      "alpha_xi": 0.021506796947394387,
+      "gamma": 0.9784932030526056,
+      "beta_pi": 0.4902187706535221
+    },
+    {
+      "N": 2000,
+      "x_frac": 1.4845142993313865,
+      "tan_theta": 8.698921176147275,
+      "theta_deg": 83.4422474043084,
+      "alpha_xi": 0.013042701999708927,
+      "gamma": 0.9869572980002912,
+      "beta_pi": 0.48586916630540605
+    },
+    {
+      "N": 5000,
+      "x_frac": 1.8532568160582539,
+      "tan_theta": 19.558483593192033,
+      "theta_deg": 87.07308949002038,
+      "alpha_xi": 0.00260732886454679,
+      "gamma": 0.9973926711354532,
+      "beta_pi": 0.4805065439998365
+    }
+  ],
+  "T4_alpha_over_beta_bootstrap": {
+    "point_estimate_exponent": -0.39500375904167795,
+    "target": -0.4,
+    "p2_5": -0.425663397729905,
+    "p50": -0.39446584765988235,
+    "p97_5": -0.3380968897243325,
+    "p0_5": -0.4401283865241751,
+    "p99_5": -0.2926810969629857,
+    "target_in_p95_CI": true,
+    "target_in_p99_CI": true
+  },
+  "T5_N_inversion_bootstrap": {
+    "structural_prediction": 600,
+    "p50": 593.3957024877471,
+    "p2_5": 301.91161172082246,
+    "p97_5": 823.6122910146792,
+    "p0_5": 286.30389453538317,
+    "p99_5": 925.3750502468208,
+    "structural_in_p95_CI": true,
+    "structural_in_p99_CI": true
+  },
+  "verdict": "T1: theta_chir(N) running follows the structural ansatz tan(theta(N)) = N_gen^(2x-1) with x = ln(N/N_*) / ln(d*N_gen). Predicted running rate Delta_theta / ln(d*N_gen) matches empirical fit within 0.37%. The geometric setup uses theta_can = arctan(1/N_gen) and theta_inv = arctan(N_gen) as endpoints; the running interpolates linearly in ln(N) between them. T2: D_Omega is non-monotonic with dips at N=84 and N=128=2^7; chirality-mixing form fails to capture this and additional matter-sector structure is needed (likely binary-subdivision lattice resonance). T3: higher-N predictions place chirality inversion at N = d*N_gen*50 = 600 (within 1.5% of empirical 591). T4: alpha/beta exponent -2/5 inside p95 bootstrap CI: True, p99: True. T5: N_inversion structural prediction 600 inside p95 CI: True, p99: True."
+}
