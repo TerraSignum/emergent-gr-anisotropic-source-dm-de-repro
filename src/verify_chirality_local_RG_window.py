@@ -33,8 +33,9 @@ Data: canonical d1 P5N N-ordered ladder by default
 9 regimes total at N in {64,72,84,100,128,200,256,300,512}, variable
 seeds (8..24 per regime), ~25,400 lattice nodes pooled. Matter-core
 indicators evaluated at multiple percentiles per the fine-percentile-
-audit (2026-05-07): PCT_LIST = [90, 95, 99] spans BULK (top-10%)
-through TRANSITION (top-5%) into MATTER_CORE (top-1%+). Setting
+audit (2026-05-07): PCT_LIST = [90, 95, 99, 99.5] spans BULK
+(top-10%) through TRANSITION (top-5%) into MATTER_CORE (top-1%) and
+the strict-extreme matter-core (top-0.5%; geometric-defect cores). Setting
 P5N_CANONICAL_ONLY=False with D1_FAMILY_ONLY=True falls back to the
 broader d1-family pool (adds alt-anchor P6N128/P8N128); setting both
 to False enables the 25-regime audit including a2/c5/e1 small-N
@@ -373,9 +374,9 @@ P5N_CANONICAL_ONLY = True
 # Fine-percentile cuts for matter-core indicators (top-q%). Matter
 # cores live in the heavy tail of T_00 / Delta / Lap|psi|^2 (per
 # fine-percentile audit 2026-05-07: BULK p97, TRANSITION p98-99,
-# MATTER_CORE p99.5+). We test 90/95/99 to span the BULK->CORE
-# transition.
-PCT_LIST = [90, 95, 99]
+# MATTER_CORE p99.5+). PCT_LIST spans the BULK -> CORE transition
+# (90, 95, 99) and the MATTER_CORE band itself (99.5).
+PCT_LIST = [90, 95, 99, 99.5]
 
 REGIMES = [
     # Companion d1/a2/c5/e1 NPZs (small-N support regimes).
