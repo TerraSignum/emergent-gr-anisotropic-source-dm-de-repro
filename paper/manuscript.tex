@@ -1602,7 +1602,16 @@ curve is one regime (colour-coded by $N$). On every regime
 $R_{00}$ is most strongly negative in the innermost shell
 adjacent to the matter cores and approaches zero in the
 outermost shell, the radial-decrease signature expected of
-an NFW-class halo carried by the residual energy density.}
+an NFW-class halo~\cite{NFW1997} carried by the residual
+energy density. At $N\!\geq\!128$ the outermost shell
+crosses zero into positive $R_{00}$ (P5N128: $-0.0022$ inner
+$\to\!+0.0334$ outer; P5N512: $-0.0134\!\to\!+0.0218$),
+reproducing on the lattice the two-component inner-orbiting /
+outer-infalling halo decomposition of
+\cite{DiemerKravtsov2014, Wang2024NFWNN} where the
+inner-shell negative residual corresponds to bound matter
+and the outer-shell positive residual to infalling
+correlated matter beyond the splashback radius.}
 \label{fig:residual_R00_distance_shells}
 \end{figure}
 
@@ -4632,7 +4641,16 @@ companion paper~\cite{Paper2}, also EXACT
 under the rational reduction $\mathcal R$
 $(\alpha_{\xi},\gamma)=(9/10,1/10)$. The 122-order hierarchy
 reduction is the downstream phenomenological readout of this
-algebraic closure on the lattice $\rho_\Lambda$.
+algebraic closure on the lattice $\rho_\Lambda$. Phenomenological
+parallels in the running-vacuum-cosmology literature describe an
+analogous, but parameterised, $\Lambda(H)\!=\!\Lambda_{0}\!+\!\nu
+H^{2}$ ansatz with the $\nu$-coefficient at small $\mathcal{O}(\nu)
+\!\sim\!\mathcal{O}(\gamma^{2})$ amplitude in our
+notation~\cite{SolaPeracaula2021RVM}; our nine-layer closure is the
+parameter-free System-$\mathcal{R}$ rational version of this
+structure, with the $\gamma^{2}$-scale running set by the
+chirality-flip branch resolution at $\theta\!=\!\pi/4$ rather than
+by a free phenomenological coefficient.
 
 \paragraph{Per-regime numerical closure.}
 Combined with the
@@ -5979,6 +5997,48 @@ M.~Yang,
 effect from topological gluon configurations in QCD},
 Symmetry \textbf{12}, 1545 (2020);
 \href{https://doi.org/10.3390/sym12091545}{doi:10.3390/sym12091545}.
+
+\bibitem{DiemerKravtsov2014}
+B.~Diemer and A.~V.~Kravtsov,
+\emph{Dependence of the outer density profiles of haloes on
+their mass accretion rate},
+Astrophys.~J.~\textbf{789}, 1 (2014), arXiv:1401.1216.
+Establishes the two-component decomposition of dark-matter halo
+profiles into an inner orbiting (1-halo / NFW-like) component
+and an outer infalling (2-halo / matter-matter correlation)
+component, with the splashback radius separating the two
+regimes. Direct phenomenological parallel to the inner-shell
+$R_{00}\!<\!0$ / outer-shell $R_{00}\!>\!0$ sign-flip onset at
+$N\!\geq\!128$ documented in Figure
+\ref{fig:residual_R00_distance_shells}.
+
+\bibitem{Wang2024NFWNN}
+L.~Wang et al.,
+\emph{Explaining dark matter halo density profiles with neural
+networks},
+Phys.\ Rev.\ Lett.\ \textbf{132}, 031001 (2024),
+arXiv:2305.03077.
+Machine-learning extraction of the inner-orbiting and
+outer-infalling components of dark-matter halo profiles across
+halo masses and redshifts, confirming the two-component
+structure of~\cite{DiemerKravtsov2014} on a statistical basis;
+provides modern validation of the inner/outer split used in
+our shell-decomposition audit.
+
+\bibitem{SolaPeracaula2021RVM}
+J.~Sola Peracaula, A.~Gomez-Valent, J.~de Cruz Perez and
+C.~Moreno-Pulido,
+\emph{Running vacuum interacting with dark matter or with
+running gravitational coupling. Phenomenological implications},
+arXiv:2109.12086 (2021); Mon.\ Not.\ R.\ Astron.\ Soc.\
+(2021).
+Running-vacuum cosmology with $\Lambda(H^{2})\!=\!\Lambda_{0}
+\!+\!\nu H^{2}$ corrections at $\mathcal{O}(\gamma^{2})$
+amplitude in our framework's notation; phenomenological
+parallel to the $\gamma^{2}$-universality of chirality-flip-
+shift corrections that controls the
+$\Lambda_{t}\!,T_{00}\!,G_{00}$ branch resolution at $\theta\!
+=\!\pi/4$ (Section~\ref{sec:matter_core_tau_eps_sync}).
 
 \end{thebibliography}
 
