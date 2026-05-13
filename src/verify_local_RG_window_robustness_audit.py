@@ -17,9 +17,11 @@ D. Threshold scan: enrichment ratio
    theta_0 from 0 to pi/2; should display the matter-core
    enrichment optimum at the framework-predicted threshold pi/4.
 
-Reads only the regimes for which the framework matter-core
-indicator Delta(a) is computable (psi-bundled d1 final-state and
-d1 snapshot regimes; eight regimes on the P5/P6/P8 ladder).
+Reads only the canonical d1 P5N N-ordered ladder regimes
+(alt-anchor-separation rule from 2026-05-11). Nine regimes at
+N in {64,72,84,100,128,200,256,300,512}; framework matter-core
+indicator Delta(a) and t_00(a) are computable on the psi-bundled
+d1_P5N* regimes by construction.
 """
 from __future__ import annotations
 
@@ -40,7 +42,7 @@ from verify_chirality_local_RG_window import (  # noqa: E402
     metrics_for_candidate, theta_local_from_n_eff, PI, N_STAR,
     D as DIM, N_GEN, LN_DG)
 
-D1_REGIMES = [r for r in REGIMES if r[0].startswith("d1_")]
+D1_REGIMES = [r for r in REGIMES if r[0].startswith("d1_P5N")]
 RNG = np.random.default_rng(20260506)
 N_BOOT = 1000
 N_NULL = 1000
@@ -82,7 +84,7 @@ def enrichment_ratio(thetas, labels, theta_0):
 
 
 def load_d1_pooled():
-    """Load only d1 regimes (psi-bundled, framework Delta available)."""
+    """Load canonical d1 P5N regimes (psi-bundled, alt-anchor-free)."""
     pooled = []
     per_regime = {}
     for label, dirname, npz_name, n_seeds, n_lat in D1_REGIMES:

@@ -3541,32 +3541,39 @@ which reduces to $\theta_{\rm chir}(a)\!>\!\pi/4$ only in the
 asymptotic matter regime. Physically, a node is locally matter-
 enriched when its local chirality scale exceeds the regime's
 global running background. We audit
-Eq.~\eqref{eq:matter_local_classifier} against three matter-core
-indicators (top-decile $t_{00}(a)$ from the per-node Galerkin
-construction, top-decile $\Delta(a)$, and the per-node
-topological winding number $|w(a)|\!>\!1/2$) on $26{,}704$
-lattice nodes from the eleven $\psi$-bundled regimes on the
-$\mathcal{P}_{5}/\mathcal{P}_{6}/\mathcal{P}_{8}$ ladder ($\mathcal{P}_{5}$ at $N\!=\!64,72,84,100,
-128,200,256,300,512$ and $\mathcal{P}_{6}, \mathcal{P}_{8}$ at $N\!=\!128$,
-including the post-flip regimes $N\!\geq\!200$ up to the
-deep-post-flip endpoint $N\!=\!512$). The framework matter-
-core indicators $\Delta(a), t_{00}(a)$ and $w(a)$ require the
-local order parameter $\psi$ to be bundled, which restricts
-the test corpus to these eleven regimes. Pooled metrics:
-AUC$\,=\!0.843$ and matter-core enrichment ratio
+Eq.~\eqref{eq:matter_local_classifier} against two framework
+matter-core indicators (top-decile $t_{00}(a)$ from the per-node
+Galerkin construction and top-decile $\Delta(a)$) on $23{,}632$
+lattice nodes from the canonical d1 $\mathcal{P}_{5}$ N-ordered
+ladder at $N\!=\!64,72,84,100,128,200,256,300,512$ (alt-anchor
+$\mathcal{P}_{6}/\mathcal{P}_{8}$ regimes are excluded per the
+alt-anchor-separation rule; auditing the chirality-flip running
+formula requires a homogeneous N-ordered pool). The framework
+matter-core indicators $\Delta(a), t_{00}(a)$ require the
+local order parameter $\psi$ to be bundled, which is satisfied
+in all nine P5N regimes. Pooled metrics: AUC$\,=\!0.841$ and
+matter-core enrichment ratio
 $P(C_{N}|\theta_{\rm loc}\!>\!\theta_{\rm glob})/
-P(C_{N}|\theta_{\rm loc}\!\leq\!\theta_{\rm glob})\!=\!10.46\!\times$
+P(C_{N}|\theta_{\rm loc}\!\leq\!\theta_{\rm glob})\!=\!10.19\!\times$
 against $t_{00}(a)$. Per-regime AUC against $t_{00}(a)$ ranges
-$0.80$--$0.89$ across all eleven regimes (slight downturn at the
-deep post-flip endpoint $N\!=\!512$, AUC$\,=\!0.798$), with
+$0.80$--$0.89$ across all nine P5N regimes (slight downturn at
+the deep post-flip endpoint $N\!=\!512$, AUC$\,=\!0.798$), with
 regime-relative ratios $6.5$--$23\!\times$. The fixed-$\pi/4$
 classifier (used asymptotically, with $\theta_{\rm
 glob}(N)\!=\!\pi/4$ only at $N\!\sim\!173$) produces a milder
-pooled ratio $1.84\!\times$ against $t_{00}(a)$, since most
+pooled ratio $1.55\!\times$ against $t_{00}(a)$, since most
 lattice regimes lie either pre-flip ($\theta_{\rm
 glob}\!<\!\pi/4$) or post-flip ($\theta_{\rm glob}\!>\!\pi/4$);
 the regime-relative classifier removes this regime-mixing
-dilution. See
+dilution. A finer-percentile audit on the same canonical
+P5N pool (matter-core support at top-$5\%$ and top-$1\%$
+$t_{00}(a)$; per
+\path|src/verify_chirality_local_RG_window.py| on the canonical
+P5N pool) yields the fixed-$\pi/4$ enrichment ratios
+$1.67\!\times$ (top-$5\%$) and $1.74\!\times$ (top-$1\%$),
+monotone with the percentile cut and consistent with the
+fine-percentile audit's location of the matter-core support in
+the heavy tail of $t_{00}$. See
 Fig.~\ref{fig:p4b_local_RG_window_audit}.
 
 \paragraph{Robustness audit: confidence intervals,
@@ -3576,29 +3583,28 @@ Four diagnostics harden the regime-relative classifier
 Eq.~\eqref{eq:matter_local_classifier} against overfitting and
 chance.
 (i)~Bootstrap $95\%$ confidence intervals (1000 node-level
-percentile resamples): AUC$\,=\!0.849$ $[0.838, 0.860]$, ratio
-$11.31\!\times$ $[9.24, 14.19]$ against $t_{00}(a)$;
-AUC$\,=\!0.616$ $[0.594, 0.637]$, ratio $1.75\!\times$
-$[1.57, 1.97]$ against $\Delta(a)$. Both AUC and enrichment-
+percentile resamples): AUC$\,=\!0.841$ $[0.833, 0.849]$, ratio
+$10.19\!\times$ $[8.99, 11.71]$ against $t_{00}(a)$;
+AUC$\,=\!0.613$ $[0.599, 0.629]$, ratio $1.63\!\times$
+$[1.51, 1.76]$ against $\Delta(a)$. Both AUC and enrichment-
 ratio confidence intervals exclude the null (AUC$\,=\!0.5$,
 ratio$\,=\!1$) by a wide margin against $t_{00}(a)$ and
-$\Delta(a)$; the winding indicator $|w(a)|$ has a confidence
-interval that includes the null, reflecting the small available
-sample (only the two regimes at $N\!=\!64,100$ bundle a winding
-map; $n\!=\!656$).
+$\Delta(a)$. The topological-winding indicator $|w(a)|$ is not
+populated in the canonical P5N snapshot NPZs and is therefore
+not audited here.
 (ii)~Leave-one-regime-out (LORO): the row-variance of $\Xi$ is
 selected as the top per-node candidate by training AUC on the
-remaining seven regimes in $8/8$ folds for both the $t_{00}(a)$
-and $\Delta(a)$ targets, with held-out test AUC ranging $0.83$--
-$0.90$ against $t_{00}(a)$ and $0.51$--$0.90$ against
-$\Delta(a)$. The out-of-sample peak AUC reaches $0.904$ on the
-$N\!=\!64$ regime, confirming that the per-node enrichment is
+remaining eight regimes in $9/9$ folds for both the $t_{00}(a)$
+and $\Delta(a)$ targets, with held-out test AUC ranging $0.80$--
+$0.89$ against $t_{00}(a)$ and $0.41$--$0.84$ against
+$\Delta(a)$. The out-of-sample peak AUC reaches $0.886$ on the
+$N\!=\!72$ regime, confirming that the per-node enrichment is
 not a within-sample fit.
 (iii)~Negative controls (within-regime permutation of
 $\theta_{\rm chir}(a)$, 1000 replicates): observed AUC against
-$t_{00}(a)$ is $z\!=\!37.9\sigma$ above the null mean
-$0.498$, $p\!=\!0.001$ (permutation-test floor); observed AUC
-against $\Delta(a)$ is $z\!=\!12.7\sigma$ above null,
+$t_{00}(a)$ is $z\!=\!57.5\sigma$ above the null mean
+$0.494$, $p\!=\!0.001$ (permutation-test floor); observed AUC
+against $\Delta(a)$ is $z\!=\!18.4\sigma$ above null,
 $p\!=\!0.001$. The per-node classifier is decisively non-random.
 (iv)~Regime-relative threshold scan
 (Fig.~\ref{fig:p4b_robustness_audit}, panel D): the matter-core
@@ -3608,17 +3614,17 @@ P(C_{N}|\theta_{\rm loc}\!\leq\!\theta_{\rm glob}\!+\!\Delta)$
 is plotted against the offset $\Delta$ from the regime-running
 threshold $\theta_{\rm glob}(N)$. For the $t_{00}(a)$ indicator,
 the ratio plateaus near the framework-predicted threshold
-($\Delta\!=\!0$ gives ratio $11.31\!\times$) and rises to a peak
-$59.9\!\times$ at $\Delta\!\sim\!-11^{\circ}$, consistent with
+($\Delta\!=\!0$ gives ratio $10.19\!\times$) and rises to a peak
+$36.8\!\times$ at $\Delta\!\sim\!-10^{\circ}$, consistent with
 $\theta_{\rm glob}(N)$ acting as the per-regime matter-core
 boundary. The chirality-flip is therefore both a global
 coefficient regime change of the bounded-operator readouts
 \emph{and} a strong local matter-core indicator at the per-node
 level: $\Delta\theta(a)\!>\!0$ predicts high local
-$t_{00}(a)$ matter loading at AUC$\,=\!0.849$ pooled with
-$0.83$--$0.90$ across all eight individual regimes and matter-
-core enrichment $9.4$--$27\!\times$, exceeding the strict
-$0.85$ promotion gate within five of eight regimes and at the
+$t_{00}(a)$ matter loading at AUC$\,=\!0.841$ pooled with
+$0.80$--$0.89$ across all nine individual P5N regimes and matter-
+core enrichment $6.5$--$23\!\times$, exceeding the strict
+$0.85$ promotion gate within four of nine regimes and at the
 gate when pooled.
 
 \begin{figure}[t]
@@ -3634,9 +3640,10 @@ $\Delta(a)$), overlaid on the global
 $\theta_{\rm chir}(N)$ running curve. Panel B: matter-core
 enrichment ratio
 $P(C_{N}|\theta\!>\!\pi/4)/P(C_{N}|\theta\!\leq\!\pi/4)$ across
-the $\mathcal{P}_{5}$ ladder ($N\!=\!100,128,200,256,300$) plus the
-$\mathcal{P}_{6}, \mathcal{P}_{8}$ regimes at $N\!=\!128$; values above $1$
-indicate matter-side nodes are more likely to lie in
+the canonical d1 $\mathcal{P}_{5}$ N-ordered ladder at
+$N\!=\!64,72,84,100,128,200,256,300,512$ (alt-anchor
+$\mathcal{P}_{6}/\mathcal{P}_{8}$ regimes excluded); values
+above $1$ indicate matter-side nodes are more likely to lie in
 $C_{N}$.}
 \label{fig:p4b_local_RG_window_audit}
 \end{figure}
@@ -3645,19 +3652,23 @@ $C_{N}$.}
 \centering
 \includegraphics[width=0.98\textwidth]
               {figures/fig_local_RG_window_robustness_audit.pdf}
-\caption{Robustness audit of the local RG-window probe. Panel
-A: bootstrap $95\%$ confidence intervals for AUC (left axis,
-blue circles) and matter-core enrichment ratio (right axis,
-orange squares) under the three matter-core indicators; both
-quantities exclude the null (AUC$\,=\!0.5$, ratio$\,=\!1$).
-Panel B: leave-one-regime-out test AUC for each held-out regime
-on the $\mathcal{P}_{5}/\mathcal{P}_{6}/\mathcal{P}_{8}$ ladder; the row-variance of $\Xi$
-remains the top candidate selected by training AUC on the
-remaining seven regimes in $8/8$ folds for the $t_{00}(a)$ and
-$\Delta(a)$ targets. Panel C: within-regime permutation null
-distribution (1000 replicates) versus the observed AUC; the
-observed AUC against $t_{00}(a)$ is $37.9\sigma$ above the null
-mean. Panel D: matter-core enrichment ratio as a function of
+\caption{Robustness audit of the local RG-window probe on the
+canonical d1 $\mathcal{P}_{5}$ N-ordered ladder
+($N\!=\!64,72,84,100,128,200,256,300,512$; alt-anchor
+$\mathcal{P}_{6}/\mathcal{P}_{8}$ regimes excluded per the
+alt-anchor-separation rule). Panel A: bootstrap $95\%$
+confidence intervals for AUC (left axis, blue circles) and
+matter-core enrichment ratio (right axis, orange squares) under
+the two framework matter-core indicators $t_{00}(a)$ and
+$\Delta(a)$; both quantities exclude the null
+(AUC$\,=\!0.5$, ratio$\,=\!1$). Panel B: leave-one-regime-out
+test AUC for each held-out regime on the canonical P5N ladder;
+the row-variance of $\Xi$ remains the top candidate selected by
+training AUC on the remaining eight regimes in $9/9$ folds for
+the $t_{00}(a)$ and $\Delta(a)$ targets. Panel C: within-regime
+permutation null distribution (1000 replicates) versus the
+observed AUC; the observed AUC against $t_{00}(a)$ is
+$57.5\sigma$ above the null mean. Panel D: matter-core enrichment ratio as a function of
 threshold $\theta_{0}$; the framework-predicted threshold $\pi/4$
 is marked, alongside the vacuum and inversion anchors
 $\arctan(1/N_{\rm gen})\!=\!18.4^{\circ}$ and

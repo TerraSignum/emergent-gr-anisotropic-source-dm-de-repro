@@ -26,11 +26,19 @@ We test four non-circular N_eff candidates (none uses T_00 directly):
                       local enhancement of the Xi displacement
 
 Promotion gate (declared upfront): AUC(theta_local -> in C_N) >= 0.85
-AND rho(theta_local, T_00) >= 0.5 on the pooled 13-regime corpus.
+AND rho(theta_local, T_00) >= 0.5 on the pooled canonical-P5N corpus.
 
-Data: 13 regime NPZs (4 seeds each); paths corrected per user
-2026-05-05; 2672 lattice nodes total; same regimes as in
-verify_chirality_matter_boundary.py.
+Data: canonical d1 P5N N-ordered ladder by default
+(P5N_CANONICAL_ONLY=True; alt-anchor-separation rule from 2026-05-11);
+9 regimes total at N in {64,72,84,100,128,200,256,300,512}, variable
+seeds (8..24 per regime), ~25,400 lattice nodes pooled. Matter-core
+indicators evaluated at multiple percentiles per the fine-percentile-
+audit (2026-05-07): PCT_LIST = [90, 95, 99] spans BULK (top-10%)
+through TRANSITION (top-5%) into MATTER_CORE (top-1%+). Setting
+P5N_CANONICAL_ONLY=False with D1_FAMILY_ONLY=True falls back to the
+broader d1-family pool (adds alt-anchor P6N128/P8N128); setting both
+to False enables the 25-regime audit including a2/c5/e1 small-N
+extensions (heterogeneous N-ranges).
 """
 from __future__ import annotations
 
@@ -231,24 +239,21 @@ def per_node_local_RG(npz_path, seed_idx):
     #                     verify_trimmed_mean_and_tail_overlap.py)
     #   in_C_N_winding : |winding_map(a)| > 0.5 (vortex sites; only on
     #                     d1 final-state regimes)
-    if fw_t00 is not None:
-        sorted_t00fw = sorted(fw_t00)
-        tau_t00fw = sorted_t00fw[int(0.9 * N_global)]
-        in_C_N_t00fw = fw_t00 >= tau_t00fw
-    else:
-        in_C_N_t00fw = None
-    if psi_lap_abs is not None:
-        sorted_lap = sorted(psi_lap_abs)
-        tau_lap = sorted_lap[int(0.9 * N_global)]
-        in_C_N_lap = psi_lap_abs >= tau_lap
-    else:
-        in_C_N_lap = None
-    if fw_delta is not None:
-        sorted_delta = sorted(fw_delta)
-        tau_delta = sorted_delta[int(0.9 * N_global)]
-        in_C_N_delta = fw_delta >= tau_delta
-    else:
-        in_C_N_delta = None
+    def _multi_pct(arr, pcts):
+        # Returns dict {pct: boolean mask of (arr >= percentile(pct))}
+        if arr is None:
+            return None
+        s = sorted(arr)
+        out = {}
+        for q in pcts:
+            idx = min(int(q / 100.0 * N_global), N_global - 1)
+            tau = s[idx]
+            out[q] = arr >= tau
+        return out
+
+    in_C_N_t00fw_pct = _multi_pct(fw_t00, PCT_LIST)
+    in_C_N_lap_pct = _multi_pct(psi_lap_abs, PCT_LIST)
+    in_C_N_delta_pct = _multi_pct(fw_delta, PCT_LIST)
     if winding_node is not None:
         in_C_N_winding = winding_node > 0.5
     else:
@@ -285,15 +290,24 @@ def per_node_local_RG(npz_path, seed_idx):
             node["N_eff_phase"] = float(n_eff_phase)
             node["theta_phase"] = theta_local_from_n_eff(n_eff_phase)
             node["phase_jump_sq"] = float(phase_jump_sq[a])
-        if in_C_N_t00fw is not None:
-            node["in_C_N_t00fw"] = bool(in_C_N_t00fw[a])
+        if in_C_N_t00fw_pct is not None:
+            node["in_C_N_t00fw"] = bool(in_C_N_t00fw_pct[90][a])
             node["framework_t00"] = float(fw_t00[a])
-        if in_C_N_lap is not None:
-            node["in_C_N_lap"] = bool(in_C_N_lap[a])
+            for q in PCT_LIST:
+                node[f"in_C_N_t00fw_p{q}"] = bool(
+                    in_C_N_t00fw_pct[q][a])
+        if in_C_N_lap_pct is not None:
+            node["in_C_N_lap"] = bool(in_C_N_lap_pct[90][a])
             node["psi_lap_abs"] = float(psi_lap_abs[a])
-        if in_C_N_delta is not None:
-            node["in_C_N_delta"] = bool(in_C_N_delta[a])
+            for q in PCT_LIST:
+                node[f"in_C_N_lap_p{q}"] = bool(
+                    in_C_N_lap_pct[q][a])
+        if in_C_N_delta_pct is not None:
+            node["in_C_N_delta"] = bool(in_C_N_delta_pct[90][a])
             node["framework_delta"] = float(fw_delta[a])
+            for q in PCT_LIST:
+                node[f"in_C_N_delta_p{q}"] = bool(
+                    in_C_N_delta_pct[q][a])
         if in_C_N_winding is not None:
             node["in_C_N_winding"] = bool(in_C_N_winding[a])
             node["winding_abs"] = float(winding_node[a])
@@ -341,6 +355,27 @@ def auc_binary(scores, labels):
             auc += tp
     return auc / (n_pos * n_neg)
 
+
+# Restriction to the homogeneous d1-family (canonical P5/P5N + alt-
+# anchor P6N128/P8N128 at the matching lattice scale). Set to False
+# to enable the broader 25-regime audit including the a2/c5/e1
+# small-N alt-anchor extensions. The published-paper audit uses
+# the homogeneous d1-family pool (Option B in the 2026-05-13
+# regime-scope audit).
+D1_FAMILY_ONLY = True
+
+# Restrict pool to the canonical d1 P5N N-ordered ladder only
+# (excludes d1_P6N128 / d1_P8N128 alt-anchors per the alt-anchor
+# separation rule from 2026-05-11). Matter-core indicators are
+# defined here on the P5N canonical pool only.
+P5N_CANONICAL_ONLY = True
+
+# Fine-percentile cuts for matter-core indicators (top-q%). Matter
+# cores live in the heavy tail of T_00 / Delta / Lap|psi|^2 (per
+# fine-percentile audit 2026-05-07: BULK p97, TRANSITION p98-99,
+# MATTER_CORE p99.5+). We test 90/95/99 to span the BULK->CORE
+# transition.
+PCT_LIST = [90, 95, 99]
 
 REGIMES = [
     # Companion d1/a2/c5/e1 NPZs (small-N support regimes).
@@ -435,6 +470,10 @@ def main():
     pooled = []
     per_regime = {}
     for label, dirname, npz_name, n_seeds, N_lat in REGIMES:
+        if P5N_CANONICAL_ONLY and not label.startswith("d1_P5N"):
+            continue
+        if D1_FAMILY_ONLY and not label.startswith("d1_"):
+            continue
         path = EMERGENCE / dirname / npz_name
         if not path.exists():
             print(f"  [skip] {label}: {path} missing")
@@ -505,12 +544,19 @@ def main():
     #   (b) C_N = top-10% |Laplacian|psi|^2| (psi-localisation peak)
     #   (c) C_N = top-10% framework Delta (residual-tail = matter core)
     #   (d) C_N = |winding_map| > 0.5 (topological vortex sites)
-    targets = [
-        ("vs_t00fw",   "in_C_N_t00fw",   "C_N = top-10% framework t00"),
-        ("vs_psi_lap", "in_C_N_lap",     "C_N = top-10% |Lap |psi|^2|"),
-        ("vs_delta",   "in_C_N_delta",   "C_N = top-10% framework Delta"),
-        ("vs_winding", "in_C_N_winding", "C_N = |winding| > 0.5"),
-    ]
+    targets = []
+    for q in PCT_LIST:
+        top_pct = 100 - q
+        targets.extend([
+            (f"vs_t00fw_p{q}",   f"in_C_N_t00fw_p{q}",
+             f"C_N = top-{top_pct}% framework t00"),
+            (f"vs_psi_lap_p{q}", f"in_C_N_lap_p{q}",
+             f"C_N = top-{top_pct}% |Lap |psi|^2|"),
+            (f"vs_delta_p{q}",   f"in_C_N_delta_p{q}",
+             f"C_N = top-{top_pct}% framework Delta"),
+        ])
+    targets.append(
+        ("vs_winding", "in_C_N_winding", "C_N = |winding| > 0.5"))
     summary = {tk: {} for (tk, _, _) in targets}
     for target_key, label_key, target_desc in targets:
         n_avail = sum(1 for n in pooled if label_key in n)
@@ -571,6 +617,12 @@ def main():
 
     n_matter_pool = sum(1 for n in pooled if n["theta_Q"] > PI/4)
     has_matter_support = n_matter_pool > 0
+    # Dynamic N-range for diagnostic text (avoids stale hardcoded
+    # "N=36..300" strings when D1_FAMILY_ONLY filter is active).
+    loaded_ns = sorted({r[4] for r in REGIMES
+                        if r[0] in per_regime})
+    n_range_str = (f"N={loaded_ns[0]}..{loaded_ns[-1]}"
+                   if loaded_ns else "N=?")
 
     if promoted:
         print(f"Promoted candidates: {promoted}")
@@ -601,7 +653,7 @@ def main():
         all_or_nothing = all_or_nothing_q
         print(f"Extended-scope test: {n_matter_pool}/{len(pooled)} "
               f"matter-side nodes pooled across {len(per_regime)} "
-              f"regimes (N=36..300, including post-flip N=200/256/300).\n"
+              f"regimes ({n_range_str}).\n"
               f"  Per-regime structure: each regime is "
               f"{'ALL-OR-NOTHING' if all_or_nothing else 'MIXED'} "
               f"(within a single lattice run, either all nodes are\n"
@@ -702,7 +754,13 @@ def main():
         },
         "honest_verdict": verdict,
     }
-    out = OUTPUTS / "verify_chirality_local_RG_window.json"
+    if P5N_CANONICAL_ONLY:
+        suffix = "_p5n_canonical"
+    elif D1_FAMILY_ONLY:
+        suffix = "_d1_family"
+    else:
+        suffix = "_all_regimes"
+    out = OUTPUTS / f"verify_chirality_local_RG_window{suffix}.json"
     out.write_text(json.dumps(bundle, indent=2), encoding="utf-8")
     print(f"\nSaved {out}")
 
