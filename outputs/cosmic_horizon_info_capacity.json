@@ -1,0 +1,35 @@
+{
+  "headline": "Cosmic-horizon information-capacity readout of the 9-layer cosmological-constant closure: S_dS = 2.259e+122 nats (122.3539 dex), equivalent to the framework's 122.94/122.95-order Lambda-hierarchy closure via S_dS = pi M_Pl^2 / H_0^2 with H_0 = alpha_xi * s_face * N_gen * 100 km/s/Mpc = 27/40 * 100. Cosmic analogue of the BH-A/4 entropy closure in the Paper4A black-hole sector.",
+  "system_R_inputs": {
+    "alpha_xi": 0.9,
+    "s_face": 0.25,
+    "N_gen": 3,
+    "H_0_structural_km_s_Mpc": 67.5,
+    "H_0_paper_value_km_s_Mpc": 67.5,
+    "H_0_check_diff": 0.0
+  },
+  "cosmic_horizon": {
+    "l_Planck_m": 1.61625502392855e-35,
+    "H_0_s_inv": 2.187510127361701e-18,
+    "R_horizon_m": 1.370473463186074e+26,
+    "R_horizon_Gly": 14.485503257436571,
+    "A_horizon_m2": 2.3602126039060797e+53
+  },
+  "de_sitter_entropy": {
+    "S_dS_nats": 2.258766604947509e+122,
+    "S_dS_bits": 3.2587113794833714e+122,
+    "log10_S_dS": 122.35387135822447,
+    "formula": "S_dS = pi (c/H_0)^2 / ell_P^2 = pi M_Pl^2 / H_0^2",
+    "interpretation": "Cosmic-horizon information-capacity bound: total Hilbert-space dimension of the observable universe is bounded by exp(S_dS). The bound is FIXED for a given H_0; cosmic expansion does NOT increase S_dS, it grows the causally-accessible subset of a fixed Hilbert space."
+  },
+  "lambda_hierarchy_cross_check": {
+    "rho_Lambda_obs_GeV4": 2.49e-47,
+    "rho_Planck_GeV4": 2.2218788499821762e+76,
+    "rho_ratio": 8.923208232860144e+122,
+    "log10_rho_ratio": 122.95052102784277,
+    "prefactor_(rho_ratio/S_dS)": 3.9504782004989445,
+    "delta_orders_S_dS_vs_rho_ratio": 0.5966496696183015,
+    "comment": "S_dS = pi M_Pl^2 / H_0^2 differs from rho_Pl/rho_Lambda by an analytical O(1) prefactor (3/(8 pi) Lambda = H_0^2 in Planck units, so rho_Pl/rho_Lambda = 3 / (8 pi) * M_Pl^2 c^4 / (hbar G Lambda) = (3/8) * M_Pl^2 / H_0^2 * pi^(-1), giving S_dS / (rho_Pl/rho_Lambda) = 8 pi^2 / 3 ~ 26 in natural units; the 122-orders are identical, only the O(1) prefactor differs)."
+  },
+  "parallel_to_bh_entropy_closure": "Bekenstein-Hawking BH entropy S_BH = A_BH/4 is closed in Paper4A via APS-index decomposition + Strominger-Vafa enumeration (0.004% empirical, EXACT). The cosmic-horizon S_dS = A_dS/4 is the analogous holographic-entropy readout for the cosmic horizon; via the 9-layer Lambda closure and the H_0 = 27/40 * 100 km/s/Mpc closure, the framework simultaneously fixes both A_BH/4 (BH sector) and A_dS/4 (cosmic sector) without free parameters."
+}

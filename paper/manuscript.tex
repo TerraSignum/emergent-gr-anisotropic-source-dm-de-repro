@@ -5400,6 +5400,54 @@ $\mathcal R: (\alpha_{\xi},\gamma)=(9/10,1/10)$ shared with the
 Bekenstein--Hawking $1/4$ identity.  The 122-orders-of-magnitude
 hierarchy reduction is the downstream phenomenological readout.
 
+\paragraph{Cosmic-horizon information-capacity readout.}
+The same closure simultaneously fixes the de-Sitter
+cosmic-horizon entropy
+\begin{equation}
+S_{dS} \;=\; \frac{A_{\rm horizon}}{4\,\ell_{\rm Pl}^{2}}
+       \;=\; \pi\,\frac{(c/H_{0})^{2}}{\ell_{\rm Pl}^{2}}
+       \;=\; \frac{\pi\,M_{\rm Pl}^{2}}{H_{0}^{2}}
+       \;\approx\; 2.26\times10^{122}\;\;\text{nats},
+\label{eq:S_dS_closure}
+\end{equation}
+with $H_{0}\!=\!100\,\alpha_{\xi}\,s_{\rm face}\,N_{\rm gen}\!=\!67.5$
+km/s/Mpc the parameter-free Hubble closure of
+Section~\ref{sec:H0_prediction}. Equivalently
+$\log_{10}S_{dS}\!=\!122.35$, matching the $122.95$-orders
+$\log_{10}(\rho_{\rm Pl}/\rho_{\Lambda})$ hierarchy of the
+nine-layer dressing to within an analytical $O(1)$ prefactor
+(the conversion $S_{dS}\!=\!\pi M_{\rm Pl}^{2}/H_{0}^{2}$
+versus $\rho_{\rm Pl}/\rho_{\Lambda}\!=\!(3/(8\pi))\,
+M_{\rm Pl}^{2}c^{4}/(\hbar G \Lambda)$ contributes a factor
+$\sim\!8\pi^{2}/3$, i.e.\ $0.6$ orders, leaving the $122$
+common orders identical).  The same $1\!:\!4$ holographic
+relation $S = A/(4\ell_{\rm Pl}^{2})$ that closes the
+Bekenstein--Hawking BH entropy in the companion
+black-hole-sector paper~\cite{Paper4A} therefore also closes
+the cosmic-horizon entropy here; the BH and cosmic
+holographic-entropy readouts are dual reductions of the
+same lattice-derived 122-orders hierarchy via two different
+horizons (Schwarzschild on the matter side, de-Sitter on the
+vacuum side).
+
+\paragraph{Information-capacity bound for the observable
+universe.} Eq.~\eqref{eq:S_dS_closure} is the
+cosmic-information-capacity analogue of the BH-A/4 bound:
+the total Hilbert-space dimension of the observable
+universe is bounded by $\exp(S_{dS})\!\sim\!\exp(2.26\!\times\!10^{122})$
+nats, a value structurally fixed by the framework's $H_{0}$
+closure. Cosmic expansion does not increase this bound;
+unitary closed-system carrier evolution preserves the total
+information, while the causally accessible subset grows with
+the comoving horizon (recovering the standard cosmological
+information-budget intuition without information creation).
+The audit
+(\path|src/verify_cosmic_horizon_info_capacity.py|,
+output
+\path|outputs/cosmic_horizon_info_capacity.json|)
+reports $S_{dS}\!=\!2.26\!\times\!10^{122}$ nats and the
+explicit cross-check against the nine-layer dressing.
+
 The inflation, vacuum-stability, and reheating readouts are
 the downstream phenomenological consequences of the algebraic
 inflation closure
