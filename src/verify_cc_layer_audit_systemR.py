@@ -3,9 +3,22 @@
 Verify the layer-by-layer System-R audit of the cosmological-constant
 nine-layer dressing chain.
 
-All nine dressing sub-layers carry closed-form identifications under
-the System-R rational primitives (d, N_gen, gamma, alpha_xi,
-eps_sync^2, s_face) = (4, 3, 1/10, 9/10, 1/20, 1/4):
+All nine dressing sub-layers are DERIVED -- the chain has 0
+free-parameter fit layers. The derivations fall in three classes:
+  (1) 5 layers are exact-under-R closed-form rationals in the System-R
+      primitives (d, N_gen, gamma, alpha_xi, eps_sync^2, s_face)
+      = (4, 3, 1/10, 9/10, 1/20, 1/4): L4, L6, H195, H196, H_sync;
+  (2) 2 layers are sub-percent System-R rationals: L2, L3;
+  (3) 2 layers are derived but NOT closed-form rationals:
+      L1 = (v_EW/M_Pl)^4 inherits the full electroweak-scale derivation
+        of Paper 1 (HBR + S^4 bounce-action + two-loop) over the Planck
+        mass as a constant of nature -- derived, not fitted, not a
+        System-R rational;
+      L5 = E_geom/E_res is derived from the carrier-lattice dynamics
+        with a Symanzik 1/N^2 continuum extrapolation -- derived, not
+        fitted, not a System-R rational.
+The honest headline is "9 of 9 derived, 0 fits; 7 closed-form rational
++ 2 derived-non-rational", NOT "9 of 9 closed-form":
 
   L1 (EW hierarchy):  4 log10(v_EW / M_Pl)                              (physical)
   L2 (lattice vac. reg.): log10(N_gen gamma + (d+N_gen) gamma^2)
@@ -238,8 +251,8 @@ def main() -> int:
         },
         "layer_matches": matches,
         "verdicts": verdicts,
-        "headline": "CC_LAYER_AUDIT_FULL_PASS_9_LAYER" if overall_pass
-                    else "CC_LAYER_AUDIT_FAIL",
+        "headline": "CC_LAYER_AUDIT_7_CLOSED_FORM_PLUS_2_PHYSICAL_SNAPSHOT"
+                    if overall_pass else "CC_LAYER_AUDIT_FAIL",
         "structural_layer_count_after_audit": 9,
         "remaining_fit_layers": [],
         "exact_under_R_count": 5,  # L4, L6, H195, H196, H_sync
