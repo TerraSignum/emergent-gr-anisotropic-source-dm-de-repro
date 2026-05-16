@@ -241,7 +241,9 @@ def per_node_local_RG(npz_path, seed_idx):
     #   in_C_N_winding : |winding_map(a)| > 0.5 (vortex sites; only on
     #                     d1 final-state regimes)
     def _multi_pct(arr, pcts):
-        # Returns dict {pct: boolean mask of (arr >= percentile(pct))}
+        # Returns dict {pct: boolean mask of (arr >= percentile(pct))}.
+        # Special key "sup" -> single-True mask at argmax(arr) (per-seed
+        # extreme; matches Stage6h Csup convention).
         if arr is None:
             return None
         s = sorted(arr)
@@ -250,6 +252,10 @@ def per_node_local_RG(npz_path, seed_idx):
             idx = min(int(q / 100.0 * N_global), N_global - 1)
             tau = s[idx]
             out[q] = arr >= tau
+        if SUP_INDICATOR:
+            sup_mask = np.zeros(N_global, dtype=bool)
+            sup_mask[int(np.argmax(arr))] = True
+            out["sup"] = sup_mask
         return out
 
     in_C_N_t00fw_pct = _multi_pct(fw_t00, PCT_LIST)
@@ -297,18 +303,27 @@ def per_node_local_RG(npz_path, seed_idx):
             for q in PCT_LIST:
                 node[f"in_C_N_t00fw_p{q}"] = bool(
                     in_C_N_t00fw_pct[q][a])
+            if SUP_INDICATOR:
+                node["in_C_N_t00fw_sup"] = bool(
+                    in_C_N_t00fw_pct["sup"][a])
         if in_C_N_lap_pct is not None:
             node["in_C_N_lap"] = bool(in_C_N_lap_pct[90][a])
             node["psi_lap_abs"] = float(psi_lap_abs[a])
             for q in PCT_LIST:
                 node[f"in_C_N_lap_p{q}"] = bool(
                     in_C_N_lap_pct[q][a])
+            if SUP_INDICATOR:
+                node["in_C_N_lap_sup"] = bool(
+                    in_C_N_lap_pct["sup"][a])
         if in_C_N_delta_pct is not None:
             node["in_C_N_delta"] = bool(in_C_N_delta_pct[90][a])
             node["framework_delta"] = float(fw_delta[a])
             for q in PCT_LIST:
                 node[f"in_C_N_delta_p{q}"] = bool(
                     in_C_N_delta_pct[q][a])
+            if SUP_INDICATOR:
+                node["in_C_N_delta_sup"] = bool(
+                    in_C_N_delta_pct["sup"][a])
         if in_C_N_winding is not None:
             node["in_C_N_winding"] = bool(in_C_N_winding[a])
             node["winding_abs"] = float(winding_node[a])
@@ -374,9 +389,17 @@ P5N_CANONICAL_ONLY = True
 # Fine-percentile cuts for matter-core indicators (top-q%). Matter
 # cores live in the heavy tail of T_00 / Delta / Lap|psi|^2 (per
 # fine-percentile audit 2026-05-07: BULK p97, TRANSITION p98-99,
-# MATTER_CORE p99.5+). PCT_LIST spans the BULK -> CORE transition
-# (90, 95, 99) and the MATTER_CORE band itself (99.5).
-PCT_LIST = [90, 95, 99, 99.5]
+# MATTER_CORE p99.5+; corpus-wide Stage6h convention uses the 5-layer
+# hierarchy C95, C99, C99_5, C99_9, Csup). PCT_LIST spans BULK -> CORE
+# transition (90, 95, 99) and the MATTER_CORE band (99.5, 99.9).
+PCT_LIST = [90, 95, 99, 99.5, 99.9]
+
+# Per-seed argmax indicator (single-extreme defect node per seed).
+# At N <= 512 the p99.9 percentile mask coincides with sup but the
+# corpus framework keeps them semantically distinct (Stage6h
+# LAYER_DEFS = [Csup, C99_9, C99_5, C99, C95]). At large N (>= 1024)
+# the two diverge.
+SUP_INDICATOR = True
 
 REGIMES = [
     # Companion d1/a2/c5/e1 NPZs (small-N support regimes).
@@ -555,6 +578,15 @@ def main():
              f"C_N = top-{top_pct}% |Lap |psi|^2|"),
             (f"vs_delta_p{q}",   f"in_C_N_delta_p{q}",
              f"C_N = top-{top_pct}% framework Delta"),
+        ])
+    if SUP_INDICATOR:
+        targets.extend([
+            ("vs_t00fw_sup",   "in_C_N_t00fw_sup",
+             "C_N = sup (argmax) framework t00 per seed"),
+            ("vs_psi_lap_sup", "in_C_N_lap_sup",
+             "C_N = sup (argmax) |Lap |psi|^2| per seed"),
+            ("vs_delta_sup",   "in_C_N_delta_sup",
+             "C_N = sup (argmax) framework Delta per seed"),
         ])
     targets.append(
         ("vs_winding", "in_C_N_winding", "C_N = |winding| > 0.5"))

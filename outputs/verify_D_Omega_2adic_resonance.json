@@ -1,9 +1,4 @@
 {
-  "branch_metadata": {
-    "causal_wave_branch": "neutral_internal",
-    "branch_rationale": "System-R coefficient derivation / search-space audit; branch-blind algebraic test",
-    "schema": "worldformula/branch_metadata/v1"
-  },
   "title": "D_Omega 2-adic resonance: structural explanation",
   "stand": "2026-05-06",
   "data_per_N": [
@@ -137,6 +132,21 @@
       "deviation": 0.5004194430399691
     },
     {
+      "N": 256,
+      "D_Omega": 0.38701499642385895,
+      "v_2": 8,
+      "factors": [
+        [
+          2,
+          8
+        ]
+      ],
+      "log_2": 8.0,
+      "rational_pi_modes": 3,
+      "Laplacian_M": 0.17311466107294304,
+      "deviation": 0.4504850035761411
+    },
+    {
       "N": 300,
       "D_Omega": 0.8245985565812509,
       "v_2": 2,
@@ -158,15 +168,30 @@
       "rational_pi_modes": 5,
       "Laplacian_M": 0.17311466107294304,
       "deviation": 0.012901443418749103
+    },
+    {
+      "N": 512,
+      "D_Omega": 0.2726858783497702,
+      "v_2": 9,
+      "factors": [
+        [
+          2,
+          9
+        ]
+      ],
+      "log_2": 9.0,
+      "rational_pi_modes": 3,
+      "Laplacian_M": 0.17311466107294304,
+      "deviation": 0.5648141216502298
     }
   ],
   "correlations": {
-    "v_2(N)": 0.39886532987607975,
-    "rational-pi modes": 0.06145133742288407,
-    "Laplacian heat-trace": -0.09149315041259219,
-    "log_2(N) mod 8": 0.6214720230320407
+    "v_2(N)": 0.6122296439168209,
+    "rational-pi modes": -0.01833834201273943,
+    "Laplacian heat-trace": -0.2782015603908207,
+    "log_2(N) mod 8": 0.0007840448276431872
   },
-  "best_predictor": "log_2(N) mod 8",
-  "best_correlation": 0.6214720230320407,
-  "verdict": "The non-monotone D_Omega dips at N=2^k arise from lattice-discretisation artefacts that cancel in the continuum (N -> infinity) limit. Empirical correlation analysis on the 8-regime ladder identifies 'log_2(N) mod 8' as the strongest predictor of D_Omega deviations from the vacuum-anchor value 67/80, with Pearson r = +0.621. The structural explanation combines (a) Brillouin-zone boundary modes (rational-pi momenta on the lattice), (b) 2-adic torsion in the discrete Bianchi identity, (c) higher mode-degeneracy at N = 2^k driving spectral plateau-formation. The Symanzik continuum limit D_Omega -> pi/d = pi/4 is unaffected by these finite-N artefacts."
+  "best_predictor": "v_2(N)",
+  "best_correlation": 0.6122296439168209,
+  "verdict": "The non-monotone D_Omega dips at N=2^k arise from lattice-discretisation artefacts that cancel in the continuum (N -> infinity) limit. Empirical correlation analysis on the 8-regime ladder identifies 'v_2(N)' as the strongest predictor of D_Omega deviations from the vacuum-anchor value 67/80, with Pearson r = +0.612. The structural explanation combines (a) Brillouin-zone boundary modes (rational-pi momenta on the lattice), (b) 2-adic torsion in the discrete Bianchi identity, (c) higher mode-degeneracy at N = 2^k driving spectral plateau-formation. The Symanzik continuum limit D_Omega -> pi/d = pi/4 is unaffected by these finite-N artefacts."
 }

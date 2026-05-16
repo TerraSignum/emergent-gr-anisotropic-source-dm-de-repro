@@ -1,7 +1,7 @@
 {
   "criterion": "Cosmological-constant 9-layer closure recompute",
-  "recompute_timestamp_utc": "2026-05-12T18:22:26.589714+00:00",
-  "input_data_sha256": "87046c910c5f3d0dc6b1a23c36c6f5baec0e7738b526b038598b9209ea2ac859",
+  "recompute_timestamp_utc": "2026-05-15T15:04:23.484107+00:00",
+  "input_data_sha256": "2d649d862690a252c882fab4c7298beaa24acfadf47b5c9c4578fcd4685348b9",
   "M_Pl_GeV_used": 1.22091e+19,
   "log10_rho_naive_recomputed": 76.346734603547,
   "log10_sum_layers_recomputed": -122.95,

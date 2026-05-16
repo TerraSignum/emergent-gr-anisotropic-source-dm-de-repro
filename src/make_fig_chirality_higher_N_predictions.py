@@ -234,7 +234,7 @@ def main():
                    r"running, higher-$N$ predictions, and "
                    r"$D_\Omega$ resonance",
                    fontsize=13, y=0.995)
-    out_pdf = FIG_DIR / "fig_iter36_higher_N_predictions.pdf"
+    out_pdf = FIG_DIR / "fig_chirality_higher_N_predictions.pdf"
     fig.savefig(out_pdf, dpi=180, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved {out_pdf}")

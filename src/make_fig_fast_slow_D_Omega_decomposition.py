@@ -8,9 +8,10 @@ Panels:
      point at theta=pi/4
   B: Slow envelope D_Omega^slow(N) = (67/80)cos² + (pi/d)sin²
      transitioning from vacuum 67/80 to matter pi/d
-  C: Fast oscillation D_Omega^fast(N) period-d=4 in log_2(N)
-     with peak at phi=3 (deepest dip)
-  D: Total D_Omega(N) = slow - fast: 8 lattice points + predictions
+  C: Fast lattice-resonance r(N) = b_0 + b_1 sin²(theta) v_2(N)
+     with b_0 ~= -0.16, b_1 ~= -gamma/2; structural form
+     (2026-05-13) superseding the earlier abstract bump phenomenology
+  D: Total D_Omega(N) = slow + r: 10 lattice points + predictions
      at N=256, 512, ..., 4096
 """
 from __future__ import annotations
@@ -53,19 +54,28 @@ def D_Omega_slow(N):
             D_OMEGA_MATTER * math.sin(th) ** 2
 
 
-def fast_bump(phi, peak_phase=3.0, power=2):
-    if phi <= peak_phase:
-        f = phi / peak_phase
-    else:
-        f = (D - phi) / (D - peak_phase)
-    f = max(0, min(1, f))
-    return f ** power
+def v2_of(n):
+    """2-adic valuation of n (number of factors of 2)."""
+    k = 0
+    n = int(n)
+    while n > 0 and n % 2 == 0:
+        n //= 2
+        k += 1
+    return k
 
 
-def D_Omega_fast(N, amplitude=0.55):
-    log2_N = math.log2(N)
-    phi = log2_N % D
-    return amplitude * fast_bump(phi)
+# Lattice-resonance coefficients from
+# verify_D_Omega_2adic_chirality_phase.py interaction-only OLS fit
+# on the 10-regime canonical-physics ladder (AIC + LOO-RMSE winner):
+B0_LATTICE_RESONANCE = -0.1613
+B1_LATTICE_RESONANCE = -0.0522  # approx -gamma/2 = -1/20
+
+
+def D_Omega_residual(N):
+    """r(N) = b_0 + b_1 * sin^2(theta_chir) * v_2(N)."""
+    th = theta_chir(N)
+    return (B0_LATTICE_RESONANCE
+            + B1_LATTICE_RESONANCE * math.sin(th) ** 2 * v2_of(N))
 
 
 def main():
@@ -131,43 +141,41 @@ def main():
     ax.legend(fontsize=8, loc="upper right")
     ax.grid(alpha=0.3, which="both")
 
-    # ---- C: Fast oscillation ----
+    # ---- C: Lattice-resonance residual r(N) ----
     ax = fig.add_subplot(gs[1, 0])
-    log2_grid = np.linspace(5.5, 13, 600)
-    fast_grid = np.array([0.55 * fast_bump(l % D) for l in log2_grid])
-    N_for_log = np.power(2, log2_grid)
-    ax.plot(N_for_log, fast_grid, "r-", lw=2,
-             label="$D_\\Omega^{\\rm fast}\\!=\\!A\\,f(\\log_2(N)\\! \\mathrm{mod}\\!d)$")
-    # Mark period boundaries (mod d = 0)
-    for k in [6, 8, 10, 12]:
+    N_int_grid = np.array([n for n in range(50, 4097)])
+    r_grid = np.array([D_Omega_residual(n) for n in N_int_grid])
+    ax.scatter(N_int_grid, r_grid, s=4, c="r", alpha=0.5,
+                label="$r(N)\\!=\\!b_0\\!+\\!b_1\\sin^2\\theta\\,v_2(N)$")
+    # Mark power-of-2 N's
+    for k in [6, 7, 8, 9, 10, 11, 12]:
         N_b = 2 ** k
         ax.axvline(N_b, color="purple", lw=0.6, ls=":", alpha=0.5)
-        ax.text(N_b * 1.1, 0.05,
-                 f"$N\\!=\\!2^{{{k}}}$\nmod=0", fontsize=7)
-    ax.scatter(Ns, [0.55 * fast_bump(math.log2(N) % D) for N in Ns],
-                s=60, c="#bf5b3b", edgecolors="k", zorder=5)
+        ax.text(N_b * 1.05, -0.05,
+                 f"$2^{{{k}}}$", fontsize=7, color="purple")
+    ax.scatter(Ns, [D_Omega_residual(N) for N in Ns],
+                s=60, c="#bf5b3b", edgecolors="k", zorder=5,
+                label="lattice data")
     ax.set_xscale("log")
     ax.set_xlim(40, 9000)
-    ax.set_ylim(0, 0.65)
+    ax.set_ylim(-0.85, 0.05)
     ax.set_xlabel("$N$", fontsize=10)
-    ax.set_ylabel("$D_\\Omega^{\\rm fast}$ deviation", fontsize=10)
-    ax.set_title("C. FAST lattice-harmonic oscillation (period $d\\!=\\!4$)",
+    ax.set_ylabel("$r(N)$ residual", fontsize=10)
+    ax.set_title("C. FAST lattice-resonance $r(N)$ (2-adic valuation)",
                   fontsize=11)
-    ax.legend(fontsize=8, loc="upper right")
+    ax.legend(fontsize=8, loc="lower left")
     ax.grid(alpha=0.3, which="both")
 
     # ---- D: Total D_Omega(N) with predictions ----
     ax = fig.add_subplot(gs[1, 1])
-    total_grid = np.array([D_Omega_slow(N) - D_Omega_fast(N)
-                              for N in N_grid])
-    ax.plot(N_grid, total_grid, "k-", lw=1.5, alpha=0.5,
-             label="$D_\\Omega^{\\rm pred}\\!=\\!{\\rm slow}\\!-\\!{\\rm fast}$")
-    # Existing 8-point lattice data
+    total_grid = np.array([D_Omega_slow(n) + D_Omega_residual(n)
+                              for n in N_int_grid])
+    ax.scatter(N_int_grid, total_grid, s=4, c="k", alpha=0.4,
+                label="$D_\\Omega^{\\rm pred}\\!=\\!D^{\\rm slow}\\!+\\!r(N)$")
     ax.scatter(Ns, DOs, s=100, c="#bf5b3b", edgecolors="k",
-                zorder=5, label="lattice data (8 pts)")
-    # Predictions at higher N
-    pred_Ns = [256, 512, 1024, 2048, 3072, 4096]
-    pred_DOs = [D_Omega_slow(N) - D_Omega_fast(N) for N in pred_Ns]
+                zorder=5, label="lattice data (10 pts)")
+    pred_Ns = [256, 512, 1024, 1536, 2048, 3072, 4096]
+    pred_DOs = [D_Omega_slow(N) + D_Omega_residual(N) for N in pred_Ns]
     ax.scatter(pred_Ns, pred_DOs, s=100, marker="*",
                 c="#3b8bbf", edgecolors="k", zorder=5,
                 label="predictions (untested)")
@@ -180,12 +188,12 @@ def main():
                 label="matter $\\pi/d$")
     ax.set_xscale("log")
     ax.set_xlim(40, 9000)
-    ax.set_ylim(0, 0.95)
+    ax.set_ylim(-0.05, 0.95)
     ax.set_xlabel("$N$", fontsize=10)
     ax.set_ylabel("$D_\\Omega(N)$", fontsize=10)
-    ax.set_title("D. Total $D_\\Omega\\!=\\!{\\rm slow}\\!-\\!{\\rm fast}$ "
-                   "+ 6 predictions", fontsize=11)
-    ax.legend(fontsize=8, loc="lower left")
+    ax.set_title("D. Total $D_\\Omega\\!=\\!D^{\\rm slow}\\!+\\!r(N)$ "
+                   "+ 7 predictions", fontsize=11)
+    ax.legend(fontsize=8, loc="upper right")
     ax.grid(alpha=0.3, which="both")
 
     fig.suptitle("Fast-Slow Decomposition of $D_\\Omega(N)$ "

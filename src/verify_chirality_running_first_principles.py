@@ -398,7 +398,7 @@ def main():
             f"{target_in_p95_Ninv}, p99: {target_in_p99_Ninv}."
         ),
     }
-    out_path = OUTPUTS / "verify_iter36_chirality_running_first_principles.json"
+    out_path = OUTPUTS / "verify_chirality_running_first_principles.json"
     out_path.write_text(json.dumps(bundle, indent=2),
                          encoding="utf-8")
     print(f"Saved {out_path}")

@@ -740,6 +740,342 @@
         "ratio_str": "0.66x"
       }
     },
+    "vs_t00fw_p99.9": {
+      "theta_Q": {
+        "AUC": 0.3011583206312203,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.3109779879852954,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.3012939343674348,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.39525716175020176,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0035253472467038005,
+        "P_CN_given_vacuum": 0.010794793099798921,
+        "ratio_str": "0.33x"
+      },
+      "theta_xivar": {
+        "AUC": 0.5064256814310051,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0052034400520344,
+        "P_CN_given_vacuum": 0.00816743236345074,
+        "ratio_str": "0.64x"
+      },
+      "theta_phase": {
+        "AUC": 0.3863727808661347,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.0034985920300366923,
+        "P_CN_given_vacuum": 0.009317552253840343,
+        "ratio_str": "0.38x"
+      }
+    },
+    "vs_psi_lap_p99.9": {
+      "theta_Q": {
+        "AUC": 0.3007234600555904,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.3095120147045638,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.30736433022505155,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.3129045996592845,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0032433194669674965,
+        "P_CN_given_vacuum": 0.011218118319398878,
+        "ratio_str": "0.29x"
+      },
+      "theta_xivar": {
+        "AUC": 0.33025110956693265,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0035412300354123005,
+        "P_CN_given_vacuum": 0.010515569167942829,
+        "ratio_str": "0.34x"
+      },
+      "theta_phase": {
+        "AUC": 0.370556688783287,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.003669255055892141,
+        "P_CN_given_vacuum": 0.009149668429446823,
+        "ratio_str": "0.40x"
+      }
+    },
+    "vs_delta_p99.9": {
+      "theta_Q": {
+        "AUC": 0.304915157356765,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.30314685510624945,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.30196079530171255,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.37422862682686275,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0033843333568356485,
+        "P_CN_given_vacuum": 0.011006455709598899,
+        "ratio_str": "0.31x"
+      },
+      "theta_xivar": {
+        "AUC": 0.46940761454317226,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0046252800462528,
+        "P_CN_given_vacuum": 0.008984175599795814,
+        "ratio_str": "0.51x"
+      },
+      "theta_phase": {
+        "AUC": 0.3873061059804537,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.003754586568819865,
+        "P_CN_given_vacuum": 0.009065726517250064,
+        "ratio_str": "0.41x"
+      }
+    },
+    "vs_t00fw_sup": {
+      "theta_Q": {
+        "AUC": 0.3011583206312203,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.3109779879852954,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.3012939343674348,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.39525716175020176,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0035253472467038005,
+        "P_CN_given_vacuum": 0.010794793099798921,
+        "ratio_str": "0.33x"
+      },
+      "theta_xivar": {
+        "AUC": 0.5064256814310051,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0052034400520344,
+        "P_CN_given_vacuum": 0.00816743236345074,
+        "ratio_str": "0.64x"
+      },
+      "theta_phase": {
+        "AUC": 0.3863727808661347,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.0034985920300366923,
+        "P_CN_given_vacuum": 0.009317552253840343,
+        "ratio_str": "0.38x"
+      }
+    },
+    "vs_psi_lap_sup": {
+      "theta_Q": {
+        "AUC": 0.3007234600555904,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.3095120147045638,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.30736433022505155,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.3129045996592845,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0032433194669674965,
+        "P_CN_given_vacuum": 0.011218118319398878,
+        "ratio_str": "0.29x"
+      },
+      "theta_xivar": {
+        "AUC": 0.33025110956693265,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0035412300354123005,
+        "P_CN_given_vacuum": 0.010515569167942829,
+        "ratio_str": "0.34x"
+      },
+      "theta_phase": {
+        "AUC": 0.370556688783287,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.003669255055892141,
+        "P_CN_given_vacuum": 0.009149668429446823,
+        "ratio_str": "0.40x"
+      }
+    },
+    "vs_delta_sup": {
+      "theta_Q": {
+        "AUC": 0.304915157356765,
+        "rho_T00": -0.4027881430713267,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_K": {
+        "AUC": 0.30314685510624945,
+        "rho_T00": -0.3215454537393666,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_KIPR": {
+        "AUC": 0.30196079530171255,
+        "rho_T00": -0.4184313606425844,
+        "n_matter": 14416,
+        "n_vacuum": 9216,
+        "P_CN_given_matter": 0.0030521642619311877,
+        "P_CN_given_vacuum": 0.01171875,
+        "ratio_str": "0.26x"
+      },
+      "theta_Xi": {
+        "AUC": 0.37422862682686275,
+        "rho_T00": -0.41264776407004955,
+        "n_matter": 14183,
+        "n_vacuum": 9449,
+        "P_CN_given_matter": 0.0033843333568356485,
+        "P_CN_given_vacuum": 0.011006455709598899,
+        "ratio_str": "0.31x"
+      },
+      "theta_xivar": {
+        "AUC": 0.46940761454317226,
+        "rho_T00": -0.3885365317084041,
+        "n_matter": 13837,
+        "n_vacuum": 9795,
+        "P_CN_given_matter": 0.0046252800462528,
+        "P_CN_given_vacuum": 0.008984175599795814,
+        "ratio_str": "0.51x"
+      },
+      "theta_phase": {
+        "AUC": 0.3873061059804537,
+        "rho_T00": -0.2898001508794443,
+        "n_matter": 11719,
+        "n_vacuum": 11913,
+        "P_CN_given_matter": 0.003754586568819865,
+        "P_CN_given_vacuum": 0.009065726517250064,
+        "ratio_str": "0.41x"
+      }
+    },
     "vs_winding": {}
   },
   "promoted_candidates": [],

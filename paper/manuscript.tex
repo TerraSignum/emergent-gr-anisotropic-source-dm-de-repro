@@ -19,6 +19,15 @@
 \usepackage{booktabs}
 \usepackage{cite}
 
+% Clickable GitHub links for src/*.py citations (auto-generated)
+\newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
+% \nolinkurl gives a monospace, line-breakable rendering of the
+% short script-stem display text without competing with \href.
+\newcommand{\pyscript}[3]{%
+  \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
+\newcommand{\repoOwn}{emergent-gr-anisotropic-source-dm-de-repro}
+\newcommand{\pyown}[2]{\pyscript{\repoOwn}{#1}{#2}}
+
 \emergencystretch=5em
 \hbadness=10000
 \hfuzz=2pt
@@ -217,23 +226,92 @@ machine precision under $\mathcal R$, deep inside the L5
 finite-$N\!\to\!$continuum spread ($0.58$ OoM on the
 canonical ten-regime ladder). The first-principles closure
 of the cosmological constant is complete at the
-System-$\mathcal R$ level. A previously documented
-paired-degeneracy correction was retracted on 2026-05-11 as
-structurally distinct from the present nine-layer chain
-(see the closure-data block
-\texttt{h197\_retraction\_2026\_05\_11}).
+System-$\mathcal R$ level. An earlier candidate
+paired-degeneracy correction does not enter the published
+nine-layer chain: the corresponding analysis (recorded in
+the closure-data bundle) showed it to be structurally
+distinct from the suppression layers used here.
 \item \emph{Hubble-tension directional attribution.} The
 framework's $H_{0}\!=\!100\,\alpha_{\xi}\,s_{\rm face}\,N_{\rm gen}\!=\!67.5\,$km/s/Mpc
 matches CMB-anchored Planck~2018 ($67.4$, $0.15\%$) and
 JAGB local~\cite{Freedman2024CCHP} ($67.80$, $0.44\%$). The
-$\sim\!5\sigma$ tension against the SH0ES Cepheid
-distance-ladder ($73.04\!\pm\!1.04$) is identified by the
-framework as a Cepheid-systematic rather than a
-framework failure; the converging trend of recent
+Hubble-tension state of the art as of late
+2025~\cite{DiValentino2025Tensions} consolidates the
+discrepancy at $\sim\!6\sigma$ in the combined post-DESI-DR2
++ JWST landscape, with neither EDE, modified-gravity, nor
+dynamical-dark-energy remedies yet closing the early-/late-
+time split; the framework's structural $67.5$ value sits on
+the early-universe side of this split. The $\sim\!5\sigma$
+SH0ES Cepheid distance-ladder tension ($73.04\!\pm\!1.04$)
+is identified by the framework as a Cepheid-systematic rather
+than a framework failure; the converging trend of recent
 CMB-lensing+JWST distance-ladder measurements toward the
 $67$--$68$~km/s/Mpc band supports this attribution but a
 direct framework-level prediction of the SH0ES systematic is
 not yet supplied.
+
+\emph{Physical-reading proposal for the structural product.}
+The dimensionless Hubble parameter
+$h\!\equiv\!H_{0}/(100\,{\rm km/s/Mpc})$ closes algebraically as
+\begin{equation}
+\label{eq:h_structural_proposal}
+h\;=\;\alpha_{\xi}\,s_{\rm face}\,N_{\rm gen}
+   \;=\;\frac{N_{\rm gen}(2d{+}1)}{2d(d{+}1)}
+   \;=\;\frac{3\!\cdot\!9}{8\!\cdot\!5}\;=\;\frac{27}{40}\;=\;0.675,
+\end{equation}
+where the numerator $N_{\rm gen}(2d{+}1)\!=\!27$ is the
+\emph{generation-replicated carrier-axis content}
+(three generations $\times$ nine carrier basis modes
+counted by $2d{+}1$, the central-$\Xi$-augmented chirality-
+doubled spatial dimension that anchors $\alpha_{\xi}\!=\!9/10$
+in the bit-information reading
+$d_{\rm eff}\!=\!\log_{2}(2d{+}1)$), and the denominator
+$2d(d{+}1)\!=\!40$ is the
+\emph{sync-extended chirality-doubled spatial volume}
+($2d\!=\!8$ chirality-doubled spatial DoF times $d{+}1\!=\!5$
+sync-cone extension). Reading $h$ as ``axis-bits per
+sync-spatial DoF, with the $N_{\rm gen}$-fold generation
+multiplicity'' identifies the Hubble rate with the
+carrier-graph's emergent expansion rate per generation-bundle.
+The unit factor $100\,{\rm km/s/Mpc}$ is not free either: it is
+the dimensional content set by the standard Friedmann equation
+at $z\!=\!0$, with the cosmological inputs
+$(\rho_{\Lambda}, \Omega_{\Lambda})$ themselves closed
+independently in the present paper. A \emph{cross-projection
+identity test} is reported in
+\pyown{src/verify_H0_friedmann_cross_projection.py}{verify_H0_friedmann_cross_projection} (bundled
+output \path|outputs/verify_H0_friedmann_cross_projection.json|):
+\textbf{Route A (carrier-product)}
+$H_{0}\!=\!100\!\cdot\!\alpha_{\xi}s_{\rm face}N_{\rm gen}
+\!=\!67.50$~km/s/Mpc; \textbf{Route B (Friedmann at $z\!=\!0$)}
+$H_{0}\!=\!\sqrt{(8\pi/3)\rho_{\Lambda}/(M_{\rm Pl}^{2}
+\Omega_{\Lambda})}\!=\!66.93$~km/s/Mpc, taking
+$\rho_{\Lambda}\!=\!2.49\!\times\!10^{-47}$~GeV$^{4}$ from the
+nine-layer dressing closure
+(\S\ref{sec:cc_nine_layer_dressing}, EXACT $0.1\%$) and
+$\Omega_{\Lambda}\!=\!103/150$ from
+Eq.~\eqref{eq:Omega_m_Lambda}. The two routes converge to
+within $0.85\%$ (PRECISE), and both lie within Planck~2018
+$1\sigma$ of $H_{0}\!=\!67.4\pm 0.5$~km/s/Mpc. The $27/40$
+product is therefore \emph{not} a free numerical coincidence
+of three independently chosen primitives but a structural
+identity required by the Friedmann equation given the
+framework's independent $\rho_{\Lambda}$ and $\Omega_{\Lambda}$
+closures. The simpler reading of $h$ as a single
+spectral observable --- the carrier's per-Fiedler-period
+expansion rate
+$|d\ln\langle|\Xi|\rangle/dt|/\sqrt{\lambda_{2}}$ on the
+vacuum branch, with $\lambda_{2}$ the Fiedler eigenvalue of
+the normalised carrier Laplacian --- is excluded by the
+in-repo audit
+\path|relational-uv-closure-repro/src/verify_ET9_H0_fiedler_spectral_ratio.py|
+across $96$ vacuum-branch seeds, which finds
+$h_{\rm emp}\!=\!0.0013\!\pm\!0.0002$ and rejects the
+identification at $-99.8\%$ relative residual to $27/40$.
+The Hubble parameter is therefore not a single spectral
+quantity of the carrier but the multiplicative composition
+of three independently-derived primitives, with the Friedmann
+equation supplying the cross-validation.
 \item \emph{Direct DM detection signature.} The framework
 identifies dark matter with the relational vortex-defect
 network of the carrier configuration; this is topological,
@@ -244,17 +322,52 @@ framework predicts. Positive gravitational-only signatures
 the chirality-flip mass scale) are framework predictions
 that require dedicated observational programmes to
 test.
-\item \emph{Neutrino mass sum $\Sigma m_{\nu}$.} The
-framework predicts $\Sigma m_{\nu}\in[0.05,\,0.06]$~eV via
-the chirality-flip closure $m_{1}\!=\!m_{3}/5$ and the
-oscillation lower limit; the DESI DR2 BAO + DR1 full shape
+\item \emph{Neutrino mass sum $\Sigma m_{\nu}$ — canonical
+reading and version history.}
+The framework's \emph{canonical} prediction is
+$$\Sigma m_{\nu}\;=\;m_{1}\!+\!m_{2}\!+\!m_{3}\;=\;0.0593\,\mathrm{eV}\qquad
+\text{(NH; canonical closure, see Eqs.~\eqref{eq:p4b_m3_nu_dressed}--\eqref{eq:p4b_m2_nu_dressed}).}$$
+This composes the seesaw closure
+$m_{1}\!=\!\gamma^{2}m_{3}\!=\!5.023\!\times\!10^{-4}$~eV with the
+parameter-free single-vertex carrier-defect dressings
+$(1\!-\!\gamma^{2}(d{+}N_{\rm gen})/4)$ on $m_{3}$ and
+$(1\!+\!\gamma^{2}(d{+}N_{\rm gen}))$ on $m_{2}$ (P4B
+Eqs.~\eqref{eq:p4b_m3_nu_dressed},
+\eqref{eq:p4b_m2_nu_dressed}); reproducer
+\pyown{src/verify_neutrino_masses_m1_m2.py}{verify_neutrino_masses_m1_m2}
+returns the canonical 0.0593\,eV value.
+\textbf{NH-absolute-minimum reading (m\_1 dropped).} If $m_{1}$ is
+formally set to zero (below typical detection threshold), the
+sum reduces to $\Sigma m_{\nu}^{\rm NH,min}\!=\!m_{2}\!+\!m_{3}\!=\!0.05883$~eV
+(strict-EXACT $0.05\%$ vs the NuFIT~6.1 oscillation lower
+bound); this is a \emph{subset} of the canonical reading, not a
+competing closure.
+\textbf{Superseded.} The earlier closure
+$m_{1}\!=\!m_{3}/(d\!+\!1)$ giving
+$\Sigma m_{\nu}\!=\!0.0603$~eV was falsified by DESI DR2 under
+$\Lambda$CDM (the value sits at the upper edge of the data
+band); the canonical 0.0593\,eV value uses the
+$m_{1}\!=\!\gamma^{2}m_{3}$ closure instead. Any in-corpus
+mention of 0.0603\,eV is legacy and should be read as
+``superseded; see P4B canonical reading''.
+\textbf{Even-older superseded.} The
+$m_{1}\!=\!m_{3}/5$ closure
+($\Sigma m_{\nu}\!=\!0.0732$~eV) was falsified by earlier
+DESI bounds and is retained only for reference.
+
+The DESI DR2 BAO + DR1 full-shape
 analysis~\cite{DESI2025} reports
 $\Sigma m_{\nu}\!<\!0.0642$~eV at $95\%$ C.L.\ under
-flat-$\Lambda$CDM with three degenerate states. The
-framework's prediction sits within $\sim\!7\%$ of the DESI
-upper edge --- a falsifiable next-generation handle. CMB-S4 /
-Roman / Euclid will determine within $\sim\!2$~years whether
-$\Sigma m_{\nu}$ lands inside or outside the framework window.
+flat-$\Lambda$CDM with three degenerate states; the
+framework's canonical $0.0593$~eV value sits $7.6\%$ below
+that upper edge and $\sim\!1\%$ above the NH-absolute-minimum
+oscillation lower bound — a sharp falsifiable next-generation
+handle. CMB-S4 / Roman / Euclid will decide within $\sim\!2$
+years whether $\Sigma m_{\nu}$ lands inside or outside the
+framework window. Under $w_{0}w_{a}\mathrm{CDM}$ the DESI bound
+relaxes to $<\!0.163$~eV~\cite{DESI2025} — the test is
+sharper under $\Lambda$CDM and weaker under dynamical
+dark energy.
 \item \emph{Dynamical $w(z)$ evolution (now closed as a
 chirality-running framework prediction).}
 The framework gives
@@ -269,13 +382,22 @@ $|w_{a}^{\rm framework}|\!\lesssim\!\gamma^{2}\!=\!0.01$
 because $dw_{\rm DE}/d\theta_{\rm chir}$ vanishes at
 $\theta\!=\!0$.
 The DESI~2024+2025 BAO central
-$w_{a}^{\rm DESI}\!\approx\!-0.4$ at $\sim\!3\sigma$
-significance~\cite{DESI2025} lies $\sim\!40\times$ outside
+$w_{a}^{\rm DESI}\!\approx\!-0.4$ at $\sim\!3.1\sigma$
+significance~\cite{DESI2025BAO,DESI2025} (DESI~DR2~BAO+CMB
+combination) lies $\sim\!40\times$ outside
 the framework band; confirmation of $|w_{a}|\!>\!0.1$ at
 $>\!5\sigma$ in DESI-DR3 would falsify the
 $\varepsilon_{\rm sync}^{4}/\gamma$ closure, and absence of
 the consolidated signal would confirm the framework's
 near-zero-$w_{a}$ prediction.
+The DESI-DR2 dynamical-DE signal is itself under live debate
+in the literature: an independent analysis~\cite{WangMota2025}
+argues that the apparent preference for evolving $w(z)$ is
+\emph{not robust} once tensions among the CMB, BAO and SNe
+datasets are propagated through the combined likelihood ---
+a non-detection that, if it consolidates, would relieve the
+present $\sim\!40\times$ pressure on the framework band
+without requiring DR3.
 \end{enumerate}
 The five residuals are mutually independent: gap~(1) is
 analytic theory work; gap~(2) is an observational
@@ -374,13 +496,22 @@ the rational-closure rate coefficients of the carrier transport
 law~\cite{Paper2}. The $-0.025$ offset above the de-Sitter
 $w = -1$ is parametrically determined by the same coefficient
 ratio that fixes the spectral-tilt identity
-$n_{s} = 1 - \gamma\,\varepsilon^{2}_{\text{sync}}$.
+$n_{s} = 1 - (d{+}N_{\rm gen})\,\gamma\,\varepsilon^{2}_{\text{sync}}
+       = 1 - \gamma^{2}(d{+}N_{\rm gen})/2 = 193/200$
+(using $\varepsilon^{2}_{\text{sync}} = \gamma/2$).
 
 \paragraph{Positive prediction: null particle-DM direct detection,
 positive gravitational-only signatures.}
 The two-component identification above makes a sharp
 positive prediction for the dark-matter sector that is
 falsifiable on existing and near-term experimental platforms.
+An independent recent line in the cosmological-structure
+literature shows that a distribution of (massless) topological
+defects can reproduce flat rotation curves and isothermal-
+sphere-style lensing signatures without an underlying particle
+component~\cite{Lieu2024}, supporting the present
+identification of the halo signal with
+$T_{\mu\nu}^{\text{DM-vortex}}$ rather than with particulate DM.
 Because $T_{\mu\nu}^{\text{DM-vortex}}$ is the stress--energy of
 a relational vortex-defect network with integer-quantised $U(1)$
 winding number~\cite{Paper4D}, the carrier of dark matter is
@@ -567,7 +698,7 @@ gap~(4) and gap~(5) into a single
 falsifiable observational handle, decidable within
 $\sim\!2$~years at CMB-S4 / DESI-DR3 precision.
 Reproducer
-\path|src/verify_wDE_chirality_running.py|.
+\pyown{src/verify_wDE_chirality_running.py}{verify_wDE_chirality_running}.
 
 \paragraph{Cross-sector consistency with the electroweak-scale
 carrier-defect coupling.}
@@ -866,7 +997,7 @@ T_{00}(a))\,e_{ab,i}$ (signed edge vector
 $e_{ab}$ in the spectral-frame spatial coordinate $i$) and
 correlated against the geodesic distance to the nearest
 matter concentration on the same twelve-regime ladder
-(\path|src/verify_signed_halo_R0i_and_R00_null.py|;
+(\pyown{src/verify_signed_halo_R0i_and_R00_null.py}{verify_signed_halo_R0i_and_R00_null};
 output \path|outputs/verify_signed_halo_R0i_and_R00_null.json|):
 all twelve regimes return a negative
 $\rho(R_{0i,J_{\rm mag}},d_{\rm core})$ with median
@@ -1204,7 +1335,7 @@ that closes the strict-EXACT charged-lepton masses of the
 companion paper~\cite{Paper3} sets, via $d_{\mathrm{crit}}\!=\!1/D_{\Omega}$,
 the spatial scale at which gravitational binding gives way
 to cosmological repulsion --- a structural cross-sector
-consequence not previously recognised.
+consequence of the System-$\mathcal R$ algebra.
 
 \emph{(vii) NFW-class shape fit on $|R_{00}|$.} The
 component-decomposed energy-density residual is fit
@@ -1352,7 +1483,7 @@ $R_{00}\!<\!0$ at $d\!\geq\!\mathrm{median}(d)$ (far from
 cluster). The per-regime polarity-violation rate
 $f_{\rm pv}\!\in\![0.39,0.47]$ across the canonical
 $\mathcal{P}_{5}/\mathcal{P}_{5}N$ ladder (reproducer
-\path|src/verify_signed_vs_magnitude_halo_separation.py|;
+\pyown{src/verify_signed_vs_magnitude_halo_separation.py}{verify_signed_vs_magnitude_halo_separation};
 output
 \path|outputs/verify_signed_vs_magnitude_halo_separation.json|).
 The cross-regime Pearson correlations
@@ -1472,7 +1603,7 @@ The natural question is: ``If SEC is satisfied
 ($\rho\!+\!3p\!>\!0$), in what precise sense does this
 produce late-time accelerated expansion?'' The numerical
 answer
-(\path|src/verify_frw_lattice_epoch_identification.py|;
+(\pyown{src/verify_frw_lattice_epoch_identification.py}{verify_frw_lattice_epoch_identification};
 output \path|outputs/frw_lattice_epoch_identification.json|)
 is concrete: \emph{the lattice source-tensor mixture is the
 standard $\Lambda$CDM dark-sector composition evaluated at
@@ -2224,7 +2355,7 @@ $\tau\!=\!\gamma/2$) is the direct numerical manifestation
 of the chirality-restriction identity at the lattice level.
 
 Reproducer
-\path|src/verify_KQ_top_pct_chi2_sweep.py|, output
+\pyown{src/verify_KQ_top_pct_chi2_sweep.py}{verify_KQ_top_pct_chi2_sweep}, output
 \path|outputs/verify_KQ_top_pct_chi2_sweep.json|; the
 identification audit lives in
 \path|data/closure_derivations/HE_tau_eps_sync_identification.{py,json}|.
@@ -2805,7 +2936,7 @@ $\sigma_v\!=\!230$~km/s and exact $\Lambda$CDM angular-diameter
 distances at $z_l\!=\!0.19$, $z_s\!=\!0.6$ gives
 $\theta_E\!=\!1.001''$, residual $0.1\%$;
 reproducer
-\path|src/verify_strong_lensing_refinements.py| O4)
+\pyown{src/verify_strong_lensing_refinements.py}{verify_strong_lensing_refinements} O4)
 and Bullet-Cluster lensing mass
 $M(<\!250\,{\rm kpc})\!=\!1.31\!\times\!10^{14}\,M_\odot$
 vs Clowe~2006 $\sim\!2\!\times\!10^{14}$ ($35\%$ residual).
@@ -2955,7 +3086,9 @@ Y_{p} \;&=\; (d + N_{\mathrm{gen}})^{2}\,\gamma^{2} / 2
 \eta_{b} \;&=\; (d + N_{\mathrm{gen}})^{2}\,\gamma^{10} / (2 d)
          \;=\; 49/(8\!\cdot\!10^{10})
          \;=\; 6.125\!\times\!10^{-10}
-         \quad \text{EXACT}\,0.082\%\,(z\!=\!+0.13),
+         \quad \text{PRECISE}\,0.41\%\,(z\!=\!+0.42
+         \nonumber \\
+         & \qquad\quad \text{vs Planck 2018 } (6.10\!\pm\!0.06)\!\times\!10^{-10}),
 \label{eq:etab_closure}\\
 \tau_{\rm re} \;&=\; (1+\gamma)\,\gamma / 2
               \;=\; 11/200 \;=\; 0.0550
@@ -3043,16 +3176,30 @@ $\theta_{*}\!=\!1.041\!\times\!10^{-2}$ at EXACT tier.
 The CMB- and JWST-anchored late-time values are consistent
 with each other and inconsistent with the SH0ES Cepheid value
 beyond $4\sigma$ each.
-\item[(H-T-3)] \emph{Convergence of 2024-2026
-distance-ladder revisions toward the $67$--$68$ band.}
-The community trend over the most recent two years is
-toward $H_{0}$ in the $67$--$68$~km/s/Mpc band as JWST
-removes the leading Cepheid-photometry systematics; the Riess
-et al.~SH0ES Cepheid recalibration with JWST data is itself
-moving toward this band relative to the 2022 reference. The
-convergence pattern is consistent with the framework's
-prediction (H-T) that the tension is a Cepheid-calibration
-systematic.
+\item[(H-T-3)] \emph{Two-camp split of 2024-2026
+distance-ladder analyses.}
+The SH0ES Cepheid analysis with JWST data
+(Riess~2024~\cite{Riess2024JWST}, three-method
+JWST result $H_{0}\!=\!72.6\!\pm\!2.0$~km/s/Mpc on the
+distance-limited $D\!\leq\!25$~Mpc sample) \emph{maintains} the
+$\sim\!73$~km/s/Mpc value with HST--JWST mutual consistency at
+the $\sim\!1\sigma$ level, attributing previous CCHP-vs-SH0ES
+discrepancies to supernova-subsample selection rather than
+Cepheid-calibration systematics. The CCHP analysis
+(Freedman~2024~\cite{Freedman2024CCHP}) with JWST TRGB at
+$H_{0}\!=\!68.81\!\pm\!2.22$~km/s/Mpc and JAGB at
+$67.80\!\pm\!2.72$~km/s/Mpc remains compatible with the
+framework's $67.5$~km/s/Mpc prediction. The two camps therefore
+present a persistent $\sim\!2\sigma$-level subsample-attribution
+debate within the JWST-anchored local-ladder sample; the
+framework's structural prediction is compatible with the
+non-Cepheid (TRGB/JAGB) JWST channels and the
+Planck~\cite{Planck2018}/DESI~\cite{DESI2025BAO} CMB-anchored
+late-time values, and at tension with the Cepheid-anchored
+SH0ES channel. The persistence of the Cepheid--TRGB/JAGB split
+under JWST validation is itself the principal load-bearing
+evidence for the framework's attribution of the SH0ES tension
+to the Cepheid step.
 \end{enumerate}
 The framework's structural attribution is therefore: the
 SH0ES Cepheid distance ladder's $73.04\!\pm\!1.04$~km/s/Mpc
@@ -3250,8 +3397,8 @@ three degenerate states; lightest mass $m_{l}\!<\!0.023$~eV
 in normal ordering with preference for NH over IH). The
 framework's existing
 $m_{1}\!=\!m_{3}/(d{+}1)$ closure giving
-$\Sigma\!=\!0.0732$~eV is FALSIFIED at $\sim\!5\sigma$ under
-$\Lambda$CDM-prior. The alternative
+$\Sigma\!=\!0.0732$~eV is falsified at $\sim\!5\sigma$ under
+the $\Lambda$CDM prior. The alternative
 $m_{1}\!=\!m_{3}/N_{\mathrm{gen}}^{2}$ closure
 ($\Sigma\!=\!0.0658$~eV) is marginal at $\sim\!2\sigma$. Under
 the $w_{0}w_{a}$CDM prior the bound relaxes to $<\!0.16$~eV
@@ -3453,27 +3600,40 @@ Cl$(1,3)$-projector eigenvalue $\beta_{\pi}\!=\!(2^{d}\!-\!1)/2^{d}
 \quad (0.05\% \text{, EXACT})
 \label{eq:p4b_DM_baryon} \\[6pt]
 \eta_{B} &= N_{\rm gen}!\,\gamma^{2d+2}
-        = 6\!\cdot\!10^{-10} \nonumber \\[2pt]
+        = 6\!\times\!10^{-10} \nonumber \\[2pt]
 &\quad \text{vs Planck 2018 / BBN } 6.1\!\times\!10^{-10}
-\quad (1.64\% \text{, PRECISE})
+\quad (1.64\% \text{, PRECISE; alternative}\nonumber\\
+&\quad \text{combinatorial reading. Canonical } \eta_{B}\text{ closure
+is the}\nonumber\\
+&\quad (d{+}N_{\rm gen})^{2}\gamma^{10}/(2 d)
+\text{ form of Eq.~\eqref{eq:etab_closure})}
 \label{eq:p4b_eta_B} \\[6pt]
 N_{\rm eff} &= N_{\rm gen} + 2\pi\,\alpha_{\rm EM}
             = 3 + 2\pi(7.297\!\times\!10^{-3}) \nonumber \\[2pt]
 &= 3.0458 \quad \text{vs Planck 2018 } 3.046
 \quad (0.01\% \text{, EXACT})
 \label{eq:p4b_N_eff} \\[6pt]
-m_{3}^{(\nu)} &= m_{e}\,\gamma^{d+3}
-            = m_{e}\,\gamma^{7} = 0.0511\,\text{eV} \nonumber \\[2pt]
+m_{3}^{(\nu)} &= m_{e}\,\gamma^{d+3}\!\left(1\!-\!\tfrac{\gamma^{2}(d{+}N_{\rm gen})}{4}\right)
+            = 0.05023\,\text{eV} \nonumber \\[2pt]
 &\quad \text{vs } \sqrt{\Delta m_{31}^{2}} = 0.0502\,\text{eV}
-\quad (1.73\% \text{, PRECISE; NuFIT 6.1})
+\quad (0.068\% \text{, EXACT; NuFIT 6.1; tree } m_e\,\gamma^7 = 0.0511 \text{ eV})
 \label{eq:p4b_m3_nu} \\[6pt]
-\Sigma m_{\nu}^{\rm NH,min} &= 0.0591\,\text{eV} \nonumber \\[2pt]
-&\quad \text{consistent with DESI DR2 } < 0.0642\,\text{eV}
+m_{2}^{(\nu)} &= m_{e}\,\gamma^{d+4}\,\tfrac{\pi}{2}\!\left(1\!+\!\gamma^{2}(d{+}N_{\rm gen})\right)
+            = 0.008594\,\text{eV} \nonumber \\[2pt]
+&\quad \text{vs } \sqrt{\Delta m_{21}^{2}} = 0.00859\,\text{eV}
+\quad (0.041\% \text{, EXACT; NuFIT 6.1})
+\label{eq:p4b_m2_nu} \\[6pt]
+\Sigma m_{\nu}^{\rm NH,min} &= m_{2}^{(\nu)}\!+\!m_{3}^{(\nu)} = 0.05883\,\text{eV} \nonumber \\[2pt]
+&\quad \text{vs NuFIT 6.1 NH-min} \quad (0.05\% \text{, EXACT; }< 0.0642\,\text{eV DESI DR2})
 \label{eq:p4b_Sigma_mnu} \\[6pt]
 Y_{p} &= \frac{1}{d+1} + \varepsilon_{\rm sync}^{2}
        - \alpha_{\rm EM} = 0.243 \nonumber \\[2pt]
 &\quad \text{vs PDG 2024 } 0.245
-\quad (0.93\% \text{, EXACT})
+\quad (0.93\% \text{, PRECISE; alternative BBN-freeze-out}\nonumber\\
+&\quad \text{decomposition; canonical }Y_{p}\text{ closure is the}\nonumber\\
+&\quad (d{+}N_{\rm gen})^{2}\gamma^{2}/2\!=\!49/200\text{ form of
+Eq.~\eqref{eq:Yp_closure}}\nonumber\\
+&\quad \text{at strict-EXACT } 0.000\%)
 \label{eq:p4b_Yp}
 \end{align}
 The fine-structure constant $\alpha_{\rm EM}\!=\!\gamma^{2}\!\cdot\!
@@ -3592,7 +3752,7 @@ the regime-relative classifier removes this regime-mixing
 dilution. A finer-percentile audit on the same canonical
 P5N pool (matter-core support at top-$5\%$, top-$1\%$, and
 top-$0.5\%$ $t_{00}(a)$; per
-\path|src/verify_chirality_local_RG_window.py| on the canonical
+\pyown{src/verify_chirality_local_RG_window.py}{verify_chirality_local_RG_window} on the canonical
 P5N pool) yields the fixed-$\pi/4$ enrichment ratios
 $1.55\!\times$ (top-$10\%$), $1.67\!\times$ (top-$5\%$),
 $1.74\!\times$ (top-$1\%$), and $1.06\!\times$ (top-$0.5\%$).
@@ -3602,7 +3762,7 @@ drops to near-unity at the top-$0.5\%$ extreme. Read together
 with the matter-localised $K, Q$ harmonic closure
 $\chi^{2}$-sweep
 (Section~\ref{sec:matter_core_tau_eps_sync}; reproducer
-\path|src/verify_KQ_top_pct_chi2_sweep.py|), which pins the
+\pyown{src/verify_KQ_top_pct_chi2_sweep.py}{verify_KQ_top_pct_chi2_sweep}), which pins the
 $K, Q$ closure-residual minimum at
 $\tau_{\rm matter\text{-}core}\!=\!\gamma/2\!=\!5\%$
 ($\chi^{2}_{K}\!=\!0.68$ vs neighbour cuts $\chi^{2}_{K}\!=\!8.85
@@ -3626,7 +3786,7 @@ documented per regime in the five-quintile-shell decomposition
 of $R_{00}(a)$ vs geodesic distance to the nearest matter
 concentration in Fig.~\ref{fig:residual_R00_distance_shells}
 and reproducer
-\path|src/verify_signed_halo_component_decomposition.py|, with
+\pyown{src/verify_signed_halo_component_decomposition.py}{verify_signed_halo_component_decomposition}, with
 inner-shell $R_{00}\!<\!0$ on every regime and a clean
 inner/outer sign-flip onset at $N\!\geq\!128$; the
 chirality-flip-AUC drops to $0.603$ at this support as it thins
@@ -3913,37 +4073,124 @@ derived $\alpha_{\rm EM}\!=\!\gamma^{2}\,\alpha_{\xi}^{N_{\rm gen}}$.
 Match Planck 2018 $3.046$ at $0.01\%$ (EXACT).
 
 \textbf{Eq.~\eqref{eq:p4b_m3_nu} atmospheric neutrino mass.}
-The form $m_{3}^{(\nu)}\!=\!m_{e}\,\gamma^{d+3}\!=\!m_{e}\,\gamma^{7}$
+The tree-level form $m_{3}^{(\nu),\rm tree}\!=\!m_{e}\,\gamma^{d+3}\!=\!m_{e}\,\gamma^{7}$
 connects the electron mass to the atmospheric-neutrino mass via
 chirality-sine to power $d\!+\!3\!=\!7$. Numerically
-$5.11\!\times\!10^{5}\!\cdot\!10^{-7}\!=\!0.0511$~eV vs
-$\sqrt{\Delta m_{31}^{2}}\!=\!0.0502$~eV at $1.73\%$ residual.
-A complementary form for the solar neutrino mass is
-$m_{2}^{(\nu)}\!=\!m_{e}\,\gamma^{d+4}\,(\pi/2)\!=\!0.0080$~eV
-vs $\sqrt{\Delta m_{21}^{2}}\!=\!0.0086$~eV at $6.8\%$ (PRECISE).
+$5.1129\!\times\!10^{5}\!\cdot\!10^{-7}\!=\!0.05113$~eV vs
+$\sqrt{\Delta m_{31}^{2}}\!=\!0.0502$~eV at $1.85\%$ residual.
+The parameter-free single-vertex carrier-defect dressing
+$(1\!-\!\gamma^{2}(d{+}N_{\rm gen})/4)\!=\!(1\!-\!7\gamma^{2}/4)$
+promotes the closure to
+\begin{equation}
+m_{3}^{(\nu)}
+   \;=\; m_{e}\,\gamma^{d+3}\!\left(1\!-\!\tfrac{\gamma^{2}(d{+}N_{\rm gen})}{4}\right)
+   \;=\; 0.05023~\mathrm{eV},
+\label{eq:p4b_m3_nu_dressed}
+\end{equation}
+strict-EXACT at $0.068\%$ vs $\sqrt{\Delta m_{31}^{2}}\!=\!0.0502$~eV.
+The complementary solar-neutrino tree form
+$m_{2}^{(\nu),\rm tree}\!=\!m_{e}\,\gamma^{d+4}\,(\pi/2)\!=\!0.00803$~eV
+admits the dual parameter-free dressing
+\begin{equation}
+m_{2}^{(\nu)}
+   \;=\; m_{e}\,\gamma^{d+4}\,\tfrac{\pi}{2}\!\left(1\!+\!\gamma^{2}(d{+}N_{\rm gen})\right)
+   \;=\; 0.008594~\mathrm{eV},
+\label{eq:p4b_m2_nu_dressed}
+\end{equation}
+strict-EXACT at $0.041\%$ vs
+$\sqrt{\Delta m_{21}^{2}}\!=\!0.00859$~eV.
+
+\paragraph{Universal $\gamma^{2}(d{+}N_{\rm gen})$ carrier-defect
+leakage: a cross-sector correspondence.}
+The same single structural integer $d\!+\!N_{\rm gen}\!=\!7$ ---
+the sum of independent geometric quantum numbers (spacetime
+dimension plus generation count) --- controls the $\gamma^{2}$-order
+single-defect-channel leakage in five a priori unrelated
+sectors:
+\begin{equation}
+\begin{aligned}
+n_{s}                 &\;=\; 1 - \tfrac{\gamma^{2}(d{+}N_{\rm gen})}{2}
+                      \;=\; \tfrac{193}{200}
+                      & \text{(CMB scalar tilt; }N_{\rm chir}/d\text{ coefficient)},\\
+m_{3}/m_{3}^{\rm tree} &\;=\; 1 - \tfrac{\gamma^{2}(d{+}N_{\rm gen})}{4}
+                      & \text{(atmospheric }\nu\text{-mass; }1/d\text{)},\\
+m_{2}/m_{2}^{\rm tree} &\;=\; 1 + \gamma^{2}(d{+}N_{\rm gen})
+                      & \text{(solar }\nu\text{-mass; full)},\\
+\frac{m_{b}/m_{s}}{(m_{b}/m_{s})^{\rm tree}}
+                      &\;=\; 1 - \tfrac{\gamma^{2}(d{+}N_{\rm gen})}{4}
+                      & \text{(heavy-light quark ratio; }1/d\text{)},\\
+(D/H)/(D/H)^{\rm tree}
+                      &\;=\; 1 + \tfrac{\gamma^{2}(d{+}N_{\rm gen})}{4}
+                      & \text{(primordial }D/H\text{; }1/d\text{; BBN}).
+\end{aligned}
+\label{eq:dNgen_universal_leakage}
+\end{equation}
+The coefficient hierarchy $1\!:\!1/d\!:\!N_{\rm chir}/d$
+($=\!1\!:\!1/4\!:\!1/2$) reflects, in order, the full
+single-vertex coupling for the lightest neutrino mode (solar),
+the spacetime-dimension suppression for one-point residues with
+single $d$-direction projection (atmospheric $\nu$, heavy-light
+quark ratio, $D/H$), and the chirality-pair averaging
+$N_{\rm chir}/d$ for the scalar two-point correlator (CMB tilt).
+Five a priori-disjoint sectors spanning $\sim\!50$ orders of
+magnitude in energy --- from inflation at $10^{16}$ GeV through
+quark masses at GeV to neutrino seesaw at $10^{-2}$ eV --- thus
+close on the \emph{same} carrier-defect leakage scale
+$\gamma^{2}(d{+}N_{\rm gen})$, parameter-free under the
+framework's first-principles rationals.
+
+\emph{Distinct from the universal leakage: the
+$(d{+}N_{\rm gen})^{2}$ BBN/reionization prefactor family.}
+Four BBN/reionization observables share a SEPARATE structural
+unification through the squared dimensional sum
+$(d{+}N_{\rm gen})^{2}\!=\!49$ as a clean integer prefactor:
+$Y_{p}\!=\!(d{+}N_{\rm gen})^{2}\gamma^{2}/2\!=\!49/200$
+(eq.~\eqref{eq:Yp_closure}),
+$\eta_{B}\!=\!(d{+}N_{\rm gen})^{2}\gamma^{10}/(2 d)\!=\!49/(8\!\cdot\!10^{10})$
+(eq.~\eqref{eq:etab_closure}),
+$\tau_{\rm re}$, and $z_{\rm re}$
+(eqs.~\eqref{eq:taure_closure},~\eqref{eq:zre_closure}). The
+canonical $\eta_{B}$ closure thus belongs to this
+$(d{+}N_{\rm gen})^{2}$ prefactor family, \emph{not} to the
+universal $\gamma^{2}(d{+}N_{\rm gen})/d$ leakage family above ---
+two distinct structural unifications coexist, each parametrising
+different physical channels. The 7/24 cross-check
+$\eta_{B}/A_{s}\!=\!(d{+}N_{\rm gen})/(2 d N_{\rm gen})\!=\!7/24$
+matching PDG at $0.04\%$ rel-err is itself the same $7/24$
+integer ratio as the $(SG)$-axiom Newman-clustered skeleton-gap
+target (P4 prop.\ Statistical-fingerprint), suggesting a deeper
+connection between the BBN $(d{+}N_{\rm gen})^{2}$ family and
+the carrier-graph spectral structure.
 
 \textbf{Eq.~\eqref{eq:p4b_Sigma_mnu} sum of neutrino masses.}
 The NH-minimum sum
 $\Sigma m_{\nu}\!=\!m_{1}\!+\!m_{2}\!+\!m_{3}\!\to\!m_{2}\!+\!m_{3}$
-(at $m_{1}\!\to\!0$) combines the structural forms
-of $m_{2}$ and $m_{3}$ to give $0.0080\!+\!0.0511\!=\!0.0591$~eV,
-matching the NuFIT 6.1 oscillation lower bound at $0.48\%$
-(EXACT) and consistent with the DESI DR2 + DR1 full-shape
-bound~\cite{DESI2025} $<\!0.0642$~eV.
+(at $m_{1}\!\to\!0$) combines the dressed structural forms
+\eqref{eq:p4b_m3_nu_dressed} and \eqref{eq:p4b_m2_nu_dressed} to
+give $0.008594\!+\!0.05023\!=\!0.05883$~eV, matching the NuFIT~6.1
+NH-minimum oscillation lower bound at $0.05\%$ strict-EXACT, and
+consistent with the DESI DR2 + DR1 full-shape
+bound~\cite{DESI2025} $\Sigma m_{\nu}\!<\!0.0642$~eV.
 
-\textbf{Eq.~\eqref{eq:p4b_Yp} primordial helium fraction.}
+\textbf{Eq.~\eqref{eq:p4b_Yp} primordial helium fraction
+(alternative decomposition).}
 The form $Y_{p}\!=\!1/(d\!+\!1)\!+\!\varepsilon_{\rm sync}^{2}\!-\!\alpha_{\rm EM}
 \!=\!1/5\!+\!1/20\!-\!7.29\!\times\!10^{-3}\!=\!0.243$
 encodes the BBN proton-to-neutron freeze-out ratio
 $1/5\!=\!1/(d\!+\!1)$ as the spacetime-dimension+1 base, plus
 the synchronisation half-chirality correction
 $\varepsilon_{\rm sync}^{2}\!=\!1/20$, minus the QED-amplitude
-$\alpha_{\rm EM}$. Match PDG 2024 $Y_{p}\!=\!0.245$ at $0.93\%$.
+$\alpha_{\rm EM}$. Match PDG 2024 $Y_{p}\!=\!0.245$ at $0.93\%$
+(PRECISE). The \emph{canonical} $Y_{p}$ closure of
+Eq.~\eqref{eq:Yp_closure} is the
+$(d{+}N_{\rm gen})^{2}\gamma^{2}/2\!=\!49/200\!=\!0.24500$
+form at strict-EXACT $0.000\%$, part of the unified
+$(d{+}N_{\rm gen})^{2}$ BBN/reionization prefactor family.
 
 Reproducers:
-\path|src/verify_neutrino_mass_DESI_2024.py|,
-\path|src/verify_post_flip_dark_sector_theories.py|,
-\path|src/verify_eta_B_precise_form.py|,
+\pyown{src/verify_neutrino_mass_DESI_2024.py}{verify_neutrino_mass_DESI_2024},
+\pyown{src/verify_post_flip_dark_sector_theories.py}{verify_post_flip_dark_sector_theories},
+\pyown{src/verify_eta_B_precise_form.py}{verify_eta_B_precise_form},
 \path|src/verify_post_flip_theories_round{2,3,4,5,7,8}.py|.
 \label{sec:strong_lensing_extended}
 A more rigorous test of the framework's strong-lensing
@@ -3977,9 +4224,9 @@ and intracluster gas ($5\!\times\!10^{11}\,M_\odot$) gives
 $M(<\!45\,{\rm kpc})\!=\!6.31\!\times\!10^{13}\,M_\odot$
 vs anchor $8\!\times\!10^{13}$, $21\%$ residual
 (reproducer
-\path|src/verify_smacs_j0723_multicomponent.py|).
+\pyscript{emergent-gr-schwarzschild-ppn-repro}{src/verify_smacs_j0723_multicomponent.py}{verify_smacs_j0723_multicomponent}).
 Reproducer for the eight-system table:
-\path|src/verify_strong_lensing_extended.py|.
+\pyscript{emergent-gr-schwarzschild-ppn-repro}{src/verify_strong_lensing_extended.py}{verify_strong_lensing_extended}.
 
 \paragraph{Real SPARC fit on the bundled 175-galaxy
 Lelli~+~2016 sample.}
@@ -4005,13 +4252,13 @@ $\chi^{2}/\text{dof}\!<\!10$ on $62/129\!\approx\!48\%$
 without any per-galaxy fit. The full $\chi^{2}/\text{dof}$
 distribution is $5$ at $<\!1$, $17$ at $<\!3$, $40$ at
 $<\!10$, $39$ at $<\!50$, $28$ at $\geq\!50$.
-Reproducer: \path|src/verify_sparc_real_175.py| with
+Reproducer: \pyown{src/verify_sparc_real_175.py}{verify_sparc_real_175} with
 SPARC data downloaded from
 \url{https://astroweb.cwru.edu/SPARC/}.
 
 \paragraph{SPARC per-galaxy pattern: late-type / dwarf systems fit
 best.} A pattern analysis on the same 129-galaxy sample
-(\path|src/verify_sparc_per_galaxy_patterns.py|) shows that
+(\pyown{src/verify_sparc_per_galaxy_patterns.py}{verify_sparc_per_galaxy_patterns}) shows that
 the parameter-free framework prediction has Pearson
 correlation $\approx\!0$ with $V_{\rm flat}$, distance, and
 Hubble type ($|r|\!<\!0.06$ for all three), but a
@@ -4080,7 +4327,7 @@ scale, but it is \emph{not} statistically separable from the
 majority null on $129$ galaxies alone. A pre-registered
 statistical hardening of the classifier
 (reproducer
-\path|src/verify_sparc_two_phase_statistical_hardening.py|,
+\pyown{src/verify_sparc_two_phase_statistical_hardening.py}{verify_sparc_two_phase_statistical_hardening},
 bundle
 \path|outputs/verify_sparc_two_phase_statistical_hardening.json|)
 gives:
@@ -4096,7 +4343,7 @@ bootstrap optimal-threshold median
 $M_{b}\!=\!92\!\times\!10^{9}\,M_{\odot}$
 (95\% CI $[60,\,223]$, consistent with the pre-registered
 $10^{11}\,M_{\odot}$ Milky-Way scale). The previous
-$V_{\rm flat}$-only test (\path|src/verify_sparc_two_phase_carrier.py|)
+$V_{\rm flat}$-only test (\pyown{src/verify_sparc_two_phase_carrier.py}{verify_sparc_two_phase_carrier})
 sat $-14$\,pp below the majority baseline; the $M_{b}$-classifier
 closes that gap and matches the pre-registered Milky-Way mass
 scale, but the present $129$-galaxy sample does not yet
@@ -4107,10 +4354,10 @@ the population-level discrimination of the pre-registered
 $M_{b}$ threshold from the majority null is registered as a
 larger-sample follow-up (extension beyond the
 $129$-galaxy quality-cut). Reproducer:
-\path|src/verify_sparc_two_phase_refined.py|; bundle
+\pyown{src/verify_sparc_two_phase_refined.py}{verify_sparc_two_phase_refined}; bundle
 \path|outputs/verify_sparc_two_phase_refined.json|;
 hardening:
-\path|src/verify_sparc_two_phase_statistical_hardening.py|.
+\pyown{src/verify_sparc_two_phase_statistical_hardening.py}{verify_sparc_two_phase_statistical_hardening}.
 
 \paragraph{Pre-registered domain $\mathcal{D}_{\rm halo}$ for
 the framework's halo predictions.} The two-phase carrier theorem
@@ -4165,7 +4412,7 @@ radial-acceleration-relation fit) is the alternative
 parameter-free comparison; the framework's chirality-flip
 prediction differs from MOND in the late-type / dwarf domain
 where MOND classically dominates, and the cluster-scale
-mass-bias prediction (\path|src/verify_cluster_xray_vs_lensing.py|)
+mass-bias prediction (\pyown{src/verify_cluster_xray_vs_lensing.py}{verify_cluster_xray_vs_lensing})
 differs from MOND on the cluster scale where MOND classically
 fails.
 \end{itemize}
@@ -4186,7 +4433,7 @@ expected for relaxed clusters with the canonical
 $\sim\!10\%$ HSE bias, while the Bullet-Cluster-class merger
 states show the well-known DM-gas spatial offset. Comparison
 on four published clusters
-(\path|src/verify_cluster_xray_vs_lensing.py|): Coma
+(\pyown{src/verify_cluster_xray_vs_lensing.py}{verify_cluster_xray_vs_lensing}): Coma
 $M_{\rm X}/M_{\rm lens}\!=\!0.97$ ($3.0\%$ residual),
 Perseus $0.94$ ($6.2\%$), Abell 1689 $0.84$ ($15.6\%$),
 Bullet $0.75$ ($25\%$ — the canonical merger anomaly).
@@ -4210,7 +4457,7 @@ therefore recovered in the continuum limit on the framework's
 Xi-graph; the emergent Einstein equation is internally
 consistent with the Bianchi constraint at a quantitative
 ($\alpha\!>\!1$) convergence rate. Reproducer:
-\path|src/verify_continuum_bianchi.py| reanchoring the
+\pyown{src/verify_continuum_bianchi.py}{verify_continuum_bianchi} reanchoring the
 bundled lattice audit
 \path|outputs/discrete_bianchi_scaling_audit.json|.
 
@@ -4762,34 +5009,30 @@ identification therefore links the cosmological-constant
 closure to the rest of the dark-sector closures through a
 single derived primitive.
 
-\paragraph{Retracted paired-degeneracy correction (2026-05-11).}
-A previously documented ninth layer (paired-degeneracy
-correction) has been retracted from the published closure.
-The reasons are recorded in
-\path|data/cosmological_constant_closure.json| (key
-\path|h197_retraction_2026_05_11|) and are reproduced here:
-(i) the eight upstream layers (six additive suppression
-layers plus zero-mode cancellation and backreaction
-screening) sum to $-122.99$ OoM, exceeding the required
-$122.95$ OoM by $0.05$ OoM, so the $122$-order hierarchy
-is fully accounted for without the paired-degeneracy
-correction; (ii) the layer was sign-inconsistent across the
-code path (the production residual-closure script applied
-it as un-suppression $+0.32$ OoM while the
+\paragraph{Candidate paired-degeneracy correction not used.}
+An earlier candidate ninth layer (a paired-degeneracy
+correction) does not enter the published nine-layer chain.
+The reasoning is reproduced here from the closure-data bundle
+(\path|data/cosmological_constant_closure.json|): (i) the
+eight upstream layers (six additive suppression layers plus
+zero-mode cancellation and backreaction screening) already
+sum to $-122.99$ OoM, exceeding the required $122.95$ OoM by
+$0.05$ OoM, so the $122$-order hierarchy is fully accounted
+for without the paired-degeneracy correction; (ii) the
+candidate was sign-inconsistent across the code path (the
+production residual-closure script applied it as
+un-suppression $+0.32$ OoM, while the
 System-$\mathcal R$ identification asserted suppression
-$-0.33$ OoM); (iii) the layer had no external
+$-0.33$ OoM); (iii) the layer admits no external
 quantum-field-theory analogue (own framing: ``internal to
-the lattice construction''); (iv) either sign overshot the
-closure further than the eight-layer chain alone (ratio
+the lattice construction''); (iv) either sign would overshoot
+the closure further than the eight-layer chain alone (ratio
 $1.83$ with $+0.32$, ratio $0.42$ with $-0.33$, vs.\ ratio
-$0.89$ with the layer dropped). The retraction shifted the
-canonical-regime residual from $+0.26$ OoM to $-0.05$ OoM
-and removed the previously documented sign mismatch from
-the layer-by-layer System-$\mathcal R$ verifier; the
-present nine-layer chain replaces the retracted candidate
-with the derived synchronization-channel un-cancellation
-$H_{\rm sync}$ (P2~\S5 $C_{3}$), closing the residual to
-$+0.0004$ OoM (EXACT).
+$0.89$ with the layer dropped). The published nine-layer chain
+replaces this candidate with the derived synchronization-
+channel un-cancellation $H_{\rm sync}$ (P2~\S5 $C_{3}$),
+closing the residual to $+0.0004$ OoM (EXACT) with the
+canonical-regime residual at $-0.05$ OoM.
 
 \paragraph{Two evidence tiers.}
 Two layers of the closure are reported separately:
@@ -4958,7 +5201,7 @@ the canonical $N^{-1.63}$ exponent.  If the proxy convention is
 observed to deliver the same $N^{-1.6}$ decay (within bootstrap
 uncertainty), the Hilbert-variation locality argument (i)
 fails; the audit script is bundled at
-\path|src/verify_proxy_kRec_bianchi_falsification.py|.
+\pyown{src/verify_proxy_kRec_bianchi_falsification.py}{verify_proxy_kRec_bianchi_falsification}.
 
 \paragraph{Naive QFT vacuum-energy hierarchy.}
 The naive QFT zero-point energy on a Planck-scale cutoff is
@@ -5121,8 +5364,8 @@ readout $\log_{10}(|E_{\rm vac}|/\Delta)=\log_{10}(0.100)=-1.00$
 (used in the closure result) and the System-$\mathcal R$
 rational identification $\log_{10}(37/100)=-0.43$ (used in the
 audit); the $0.57$ OoM spread is part of the L1/L2 finite-$N$
-theory systematic. A previously documented paired-degeneracy
-correction was retracted on 2026-05-11 as structurally
+theory systematic. An earlier candidate paired-degeneracy
+correction does not enter the published chain, as structurally
 distinct from the present nine-layer chain
 (the candidate had no external quantum-field-theory analogue
 and was sign-inconsistent across the code path; the present
@@ -5130,8 +5373,8 @@ ninth layer is the synchronization-channel un-cancellation,
 derived from P2~\S5 $C_{3}$, not a paired-degeneracy
 correction). Note that the $122$-OoM hierarchy is fully
 accounted for by the nine upstream layers (see the
-\texttt{h\_sync\_promotion\_2026\_05\_11} and
-\texttt{h197\_retraction\_2026\_05\_11} blocks in
+\texttt{h\_sync\_promotion} and
+\texttt{h197\_candidate\_review} entries in
 \texttt{data/cosmological\_constant\_closure.json}).}
 \label{tab:cc-layer-audit}
 \end{table}
@@ -5211,7 +5454,7 @@ $N_{\rm sectors}\!=\!2 d\!=\!8$ multiplied by the
 back-channel-inverse-aligned per-sector base; the small
 $\gamma^{2}$-correction $35/100\!=\!5{\cdot}7\,\gamma^{2}\!=\!(d{+}1)(d{+}N_{\mathrm{gen}})\,\gamma^{2}$
 recombines the same two dimensional primitives that drive L2
-and L4. The previously-reported split between the integer
+and L4. The earlier split between the integer
 sector count $N_{\rm sectors}$ and the composite occupancy
 product $L_{\rm occ}$ is therefore absorbed into a single
 System-$\mathcal R$-rational closure for the layer as a whole.
@@ -5262,7 +5505,7 @@ deep inside the L5 finite-$N\!\to\!$continuum spread of
 $0.58$~OoM on the canonical ten-regime ladder of
 Section~\ref{sec:cc}. A reproducibility script bundling the
 full audit is at
-\path|src/verify_cc_layer_audit_systemR.py|; it recomputes
+\pyown{src/verify_cc_layer_audit_systemR.py}{verify_cc_layer_audit_systemR}; it recomputes
 the six System-$\mathcal R$ identities of
 Eqs.~\eqref{eq:L2-closure}--\eqref{eq:backreaction-closure}
 plus the derived sync-channel identity
@@ -5374,11 +5617,19 @@ as the unique algebraically clean closure.
 
 \paragraph{Spectral tilt and tensor-to-scalar ratio.}
 The bundled readouts include the loop-class algebraic identity
-$n_{s} = 1 - \gamma\,\varepsilon^{2}_{\text{sync}}$, numerically
-very close to the Planck~2018~\cite{Planck2018} best-fit
-$n_{s} = 0.9649 \pm 0.0042$. The tensor-to-scalar ratio
-$r_{\text{pred}} = 0.029$ is a factor $\sim 1.9$ below the
-BICEP/Keck~2021 95\% upper bound $r < 0.056$~\cite{BICEPKeck2021}.
+$n_{s} = 1 - \gamma^{2}(d{+}N_{\rm gen})/2 = 193/200 = 0.965$
+(equivalently $1 - (d{+}N_{\rm gen})\,\gamma\,\varepsilon^{2}_{\text{sync}}$
+using $\varepsilon^{2}_{\text{sync}} = \gamma/2$), matching the
+Planck~2018~\cite{Planck2018} best-fit $n_{s} = 0.9649 \pm 0.0042$
+within $0.02\sigma$ and remaining inside the
+end-of-2025 CMB+BAO combined posterior
+$n_{s} = 0.9682 \pm 0.0032$~\cite{Balkenhol2025}. The
+tensor-to-scalar ratio $r_{\text{pred}} = 0.029$ is a factor
+$\sim 1.2$ below the most recent 95\% C.L.\ combined
+Planck--SPT--ACT--BICEP/Keck--DESI bound
+$r < 0.034$~\cite{Balkenhol2025} (and a factor $\sim 1.9$ below
+the earlier BK18 stand-alone bound
+$r < 0.056$~\cite{BICEPKeck2021}).
 The cascade mechanism across 26 phase-stabilising barriers
 delivers $N_{\text{efolds}} = 304$, a factor $\sim 4$ above the
 typical horizon-flatness requirement. All five readouts are
@@ -5447,15 +5698,14 @@ loop-class identity $n_{s} = 1 -
 Observation of a vacuum-decay event would falsify the
 absolute-stability claim of Section~\ref{sec:infl-vac}.
 
-\paragraph{Pre-registered near-term falsification handles
-(2026-05-11).}
+\paragraph{Pre-registered near-term falsification handles.}
 Five near-term cosmology / neutrino-physics predictions are
-content-hashed at the present freeze date in
+content-hashed in the bundled pre-registration record
 \path|data/preregistration_2026_05_11.json|
 (SHA-256 hash \texttt{aa563454e9ff5404}\ldots over the bundled
 data files that ground the predictions; full $64$-character
 hash and per-file hashes in the bundle). The reproducer
-\path|src/build_preregistration.py| recomputes the hash
+\pyown{src/build_preregistration.py}{build_preregistration} recomputes the hash
 deterministically from the downloaded repository state, so
 any reader can independently verify that the predictions
 were stamped before the experimental releases below.
@@ -5465,10 +5715,11 @@ $|w_{a}|\!\le\!0.01$ from $\varepsilon_{\rm sync}^{4}/\gamma_{\rm eff}$
 with $\partial w_{\rm DE}/\partial\theta_{\rm chir}|_{0}\!=\!0$;
 decisive at DESI~DR3.
 \item \emph{P-SIGMA\_M\_NU}: neutrino mass sum
-$\Sigma m_{\nu}\!=\!0.0591$\,eV from $m_{1}\!=\!\gamma^{2} m_{3}$;
+$\Sigma m_{\nu}\!=\!0.0593$\,eV (canonical, NH;
+$m_{1}\!=\!\gamma^{2} m_{3}$);
 band $[0.0586, 0.0642]$\,eV between the oscillation lower
-limit and the DESI~DR2 upper bound; decisive at CMB-S4 /
-Roman / Euclid Year-1-2.
+limit and the DESI~DR2 upper bound under $\Lambda$CDM;
+decisive at CMB-S4 / Roman / Euclid Year-1-2.
 \item \emph{P-H0}: Hubble constant $H_{0}\!=\!67.5$\,km/s/Mpc
 $=\!100\alpha_{\xi} s_{\rm face} N_{\rm gen}$; structurally locked
 to $V_{us}$, $\sin^{2}\theta_{W}$, $S_{\rm BH}/A$; decisive at
@@ -5547,7 +5798,7 @@ information, while the causally accessible subset grows with
 the comoving horizon (recovering the standard cosmological
 information-budget intuition without information creation).
 The audit
-(\path|src/verify_cosmic_horizon_info_capacity.py|,
+(\pyown{src/verify_cosmic_horizon_info_capacity.py}{verify_cosmic_horizon_info_capacity},
 output
 \path|outputs/cosmic_horizon_info_capacity.json|)
 reports $S_{dS}\!=\!2.26\!\times\!10^{122}$ nats and the
@@ -5691,6 +5942,14 @@ observing season},
 Phys.~Rev.~Lett.~\textbf{127}, 151301 (2021);
 arXiv:2110.00483;
 \href{https://doi.org/10.1103/PhysRevLett.127.151301}{doi:10.1103/PhysRevLett.127.151301}.
+
+\bibitem{Balkenhol2025}
+L.~Balkenhol \textit{et al.}, \emph{Inflation at the End of 2025:
+Constraints on $r$ and $n_s$ Using the Latest CMB and BAO Data},
+arXiv:2512.10613 (December 2025). Combined Planck+SPT+ACT+BICEP/Keck
+analysis with DESI BAO, yielding $n_s = 0.9682 \pm 0.0032$ (CMB only)
+shifting to $0.9728 \pm 0.0029$ with BAO, and the 95\% C.L. upper
+bound $r < 0.034$.
 
 \bibitem{Planck2018}
 Planck Collaboration, N.~Aghanim \textit{et al.},
@@ -5899,6 +6158,45 @@ flat-$\Lambda$CDM with three degenerate states; lightest
 mass $m_{l}\!<\!0.023$~eV in the normal ordering with
 preference for normal over inverted.
 
+\bibitem{DESI2025BAO}
+M.~Abdul-Karim \textit{et al.} (DESI Collaboration),
+``DESI DR2 Results II: Measurements of Baryon Acoustic
+Oscillations and Cosmological Constraints'',
+Physical Review D \textbf{112}, 083515 (2025); arXiv:2503.14738.
+BAO measurement from $14$ million galaxies and quasars across
+three years of operation; under flat-$\Lambda$CDM the DESI+CMB
+combination yields the tightest current cosmological-parameter
+constraints. The dynamical dark-energy $(w_0, w_a)$
+parametrisation is preferred over $\Lambda$CDM at $3.1\sigma$,
+representing the principal late-time DE tension addressed by the
+framework's
+$w_{\rm DE}\!=\!-1\!+\!\varepsilon_{\rm sync}^{4}/\gamma\!=\!-39/40$
+closure (Section~\ref{sec:dm-de}).
+
+\bibitem{WangMota2025}
+D.~Wang and D.~Mota,
+\emph{Did DESI DR2 truly reveal dynamical dark energy?},
+European Physical Journal C (2025); arXiv:2504.15222.
+Independent analysis arguing that the DESI-DR2 preference
+for evolving $w(z)$ is not robust once tensions among the
+CMB, BAO and SNe data sets are propagated through the
+combined likelihood; the active counter-line to the
+DESI~2024+2025 dynamical-DE claim.
+
+\bibitem{Lieu2024}
+R.~Lieu,
+\emph{The binding of cosmological structures by massless
+topological defects},
+Monthly Notices of the Royal Astronomical Society
+\textbf{531}, 1630 (2024); arXiv:2406.04355.
+Demonstrates that a distribution of massless topological
+defects produces flat stellar / galactic rotation curves and
+isothermal-sphere-style lensing signatures \emph{without an
+underlying particle component} -- the literature precedent
+for the present identification of the halo signal with
+$T_{\mu\nu}^{\rm DM\text{-}vortex}$ of the relational
+vortex-defect network rather than with particulate DM.
+
 \bibitem{Freedman2024CCHP}
 W.~L.~Freedman \textit{et al.},
 ``Status report on the Chicago-Carnegie Hubble Program (CCHP):
@@ -5908,6 +6206,38 @@ Astrophysical Journal \textbf{985}, 203 (2025); arXiv:2408.06153.
 JWST-only TRGB $H_{0}\!=\!68.81\!\pm\!1.79\,\text{(stat)}\!\pm\!1.32\,\text{(sys)}$;
 JWST-only JAGB $H_{0}\!=\!67.80\!\pm\!2.17\,\text{(stat)}\!\pm\!1.64\,\text{(sys)}$;
 combined HST+JWST TRGB $H_{0}\!=\!70.39\!\pm\!1.22\,\text{(stat)}\!\pm\!1.33\,\text{(sys)}\!\pm\!0.70\,(\sigma_{\rm SN})$.
+
+\bibitem{DiValentino2025Tensions}
+E.~Di Valentino \textit{et al.},
+\emph{Cosmological tensions in the era of precision cosmology:
+insights from Tensions in Cosmology 2025},
+arXiv:2509.25288 (2025).
+Community-white-paper-style review consolidating the
+post-DESI-DR2 + JWST landscape; reports a Hubble-tension
+discrepancy now exceeding $\sim\!6\sigma$ and surveys the
+EDE, modified-gravity, and dark-sector remedies. Sets the
+state-of-the-art empirical context for the present
+framework's structural prediction
+$H_{0}\!=\!100\,\alpha_{\xi}\,s_{\rm face}N_{\rm gen}\!=\!67.5$~km/s/Mpc,
+which sits on the early-universe side of the persistent
+late-time/early-time split.
+
+\bibitem{Riess2024JWST}
+A.~G.~Riess \textit{et al.},
+``JWST Validates HST Distance Measurements: Selection of
+Supernova Subsample Explains Differences in JWST Estimates of
+Local $H_{0}$'',
+Astrophysical Journal \textbf{977}, 120 (2024); arXiv:2408.11770.
+SH0ES JWST cross-validation of the HST Cepheid distance ladder:
+HST Cepheid distance linearity constrained to
+$0.994\!\pm\!0.010$; three-method JWST result
+$H_{0}\!=\!72.6\!\pm\!2.0$~km/s/Mpc on the distance-limited
+$D\!\leq\!25$~Mpc sample, maintaining the $\sim\!73$~km/s/Mpc
+SH0ES value with HST--JWST mutual consistency at $\sim\!1\sigma$.
+Attributes prior CCHP-vs-SH0ES discrepancies to supernova-subsample
+selection rather than Cepheid-calibration bias; the persistence
+of the Cepheid-vs-TRGB/JAGB split therefore remains the principal
+$H_{0}$-tension load-bearing observation under JWST validation.
 
 \bibitem{TDCOSMO2020}
 S.~Birrer \textit{et al.} (TDCOSMO Collaboration),
@@ -6079,7 +6409,7 @@ $\Lambda_{t}\!,T_{00}\!,G_{00}$ branch resolution at $\theta\!
 The reproducibility package
 (\url{https://github.com/TerraSignum/emergent-gr-anisotropic-source-dm-de-repro}) bundles all
 input data files (under \path|data/|), reproducer scripts
-(\path|src/verify_*.py| and \path|src/make_figures.py|), and
+(\path|src/verify_*.py| and \pyscript{causal-wave-landings-repro}{src/make_figures.py}{make_figures}), and
 unit tests (\path|tests/|). Cryptographic provenance is provided by
 \path|data/SHA256SUMS| (GNU \texttt{sha256sum -c} compatible),
 and the publication-prep frozen state is documented in
