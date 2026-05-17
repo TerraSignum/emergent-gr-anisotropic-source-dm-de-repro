@@ -21,8 +21,8 @@
 
 % Clickable GitHub links for src/*.py citations (auto-generated)
 \newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
-% \nolinkurl gives a monospace, line-breakable rendering of the
-% short script-stem display text without competing with \href.
+% \nolinkurl gives a monospace, line-breakable rendering (handles
+% underscores) without creating an inner link competing with \href.
 \newcommand{\pyscript}[3]{%
   \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
 \newcommand{\repoOwn}{emergent-gr-anisotropic-source-dm-de-repro}
@@ -280,7 +280,7 @@ $(\rho_{\Lambda}, \Omega_{\Lambda})$ themselves closed
 independently in the present paper. A \emph{cross-projection
 identity test} is reported in
 \pyown{src/verify_H0_friedmann_cross_projection.py}{verify_H0_friedmann_cross_projection} (bundled
-output \path|outputs/verify_H0_friedmann_cross_projection.json|):
+output \pyown{outputs/verify_H0_friedmann_cross_projection.json}{verify_H0_friedmann_cross_projection.json}):
 \textbf{Route A (carrier-product)}
 $H_{0}\!=\!100\!\cdot\!\alpha_{\xi}s_{\rm face}N_{\rm gen}
 \!=\!67.50$~km/s/Mpc; \textbf{Route B (Friedmann at $z\!=\!0$)}
@@ -998,7 +998,7 @@ $e_{ab}$ in the spectral-frame spatial coordinate $i$) and
 correlated against the geodesic distance to the nearest
 matter concentration on the same twelve-regime ladder
 (\pyown{src/verify_signed_halo_R0i_and_R00_null.py}{verify_signed_halo_R0i_and_R00_null};
-output \path|outputs/verify_signed_halo_R0i_and_R00_null.json|):
+output \pyown{outputs/verify_signed_halo_R0i_and_R00_null.json}{verify_signed_halo_R0i_and_R00_null.json}):
 all twelve regimes return a negative
 $\rho(R_{0i,J_{\rm mag}},d_{\rm core})$ with median
 $-0.658$, the signed accretion-class signature on the
@@ -1485,7 +1485,7 @@ $f_{\rm pv}\!\in\![0.39,0.47]$ across the canonical
 $\mathcal{P}_{5}/\mathcal{P}_{5}N$ ladder (reproducer
 \pyown{src/verify_signed_vs_magnitude_halo_separation.py}{verify_signed_vs_magnitude_halo_separation};
 output
-\path|outputs/verify_signed_vs_magnitude_halo_separation.json|).
+\pyown{outputs/verify_signed_vs_magnitude_halo_separation.json}{verify_signed_vs_magnitude_halo_separation.json}).
 The cross-regime Pearson correlations
 $\mathrm{corr}(f_{\rm pv}, \rho_{\rm mag})\!=\!-0.28$ and
 $\mathrm{corr}(N, \rho_{\rm mag})\!=\!+0.58$ identify the
@@ -1604,7 +1604,7 @@ The natural question is: ``If SEC is satisfied
 produce late-time accelerated expansion?'' The numerical
 answer
 (\pyown{src/verify_frw_lattice_epoch_identification.py}{verify_frw_lattice_epoch_identification};
-output \path|outputs/frw_lattice_epoch_identification.json|)
+output \pyown{outputs/frw_lattice_epoch_identification.json}{frw_lattice_epoch_identification.json})
 is concrete: \emph{the lattice source-tensor mixture is the
 standard $\Lambda$CDM dark-sector composition evaluated at
 the late-matter / early-DE crossover redshift}, not at
@@ -2356,7 +2356,7 @@ of the chirality-restriction identity at the lattice level.
 
 Reproducer
 \pyown{src/verify_KQ_top_pct_chi2_sweep.py}{verify_KQ_top_pct_chi2_sweep}, output
-\path|outputs/verify_KQ_top_pct_chi2_sweep.json|; the
+\pyown{outputs/verify_KQ_top_pct_chi2_sweep.json}{verify_KQ_top_pct_chi2_sweep.json}; the
 identification audit lives in
 \path|data/closure_derivations/HE_tau_eps_sync_identification.{py,json}|.
 
@@ -3318,7 +3318,7 @@ The continuum candidate $\alpha_{\xi}^{2}\!\to\!8/\pi^{2}$
 back-channel projection that the lattice rational
 $1\!-\!1/(2(d{+}1))\!=\!9/10$ approximates within current
 measurement precision; an indirect aggregated $\chi^{2}$ test
-across nine cross-sector observables (\path|data/closure_derivations/HW_indirect_audit.json|) finds $\Delta\chi^{2}\!=\!+1.15$
+across nine cross-sector observables (\pyown{data/closure_derivations/HW_indirect_audit.json}{HW_indirect_audit.json}) finds $\Delta\chi^{2}\!=\!+1.15$
 in favour of the continuum reading at the framework's intrinsic
 loop-correction precision floor of $\sim\!0.1\%$ on
 $\alpha_{\rm EM}\!=\!\gamma^{2}\alpha_{\xi}^{N_{\mathrm{gen}}}$;
@@ -3416,7 +3416,7 @@ A grid scan over $(d, N_{\mathrm{gen}}) \!\in\! \{3,4,5\}
 \eqref{eq:master_primitives_in_d}, evaluated against six
 independent anchors $V_{us}$, $\sin^{2}\theta_{W}$, $\sigma_{8}$,
 $n_{s}$, $Y_{p}$, $z_{*}$, gives a cumulative percentage-residual
-$\chi$-like metric (cf.~\path|data/closure_derivations/HAA_d_Ngen_derivation.json|):
+$\chi$-like metric (cf.~\pyown{data/closure_derivations/HAA_d_Ngen_derivation.json}{HAA_d_Ngen_derivation.json}):
 \begin{equation}
 \chi^{2}_{\rm like}(d, N_{\mathrm{gen}}) \;=\; \sum_{k}
 \left(\frac{P_{k}(d, N_{\mathrm{gen}}) - O_{k}}{O_{k}}\right)^{2},
@@ -4329,7 +4329,7 @@ statistical hardening of the classifier
 (reproducer
 \pyown{src/verify_sparc_two_phase_statistical_hardening.py}{verify_sparc_two_phase_statistical_hardening},
 bundle
-\path|outputs/verify_sparc_two_phase_statistical_hardening.json|)
+\pyown{outputs/verify_sparc_two_phase_statistical_hardening.json}{verify_sparc_two_phase_statistical_hardening.json})
 gives:
 binomial $p$-value vs. majority $p\!=\!0.21$;
 ROC-AUC $\!=\!0.531$ (slightly above the chance value $0.5$);
@@ -4355,7 +4355,7 @@ $M_{b}$ threshold from the majority null is registered as a
 larger-sample follow-up (extension beyond the
 $129$-galaxy quality-cut). Reproducer:
 \pyown{src/verify_sparc_two_phase_refined.py}{verify_sparc_two_phase_refined}; bundle
-\path|outputs/verify_sparc_two_phase_refined.json|;
+\pyown{outputs/verify_sparc_two_phase_refined.json}{verify_sparc_two_phase_refined.json};
 hardening:
 \pyown{src/verify_sparc_two_phase_statistical_hardening.py}{verify_sparc_two_phase_statistical_hardening}.
 
@@ -4459,7 +4459,7 @@ consistent with the Bianchi constraint at a quantitative
 ($\alpha\!>\!1$) convergence rate. Reproducer:
 \pyown{src/verify_continuum_bianchi.py}{verify_continuum_bianchi} reanchoring the
 bundled lattice audit
-\path|outputs/discrete_bianchi_scaling_audit.json|.
+\pyown{outputs/discrete_bianchi_scaling_audit.json}{discrete_bianchi_scaling_audit.json}.
 
 \begin{figure}[!htbp]
 \centering
@@ -5013,7 +5013,7 @@ single derived primitive.
 An earlier candidate ninth layer (a paired-degeneracy
 correction) does not enter the published nine-layer chain.
 The reasoning is reproduced here from the closure-data bundle
-(\path|data/cosmological_constant_closure.json|): (i) the
+(\pyown{data/cosmological_constant_closure.json}{cosmological_constant_closure.json}): (i) the
 eight upstream layers (six additive suppression layers plus
 zero-mode cancellation and backreaction screening) already
 sum to $-122.99$ OoM, exceeding the required $122.95$ OoM by
@@ -5583,7 +5583,7 @@ volume average reduces to $\alpha_{\xi}^{2}$. The norm-explicit
 audit of the parent paper
 (\cite{Paper4}, sec.~gap, percentile-spectrum table and
 Symanzik-2 fits in the parent's
-\path|outputs/stage6f_full_tensor_norm_audit.json|) verifies
+\pyscript{emergent-gr-closure-repro}{outputs/stage6f_full_tensor_norm_audit.json}{stage6f_full_tensor_norm_audit.json}) verifies
 \eqref{eq:t00-perpoint-closure} simultaneously in median, mean,
 $p_{90}$, and $p_{95}$ of the per-node relative-Frobenius
 residual: all four bulk percentiles extrapolate to or below zero
@@ -5701,7 +5701,7 @@ absolute-stability claim of Section~\ref{sec:infl-vac}.
 \paragraph{Pre-registered near-term falsification handles.}
 Five near-term cosmology / neutrino-physics predictions are
 content-hashed in the bundled pre-registration record
-\path|data/preregistration_2026_05_11.json|
+\pyown{data/preregistration_2026_05_11.json}{preregistration_2026_05_11.json}
 (SHA-256 hash \texttt{aa563454e9ff5404}\ldots over the bundled
 data files that ground the predictions; full $64$-character
 hash and per-file hashes in the bundle). The reproducer
@@ -5800,7 +5800,7 @@ information-budget intuition without information creation).
 The audit
 (\pyown{src/verify_cosmic_horizon_info_capacity.py}{verify_cosmic_horizon_info_capacity},
 output
-\path|outputs/cosmic_horizon_info_capacity.json|)
+\pyown{outputs/cosmic_horizon_info_capacity.json}{cosmic_horizon_info_capacity.json})
 reports $S_{dS}\!=\!2.26\!\times\!10^{122}$ nats and the
 explicit cross-check against the nine-layer dressing.
 
@@ -6413,8 +6413,8 @@ input data files (under \path|data/|), reproducer scripts
 unit tests (\path|tests/|). Cryptographic provenance is provided by
 \path|data/SHA256SUMS| (GNU \texttt{sha256sum -c} compatible),
 and the publication-prep frozen state is documented in
-\path|RELEASE_v1_0_0.md| with full release notes in
-\path|CHANGELOG.md|. Software metadata is in \path|pyproject.toml|
+\pyscript{causal-wave-landings-repro}{RELEASE_v1_0_0.md}{RELEASE_v1_0_0.md} with full release notes in
+\pyscript{causal-wave-landings-repro}{CHANGELOG.md}{CHANGELOG.md}. Software metadata is in \path|pyproject.toml|
 and \path|CITATION.cff| (Citation File Format 1.2). The package is
 licensed under MIT; the manuscript text is licensed under
 CC-BY-4.0.
